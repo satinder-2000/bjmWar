@@ -1,0 +1,49 @@
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+                template="/WEB-INF/bjmTemplate.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <ui:define name="content">
+        <div class="col-sm-8">
+            <br/>
+            <div class=" row form-group">
+                    <div class="col-sm-5 text-center">
+                        
+                        <h:outputText/>
+                    </div>
+                    <div class="col-sm-5 text-center">
+                        <h:form>
+                            <h:commandLink  value="#{msg.createNewForum}"  action="NewForum" styleClass="btn btn-primary btn-lg"/>
+                        </h:form>
+                    </div>
+            </div>
+            <h2>Current Forums</h2>
+            <c:forEach items="#{forumsMBean.forums}" var="f">
+            <div class="row">
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <h:outputText value="#{f.title}" />
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <h:outputText value="#{msg.dated}  : #{f.createdStr}" /><br/>
+                            <h:outputText value="#{msg.by} : #{f.user.firstname} #{f.user.lastname}" />
+                        </div>
+                    </div>
+                <div class="col-sm-4">
+                        <div class="well">
+                            <h:form>
+                                <h:link value="#{msg.forumDetails}" outcome="ForumDetails.xhtml?faces-redirect=true" styleClass="btn btn-primary">
+                                    <f:param name="forumId" value="#{f.id}"/>
+                                </h:link>
+                            </h:form>
+                        </div>
+                    </div>
+            </div>
+            <br/>
+            </c:forEach>
+        </div>
+    </ui:define>
+
+</ui:composition>

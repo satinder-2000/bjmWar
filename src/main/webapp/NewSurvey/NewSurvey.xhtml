@@ -1,0 +1,39 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                template="/WEB-INF/bjmTemplate.xhtml"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <ui:define name="content">
+        <div class="col-sm-8">
+            <h1>#{msg.newSurvey}</h1>
+            <h:form prependId="false">
+                <h3>#{msg.selectOne}</h3>
+                <div class="row form-group">
+                    <div class="col-sm-6">
+                        <h:outputLabel value="#{msg.createNewSurvey}"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:commandButton action="#{newSurveyMBean.startNew}" value="#{msg.start}" styleClass="form-control btn btn-primary" />
+                    </div>
+
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-4">
+                        <h:outputLabel value="#{msg.fromYourForum}"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <h:selectOneMenu value="#{newSurveyMBean.forumId}" styleClass="form-control" style="background-color: #4d4dff;height: 2.5em;color: white;">
+                            <f:selectItems value="#{newSurveyMBean.userForums}" var="f" itemLabel="#{f.title}" itemValue="#{f.id}"/>
+                        </h:selectOneMenu>
+                    </div>
+                    <div class="col-sm-4">
+                        <h:commandButton action="#{newSurveyMBean.useForumCategory}" value="#{msg.start}" disabled="#{!newSurveyMBean.userHasForums}" styleClass="form-control btn btn-primary"/>
+                    </div>
+                </div>
+            </h:form>
+        </div>
+    </ui:define>
+
+</ui:composition>

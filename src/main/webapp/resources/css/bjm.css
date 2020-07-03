@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 7, 2020, 8:19:54 PM
+    Author     : root
+*/
+h1,h2 {
+    color: #b30000 !important
+}
+
+h3 {
+    color: #024597 !important
+}
+
+.btn-primary{
+    background-color: #2854da; /*#4d4dff;*/
+    border: none;
+}
+
+.bjm-p{
+    background-color: #2854da;
+    height: 2.5em !important;
+    color: white;
+}
+
+.bjm-a {
+    color: #0000cc; /*#035cc9;*/
+}

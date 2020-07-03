@@ -1,0 +1,21 @@
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="/WEB-INF/bjmTemplate.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <ui:define name="content">
+        <div class="col-sm-8">
+            <h1>#{msg.bjmanch}</h1>
+        <div class="row form-group" style="margin-top: 2.5em;">
+            <div class="col-sm-6">
+                <h:form>
+                    <h:commandButton  value="#{msg.register}"  action="UserRegister" styleClass="btn btn-primary btn-lg"/>
+                </h:form>
+            </div>
+            <div class="col-sm-6">
+                <h:button value="#{msg.login}" outcome="Login" styleClass="btn btn-primary btn-lg"></h:button>
+            </div>
+        </div>
+        </div>
+    </ui:define>
+
+</ui:composition>

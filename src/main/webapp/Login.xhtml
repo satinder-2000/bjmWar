@@ -1,0 +1,55 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+                xmlns:f="http://java.sun.com/jsf/core"
+                template="/WEB-INF/bjmTemplate.xhtml">
+    <h:head>
+        <title>BJManch Login</title>
+    </h:head> 
+    <ui:define name="content">
+        <div class="col-sm-8">
+
+            <h:form>
+                <h1>#{msg.login}</h1>
+                <h:messages infoStyle="color:blue;margin:5px;" errorStyle="color:red;margin:5px;"/>
+                <div class="row form-group" style="margin-top: 1em;">
+                    <div class="col-sm-5">
+                        <h:outputLabel value="#{msg.email}"/>  
+                    </div>
+                    <div class="col-sm-5">
+                        <h:inputText value="#{loginMBean.email}" styleClass="form-control"/> 
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 1em;">
+                    <div class="col-sm-5">
+                        <h:outputLabel value="#{msg.password}"/>  
+                    </div>
+                    <div class="col-sm-5">
+                        <h:inputSecret value="#{loginMBean.password}" styleClass="form-control"/> 
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 1em;">
+                    <div class="col-sm-5">
+                        <h:outputLabel value=" "/>  
+                    </div>
+                    <div class="col-sm-5">
+                        <h:commandButton value="#{msg.login}" action="#{loginMBean.logIn}" styleClass="btn btn-primary">
+                            <f:ajax execute="@form" render="@form" />
+                        </h:commandButton>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 2em;">
+                    <div class="col-sm-10">
+                        <p class="text-center">
+                            <h:outputLink value="DispatchAccessReset.xhtml?faces-redirect=true">
+                                #{msg.forgotPasswordClickHere}
+                            </h:outputLink>
+                        </p>
+                    </div>
+                </div>
+            </h:form>
+        </div>
+    </ui:define>
+
+</ui:composition>

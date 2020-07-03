@@ -1,0 +1,28 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                template="/WEB-INF/bjmTemplate.xhtml">
+
+    <ui:define name="content">
+        <div class="col-sm-8">
+            <h2>#{msg.surveyPosted}</h2>
+            <div class="row form-group">
+                    <div class="col-sm-10 text-center">
+                        <h:outputText value="#{msg.thankYouForPostingSurvey}"/>
+                        
+                    </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-sm-5">
+                    <h:outputLabel />
+                </div>
+                <div class="col-sm-5 text-center">
+                    <h:form prependId="false">
+                        <h:commandButton value="#{msg.home}" styleClass="btn btn-primary" action="#{homeMBean.redirectToSiteHome}"/>
+                    </h:form>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+
+</ui:composition>

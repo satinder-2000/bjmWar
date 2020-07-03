@@ -1,0 +1,45 @@
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+                template="/WEB-INF/bjmTemplate.xhtml">
+
+    <ui:define name="content">
+        <div class="col-sm-8">
+            <h1>#{msg.essays}</h1>
+            <div class="row">
+                <div class="col-sm-3">
+                    <b><h:outputLabel value="#{msg.essayTitle}"/></b>   
+                </div>
+                <div class="col-sm-3">
+                    <b><h:outputLabel value="#{msg.essayDated}"/></b>   
+                </div>
+                <div class="col-sm-3">
+                    <b><h:outputLabel value="#{msg.essayAuthor}"/></b>   
+                </div>
+                <div class="col-sm-3">
+                    <h:outputLabel/>
+                </div>
+            </div>
+
+            <c:forEach var="e" items="#{miscServiceMBean.allEssays}">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h:outputLabel value="#{e.title}"/> 
+                    </div>
+                    <div class="col-sm-3">
+                        <h:outputText value="#{e.dateStr}"/>
+                    </div>
+                    <div class="col-sm-3">
+                        <h:outputText value="#{e.author}"/>
+                    </div>
+                    <div class="col-sm-3">
+                        <h:outputLink value="/essays/#{e.file}.xhtml?faces-redirect=true">#{msg.details}</h:outputLink>
+
+                    </div>
+                </div>
+            </c:forEach>
+        </div>
+
+    </ui:define>
+
+</ui:composition>

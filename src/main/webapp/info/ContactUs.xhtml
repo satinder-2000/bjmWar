@@ -1,0 +1,54 @@
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                template="/WEB-INF/bjmTemplate.xhtml">
+
+    <ui:define name="content">
+        <div class="col-sm-8">
+            <h1>#{msg.contactUs}</h1>
+            <h:form>
+                <h:messages infoStyle="color:blue;margin:5px;" errorStyle="color:red;margin:5px;"/>
+                <div class="row" style="margin-top: 1em;">
+                    <div class="col-sm-5">
+                        <h5>#{msg.contactSubject}</h5>  
+                    </div>
+                    <div class="col-sm-5">
+                        <h:inputText value="#{contactUsMBean.subject}" styleClass="form-control" /> 
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h5>#{msg.contactMsg}</h5>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:outputText value="&#160;"/> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h:outputText value="&#160;"/> 
+                    </div>
+                    <div class="col-sm-8">
+                        <h:inputTextarea value="#{contactUsMBean.details}"  cols="80" rows="10" styleClass="form-control"  />
+                    </div>
+                    <div class="col-sm-2">
+                        <h:outputText value="&#160;"/> 
+                    </div>
+                </div>    
+
+                <div class="row" style="margin-top: 1em;">
+                    <div class="col-sm-5">
+                        <h:outputLabel value="&#160;"/>  
+                    </div>
+                    <div class="col-sm-5">
+                        <h:commandButton value="#{msg.submit}" action="#{contactUsMBean.sendRequest}" styleClass="btn btn-primary">
+                            <f:ajax execute="@form" render="@form" />
+                        </h:commandButton>
+                    </div>
+                </div>
+            </h:form>
+        </div>
+    </ui:define>
+
+</ui:composition>

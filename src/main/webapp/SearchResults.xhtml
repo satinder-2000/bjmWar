@@ -1,0 +1,35 @@
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                template="/WEB-INF/bjmTemplate.xhtml">
+
+    <ui:define name="content">
+        <div class="col-sm-8">
+            <h2>#{msg.searchResultsFor}<h:outputText value="#{searchMBean.query}"/></h2>
+            <c:choose>
+                <c:when test="#{searchMBean.results.size()==0}"><h:outputText value="#{msg.noSearchResult}"/></c:when>
+               <c:otherwise>
+                   <c:forEach items="#{searchMBean.results}" var="vo">
+                       <div class="row col-sm-10">
+                           <h:form prependId="false">
+                               <h5 style="text-align: left;"><h:commandLink action="#{searchMBean.generateDetails}" value="#{vo.title}">
+                                   <f:param name="itemId" value="#{vo.id}"/>
+                                   </h:commandLink>
+                               </h5>
+                               <p class="text-left">
+                               <h:outputText value="#{vo.descriptionText}"/>
+                               </p>
+                           </h:form>
+                           
+                       </div>
+                       <br/>
+                   
+                   </c:forEach>
+                   
+               </c:otherwise>
+            </c:choose>
+        </div>
+    </ui:define>
+
+</ui:composition>

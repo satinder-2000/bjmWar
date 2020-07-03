@@ -1,0 +1,59 @@
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template/wdfTemplate.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <ui:define name="content">
+        
+        
+            
+            <div id="forums" class="col-sm-8">
+                <h3><p:outputLabel value="#{msg.forumsListing}"/></h3>
+                <h:form>
+                    <h:outputText value="#{msg.recordPerPage} : "/>
+                    <h:selectOneMenu value="#{forumsMBean.recordsOnPage}"  valueChangeListener="#{forumsMBean.changeRecordsOnPage}" onchange="submit()">
+                        <f:selectItems value="#{forumsMBean.listRecordsPerPage}" var="val" itemLabel="#{val}" itemValue="#{val}"/> 
+                    </h:selectOneMenu>
+                
+                    <p:dataTable var="forum" value="#{forumsMBean.forums}" style="margin-top: 1.5em;">
+                        <p:column headerText="Id">
+                            <h:outputText value="#{forum.id}" />
+                        </p:column>
+
+                        <p:column headerText="#{msg.title}">
+                            <h:outputText value="#{forum.title}" />
+                        </p:column>
+
+                        <p:column headerText="#{msg.date}">
+                            <h:outputText value="#{forum.dateCreated}" >
+                                <f:convertDateTime pattern="d-M-yyyy"/>
+                            </h:outputText>    
+                        </p:column>
+                        <p:column headerText="#{msg.details}">
+                            <h:outputLink value="forumDetails.xhtml" >
+                                <h:outputText value="#{msg.forumDetails}"/>
+                                <f:param name="forumId" value="#{forum.id}"/>
+                                </h:outputLink>
+                        </p:column>
+                    
+                     </p:dataTable>
+                    
+                    <p:panelGrid columns="3" class="col-sm-12 center_content" style="margin-top: 2em;">
+                        <h:commandButton disabled="#{forumsMBean.prevDisable}" action="#{forumsMBean.processPrev}"  value="#{msg.prev}" class="btn btn-primary">
+                            <f:ajax execute="@this" render="@form"/>
+                        </h:commandButton>    
+                        <h:outputText value="#{msg.page} #{forumsMBean.currentPage} #{msg.of} #{forumsMBean.noOfPages}"/>
+                        <h:commandButton disabled="#{forumsMBean.nextDisable}" action="#{forumsMBean.processNext}" value="#{msg.next}" class="btn btn-primary">
+                            <f:ajax execute="@this" render="@form"/>
+                        </h:commandButton>
+                    </p:panelGrid>   
+                    
+                 </h:form>   
+                </div>
+            
+            
+        
+    </ui:define>
+
+</ui:composition>

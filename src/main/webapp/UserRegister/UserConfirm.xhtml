@@ -1,0 +1,111 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:jsf="http://xmlns.jcp.org/jsf"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                template="/WEB-INF/bjmTemplate.xhtml">
+    
+    <ui:define name="content">
+        <div class="container col-sm-8">
+            <h1>#{msg.confirmDetails}</h1>
+            <div class="row col-sm-12">
+                <div class="col-sm-3">
+                        <p class="text-center">
+                            <h:graphicImage value="/TempImageServlet" width="100" style="border-radius: 50%;"/>
+                        </p>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class=" row form-group">
+                            <div class="col-sm-6">
+                                <label for="firstname">#{msg.firstname}</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <h:outputText id="firstname" value="#{userRegisterMBean.user.firstname}" styleClass="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class=" row form-group">
+                            <div class="col-sm-6">
+                                <label for="lastname">#{msg.lastname}</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <h:outputText id="lastname" value="#{userRegisterMBean.user.lastname}" styleClass="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class=" row form-group">
+                            <div class="col-sm-6">
+                                <label for="email">#{msg.email}</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <h:outputText id="email" value="#{userRegisterMBean.user.email}" styleClass="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class=" row form-group">
+                            <div class="col-sm-6">
+                                <label for="dob">#{msg.dateofbirth}</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <h:outputText id="dob" value="#{userRegisterMBean.user.dobStr}" styleClass="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class=" row form-group">
+                            <div class="col-sm-6">
+                                <label for="gender">#{msg.gender}</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <h:outputText id="gender" value="#{userRegisterMBean.user.gender}" styleClass="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class=" row form-group">
+                            <div class="col-sm-6">
+                                <label for="state">#{msg.state}</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <h:outputText id="state" value="#{userRegisterMBean.userState.name}" styleClass="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class=" row form-group">
+                            <div class="col-sm-6">
+                                <label for="phone">#{msg.phone}</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <h:outputText id="phone" value="#{userRegisterMBean.user.phone}" styleClass="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class=" row form-group">
+                            <div class="col-sm-6">
+                                <label for="mobile">#{msg.mobile}</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <h:outputText id="mobile" value="#{userRegisterMBean.user.mobile}" styleClass="form-control"/>
+                            </div>
+                        </div>
+                        
+                        <!-- Submits -->
+                        <h:form>
+                            <div class=" row form-group">
+                                <div class="col-sm-6">
+                                    <h:commandButton value="#{msg.amend}" action="#{userRegisterMBean.amendDetails}" styleClass="btn btn-primary" />
+                                </div>
+                                <div class="col-sm-6">
+                                    <h:commandButton value="#{msg.cntinue}" action="returnFromUserRegisterFlow" styleClass="btn btn-primary" />
+                                </div>
+                            </div>
+                            
+                        </h:form>
+
+                    </div>
+                
+            </div>
+        </div>
+    </ui:define>
+
+    
+
+</ui:composition>

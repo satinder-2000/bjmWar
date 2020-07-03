@@ -1,0 +1,62 @@
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/bjmTemplate.xhtml"
+                xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:define name="content">
+        <div class="col-sm-8">
+            <h1>#{msg.createNewForum}</h1>
+            <h:form prependId="false">
+                <div class="row form-group">
+                    <div class="col-sm-5">
+                        <label>#{msg.selectCategory}</label>
+                    </div>
+                    <div class="col-sm-5">
+                        <h:outputText value="#{newForumMBean.type}" styleClass="form-control"></h:outputText> 
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-sm-5">
+                        <label>#{msg.selectSubCategory}</label>
+                    </div>
+                    <div class="col-sm-5">
+                        <h:outputText value="#{newForumMBean.subType}" styleClass="form-control"></h:outputText>
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-sm-5">
+                        <label for="title">#{msg.title}</label>
+                    </div>
+                    <div class="col-sm-5">
+                        <h:outputText id="title" value="#{newForumMBean.forum.title}" styleClass="form-control"/>
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-sm-5">
+                        <label for="title">#{msg.description}</label>
+                    </div>
+                    <div class="col-sm-5">
+                        <h:outputText value="&#160;"/>
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <p:textEditor id="description" value="#{newForumMBean.forum.description}" secure="false" readonly="true" height="300" />
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-sm-5">
+                        <h:commandButton value="#{msg.amend}" action="#{newForumMBean.amendForum}" styleClass="btn btn-primary" /> 
+                    </div>
+                    <div class="col-sm-5">
+                        <h:commandButton action="returnFromNewForumFlow" value="#{msg.cntinue}" styleClass="btn btn-primary"  />
+                    </div>
+                </div> 
+            </h:form>
+        </div>
+    </ui:define>
+
+</ui:composition>

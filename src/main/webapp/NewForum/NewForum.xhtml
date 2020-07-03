@@ -1,0 +1,70 @@
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/bjmTemplate.xhtml"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+    <ui:define name="content">
+        <div class="col-sm-8">
+            <h1>#{msg.createNewForum}</h1>
+            <br/>
+            <h:form prependId="false">
+                <h:messages infoStyle="color:blue;margin:5px;" errorStyle="color:red;margin:5px;"/>
+                <div class="row form-group">
+                    <div class="col-sm-5">
+                        <label for="forumCat">#{msg.selectCategory}</label>
+                    </div>
+                    <div class="col-sm-5">
+                        <h:selectOneMenu id="forumCat" value="#{newForumMBean.type}" styleClass="form-control">
+                            <f:selectItems value="#{newForumMBean.forumCategories}" var="cat" itemLabel="#{cat}" itemValue="#{cat}"/>
+                            <f:ajax listener="#{newForumMBean.ajaxTypeListener}" render="@this forumSubcat"/>
+                        </h:selectOneMenu>
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-sm-5">
+                        <label for="forumSubcat">#{msg.selectSubCategory}</label>
+                    </div>
+                    <div class="col-sm-5">
+                        <h:selectOneMenu id="forumSubcat" value="#{newForumMBean.subType}" styleClass="form-control">
+                            <f:selectItems value="#{newForumMBean.forumSubcategories}" var="cat" itemLabel="#{cat}" itemValue="#{cat}"/>
+                        </h:selectOneMenu>
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-sm-5">
+                        <label for="title">#{msg.title}</label>
+                    </div>
+                    <div class="col-sm-5">
+                        <h:inputText id="title" value="#{newForumMBean.forum.title}" pt:placeholder="#{msg.forumTitleSize}"  styleClass="form-control"/>
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-sm-5">
+                        <label for="title">#{msg.description}</label>
+                    </div>
+                    <div class="col-sm-5">
+                        <h:outputText value="&#160;"/>
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <p:textEditor id="description" value="#{newForumMBean.forum.description}" pt:placeholder="#{msg.forumDescSize}" secure="false" height="300" />
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-sm-5">
+                        <h:outputText value="&#160;"/> 
+                    </div>
+                    <div class="col-sm-5">
+                        <h:commandButton action="#{newForumMBean.prepareForum}" value="#{msg.cntinue}" styleClass="btn btn-primary"  />
+                    </div>
+                </div> 
+            </h:form>
+        </div>
+    </ui:define>
+
+</ui:composition>

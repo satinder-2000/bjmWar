@@ -1,0 +1,29 @@
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                template="/WEB-INF/bjmTemplateHome.xhtml">
+    <ui:define name="content">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-6">
+                   <h:graphicImage library="images" name="Logo420.png"/>
+                </div>
+                <div class="col-sm-6">
+                    <h1 class="display-4">#{msg.welcomeBjmanch}</h1>
+                    <p style="color: #006600;font-size: 1.75em;font-weight: bold; font-family: Garamond;">#{msg.slogan}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                   
+                </div>
+                <div class="col-sm-6">
+                    <h:form>
+                        <h:outputLink value="Login.xhtml" styleClass="btn btn-lg btn-primary">#{msg.cntinue}</h:outputLink>
+                    </h:form>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+
+</ui:composition>

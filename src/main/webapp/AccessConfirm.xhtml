@@ -1,0 +1,55 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                template="./WEB-INF/bjmTemplate.xhtml">
+    <h:head>
+        <title>BJManch.in Create Password and Complete registration.</title>
+    </h:head> 
+
+    <ui:define name="content">
+        <div class="container col-sm-8">
+            <h2>Create Log In</h2>
+            <h6 class="text-center"><small style="color: blue;">NOTE: Password must be between 8 and 14 chars long and include at least one numeric digit.</small></h6>
+            <h:form styleClass="form-horizontal">
+                <h:messages infoStyle="color:blue;margin:5px;" errorStyle="color:red;margin:5px;"/>
+                <div class=" row form-group">
+                    <div class="col-sm-5">
+                        <label for="email">#{msg.email}</label>
+                    </div>
+                    <div class="col-sm-5">
+                        <h:outputText id="email" value="#{accessConfirmMBean.user.email}" styleClass="form-control"/>
+                    </div>
+                </div>
+                <div class=" row form-group">
+                    <div class="col-sm-5">
+                        <label for="password">#{msg.password}</label>
+                    </div>
+                    <div class="col-sm-5">
+                        <h:inputSecret id="password" value="#{accessConfirmMBean.user.password}" styleClass="form-control"/>
+                    </div>
+                </div>
+                <div class=" row form-group">
+                    <div class="col-sm-5">
+                        <label for="passwordConfirm">#{msg.passwordConfirm}</label>
+                    </div>
+                    <div class="col-sm-5">
+                        <h:inputSecret id="passwordConfirm" value="#{accessConfirmMBean.user.passwordConfirm}" styleClass="form-control"/>
+                    </div>
+                </div>
+                <div class=" row form-group">
+                    <div class="col-sm-5">
+                        <h:outputText/>
+                    </div>
+                    <div class="col-sm-5">
+                        <h:commandButton value="#{msg.cntinue}" action="#{accessConfirmMBean.processForm}" styleClass="btn btn-primary">
+                            <f:ajax execute="@form" render="@form" />
+                        </h:commandButton>
+                    </div>
+                </div>
+                
+            </h:form>
+        </div>
+    </ui:define>
+
+</ui:composition>

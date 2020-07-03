@@ -1,0 +1,136 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+                xmlns:jsf="http://xmlns.jcp.org/jsf"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                template="/WEB-INF/bjmTemplate.xhtml">
+
+    <ui:define name="content">
+        <div class="container col-sm-8">
+            <h1>#{msg.userRegistration}</h1>
+            <div class="alert alert-warning">
+                <strong>#{msg.warning}!</strong><h:outputText value="&#160;" />#{msg.minAge}
+            </div>
+            <h:form styleClass="form-horizontal" enctype="multipart/form-data" prependId="false">
+                <h6 style="color: green;">#{msg.allFieldsMandatory}</h6>
+                <h:messages infoStyle="color:blue;margin:5px;" errorStyle="color:red;margin:5px;"/>
+                <div class=" row form-group">
+                    <div class="col-sm-6">
+                        <label for="firstname">#{msg.firstname}*</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:inputText id="firstname" value="#{userRegisterMBean.user.firstname}" pt:placeholder="#{msg.charsAllowed}" styleClass="form-control"/>
+                    </div>
+                </div>
+
+                <div class=" row form-group">
+                    <div class="col-sm-6">
+                        <label for="lastname">#{msg.lastname}*</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:inputText id="lastname" value="#{userRegisterMBean.user.lastname}" pt:placeholder="#{msg.charsAllowed}" styleClass="form-control"/>
+                    </div>
+                </div>
+
+                <div class=" row form-group">
+                    <div class="col-sm-6">
+                        <label for="email">#{msg.email}*</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:inputText id="email" value="#{userRegisterMBean.user.email}" styleClass="form-control"/>
+                    </div>
+                </div>
+
+                <div class=" row form-group">
+                    <div class="col-sm-6">
+                        <label for="dob">#{msg.dateofbirth}*</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:inputText id="dob" value="#{userRegisterMBean.user.dobStr}" pt:placeholder="#{msg.dobFormat}" styleClass="form-control"/>
+                    </div>
+                </div>
+
+                <div class=" row form-group">
+                    <div class="col-sm-6">
+                        <label for="gender">#{msg.gender}*</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:selectOneMenu id="gender" value="#{userRegisterMBean.user.gender}" styleClass="form-control">
+                            <f:selectItem itemLabel="#{msg.selectone}" itemValue="" />
+                            <f:selectItem itemValue="MALE" itemLabel="#{msg.male}" />
+                            <f:selectItem itemValue="FEMALE" itemLabel="#{msg.female}" />
+                            <f:selectItem itemValue="HUMAN" itemLabel="#{msg.human}" />
+                        </h:selectOneMenu>
+                    </div>
+                </div>
+
+                <div class=" row form-group">
+                    <div class="col-sm-6">
+                        <label for="stateCd">#{msg.state}*</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:selectOneMenu id="stateCd" value="#{userRegisterMBean.user.stateCode}" styleClass="form-control">
+                            <f:selectItems value="#{userRegisterMBean.states}" var="s" itemLabel="#{s.name}" itemValue="#{s.code}"/>
+                        </h:selectOneMenu> 
+                    </div>
+                </div>
+
+                <div class=" row form-group">
+                    <div class="col-sm-6">
+                        <label for="phone">#{msg.phone}</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:inputText id="phone" value="#{userRegisterMBean.user.phone}" pt:placeholder="#{msg.inclAreaCd}" styleClass="form-control"/>
+                    </div>
+                </div>
+                <div class=" row form-group">
+                    
+                    <div class="col-sm-6">
+                        <h:outputText value="#{msg.OR}*"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:outputText />
+                    </div>
+                </div>
+                
+                <div class=" row form-group">
+                    <div class="col-sm-6">
+                        <label for="mobile">#{msg.mobile}</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:inputText id="mobile" value="#{userRegisterMBean.user.mobile}" pt:placeholder="#{msg.mobIncl0}" styleClass="form-control"/>
+                    </div>
+                </div>
+
+                <div class=" row form-group">
+                    <div class="col-sm-6">
+                        <label for="profilePic">#{msg.profilepic}</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:inputFile id="profilePic" value="#{userRegisterMBean.profileFile}" styleClass="form-control"/>
+                    </div>
+                </div>
+
+
+                <div class="row form-group">
+                    <div class="col-sm-6">
+                        <h:outputLink value="/info/TermsAndConditions.xhtml?faces-redirect=true" target="_blank" styleClass="control-label col-sm-6">#{msg.acceptTC}*</h:outputLink>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:selectBooleanCheckbox id="tcAcpt" value="#{userRegisterMBean.acceptedTC}" style="width: 1.5em;height: 1.5em; float: left;"/>
+                    </div>                        
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-6">
+                        <h:outputLabel />
+                    </div>
+                    <div class="col-sm-6">
+                        <h:commandButton value="#{msg.cntinue}" action="#{userRegisterMBean.processData}" styleClass="btn btn-primary" />
+                    </div>                        
+                </div>
+            </h:form>
+        </div>
+    </ui:define>
+
+</ui:composition>

@@ -1,0 +1,280 @@
+    <ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+                template="/WEB-INF/bjmTemplate.xhtml"
+                xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:define name="content">
+        <div class="container col-sm-8">
+            <h:form prependId="false">
+                <h2>#{msg.welcomeHome}, #{session.getAttribute('User').email}</h2>
+            <br/><br/>
+            <div class="row">
+                
+                <div class="col-sm-4">
+                    <h:graphicImage value="/UserImageServlet" width="100" height="100" style="border-radius: 50%;"/>
+                </div>
+                <div class="col-sm-4">
+                    <h:selectOneMenu id="acctActions" value="#{userMBean.accountAction}" styleClass="form-control bjm-p" >
+                        <f:selectItems value="#{userMBean.accountActions}" var="a" itemValue="#{a}" itemLabel="#{a}" />
+                        <f:ajax listener="#{userMBean.accountActionListener}" render="@this activitiesPanel"/>
+                    </h:selectOneMenu>
+                </div>
+                    
+                    <!-- div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            # {msg.accountActions}
+                        </button>
+                        <div class="dropdown-menu">
+                            <h:outputLink styleClass="dropdown-item" value="# {request.contextPath}/home/AmendDetails.xhtml">Amend Details</h:outputLink>
+                            <h:outputLink styleClass="dropdown-item" value="# {request.contextPath}/home/ChangePassword.xhtml">Change Password</h:outputLink>
+                        </div>
+                    </div -->
+                    
+                <div class="col-sm-4">
+                    <h:selectOneMenu id="activities" value="#{userMBean.activity}" styleClass="form-control bjm-p">
+                        <f:selectItems value="#{userMBean.activities}" var="a" itemValue="#{a}" itemLabel="#{a}" />
+                        <f:ajax listener="#{userMBean.activityListener}" render="@this activitiesPanel"/>
+                    </h:selectOneMenu>
+                </div>
+            </div>
+            <h:panelGroup id="activitiesPanel">
+                <h:panelGroup id="amendDetails" rendered="#{userMBean.actionMode == 'Amend Details'}">
+                    <div class="row">
+                        <div class="col-sm-4"><h:outputText/></div>
+                        <div class="col-sm-4"><h5>#{msg.amendDetails}</h5></div>
+                        <div class="col-sm-4"><h:outputText/></div>
+                    </div>
+                    <h:form styleClass="form-horizontal" enctype="multipart/form-data" prependId="false">
+                        <h6 style="color: green;">#{msg.fieldsMandatory}</h6>
+                        <h:messages infoStyle="color:blue;margin:5px;" errorStyle="color:red;margin:5px;"/>
+                        <div class=" row form-group">
+                            <div class="col-sm-5">
+                                <label for="firstname">#{msg.firstname}</label>
+                            </div>
+                            <div class="col-sm-5">
+                                <h:inputText id="firstname" value="#{userMBean.user.firstname}" styleClass="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class=" row form-group">
+                            <div class="col-sm-5">
+                                <label for="lastname">#{msg.lastname}</label>
+                            </div>
+                            <div class="col-sm-5">
+                                <h:inputText id="lastname" value="#{userMBean.user.lastname}" styleClass="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class=" row form-group">
+                            <div class="col-sm-5">
+                                <label for="email">#{msg.email}</label>
+                            </div>
+                            <div class="col-sm-5">
+                                <h:outputText id="email" value="#{userMBean.newEmail}" styleClass="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class=" row form-group">
+                            <div class="col-sm-5">
+                                <label for="dob">#{msg.dateofbirth}</label>
+                            </div>
+                            <div class="col-sm-5">
+                                <h:outputText id="dob" value="#{userMBean.user.dobStr}" styleClass="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class=" row form-group">
+                            <div class="col-sm-5">
+                                <label for="gender">#{msg.gender}</label>
+                            </div>
+                            <div class="col-sm-5">
+                                <h:selectOneMenu id="gender" value="#{userMBean.user.gender}" styleClass="form-control">
+                                    <f:selectItem itemLabel="#{msg.selectone}" itemValue="" />
+                                    <f:selectItem itemValue="MALE" itemLabel="#{msg.male}" />
+                                    <f:selectItem itemValue="FEMALE" itemLabel="#{msg.female}" />
+                                    <f:selectItem itemValue="HUMAN" itemLabel="#{msg.human}" />
+                                </h:selectOneMenu>
+                            </div>
+                        </div>
+
+                        <div class=" row form-group">
+                            <div class="col-sm-5">
+                                <label for="stateCd">#{msg.state}</label>
+                            </div>
+                            <div class="col-sm-5">
+                                <h:selectOneMenu id="stateCd" value="#{userMBean.user.stateCode}" styleClass="form-control">
+                                    <f:selectItems value="#{userMBean.states}" var="s" itemLabel="#{s.name}" itemValue="#{s.code}"/>
+                                </h:selectOneMenu> 
+                            </div>
+                        </div>
+
+                        <div class=" row form-group">
+                            <div class="col-sm-5">
+                                <label for="phone">#{msg.phone}</label>
+                            </div>
+                            <div class="col-sm-5">
+                                <h:inputText id="phone" value="#{userMBean.user.phone}" styleClass="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class=" row form-group">
+                            <div class="col-sm-5">
+                                <label for="mobile">#{msg.mobile}</label>
+                            </div>
+                            <div class="col-sm-5">
+                                <h:inputText id="mobile" value="#{userMBean.user.mobile}" styleClass="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class=" row form-group">
+                            <div class="col-sm-5">
+                                <label for="profilePic">#{msg.profilepic}</label>
+                            </div>
+                            <div class="col-sm-5">
+                                <h:inputFile id="profilePic" value="#{userMBean.profileFile}" styleClass="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-sm-5">
+                                <h:outputLabel />
+                            </div>
+                            <div class="col-sm-5">
+                                <h:commandButton value="#{msg.cntinue}" action="#{userMBean.amendUserDetails}" styleClass="btn btn-primary">
+                                    <f:ajax execute="@form" render="@form"/>
+                                </h:commandButton>
+                            </div>                        
+                        </div>
+                    </h:form>
+                </h:panelGroup>
+                <h:panelGroup id="changePassword" rendered="#{userMBean.actionMode == 'Change Password'}">
+                    <div class="row">
+                        <div class="col-sm-4"><h:outputText/></div>
+                        <div class="col-sm-4"><h5>#{msg.changePassword}</h5></div>
+                        <div class="col-sm-4"><h:outputText/></div>
+                    </div>
+                    <h:form styleClass="form-horizontal">
+                        <h:messages infoStyle="color:blue;margin:5px;" errorStyle="color:red;margin:5px;"/>
+                        <div class=" row form-group">
+                            <div class="col-sm-6">
+                                <label for="email">#{msg.email}</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <h:outputText id="email" value="#{userMBean.user.email}" styleClass="form-control"/>
+                            </div>
+                        </div>
+                        <div class=" row form-group">
+                            <div class="col-sm-6">
+                                <label for="password">#{msg.password}</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <h:inputSecret id="password" value="#{userMBean.user.password}" styleClass="form-control"/>
+                            </div>
+                        </div>
+                        <div class=" row form-group">
+                            <div class="col-sm-6">
+                                <label for="passwordConfirm">#{msg.passwordConfirm}</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <h:inputSecret id="passwordConfirm" value="#{userMBean.user.passwordConfirm}" styleClass="form-control"/>
+                            </div>
+                        </div>
+                        <div class=" row form-group">
+                            <div class="col-sm-6">
+                                <h:outputText/>
+                            </div>
+                            <div class="col-sm-6">
+                                <h:commandButton value="#{msg.cntinue}" action="#{userMBean.changePassword}" styleClass="btn btn-primary">
+                                    <f:ajax execute="@form" render="@form" />
+                                </h:commandButton>
+                            </div>
+                        </div>
+
+                    </h:form>
+                </h:panelGroup>
+                <h:panelGroup id="forumsPanel" rendered="#{userMBean.listMode == 'My Forums'}">
+                    <div class="row">
+                        <div class="col-sm-4"><h:outputText/></div>
+                        <div class="col-sm-4"><h5>#{msg.myForums}</h5></div>
+                        <div class="col-sm-4"><h:outputText/></div>
+                    </div>
+
+                    <c:set var="fsize" value="#{userMBean.forumsByUser.size()}"></c:set>
+                    <c:choose>
+                        <c:when test="#{fsize==0}"><h:outputText value="#{msg.haveNoForum}"/></c:when>
+                        <c:otherwise>
+                            <c:forEach items="#{userMBean.forumsByUser}" var="f">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="well">
+                                            <h:outputText value="#{f.title}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="well">
+                                            <h:outputText value="#{msg.dated}  : #{f.createdStr}" /><br/>
+                                            <h:outputText value="#{msg.by} : #{f.user.firstname} #{f.user.lastname}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="well">
+                                            <h:form>
+                                                <h:outputLink value="/forum/ForumDetails.xhtml">#{msg.forumDetails}
+                                                    <f:param name="forumId" value="#{f.id}" />
+                                                </h:outputLink>
+                                            </h:form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </c:forEach>
+
+                        </c:otherwise>
+                    </c:choose>
+                </h:panelGroup>
+                <h:panelGroup id="surveysPanel" rendered="#{userMBean.listMode == 'My Surveys'}">
+                    <div class="row">
+                        <div class="col-sm-4"><h:outputText/></div>
+                        <div class="col-sm-4"><h5>#{msg.mySurveys}</h5></div>
+                        <div class="col-sm-4"><h:outputText/></div>
+                    </div>
+
+                    <c:set var="ssize" value="#{userMBean.surveysByUser.size()}"></c:set>
+                    <c:choose>
+                        <c:when test="#{ssize==0}"><h:outputText value="#{msg.haveNoSurvey}"/></c:when>
+                        <c:otherwise>
+                            <c:forEach items="#{userMBean.surveysByUser}" var="s">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="well">
+                                            <h:outputText value="#{s.title}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="well">
+                                            <h:outputText value="#{msg.dated}  : #{s.datedStr}" /><br/>
+                                            <h:outputText value="#{msg.by} : #{s.user.firstname} #{s.user.lastname}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="well">
+                                            <h:form>
+                                                <h:outputLink value="/survey/SurveyDetails.xhtml">#{msg.surveyDetails}
+                                                    <f:param name="surveyId" value="#{s.id}" />
+                                                </h:outputLink>
+                                            </h:form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </c:forEach>
+
+                        </c:otherwise>
+                    </c:choose>
+                </h:panelGroup>
+            </h:panelGroup>
+            </h:form>
+        
+        </div>
+    </ui:define>
+
+</ui:composition>

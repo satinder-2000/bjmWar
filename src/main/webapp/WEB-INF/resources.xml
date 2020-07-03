@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <Resource id="jdbc/bjm" type="javax.sql.DataSource">#Sat Jun 13 21:48:37 BST 2020
+jdbcDriver=com.mysql.cj.jdbc.Driver
+password=IL@ve2nu69
+userName=root
+jdbcUrl=jdbc\:mysql\://localhost\:3306/bjm?zeroDateTimeBehavior\=CONVERT_TO_NULL
+</Resource>
+</resources>

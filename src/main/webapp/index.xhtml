@@ -1,0 +1,74 @@
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                template="/WEB-INF/bjmTemplateHome.xhtml">
+
+    <ui:define name="content">
+        <div class="container">
+
+            <div class="row" style="margin-bottom: 5em;">
+                <div class="col-sm-6">
+                    <img src="/javax.faces.resource/Logo420.png.xhtml?ln=images" width="300" height="300" />
+                </div>
+                <div class="col-sm-6">
+                    <h1 class="display-4">#{msg.welcomeBjmanch}</h1>
+                    <p style="color: #006600;font-size: 1.75em;font-weight: bold; font-family: Garamond;">#{msg.slogan}</p>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 5em;">
+                <div class="col-sm-2"/>
+                <div class="col-sm-8">
+                    <h:form>
+                        <div class="row col-sm-12">
+                            <img src="/javax.faces.resource/BJManch#{tempImageScroll.index}.jpg.xhtml?ln=images" width="700" height="526"/>
+                        </div>
+                        <div class="row col-sm-12">
+                            <div class="col-sm-6">
+                                <h:commandButton action="#{tempImageScroll.prev}" disabled="#{tempImageScroll.prevDisabled}" value="#{msg.prev}" class="btn btn-primary">
+                                    <f:ajax execute="@form" render="@form"/>
+                                </h:commandButton>
+                            </div>
+                            <div class="col-sm-6">
+                                <h:commandButton action="#{tempImageScroll.next}" disabled="#{tempImageScroll.nextDisabled}" value="#{msg.next}" class="btn btn-primary">
+                                    <f:ajax execute="@form" render="@form"/>
+                                </h:commandButton>
+                            </div>
+                        </div>
+                    </h:form>
+                </div>
+                <div class="col-sm-2"/>
+            </div>
+            <h:form>
+            <div class="row" style="margin-top: 2em;">
+                <div class="col-sm-2"/>
+                <div class="col-sm-6">
+                    <h6 style="color: green;">#{msg.understoodWorking}</h6>
+                </div>
+                <div class="col-sm-4" style="text-align: left;">
+                    <h:selectBooleanCheckbox value="#{visitorMBean.rememberMe}"><h:outputText value="#{msg.rememberMe}&#160;&#160;"/></h:selectBooleanCheckbox>
+                </div>    
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <h:outputText/>
+                </div>
+                <div class="col-sm-6">
+                    
+                </div>
+            </div>
+            <div class="row" style="margin-top: 2em;">
+                <div class="col-sm-6">
+                    <h:outputText/>
+                </div>
+                <div class="col-sm-6">
+                    <h:commandButton value="#{msg.cntinue}" action="#{visitorMBean.saveVisitor}" styleClass="btn btn-primary"/>
+                </div>
+            </div>
+            </h:form>    
+        </div>
+
+
+    </ui:define>
+
+</ui:composition>

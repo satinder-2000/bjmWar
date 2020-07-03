@@ -1,0 +1,64 @@
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/bjmTemplate.xhtml"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+
+    <ui:define name="content">
+        
+        <div class="col-sm-8">
+            <h1>#{msg.fromYourForum}</h1>
+            <h:form prependId="false">
+                <div class="row form-group">
+                    <div class="col-sm-6">
+                        <h:outputLabel value="#{msg.category}"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:outputLabel value="#{newSurveyMBean.survey.surveyCategory.type}"/>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-6">
+                        <h:outputLabel value="#{msg.subCategory}"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:outputLabel value="#{newSurveyMBean.survey.surveyCategory.subtype}"/>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-6">
+                        <label for="title">#{msg.title}</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:inputText id="title" value="#{newSurveyMBean.survey.title}" pt:placeholder="#{msg.surveyTitleSize}" styleClass="form-control"/>
+                    </div>
+                </div>
+                    
+                <div class="row form-group">
+                    <div class="col-sm-5">
+                        <label for="title">#{msg.description}</label>
+                    </div>
+                    <div class="col-sm-5">
+                        <h:outputText value="&#160;"/>
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <p:textEditor value="#{newSurveyMBean.survey.description}" secure="false" pt:placeholder="#{msg.surveyDescSize}" height="200" />
+                </div>
+                    
+                <div class="row form-group">
+                    <div class="col-sm-5">
+                        <h:outputText value="&#160;"/>
+                    </div>
+                    <div class="col-sm-5">
+                        <h:commandButton action="#{newSurveyMBean.surveyFilled}" value="#{msg.cntinue}" styleClass="btn btn-primary"  />
+                    </div>
+                </div>
+                
+            </h:form>    
+        </div>
+    </ui:define>
+
+</ui:composition>
