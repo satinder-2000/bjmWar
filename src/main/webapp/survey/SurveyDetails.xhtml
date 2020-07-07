@@ -14,9 +14,9 @@
                     <h:graphicImage value="/SurveyCreatorImageServlet" width="60" height="60" style="border-radius: 50%;"/>
                     <br/>
                     <small>By:<h:outputText value="#{surveyDetailsMBean.survey.user.firstname} #{surveyDetailsMBean.survey.user.firstname}"/></small>  
-                    
+
                 </div>
-                
+
                 <div class="col-sm-3">
                     <h5>#{msg.title}</h5>
                 </div>
@@ -36,7 +36,7 @@
 
             <div class="row form-group">
                 <p:textEditor value="#{surveyDetailsMBean.survey.description}" readonly="true" secure="false"  height="200" />
-                
+
             </div>
             <c:choose>
                 <c:when test="#{session.getAttribute('User')!=null}">
@@ -57,7 +57,7 @@
                             <strong>#{msg.warning}</strong>&#160;#{msg.oneVoteOnly}
                         </div>
                     </div>
-                    
+
                     <div class="row form-group">
                         <h:form>
                             <h:messages infoStyle="color:blue;margin:5px;" errorStyle="color:red;margin:5px;"/>
@@ -66,13 +66,13 @@
                                     <h:graphicImage value="/TempImageServlet" width="60" height="60" style="border-radius: 50%;"/>
                                 </div>
                                 <div class="col-sm-8">
-                                    <h:selectOneRadio style="margin-left: 1eml" value="#{surveyDetailsMBean.surveyVote.voteType}">
+                                    <h:selectOneRadio style="margin-left: 1eml" value="#{surveyDetailsMBean.surveyVoteUser.voteType}">
                                         <f:selectItem itemValue="AGREE" itemLabel="&#160;&#160;#{msg.agree}"  />
                                         <f:selectItem itemValue="DISAGREE" itemLabel="&#160;&#160;#{msg.disagree}" />
                                         <f:selectItem itemValue="UNDECIDED" itemLabel="&#160;&#160;#{msg.undecided}" />
                                     </h:selectOneRadio>
                                     <br/>
-                                    <h:inputTextarea id="usercomment" value="#{surveyDetailsMBean.surveyVote.comment}" cols="50" rows="3" pt:placeholder="#{msg.surveyCommentMaxChars}" styleClass="form-control"  />
+                                    <h:inputTextarea id="usercomment" value="#{surveyDetailsMBean.surveyVoteUser.comment}" cols="50" rows="3" pt:placeholder="#{msg.surveyCommentMaxChars}" styleClass="form-control"  />
                                 </div>
                                 <div class="col-sm-2">
                                     <h:commandButton styleClass="btn btn-sm btn-primary" action="#{surveyDetailsMBean.postSurveyVote}" value="#{msg.submit}">
@@ -87,7 +87,7 @@
                     <div class="row form-group"><b><h:outputText value="#{msg.loginForVote}"/></b></div>  
                 </c:otherwise>
             </c:choose>
-            
+
             <c:if test="#{surveyDetailsMBean.votesTillDate gt 0}">
                 <div class="row form-group">
                     <div class="col-sm-6">
@@ -110,7 +110,7 @@
                         <h:outputText value=""/>
                     </div>
                 </div>
-                
+
             </c:otherwise>
             <div class="row form-group">
                 <div class="col-sm-6">
@@ -123,10 +123,10 @@
                 </div>
                 <div class="col-sm-6">
                     <h:graphicImage value="/PieChartServlet?surveyId=#{surveyDetailsMBean.survey.id}&amp;dia=250"/>
-                    
+
                 </div>
             </div>
-            
+
             <div class="row form-group">
                 <div class="col-sm-3">
                     <h:outputText value="&#160;"/> 
@@ -143,6 +143,8 @@
                 <div class="row form-group">
                     <div class="col-sm-2">
                         <h:graphicImage value="/SurveyVoteImageServlet?svId=#{sv.id}" width="60" height="60" style="border-radius: 50%;"/>
+                        <br/>
+                        <small>By:<h:outputText value="#{sv.user.firstname.substring(0,1)} #{surveyDetailsMBean.survey.user.lastname}"/></small>
                     </div>
                     <div class="col-sm-2">
                         <small><h:outputText value="#{msg.dated}: #{sv.datedStr} " /></small>
@@ -167,8 +169,8 @@
                 </div>
                 <br/>
             </c:forEach>
-            
-            
+
+
         </div>
     </ui:define>
 

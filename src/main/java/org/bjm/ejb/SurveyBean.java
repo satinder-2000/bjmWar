@@ -83,7 +83,19 @@ public class SurveyBean implements SurveyBeanLocal {
         em.persist(surveyVote);
         Survey toReturn=em.merge(survey);
         em.flush();
-        LOGGER.info("Survey Vote persisted with ID : "+surveyVote.getId()+" and not Survey "+survey.getId()+"has total votes of "+survey.getSurveyVotes().size());
+        LOGGER.info("Survey Vote persisted with ID : "+surveyVote.getId()+" and now Survey "+survey.getId()+"has total votes of "+survey.getSurveyVotes().size());
+        return toReturn;
+    }
+    
+    @Override
+    public Survey updateSurveyVote(Survey survey, SurveyVote surveyVote) {
+        surveyVote.setSurvey(survey);
+        surveyVote.setDated(LocalDateTime.now());
+        em.merge(surveyVote);
+        //em.merge(survey);
+        Survey toReturn=em.merge(survey);
+        em.flush();
+        LOGGER.info("Survey Vote updated with ID : "+surveyVote.getId()+" and now Survey "+survey.getId()+"has total votes of "+survey.getSurveyVotes().size());
         return toReturn;
     }
 
@@ -131,6 +143,8 @@ public class SurveyBean implements SurveyBeanLocal {
         }
         return toReturn;
     }
+
+    
 
     
 }

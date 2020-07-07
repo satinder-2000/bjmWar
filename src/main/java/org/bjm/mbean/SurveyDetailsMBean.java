@@ -43,8 +43,9 @@ public class SurveyDetailsMBean implements Serializable {
     private SurveyBeanLocal surveyBeanLocal;
     
     private Survey survey;
+    List<SurveyVote> surveyVotes;
     
-    private SurveyVote surveyVote;
+    private SurveyVote surveyVoteUser;
     private int votesTillDate;
     
     private String agreePct;
@@ -58,18 +59,34 @@ public class SurveyDetailsMBean implements Serializable {
         String surveyIdStr=request.getParameter("surveyId");
         int surveyId=Integer.parseInt(surveyIdStr);
         survey=surveyBeanLocal.getSurveyById(surveyId);
+        //Load all the Votes as well
+        surveyVotes=surveyBeanLocal.getSurveyVotes(survey.getId());
         HttpSession session=request.getSession();
         User user =(User)session.getAttribute(BJMConstants.USER);
         if (user!=null){//Good to allow read only view as well. 
             String imgType = user.getProfileFile().substring(user.getProfileFile().indexOf('.') + 1);
             ImageVO imageVO = new ImageVO(imgType, user.getImage());
             session.setAttribute(BJMConstants.TEMP_IMAGE, imageVO);
+            if (surveyVotes != null && surveyVotes.size() > 0) {
+                //Does the USer have any Vote already casted? Load it.
+                for (SurveyVote sv : surveyVotes) {
+                    if (sv.getUser().getId().equals(user.getId())) {
+                        surveyVoteUser = sv;
+                        break;
+                    }
+                }
+            }
+            //if surveyVote is still null. Makes sense to initialise it because we have initiated a session for a User.
+            if (surveyVoteUser==null){
+               surveyVoteUser=new SurveyVote(); 
+            }
         }
+        
+            
         String creatorImgType=survey.getUser().getProfileFile().substring(survey.getUser().getProfileFile().indexOf('.') + 1);
         ImageVO creatorImgVO=new ImageVO(creatorImgType,survey.getUser().getImage());
         session.setAttribute(BJMConstants.SURVEY_CREATOR, creatorImgVO);
-        
-        surveyVote=new SurveyVote();
+               
         agreePct =""+0.0;
         disagreePct =""+0.0;
         undecidedPct=""+0.0;
@@ -77,20 +94,23 @@ public class SurveyDetailsMBean implements Serializable {
         
     }
     
+    
+    /**
+     * This method will handle new Vote as well as any updated Vote.
+     * @return 
+     */
     public String postSurveyVote() {
         FacesContext context = FacesContext.getCurrentInstance();
         ResourceBundle rb = context.getApplication().evaluateExpressionGet(context, "#{msg}", ResourceBundle.class);
-
         HttpServletRequest request = (HttpServletRequest) context.getExternalContext().getRequest();
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute(BJMConstants.USER);
-        //First check if the user has already casted a Vote
-        SurveyVote voteDB = surveyBeanLocal.getSurveyVoteByUser(survey.getId(), user.getId());
+        SurveyVote voteDB= surveyBeanLocal.getSurveyVoteByUser(survey.getId(), user.getId());
         if (voteDB != null) {
             context.addMessage("surveyVote", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("multiVote"), rb.getString("multiVote")));
             return null;
         } else {
-            String comment = surveyVote.getComment();
+            String comment = surveyVoteUser.getComment();
             if (comment.isEmpty()) {
                 context.addMessage("surveyVote", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("noVoteComment"), rb.getString("noVoteComment")));
                 return null;
@@ -98,15 +118,16 @@ public class SurveyDetailsMBean implements Serializable {
                 context.addMessage("surveyVote", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("voteCommentLength"), rb.getString("voteCommentLength")));
                 return null;
             } else {
-                surveyVote.setUser(user);
-                surveyVote.setVoteType(surveyVote.getVoteType());
-                survey = surveyBeanLocal.addSurveyVote(survey, surveyVote);
+                surveyVoteUser.setUser(user);
+                surveyVoteUser.setVoteType(surveyVoteUser.getVoteType());
+                survey = surveyBeanLocal.addSurveyVote(survey, surveyVoteUser);
                 context.addMessage("surveyVote", new FacesMessage(FacesMessage.SEVERITY_INFO, rb.getString("voteAdded"), rb.getString("voteAdded")));
-                surveyVote = new SurveyVote();
+                surveyVoteUser = new SurveyVote();
                 return null;
             }
         }
     }
+        
     
     public List<SurveyVote> getOtherSurveyVotes(){
         List<SurveyVote> surveyVotes=surveyBeanLocal.getSurveyVotes(survey.getId());
@@ -146,25 +167,19 @@ public class SurveyDetailsMBean implements Serializable {
         }
         return surveyVotes;
         
-       
-        
-        
-        
     }
 
     public Survey getSurvey() {
         return survey;
     }
 
-    public SurveyVote getSurveyVote() {
-        return surveyVote;
+    public SurveyVote getSurveyVoteUser() {
+        return surveyVoteUser;
     }
 
-    public void setSurveyVote(SurveyVote surveyVote) {
-        this.surveyVote = surveyVote;
+    public void setSurveyVoteUser(SurveyVote surveyVoteUser) {
+        this.surveyVoteUser = surveyVoteUser;
     }
-
-    
 
     public String getAgreePct() {
         return agreePct;

@@ -28,6 +28,8 @@ public interface SurveyBeanLocal {
     public Survey getSurveyById(int surveyId);
 
     public Survey addSurveyVote(Survey survey, SurveyVote surveyVote);
+    
+    public Survey updateSurveyVote(Survey survey, SurveyVote surveyVote);
 
     public List<SurveyVote> getSurveyVotes(int surveyId);
     

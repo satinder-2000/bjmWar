@@ -93,4 +93,7 @@
         <error-code>401</error-code>
         <location>/error401.xhtml</location>
     </error-page>
+    <error-page>
+        <location>/error.xhtml</location>
+    </error-page>
 </web-app>
