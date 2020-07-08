@@ -94,6 +94,7 @@
         <location>/error401.xhtml</location>
     </error-page>
     <error-page>
-        <location>/error.xhtml</location>
+        <error-code>500</error-code>
+        <location>/error500.xhtml</location>
     </error-page>
 </web-app>

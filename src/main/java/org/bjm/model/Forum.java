@@ -42,6 +42,9 @@ public class Forum implements Serializable {
     @Column(name = "DESCRIPTION")
     private String description;
     
+    @Transient
+    private String descriptionText;
+    
     @Column(name = "CREATED")
     private LocalDateTime created;
     
@@ -81,6 +84,18 @@ public class Forum implements Serializable {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+    
+    public String getDescriptionText() {
+        descriptionText=description.replaceAll("\\<.*?>", "").replaceAll("&amp;","&").replaceAll("&gt;",">").replaceAll("&lt;","<").replaceAll("Â","#").replaceAll("Ã.{5}", "'").replaceAll("&nbsp;", " ");;
+        if (descriptionText.length()>=150){
+            descriptionText=descriptionText.substring(0, 150);
+        }
+        return descriptionText;
+    }
+
+    public void setDescriptionText(String descriptionText) {
+        this.descriptionText = descriptionText;
     }
 
     public LocalDateTime getCreated() {

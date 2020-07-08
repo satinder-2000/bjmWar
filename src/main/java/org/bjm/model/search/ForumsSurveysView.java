@@ -60,10 +60,10 @@ public class ForumsSurveysView implements Serializable{
     }
 
     public String getDescriptionText() {
-        String s1=description.replaceAll("\"\\\\<.*?\\\\>\", \"\"", "");
-        String s2=s1.replaceAll("&amp;","&");
-        String s3=s2.replaceAll("&gt;",">");
-        String s4=s3.replaceAll("&lt;","<");
+        //String s1=description.replaceAll("\"\\\\<.*?\\\\>\", \"\"", "");
+        //String s2=s1.replaceAll("&amp;","&");
+        //String s3=s2.replaceAll("&gt;",">");
+        //String s4=s3.replaceAll("&lt;","<");
         
         descriptionText=description.replaceAll("\\<.*?>", "").replaceAll("&amp;","&").replaceAll("&gt;",">").replaceAll("&lt;","<").replaceAll("Â","#").replaceAll("Ã.{5}", "'").replaceAll("&nbsp;", " ");;
         if (descriptionText.length()>=150){
