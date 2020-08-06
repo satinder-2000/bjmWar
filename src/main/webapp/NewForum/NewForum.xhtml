@@ -1,9 +1,11 @@
 <ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
                 xmlns:h="http://xmlns.jcp.org/jsf/html"
-                xmlns:p="http://primefaces.org/ui"
                 template="/WEB-INF/bjmTemplate.xhtml"
                 xmlns:f="http://xmlns.jcp.org/jsf/core"
                 xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <script src="https://cdn.tiny.cloud/1/h6gaoe3uywp2cu0xn4a9qogyy2c3l7j8j6zm7g0lu20yax24/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    </h:head>
     <ui:define name="content">
         <div class="col-sm-8">
             <h1>#{msg.createNewForum}</h1>
@@ -52,7 +54,10 @@
                 </div>
 
                 <div class="row form-group">
-                    <p:textEditor id="description" value="#{newForumMBean.forum.description}" pt:placeholder="#{msg.forumDescSize}" secure="false" height="300" />
+                    <!-- p:textEditor value="" readonly="true" secure="false"  height="200" / -->
+                <textarea cols="75" rows="10">
+                    #{newForumMBean.forum.description}
+                </textarea>
                 </div>
 
                 <div class="row form-group">
@@ -65,6 +70,18 @@
                 </div> 
             </h:form>
         </div>
+    </ui:define>
+    <ui:define name="script">
+        <script>
+        tinymce.init({
+          selector: 'textarea',
+          plugins: 'a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
+          toolbar: 'a11ycheck addcomment showcomments casechange checklist code formatpainter pageembed permanentpen table',
+          toolbar_mode: 'floating',
+          tinycomments_mode: 'embedded',
+          tinycomments_author: 'Author name',
+        });
+        </script>
     </ui:define>
 
 </ui:composition>

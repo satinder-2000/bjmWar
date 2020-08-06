@@ -13,12 +13,12 @@ public class ContactVO {
     
     private String senderEmail;
     private String subject;
-    private String details;
+    private String message;
 
-    public ContactVO(String senderEmail, String subject, String details) {
+    public ContactVO(String senderEmail, String subject, String message) {
         this.senderEmail = senderEmail;
         this.subject = subject;
-        this.details = details;
+        this.message = message;
     }
 
     public String getSenderEmail() {
@@ -37,12 +37,12 @@ public class ContactVO {
         this.subject = subject;
     }
 
-    public String getDetails() {
-        return details;
+    public String getMessage() {
+        return message;
     }
 
-    public void setDetails(String details) {
-        this.details = details;
+    public void setMessage(String message) {
+        this.message = message;
     }
     
     

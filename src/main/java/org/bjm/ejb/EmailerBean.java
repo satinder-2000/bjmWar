@@ -242,7 +242,7 @@ public class EmailerBean implements EmailerBeanLocal {
             vc.put("admin", sender);
             vc.put("userEmail", contactVO.getSenderEmail());
             vc.put("subject", contactVO.getSubject());
-            vc.put("message", contactVO.getDetails());
+            vc.put("message", contactVO.getMessage());
             ve.evaluate(vc, sw, EmailTemplateType.CONTACT_US.toString(), htmlText);
             message.setContent(sw.getBuffer().toString(), "text/html");
             Transport.send(message);

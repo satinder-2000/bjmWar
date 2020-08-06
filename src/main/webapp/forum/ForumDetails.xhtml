@@ -21,7 +21,7 @@
                     <h:outputText value="#{forumDetailsMBean.forum.forumCategory.type}" styleClass="form-control"></h:outputText> 
                 </div>
                 <div class="col-sm-3">
-                    <small>By:<h:outputText value="#{forumDetailsMBean.forum.user.firstname} #{forumDetailsMBean.forum.user.firstname}"/></small>  
+                    <small>By:<h:outputText value="#{forumDetailsMBean.forum.user.firstname} #{forumDetailsMBean.forum.user.lastname}"/></small>  
 
                 </div>
 
@@ -39,7 +39,7 @@
             </div>
 
             <div class="row form-group">
-                <p:textEditor value="#{forumDetailsMBean.forum.descriptionText}" readonly="true" secure="false"  height="200" />
+                <p:textEditor value="#{forumDetailsMBean.forum.description}" readonly="true" secure="false"  height="200" />
             </div>
             <c:choose>
                 <c:when test="#{session.getAttribute('User')!=null}">

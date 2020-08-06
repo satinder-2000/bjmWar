@@ -20,7 +20,7 @@ import javax.inject.Named;
 public class TempImageScroll implements Serializable{
     
     
-    private int size=14;
+    private int size=16;
     private int index=1;
     
     private boolean prevDisabled=true;

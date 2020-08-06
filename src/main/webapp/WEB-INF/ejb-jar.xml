@@ -74,6 +74,21 @@
                 <env-entry-value>20</env-entry-value>
             </env-entry>
         </session>
+        
+        <session>
+            <ejb-name>IndexTimer</ejb-name>
+            <ejb-class>org.bjm.ejb.IndexTimer</ejb-class>
+            <env-entry>
+                <env-entry-name>indexDir</env-entry-name>
+                <env-entry-type>java.lang.String</env-entry-type>
+                <env-entry-value>/opt/lucene/</env-entry-value>
+            </env-entry>
+            <env-entry>
+                <env-entry-name>maxResults</env-entry-name>
+                <env-entry-type>java.lang.Integer</env-entry-type>
+                <env-entry-value>20</env-entry-value>
+            </env-entry>
+        </session>
     </enterprise-beans>
 
 </ejb-jar>

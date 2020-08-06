@@ -41,6 +41,7 @@ public class VisitorBean implements VisitorBeanLocal {
     @Override
     public void saveVisitor(Visitor visitor) {
         visitor.setTime(LocalDateTime.now());
+        visitor.setLang("en");
         em.persist(visitor);
         em.flush();
         LOGGER.info("IPAddress saved - "+visitor.getIpAddress());

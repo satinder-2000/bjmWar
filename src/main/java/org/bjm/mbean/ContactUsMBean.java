@@ -10,6 +10,8 @@ import java.io.Serializable;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
@@ -39,30 +41,62 @@ public class ContactUsMBean implements Serializable {
     
     private User user;
     
+    private String userEmail;
+    
     
     private String subject;
     
-    private String details;
+    private String message;
     
     
     @PostConstruct
     public void init(){
         HttpServletRequest request=(HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
         HttpSession session=request.getSession();
-        user=(User)session.getAttribute(BJMConstants.USER);
-        LOGGER.info("ContactUsMBean - User loaded");
+        if (session.getAttribute(BJMConstants.USER)!=null){
+           user=(User)session.getAttribute(BJMConstants.USER);
+           userEmail=user.getEmail();
+           LOGGER.info("ContactUsMBean - User loaded"); 
+        }
+        
         
     }
     
     public String sendRequest(){
-        
-        ContactVO vo=new ContactVO(user.getEmail(),subject, details);
-        miscellaneousServicesBeanLocal.sendContactUsMessage(vo);
         FacesContext context = FacesContext.getCurrentInstance();
         ResourceBundle rb = context.getApplication().evaluateExpressionGet(context, "#{msg}", ResourceBundle.class);
-        FacesContext.getCurrentInstance().addMessage("",
-                        new FacesMessage(FacesMessage.SEVERITY_INFO,rb.getString("requestSent"),rb.getString("requestSent")));
-        LOGGER.info("Message Sent need implementation");
+        boolean formValid=true;
+        //One. Validate Email
+        if (userEmail.isEmpty()){
+            FacesContext.getCurrentInstance().addMessage("email", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("emailRequired"), rb.getString("emailRequired")));
+            formValid=false;
+        }else{//Email validations
+            Pattern p = Pattern.compile(BJMConstants.EMAIL_REGEX);
+            Matcher m = p.matcher(userEmail);
+            if (!m.find()) {
+                FacesContext.getCurrentInstance().addMessage("email", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("emailInvalid"), rb.getString("emailInvalid")));
+                formValid=false;
+            }
+        }
+        //Two, validate Subject
+        if (subject.isEmpty()){
+            FacesContext.getCurrentInstance().addMessage("subject", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("contactSubjectNotValid"), rb.getString("contactSubjectNotValid")));
+            formValid=false;
+        }
+        //Three, validate Details
+        if (message.isEmpty()){
+            FacesContext.getCurrentInstance().addMessage("message", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("contactMsgNotValid"), rb.getString("contactMsgNotValid")));
+            formValid=false;
+        }
+        
+        if (formValid){//Submit Data
+            ContactVO vo = new ContactVO(userEmail, subject, message);
+            miscellaneousServicesBeanLocal.sendContactUsMessage(vo);
+
+            FacesContext.getCurrentInstance().addMessage("",
+                    new FacesMessage(FacesMessage.SEVERITY_INFO, rb.getString("requestSent"), rb.getString("requestSent")));
+            LOGGER.info("Message Sent");
+        }
         return null;
     }
     
@@ -75,12 +109,20 @@ public class ContactUsMBean implements Serializable {
         this.subject = subject;
     }
 
-    public String getDetails() {
-        return details;
+    public String getMessage() {
+        return message;
     }
 
-    public void setDetails(String details) {
-        this.details = details;
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getUserEmail() {
+        return userEmail;
+    }
+
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
     }
     
     

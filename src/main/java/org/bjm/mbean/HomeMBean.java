@@ -35,8 +35,8 @@ public class HomeMBean implements Serializable {
         HttpServletRequest request= (HttpServletRequest)ctx.getRequest();
         HttpServletResponse response= (HttpServletResponse)ctx.getResponse();
         try {
-            LOGGER.log(Level.INFO, "Redirecting to:{0}", request.getContextPath());
-            response.sendRedirect(request.getContextPath());
+            LOGGER.log(Level.INFO, "Redirecting to:{0}", "/");
+            response.sendRedirect("/");
         } catch (IOException ex) {
             Logger.getLogger(HomeMBean.class.getName()).log(Level.SEVERE, null, ex);
         }

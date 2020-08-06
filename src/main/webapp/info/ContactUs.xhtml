@@ -1,25 +1,54 @@
 <ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
                 xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
                 template="/WEB-INF/bjmTemplate.xhtml">
 
     <ui:define name="content">
         <div class="col-sm-8">
             <h1>#{msg.contactUs}</h1>
+            <br/>
+            <p>
+                <ul style="text-align: left;">Use the form below in the following scenarios:
+                    <li style="text-align: left;">You need some clarification on the feature or functionality of this website.</li>
+                    <li style="text-align: left;">You need to propose Category or/and Subcategory for Forums and Surveys.</li>
+                    <li style="text-align: left;">Any other feedback you wish to give regarding this website.</li>
+                </ul>
+            </p>
             <h:form>
                 <h:messages infoStyle="color:blue;margin:5px;" errorStyle="color:red;margin:5px;"/>
                 <div class="row" style="margin-top: 1em;">
+                <c:choose>
+                    <c:when test="#{session.getAttribute('User')!=null}">
+                        <div class="col-sm-5">
+                            <label>#{msg.email}</label>  
+                        </div>
+                        <div class="col-sm-5">
+                            <h:inputText id="email" disabled="true" value="#{contactUsMBean.userEmail}" styleClass="form-control"/>
+                        </div>
+                    </c:when>
+                    <c:otherwise>
+                        <div class="col-sm-5">
+                            <label>#{msg.email}</label> 
+                        </div>
+                        <div class="col-sm-5">
+                            <h:inputText id="email" value="#{contactUsMBean.userEmail}" styleClass="form-control"/>
+                        </div>
+                    </c:otherwise>
+                </c:choose>
+                </div>
+                <div class="row" style="margin-top: 1em;">
                     <div class="col-sm-5">
-                        <h5>#{msg.contactSubject}</h5>  
+                        <label>#{msg.contactSubject}</label>  
                     </div>
                     <div class="col-sm-5">
-                        <h:inputText value="#{contactUsMBean.subject}" styleClass="form-control" /> 
+                        <h:inputText id="subject" value="#{contactUsMBean.subject}" styleClass="form-control" /> 
                     </div>
                 </div>
                 <br/>
                 <div class="row">
                     <div class="col-sm-5">
-                        <h5>#{msg.contactMsg}</h5>
+                        <label>#{msg.contactMsg}</label>
                     </div>
                     <div class="col-sm-6">
                         <h:outputText value="&#160;"/> 
@@ -30,7 +59,7 @@
                         <h:outputText value="&#160;"/> 
                     </div>
                     <div class="col-sm-8">
-                        <h:inputTextarea value="#{contactUsMBean.details}"  cols="80" rows="10" styleClass="form-control"  />
+                        <h:inputTextarea id="message" value="#{contactUsMBean.message}"  cols="80" rows="10" styleClass="form-control"  />
                     </div>
                     <div class="col-sm-2">
                         <h:outputText value="&#160;"/> 

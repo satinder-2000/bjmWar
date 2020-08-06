@@ -79,6 +79,9 @@ public class Forum implements Serializable {
     }
 
     public String getDescription() {
+        if (description!=null){
+           description=description.replaceAll("Ã.{5}", "'"); 
+        }
         return description;
     }
 
@@ -87,9 +90,11 @@ public class Forum implements Serializable {
     }
     
     public String getDescriptionText() {
-        descriptionText=description.replaceAll("\\<.*?>", "").replaceAll("&amp;","&").replaceAll("&gt;",">").replaceAll("&lt;","<").replaceAll("Â","#").replaceAll("Ã.{5}", "'").replaceAll("&nbsp;", " ");;
-        if (descriptionText.length()>=150){
-            descriptionText=descriptionText.substring(0, 150);
+        if (description != null) {
+            descriptionText = description.replaceAll("\\<.*?>", "").replaceAll("&amp;", "&").replaceAll("&gt;", ">").replaceAll("&lt;", "<").replaceAll("Â", "#").replaceAll("Ã.{5}", "'").replaceAll("&nbsp;", " ");;
+            if (descriptionText.length() >= 150) {
+                descriptionText = descriptionText.substring(0, 150);
+            }
         }
         return descriptionText;
     }

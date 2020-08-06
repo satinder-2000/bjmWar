@@ -30,6 +30,7 @@ import org.bjm.model.SurveyCategory;
  * @author root
  */
 @Stateful
+@Startup
 public class ReferenceDataBean {
     
     static final Logger LOGGER=Logger.getLogger(ReferenceDataBean.class.getName());

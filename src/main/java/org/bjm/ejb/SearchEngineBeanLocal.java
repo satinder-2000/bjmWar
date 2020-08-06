@@ -5,6 +5,7 @@
  */
 package org.bjm.ejb;
 
+import java.io.IOException;
 import java.util.List;
 import javax.ejb.Local;
 import org.bjm.model.search.ForumsSurveysView;
@@ -16,6 +17,8 @@ import org.bjm.model.search.ForumsSurveysView;
 @Local
 public interface SearchEngineBeanLocal {
     
-    List<ForumsSurveysView> getSearchResult(String query);
+    public void createIndex() throws IOException;
+    
+    public List<ForumsSurveysView> getSearchResult(String query);
     
 }

@@ -16,13 +16,9 @@
             </li>
             <li class="nav-item">
                 <c:choose>
-
                     <c:when test="#{session.getAttribute('User')!=null}">
                         <li class="active">
-                            <h:outputLink value="/home/UserHome.xhtml" styleClass="nav-link">#{session.getAttribute('User').email}</h:outputLink>
-                        </li>
-                        <li>
-                            <h:form><h:commandLink value="Log Out" action="#{logoutMBean.logOut}" styleClass="nav-link"/></h:form>
+                            <h:outputLink value="/home/UserHome.xhtml" styleClass="nav-link">#{session.getAttribute('User').firstname}</h:outputLink>
                         </li>
                     </c:when>
                     <c:otherwise>
@@ -34,46 +30,28 @@
 
             </li>
             <li class="nav-item">
-                <c:choose>
-                    <c:when test="#{session.getAttribute('User')!=null}">
-                        <h:form>
-                            <h:outputLink value="/forum/ForumHome.xhtml" styleClass="nav-link">#{msg.forums}</h:outputLink>
-                        </h:form>
-                    </c:when>
-                    <c:otherwise>
-                        <h:link disabled="true" target="/forum/ForumHome.xhtml" value="#{msg.forums}" styleClass="nav-link"/>
-                    </c:otherwise>
-                </c:choose>
+                <h:form>
+                    <h:outputLink value="/forum/ForumHome.xhtml" styleClass="nav-link">#{msg.forums}</h:outputLink>
+                </h:form>
             </li>
             <li class="nav-item">
-                <c:choose>
-                    <c:when test="#{session.getAttribute('User')!=null}">
-                        <h:form>
-                            <h:outputLink value="/survey/SurveyHome.xhtml" styleClass="nav-link">#{msg.surveys}</h:outputLink>
-                        </h:form>
-                    </c:when>
-                    <c:otherwise>
-                        <h:link disabled="true" target="survey/SurveyHome.xhtml" value="#{msg.surveys}" styleClass="nav-link"/>
-                    </c:otherwise>
-                </c:choose>
+                <h:form>
+                    <h:outputLink value="/survey/SurveyHome.xhtml" styleClass="nav-link">#{msg.surveys}</h:outputLink>
+                </h:form>
             </li>
             <li class="nav-item">
-                <c:choose>
-                    <c:when test="#{session.getAttribute('User')!=null}">
-                        <h:form>
-                            <h:outputLink value="/info/ContactUs.xhtml" styleClass="nav-link">#{msg.contactUs}</h:outputLink>
-                        </h:form>
-                    </c:when>
-                    <c:otherwise>
-                        <h:link disabled="true" target="info/ContactUs.xhtml" value="#{msg.contactUs}" styleClass="nav-link"/>
-                    </c:otherwise>
-                </c:choose>
+                <h:form>
+                    <h:outputLink value="/info/ContactUs.xhtml" styleClass="nav-link">#{msg.contactUs}</h:outputLink>
+                </h:form>
             </li>
             <li class="nav-item">
                 <h:outputLink value="/info/Faq.xhtml" styleClass="nav-link">#{msg.faq}</h:outputLink>
             </li>
             <li class="nav-item">
                 <h:outputLink value="/info/TermsAndConditions.xhtml" styleClass="nav-link">#{msg.tAndC}</h:outputLink>
+            </li>
+            <li class="nav-item">
+                <h:outputLink value="/info/Blog.xhtml" styleClass="nav-link">Blog</h:outputLink>
             </li>
 
             <li class="nav-item dropdown">
@@ -83,8 +61,17 @@
                 <div class="dropdown-menu">
                     <h:outputLink value="/info/AboutBJM.xhtml" styleClass="dropdown-item">#{msg.aboutUs}</h:outputLink>
                     <h:outputLink value="/info/AboutLogo.xhtml" styleClass="dropdown-item">#{msg.aboutLogo}</h:outputLink>
-                    <h:outputLink value="/info/Essays.xhtml" styleClass="dropdown-item">#{msg.essays}</h:outputLink>
                 </div>
+            </li>
+            
+            <li class="nav-item">
+                <c:choose>
+                    <c:when test="#{session.getAttribute('User')!=null}">
+                        <li>
+                            <h:form><h:commandLink value="Log Out" action="#{logoutMBean.logOut}" styleClass="nav-link"/></h:form>
+                        </li>
+                    </c:when>
+                </c:choose>
             </li>
 
             <li>
@@ -99,6 +86,8 @@
                     </h:commandLink>
                 </h:form>
             </li>
+            
+            
 
 
         </ul>

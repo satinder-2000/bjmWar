@@ -13,7 +13,7 @@
                 <div class="col-sm-3">
                     <h:graphicImage value="/SurveyCreatorImageServlet" width="60" height="60" style="border-radius: 50%;"/>
                     <br/>
-                    <small>By:<h:outputText value="#{surveyDetailsMBean.survey.user.firstname} #{surveyDetailsMBean.survey.user.firstname}"/></small>  
+                    <small>By:<h:outputText value="#{surveyDetailsMBean.survey.user.firstname} #{surveyDetailsMBean.survey.user.lastname}"/></small>  
 
                 </div>
 
@@ -35,7 +35,7 @@
             </div>
 
             <div class="row form-group">
-                <p:textEditor value="#{surveyDetailsMBean.survey.descriptionText}" readonly="true" secure="false"  height="200" />
+                <p:textEditor value="#{surveyDetailsMBean.survey.description}" readonly="true" secure="false"  height="200" />
 
             </div>
             <c:choose>

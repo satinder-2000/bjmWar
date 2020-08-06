@@ -5,7 +5,16 @@
                 xmlns:h="http://xmlns.jcp.org/jsf/html">
     <ui:define name="content">
         <div class="col-sm-8">
+            <h1>#{msg.forums}</h1>
             <br/>
+            <p style="text-align: justify">
+                In a Forum, which every member of the Manch can start, we can highlight the issues that are important for our nation and need resolution.
+                There are Forum Categories under which a member may start a new Forum. If there is no appropriate Sub Category, the member may select the “OTHER” option.
+                Still, should a member feel that yet another Category (along with Subcategory(ies)) is required altogether, then the member may send an email to the Manch administrator at
+                admin@bjmanch.in ​OR propose the suggestion on Category and its subcategories in the ​Contact Us​ form.
+            </p>
+            <br/>
+            <h:panelGroup rendered="#{session.getAttribute('User')!=null}">
             <div class=" row form-group">
                     <div class="col-sm-5 text-center">
                         
@@ -43,6 +52,7 @@
             </div>
             <br/>
             </c:forEach>
+            </h:panelGroup>
         </div>
     </ui:define>
 

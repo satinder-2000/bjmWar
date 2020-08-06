@@ -5,16 +5,16 @@
 
     <ui:define name="content">
         <div class="col-sm-8">
-            <h1>#{msg.essays}</h1>
+            <h1>#{msg.blog}</h1>
             <div class="row">
                 <div class="col-sm-3">
-                    <b><h:outputLabel value="#{msg.essayTitle}"/></b>   
+                    <b><h:outputLabel value="#{msg.blogTitle}"/></b>   
                 </div>
                 <div class="col-sm-3">
-                    <b><h:outputLabel value="#{msg.essayDated}"/></b>   
+                    <b><h:outputLabel value="#{msg.blogDated}"/></b>   
                 </div>
                 <div class="col-sm-3">
-                    <b><h:outputLabel value="#{msg.essayAuthor}"/></b>   
+                    <b><h:outputLabel value="#{msg.blogAuthor}"/></b>   
                 </div>
                 <div class="col-sm-3">
                     <h:outputLabel/>
@@ -33,7 +33,7 @@
                         <h:outputText value="#{e.author}"/>
                     </div>
                     <div class="col-sm-3">
-                        <h:outputLink value="/essays/#{e.file}.xhtml?faces-redirect=true">#{msg.details}</h:outputLink>
+                        <h:outputLink value="/blog/#{e.file}.xhtml?faces-redirect=true">#{msg.details}</h:outputLink>
 
                     </div>
                 </div>

@@ -8,29 +8,31 @@ package org.bjm.ejb;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
+import javax.ejb.Schedule;
+import javax.ejb.ScheduleExpression;
+import javax.ejb.SessionContext;
+import javax.ejb.Singleton;
 import javax.ejb.Startup;
-import javax.ejb.Stateful;
+import javax.ejb.Stateless;
+import javax.ejb.Timeout;
+import javax.ejb.Timer;
+import javax.ejb.TimerConfig;
+import javax.ejb.TimerService;
+import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.TextField;
-import org.apache.lucene.index.DirectoryReader;
-import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
-import org.apache.lucene.queryparser.classic.ParseException;
-import org.apache.lucene.queryparser.classic.QueryParser;
-import org.apache.lucene.search.IndexSearcher;
-import org.apache.lucene.search.Query;
-import org.apache.lucene.search.ScoreDoc;
-import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.bjm.model.search.ForumsSurveysView;
@@ -39,12 +41,15 @@ import org.bjm.model.search.ForumsSurveysView;
  *
  * @author root
  */
-@Stateful
+@Stateless
 @Startup
-public class SearchEngineBean implements SearchEngineBeanLocal {
+public class IndexTimer {
+
+    static final Logger LOGGER = Logger.getLogger(IndexTimer.class.getName());
     
-    private static final Logger LOGGER=Logger.getLogger(SearchEngineBean.class.getName());
-    
+    //@Resource
+    //SessionContext sessionContext;
+
     @PersistenceContext(name = "bjmPU")
     private EntityManager em;
     
@@ -57,17 +62,31 @@ public class SearchEngineBean implements SearchEngineBeanLocal {
     //private IndexWriter writer;
     private List<ForumsSurveysView> forumsSurveys;
 
+    @Resource
+    private TimerService timerService;
+
     @PostConstruct
-    public void init(){
+    public void init() {
+        //sessionContext.getTimerService().c
+        final TimerConfig createIndex = new TimerConfig("createIndex", false);
+        timerService.createCalendarTimer(new ScheduleExpression().minute("*/1"), createIndex);
+        LOGGER.info("IndexTimer created..");
+
+    }
+
+    @Timeout
+    public void timeout(Timer timer) {
+        LOGGER.log(Level.INFO, "Building Index at {0}", new Date());
         try {
             createIndex();
-            LOGGER.info("SearchEngineBean loaded ");
         } catch (IOException ex) {
             LOGGER.severe(ex.getMessage());
         }
+        timer.cancel();
     }
     
-    @Override
+    
+    
     public void createIndex() throws IOException{
         Directory indexDirectory = FSDirectory.open(Paths.get(indexDir));
         StandardAnalyzer analyzer = new StandardAnalyzer();
@@ -101,39 +120,6 @@ public class SearchEngineBean implements SearchEngineBeanLocal {
         writer.close();
         
     }
-    
-    
-
-    @Override
-    public List<ForumsSurveysView> getSearchResult(String queryStr) {
-        List<ForumsSurveysView> toReturn=new ArrayList<>();
-        try {
-            Directory indexDirectory = FSDirectory.open(Paths.get(indexDir));
-            IndexReader reader = DirectoryReader.open(indexDirectory);
-            IndexSearcher indexSearcher = new IndexSearcher(reader);
-            QueryParser queryParser = new QueryParser("TEXT", new StandardAnalyzer());
-            Query q=queryParser.parse(queryStr);
-            TopDocs docs= indexSearcher.search(q, maxResults);
-            for (ScoreDoc sd: docs.scoreDocs){
-                ForumsSurveysView fsv=new ForumsSurveysView();
-                Document doc = indexSearcher.doc(sd.doc);
-                fsv.setId(doc.get("ID"));
-                fsv.setTitle(doc.get("TITLE"));
-                fsv.setDescription(doc.get("DESCRIPTION"));
-                fsv.setType(doc.get("TYPE"));
-                fsv.setSubtype(doc.get("SUBTYPE"));
-                fsv.setCreatedStr(doc.get("CREATEDSTR"));
-                toReturn.add(fsv);
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(SearchEngineBean.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ParseException ex) {
-            Logger.getLogger(SearchEngineBean.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-        return toReturn;
-    }
-    
-    
-    
 }
+
+    

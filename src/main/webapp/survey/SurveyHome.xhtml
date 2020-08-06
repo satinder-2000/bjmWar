@@ -6,7 +6,16 @@
 
     <ui:define name="content">
         <div class="col-sm-8">
+            <h1>#{msg.surveys}</h1>
             <br/>
+            <p style="text-align: justify">
+                Surveys are an effective voting tool on any issue that we bring to the Manch either directly or after having properly discussed on a Forum.
+                Just like a Forum, every registered member of the Manch can start a new Survey and each registered member will get an opportunity to cast a vote on each Survey.
+                Survey Categories and Subcategories are the same as the Forum Categories and Subcategories and they work in exactly the same manner.
+                Clearly, should a member propose a new category or subcategory, they will be applied across both the streams.
+            </p>
+            <br/>
+            <h:panelGroup rendered="#{session.getAttribute('User')!=null}">
             <div class=" row form-group">
                     <div class="col-sm-5 text-center">
                         <h:outputText/>
@@ -43,6 +52,7 @@
             </div>
             <br/>
             </c:forEach>
+            </h:panelGroup>
         </div>
     </ui:define>
 
