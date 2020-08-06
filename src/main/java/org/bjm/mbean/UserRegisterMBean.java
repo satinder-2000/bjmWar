@@ -171,6 +171,7 @@ public class UserRegisterMBean implements Serializable {
         //Phone and Mobile
         String phone=user.getPhone();
         String mobile=user.getMobile();
+        Pattern p = Pattern.compile(BJMConstants.PHONE_REGEX);
         if (phone.isEmpty() && mobile.isEmpty()){
             FacesContext.getCurrentInstance().addMessage("phone",new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("phoneMobileRequired"), rb.getString("phoneMobileRequired")));
         }
@@ -182,6 +183,11 @@ public class UserRegisterMBean implements Serializable {
                 //Phone with STD Code (excluding the 0) must made 10 chars
                 if (phone.length()!=11){
                   FacesContext.getCurrentInstance().addMessage("phone",new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("totalDigitsPhone"), rb.getString("totalDigitsPhone")));  
+                }else {
+                    Matcher m = p.matcher(phone);
+                    if (!m.find()){
+                       FacesContext.getCurrentInstance().addMessage("phone",new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("invalidPhone"), rb.getString("invalidPhone")));  
+                    }
                 }
             }
         }
@@ -193,6 +199,11 @@ public class UserRegisterMBean implements Serializable {
             }else{
                 if (mobile.length()!=11){
                   FacesContext.getCurrentInstance().addMessage("mobile",new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("totalDigitsMobile"), rb.getString("totalDigitsMobile")));  
+                }else {
+                    Matcher m = p.matcher(phone);
+                    if (!m.find()){
+                       FacesContext.getCurrentInstance().addMessage("mobile",new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("invalidMobile"), rb.getString("invalidMobile")));  
+                    }
                 }
             }
             

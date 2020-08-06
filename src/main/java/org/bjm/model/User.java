@@ -86,6 +86,9 @@ public class User implements Serializable {
     @Column(name = "FAILED_ATTEMPTS")
     private int failedAttempts;
     
+    //@Column(name="FS_REMINDER")
+    //private byte fsReminder;
+    
     @OneToMany(
             mappedBy = "user",
             cascade = CascadeType.ALL,
@@ -321,6 +324,14 @@ public class User implements Serializable {
     public void setExceptionMsg(String exceptionMsg) {
         this.exceptionMsg = exceptionMsg;
     }
+
+    /*public byte getFsReminder() {
+        return fsReminder;
+    }
+
+    public void setFsReminder(byte fsReminder) {
+        this.fsReminder = fsReminder;
+    }*/
 
     
     

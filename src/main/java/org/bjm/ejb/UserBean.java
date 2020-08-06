@@ -141,5 +141,13 @@ public class UserBean implements UserBeanLocal {
         return user;
     }
 
+    @Override
+    public User updateUserFSReminder(User user) {
+        user.setUpdatedOn(LocalDateTime.now());
+        user=em.merge(user);
+        em.flush();
+        return user;
+    }
+
     
 }

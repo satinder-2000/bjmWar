@@ -31,4 +31,6 @@ public interface UserBeanLocal {
     
     public User changePassword(User user);
     
+    public User updateUserFSReminder(User user);
+    
 }

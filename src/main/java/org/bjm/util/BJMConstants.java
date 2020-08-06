@@ -16,6 +16,7 @@ public interface BJMConstants {
     @Deprecated
     public static String ACCESS="Access";
     public static String PW_REGEX="^(?=.*\\d).{8,14}$";
+    public static String PHONE_REGEX="\\d{11}";
     public static String USER="User";
     public static String FORUM_COMMENT_IMAGE_MAP="forumCommentImageMap";
     public static String SURVEY_VOTE_IMAGE_MAP="surveyVoteImageMap";
