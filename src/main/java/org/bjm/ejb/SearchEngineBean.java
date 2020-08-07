@@ -6,6 +6,7 @@
 package org.bjm.ejb;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
@@ -41,7 +42,7 @@ import org.bjm.model.search.ForumsSurveysView;
  */
 @Stateful
 @Startup
-public class SearchEngineBean implements SearchEngineBeanLocal {
+public class SearchEngineBean implements SearchEngineBeanLocal, Serializable {
     
     private static final Logger LOGGER=Logger.getLogger(SearchEngineBean.class.getName());
     
