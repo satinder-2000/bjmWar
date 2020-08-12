@@ -5,15 +5,14 @@
  */
 package org.bjm.ejb;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.StringTokenizer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.annotation.PostConstruct;
-import javax.ejb.Singleton;
 import javax.ejb.Startup;
 import javax.ejb.Stateful;
 import javax.persistence.EntityManager;
@@ -31,7 +30,7 @@ import org.bjm.model.SurveyCategory;
  */
 @Stateful
 @Startup
-public class ReferenceDataBean {
+public class ReferenceDataBean implements Serializable, ReferenceDataBeanLocal {
     
     static final Logger LOGGER=Logger.getLogger(ReferenceDataBean.class.getName());
     
@@ -66,30 +65,36 @@ public class ReferenceDataBean {
         
     }
 
+    @Override
     public List<State> getStates() {
        return states;
     }
 
+    @Override
     public Map<EmailTemplateType, String> getEmailTemplatesMap() {
         return emailTemplateMap;
     }
 
+    @Override
     public String getEmailTemplate(EmailTemplateType emailTemplateType) {
         return emailTemplateMap.get(emailTemplateType);
     }
 
+    @Override
     public List<String> getForumCategories() {
         return forumCategories;
     }
     
     
 
+    @Override
     public List<String> getForumSubCategories(String category) {
         TypedQuery<String> fcTq=em.createQuery("select fc.subtype from ForumCategory fc where fc.type=?1", String.class);
         fcTq.setParameter(1, category);
         return fcTq.getResultList();
     }
     
+    @Override
     public ForumCategory getForumCategory(String cat, String subCat){
         TypedQuery<ForumCategory> fcTq=em.createQuery("select fc from ForumCategory fc where fc.type=?1 and fc.subtype=?2", ForumCategory.class);
         fcTq.setParameter(1, cat);
@@ -98,10 +103,12 @@ public class ReferenceDataBean {
         
     }
 
+    @Override
     public List<String> getSurveyCategories() {
         return surveyCategories;
     }
 
+    @Override
     public List<String> getSurveySubCategories(String category) {
         TypedQuery<String> scTq=em.createQuery("select sc.subtype from SurveyCategory sc where sc.type=?1", String.class);
         scTq.setParameter(1, category);

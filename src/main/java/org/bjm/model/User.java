@@ -86,8 +86,8 @@ public class User implements Serializable {
     @Column(name = "FAILED_ATTEMPTS")
     private int failedAttempts;
     
-    //@Column(name="FS_REMINDER")
-    //private byte fsReminder;
+    @Column(name="FS_REMINDER")
+    private int fsReminder;
     
     @OneToMany(
             mappedBy = "user",
@@ -325,18 +325,12 @@ public class User implements Serializable {
         this.exceptionMsg = exceptionMsg;
     }
 
-    /*public byte getFsReminder() {
+    public int getFsReminder() {
         return fsReminder;
     }
 
-    public void setFsReminder(byte fsReminder) {
+    public void setFsReminder(int fsReminder) {
         this.fsReminder = fsReminder;
-    }*/
+    }
 
-    
-    
-    
-    
-
-    
 }

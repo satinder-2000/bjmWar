@@ -37,8 +37,9 @@ public class UserBean implements UserBeanLocal {
     public User createUser(User user) {
         user.setCreatedOn(LocalDateTime.now());
         user.setUpdatedOn(LocalDateTime.now());
+        user.setFsReminder(4);
         em.persist(user);
-        emailerBeanLocal.sendUserRegConfirmEmail(user);//TEMPORARY
+        emailerBeanLocal.sendUserRegConfirmEmail(user);
         LOGGER.log(Level.INFO, "User persisted with ID : {0}", user.getId());
         return user;
     }

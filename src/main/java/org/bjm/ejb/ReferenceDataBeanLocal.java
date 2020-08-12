@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.bjm.ejb.facade;
+package org.bjm.ejb;
 
 import java.util.List;
 import java.util.Map;
@@ -18,7 +18,7 @@ import org.bjm.model.SurveyCategory;
  * @author root
  */
 @Local
-public interface ReferenceDataFacadeLocal {
+public interface ReferenceDataBeanLocal {
     
     public List<State> getStates();
 

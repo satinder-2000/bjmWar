@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.bjm.ejb.facade;
+package org.bjm.ejb;
 
 import java.util.List;
 import javax.ejb.Local;
@@ -14,7 +14,7 @@ import org.bjm.model.Activity;
  * @author root
  */
 @Local
-public interface ActivityFacadeLocal {
+public interface ActivityBeanLocal {
     
     public Activity logActivity(Activity activity);
     

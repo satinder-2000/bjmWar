@@ -26,7 +26,7 @@ import org.bjm.model.Activity;
  * @author root
  */
 @Stateless
-public class ActivityBean implements Serializable {
+public class ActivityBean implements Serializable, ActivityBeanLocal {
     
     private static final Logger LOGGER=Logger.getLogger(ActivityBean.class.getName());
     
@@ -37,6 +37,7 @@ public class ActivityBean implements Serializable {
     private int maxActivities;
     
     
+    @Override
     public Activity logActivity(Activity activity) {
         em.persist(activity);
         em.flush();
@@ -44,6 +45,7 @@ public class ActivityBean implements Serializable {
         return activity;
     }
 
+    @Override
     public List<Activity> getRecentActivities() {
         TypedQuery<Activity> tQA = em.createQuery("select a from Activity a order by a.id desc", Activity.class);
         tQA.setMaxResults(maxActivities);

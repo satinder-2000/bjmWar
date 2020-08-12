@@ -15,10 +15,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
-import org.bjm.ejb.facade.ActivityFacadeLocal;
 import org.bjm.model.Activity;
 import org.bjm.model.ActivityType;
-import org.bjm.model.ForumComment;
 import org.bjm.model.Survey;
 import org.bjm.model.SurveyAbuse;
 import org.bjm.model.SurveyVote;
@@ -37,7 +35,7 @@ public class SurveyBean implements SurveyBeanLocal {
     private EmailerBeanLocal emailerBeanLocal;
     
     @Inject
-    private ActivityFacadeLocal activityFacadeLocal;
+    private ActivityBeanLocal activityBeanLocal;
     
     @PersistenceContext(name = "bjmPU")
     private EntityManager em;
@@ -57,7 +55,7 @@ public class SurveyBean implements SurveyBeanLocal {
         activity.setActivityType(ActivityType.SURVEY_CREATED);
         activity.setDated(LocalDateTime.now());
         activity.setDescription("Survey created :"+survey.getTitle());
-        activityFacadeLocal.logActivity(activity);
+        activityBeanLocal.logActivity(activity);
         return survey;
         
         

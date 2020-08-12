@@ -8,7 +8,6 @@ package org.bjm.ejb;
 import java.io.StringWriter;
 import java.util.Base64;
 import java.util.Map;
-import java.util.Properties;
 import java.util.logging.Logger;
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
@@ -22,7 +21,6 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
-import org.bjm.ejb.facade.ReferenceDataFacadeLocal;
 import org.bjm.model.EmailTemplateType;
 import org.bjm.model.Forum;
 import org.bjm.model.Survey;
@@ -65,14 +63,14 @@ public class EmailerBean implements EmailerBeanLocal {
     
     
     @Inject
-    ReferenceDataFacadeLocal referenceDataFacadeLocal;
+    ReferenceDataBeanLocal referenceDataBeanLocal;
     
     Map<EmailTemplateType, String> templatesMap;
     
     @PostConstruct
     public void init(){
         LOGGER.info(sender+ " is Sender and accessConfirmURI is "+accessConfirmURI);
-        templatesMap = referenceDataFacadeLocal.getEmailTemplatesMap();
+        templatesMap = referenceDataBeanLocal.getEmailTemplatesMap();
       /*LOGGER.warning("Remove Temp Code from Emailer Bean");
       Properties props = new Properties();
       //props.put("mail.smtp.host", "smtp.privateemail.com");

@@ -33,8 +33,8 @@ import javax.inject.Named;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.servlet.http.Part;
+import org.bjm.ejb.ReferenceDataBeanLocal;
 import org.bjm.ejb.UserBeanLocal;
-import org.bjm.ejb.facade.ReferenceDataFacadeLocal;
 import org.bjm.model.State;
 import org.bjm.model.User;
 import org.bjm.util.BJMConstants;
@@ -59,7 +59,7 @@ public class UserRegisterMBean implements Serializable {
     private UserBeanLocal userBeanLocal;
     
     @Inject
-    private ReferenceDataFacadeLocal referenceDataFacadeLocal;
+    private ReferenceDataBeanLocal referenceDataBeanLocal;
     
     @ManagedProperty("#{msg}")
     private ResourceBundle bundle;
@@ -83,7 +83,7 @@ public class UserRegisterMBean implements Serializable {
         ResourceBundle rb = context.getApplication().evaluateExpressionGet(context, "#{msg}", ResourceBundle.class);
         dummy.setName(rb.getString("pleaseSelectOne"));
         states.add(dummy);
-        states.addAll(referenceDataFacadeLocal.getStates());
+        states.addAll(referenceDataBeanLocal.getStates());
         LOGGER.info("New User initialised");
     }
     

@@ -11,7 +11,7 @@ import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
-import org.bjm.ejb.facade.ReferenceDataFacadeLocal;
+import org.bjm.ejb.ReferenceDataBeanLocal;
 import org.bjm.model.State;
 
 /**
@@ -27,13 +27,13 @@ public class ReferenceDataMBean {
     
     
     @Inject
-    private ReferenceDataFacadeLocal referenceDataFacadeLocal;
+    private ReferenceDataBeanLocal referenceDataBeanLocal;
     
     private List<State> states;
     
     @PostConstruct
     public void init(){
-        states=referenceDataFacadeLocal.getStates();
+        states=referenceDataBeanLocal.getStates();
     }
 
     public List<State> getStates() {

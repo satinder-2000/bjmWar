@@ -13,8 +13,6 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
-import org.bjm.ejb.facade.ActivityFacadeLocal;
-
 import org.bjm.model.Activity;
 import org.bjm.model.ActivityType;
 import org.bjm.model.Forum;
@@ -38,7 +36,7 @@ public class ForumBean implements ForumBeanLocal {
     private EmailerBeanLocal emailerBeanLocal;
     
     @Inject
-    private ActivityFacadeLocal activityFacadeLocal;
+    private ActivityBeanLocal activityBeanLocal;
 
     @Override
     public Forum createForum(Forum forum, User user) {
@@ -55,7 +53,7 @@ public class ForumBean implements ForumBeanLocal {
         activity.setActivityType(ActivityType.FORUM_CREATED);
         activity.setDated(LocalDateTime.now());
         activity.setDescription("Forum created :"+forum.getTitle());
-        activityFacadeLocal.logActivity(activity);
+        activityBeanLocal.logActivity(activity);
         return forum;
     }
 

@@ -144,7 +144,7 @@
                     <div class="col-sm-2">
                         <h:graphicImage value="/SurveyVoteImageServlet?svId=#{sv.id}" width="60" height="60" style="border-radius: 50%;"/>
                         <br/>
-                        <small>By:<h:outputText value="#{sv.user.firstname.substring(0,1)} #{surveyDetailsMBean.survey.user.lastname} on #{sv.datedStr}"/></small>
+                        <small>By:<h:outputText value="#{sv.user.firstname} on #{sv.datedStr}"/></small>
                     </div>
                     <div class="col-sm-8">
                         <h:outputText value="#{msg.voted} #{sv.voteType}" /><br/>

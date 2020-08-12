@@ -21,9 +21,9 @@ import javax.inject.Named;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import org.bjm.ejb.ForumBeanLocal;
+import org.bjm.ejb.ReferenceDataBeanLocal;
 import org.bjm.ejb.SurveyBeanLocal;
 import org.bjm.ejb.UserBeanLocal;
-import org.bjm.ejb.facade.ReferenceDataFacadeLocal;
 import org.bjm.model.Forum;
 import org.bjm.model.ForumCategory;
 import org.bjm.model.Survey;
@@ -46,7 +46,7 @@ public class NewSurveyMBean implements Serializable {
     private String SELECT_ONE=null;
     
     @Inject
-    private ReferenceDataFacadeLocal referenceDataFacadeLocal;
+    private ReferenceDataBeanLocal referenceDataBeanLocal;
     
     @Inject
     private SurveyBeanLocal surveyBeanLocal;
@@ -74,7 +74,7 @@ public class NewSurveyMBean implements Serializable {
         ResourceBundle rb = context.getApplication().evaluateExpressionGet(context, "#{msg}", ResourceBundle.class);
         SELECT_ONE=rb.getString("selectOne");
         categories.add(SELECT_ONE);
-        categories.addAll(referenceDataFacadeLocal.getForumCategories());
+        categories.addAll(referenceDataBeanLocal.getForumCategories());
         HttpServletRequest request=(HttpServletRequest) context.getExternalContext().getRequest();
         HttpSession session=request.getSession();
         User user=(User)session.getAttribute(BJMConstants.USER); 
@@ -94,7 +94,7 @@ public class NewSurveyMBean implements Serializable {
         ForumCategory fc=f.getForumCategory();
         type=fc.getType();
         subType=fc.getSubtype();
-        SurveyCategory sc=referenceDataFacadeLocal.getSurveyCategory(type, subType);
+        SurveyCategory sc=referenceDataBeanLocal.getSurveyCategory(type, subType);
         survey.setSurveyCategory(sc);
         return "SurveyFromForum?faces-redirect=true";
         
@@ -104,7 +104,7 @@ public class NewSurveyMBean implements Serializable {
         LOGGER.log(Level.INFO, "Category Type is {0}", type);
         subcategories=new ArrayList();
         subcategories.add(SELECT_ONE);
-        subcategories.addAll(referenceDataFacadeLocal.getSurveySubCategories(type));
+        subcategories.addAll(referenceDataBeanLocal.getSurveySubCategories(type));
         
     }
     
@@ -119,7 +119,7 @@ public class NewSurveyMBean implements Serializable {
             FacesContext.getCurrentInstance().addMessage("subcat", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("surveySubCatNotValid"), rb.getString("surveySubCatNotValid")));
         }
         if (!type.equals(SELECT_ONE) && !subType.equals(SELECT_ONE)){//we are good to go
-            SurveyCategory sc=referenceDataFacadeLocal.getSurveyCategory(type, subType);
+            SurveyCategory sc=referenceDataBeanLocal.getSurveyCategory(type, subType);
             survey.setSurveyCategory(sc);
         }
         if (survey.getTitle().isEmpty()){

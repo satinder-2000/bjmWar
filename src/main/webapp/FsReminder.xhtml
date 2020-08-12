@@ -1,0 +1,50 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                template="/WEB-INF/bjmTemplate.xhtml">
+
+    <ui:define name="content">
+        
+        <div class="container col-sm-8">
+            <h2>#{msg.fsReminderHeading}</h2>
+            <h6>#{msg.fsReminderTitle}</h6>
+            <div class="row">
+                <div class="col-sm-2"><h:outputText/></div>
+                <div class="col-sm-8">
+                    <h5><h:outputText value="#{msg.reminderMsg}"/></h5>
+                </div>
+                <div class="col-sm-2"><h:outputText/></div>
+            </div>
+            <h:form styleClass="form-horizontal">
+                <h:messages infoStyle="color:blue;margin:5px;" errorStyle="color:red;margin:5px;"/>
+                <div class=" row form-group">
+                    <div class="col-sm-5">
+                        <label for="actReminder">#{msg.reminderLabel}</label>
+                    </div>
+                    <div class="col-sm-5">
+                        <h:selectOneMenu id="actReminder" value="#{fsReminderMBean.user.fsReminder}" styleClass="form-control">
+                            <f:selectItem itemValue="#{fsReminderMBean.user.fsReminder}" itemLabel="#{fsReminderMBean.user.fsReminder} Weeks" />
+                            <f:selectItem itemValue="1" itemLabel="#{msg.reminder1W}" />
+                            <f:selectItem itemValue="2" itemLabel="#{msg.reminder2W}" />
+                            <f:selectItem itemValue="3" itemLabel="#{msg.reminder3W}" />
+                            <f:selectItem itemValue="4" itemLabel="#{msg.reminder4W}" />
+                            <f:selectItem itemValue="-1" itemLabel="#{msg.reminderNO}" />
+                        </h:selectOneMenu>
+                    </div>
+                </div>
+                <div class=" row form-group">
+                    <div class="col-sm-6">
+                        <h:outputText/>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:commandButton value="#{msg.cntinue}" action="#{fsReminderMBean.updateFSReminder}" styleClass="btn btn-primary">
+                            <f:ajax execute="@form" render="@form" />
+                        </h:commandButton>
+                    </div>
+                </div>
+            </h:form>
+        </div>
+    </ui:define>
+
+</ui:composition>

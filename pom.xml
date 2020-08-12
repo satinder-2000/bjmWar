@@ -131,18 +131,7 @@
             <artifactId>solr-solrj</artifactId>
             <version>8.5.0</version>
         </dependency>
-        <!--dependency>
-            <groupId>org.jsoup</groupId>
-            <artifactId>jsoup</artifactId>
-            <version>1.13.1</version>
-        </dependency-->
-        <!-- Test Dependencies -->
-        <dependency>
-            <groupId>org.apache.tomee</groupId>
-            <artifactId>tomee-embedded</artifactId>
-            <version>8.0.2</version>
-            <scope>test</scope> 
-        </dependency>
+        
 
 
             

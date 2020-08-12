@@ -30,9 +30,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.servlet.http.Part;
 import org.bjm.ejb.ForumBeanLocal;
+import org.bjm.ejb.ReferenceDataBeanLocal;
 import org.bjm.ejb.SurveyBeanLocal;
 import org.bjm.ejb.UserBeanLocal;
-import org.bjm.ejb.facade.ReferenceDataFacadeLocal;
 import org.bjm.model.Forum;
 import org.bjm.model.State;
 import org.bjm.model.Survey;
@@ -58,6 +58,8 @@ public class UserMBean implements Serializable {
     private static final String MY_SURVEYS="My Surveys";
     private static final String AMEND_DETAILS="Amend Details";
     private static final String CHANGE_PASSWORD="Change Password";
+    private static final String ACTIVITY_REMINDER="Activity Reminder";
+    private static int[] ACTIVITY_REMINDER_OPTIONS={-1,1,2,3,4};
     
     @Inject
     private UserBeanLocal userBeanLocal;
@@ -69,7 +71,7 @@ public class UserMBean implements Serializable {
     private SurveyBeanLocal surveyBeanLocal;
     
     @Inject
-    private ReferenceDataFacadeLocal referenceDataFacadeLocal;
+    private ReferenceDataBeanLocal referenceDataBeanLocal;
     
     private List<State> states; 
     
@@ -97,7 +99,7 @@ public class UserMBean implements Serializable {
         orgStateCode=user.getStateCode();
         profileFileName=user.getProfileFile();
         states=new ArrayList<>();
-        states.addAll(referenceDataFacadeLocal.getStates());
+        states.addAll(referenceDataBeanLocal.getStates());
         activities=new ArrayList<>();
         activities.add(MY_ACTIVITIES);
         activities.add(MY_FORUMS);
@@ -106,6 +108,7 @@ public class UserMBean implements Serializable {
         accountActions.add(ACCOUNT_ACTIONS);
         accountActions.add(AMEND_DETAILS);
         accountActions.add(CHANGE_PASSWORD);
+        accountActions.add(ACTIVITY_REMINDER);
         LOGGER.info("User Loaded ID - "+user.getId());
         
     }
@@ -130,13 +133,25 @@ public class UserMBean implements Serializable {
             actionMode=AMEND_DETAILS;
         }else if (value.equals(CHANGE_PASSWORD)){
             actionMode=CHANGE_PASSWORD;
-        }        
+        }else if (value.equals(ACTIVITY_REMINDER)){
+            actionMode=ACTIVITY_REMINDER;
+        }       
         LOGGER.log(Level.INFO, "Value is {0}", value);
+    }
+    
+    public String updateFSReminder(){
+        int value=user.getFsReminder();
+        LOGGER.log(Level.INFO, "reminderActionListener value is :{0}", value);
+        user=userBeanLocal.updateUserFSReminder(user);
+        FacesContext context = FacesContext.getCurrentInstance();
+        ResourceBundle rb = context.getApplication().evaluateExpressionGet(context, "#{msg}", ResourceBundle.class);
+        FacesContext.getCurrentInstance().addMessage("",new FacesMessage(FacesMessage.SEVERITY_INFO, rb.getString("changesApplied"), rb.getString("changesApplied")));
+        return null;
     }
     
     public List<Forum> getForumsByUser(){
         List<Forum> forums=forumBeanLocal.getForumsByUser(user.getId());
-        LOGGER.info("Forums by User["+user.getId()+"] extracted. Size is : "+forums.size());
+        LOGGER.log(Level.INFO, "Forums by User[{0}] extracted. Size is : {1}", new Object[]{user.getId(), forums.size()});
         return forums;
     }
     
@@ -418,6 +433,14 @@ public class UserMBean implements Serializable {
 
     public void setActionMode(String actionMode) {
         this.actionMode = actionMode;
+    }
+
+    public static int[] getACTIVITY_REMINDER_OPTIONS() {
+        return ACTIVITY_REMINDER_OPTIONS;
+    }
+
+    public static void setACTIVITY_REMINDER_OPTIONS(int[] ACTIVITY_REMINDER_OPTIONS) {
+        UserMBean.ACTIVITY_REMINDER_OPTIONS = ACTIVITY_REMINDER_OPTIONS;
     }
 
     

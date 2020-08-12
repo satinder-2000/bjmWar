@@ -14,10 +14,9 @@ import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.servlet.http.HttpServletRequest;
-import org.bjm.ejb.facade.ActivityFacadeLocal;
-
 import org.bjm.model.Activity;
 import org.bjm.model.ActivityType;
+import org.bjm.ejb.ActivityBeanLocal;
 
 /**
  *
@@ -31,10 +30,10 @@ public class ActivityMBean implements Serializable {
     private static final Logger LOGGER=Logger.getLogger(ActivityMBean.class.getName());
     
     @Inject
-    private ActivityFacadeLocal activityFacadeLocal;
+    private ActivityBeanLocal activityBeanLocal;
     
     public List<Activity> getRecentActivities(){
-        List<Activity> activities=activityFacadeLocal.getRecentActivities();
+        List<Activity> activities=activityBeanLocal.getRecentActivities();
         //LOGGER.info("Activities extracted :"+activities.size());
         return activities;
     }

@@ -47,6 +47,11 @@
                 <env-entry-type>java.lang.String</env-entry-type>
                 <env-entry-value>home/AccessReset.xhtml</env-entry-value>
             </env-entry>
+            <env-entry>
+                <env-entry-name>fsReminderURI</env-entry-name>
+                <env-entry-type>java.lang.String</env-entry-type>
+                <env-entry-value>home/FsReminder.xhtml?id=</env-entry-value>
+            </env-entry>
         </session>
         
         

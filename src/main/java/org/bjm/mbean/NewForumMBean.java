@@ -8,7 +8,6 @@ package org.bjm.mbean;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -22,8 +21,8 @@ import javax.inject.Named;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import org.bjm.ejb.ForumBeanLocal;
+import org.bjm.ejb.ReferenceDataBeanLocal;
 import org.bjm.ejb.UserBeanLocal;
-import org.bjm.ejb.facade.ReferenceDataFacadeLocal;
 import org.bjm.model.Forum;
 import org.bjm.model.ForumCategory;
 import org.bjm.model.User;
@@ -43,7 +42,7 @@ public class NewForumMBean implements Serializable {
     private String SELECT_ONE=null;
     
     @Inject
-    private ReferenceDataFacadeLocal referenceDataFacadeLocal;
+    private ReferenceDataBeanLocal referenceDataBeanLocal;
     
     @Inject
     private ForumBeanLocal forumBeanLocal;
@@ -65,7 +64,7 @@ public class NewForumMBean implements Serializable {
         ResourceBundle rb = context.getApplication().evaluateExpressionGet(context, "#{msg}", ResourceBundle.class);
         SELECT_ONE=rb.getString("selectOne");
         forumCategories.add(SELECT_ONE);
-        forumCategories.addAll(referenceDataFacadeLocal.getForumCategories());
+        forumCategories.addAll(referenceDataBeanLocal.getForumCategories());
         forum=new Forum();
         ForumCategory fc=new ForumCategory();
         forum.setForumCategory(fc);
@@ -76,7 +75,7 @@ public class NewForumMBean implements Serializable {
         LOGGER.log(Level.INFO, "Category Type is {0}", type);
         forumSubcategories=new ArrayList();
         forumSubcategories.add(SELECT_ONE);
-        forumSubcategories.addAll(referenceDataFacadeLocal.getForumSubCategories(type));
+        forumSubcategories.addAll(referenceDataBeanLocal.getForumSubCategories(type));
         
     }
     
@@ -91,7 +90,7 @@ public class NewForumMBean implements Serializable {
             FacesContext.getCurrentInstance().addMessage("forumSubcat", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("forumSubCatNotValid"), rb.getString("forumSubCatNotValid")));
         }
         if (!type.equals(SELECT_ONE) && !subType.equals(SELECT_ONE)){//we are good to go
-            ForumCategory fc=referenceDataFacadeLocal.getForumCategory(type, subType);
+            ForumCategory fc=referenceDataBeanLocal.getForumCategory(type, subType);
             forum.setForumCategory(fc);
         }
         if (forum.getTitle().isEmpty()){
