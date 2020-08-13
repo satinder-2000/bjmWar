@@ -59,6 +59,7 @@ public class ReportAbuseSurveyMBean implements Serializable {
         surveyAbuse=surveyBeanLocal.addSurveyAbuse(surveyAbuse);
         LOGGER.info("Survey Abuse added with ID - "+surveyAbuse.getId());
         FacesContext.getCurrentInstance().addMessage("", new FacesMessage(FacesMessage.SEVERITY_INFO, "Thanks. Abuse reported.", "Thanks. Abuse reported."));
+        surveyAbuse=new SurveyAbuse();
         return null;
     }
 

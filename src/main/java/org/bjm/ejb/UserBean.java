@@ -138,6 +138,7 @@ public class UserBean implements UserBeanLocal {
         user.setUpdatedOn(LocalDateTime.now());
         user.setPassword(PasswordUtil.generateSecurePassword(user.getPassword(), user.getEmail()));
         user= em.merge(user);
+        //em.persist(user);
         em.flush();
         return user;
     }

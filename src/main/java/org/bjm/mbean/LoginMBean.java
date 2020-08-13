@@ -6,6 +6,7 @@
 package org.bjm.mbean;
 
 import java.io.Serializable;
+import java.util.ResourceBundle;
 import java.util.logging.Logger;
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
@@ -66,40 +67,36 @@ public class LoginMBean implements Serializable {
     
     public String logIn(){
         User user =null;
-        String type= null;
-        String nextPage=null;
         try {
             if(email.isEmpty()){
                 throw new RuntimeException("No Email provided");
             }
-                user= userBeanLocal.getUser(email, password);
-            if (user.getExceptionMsg()!=null){
+            user= userBeanLocal.getUser(email, password);
+            if (user == null) {
+                FacesContext context = FacesContext.getCurrentInstance();
+                ResourceBundle rb = context.getApplication().evaluateExpressionGet(context, "#{msg}", ResourceBundle.class);
+                FacesContext.getCurrentInstance().addMessage("email", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("notFound"), rb.getString("notFound")));
+                return null;
+            }
+            if (user.getExceptionMsg() == null) {
+                //just ignore. 
+            } else {
                 throw new RuntimeException(user.getExceptionMsg());
             }
-            
-            if (user!=null){
-                LOGGER.info("Access granted to "+user.getEmail());
-            }else{
-                LOGGER.warning("Failed to grant Access");
-            }
+            //Continue on mormal path..
+            LOGGER.info("Access granted to " + user.getEmail());
             FacesContext facesContext = FacesContext.getCurrentInstance();
             HttpSession session = (HttpSession) facesContext.getExternalContext().getSession(true);
             session.setAttribute(BJMConstants.USER, user);
             LOGGER.info("Session set successfully after login");
-            
             String profileFile = user.getProfileFile();
-            nextPage="home/UserHome?faces-redirect=true";
-            } catch (RuntimeException ex) {
+            return "home/UserHome?faces-redirect=true";
+            
+        }catch (RuntimeException ex) {
             ex.printStackTrace();
             FacesContext.getCurrentInstance().addMessage(null,
                         new FacesMessage(FacesMessage.SEVERITY_ERROR,ex.getMessage(),ex.getMessage()));
             return null;
         }
-        
-        
-        
-        return nextPage;
-    }
-   
-    
+} 
 }

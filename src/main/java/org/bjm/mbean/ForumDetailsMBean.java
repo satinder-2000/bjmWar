@@ -36,6 +36,8 @@ public class ForumDetailsMBean implements Serializable {
     
     private static final Logger LOGGER=Logger.getLogger(ForumDetailsMBean.class.getName());
     
+    private static final int COMMENT_LENGTH=1500; 
+    
     @Inject
     private ForumBeanLocal forumBeanLocal;
     
@@ -73,6 +75,8 @@ public class ForumDetailsMBean implements Serializable {
         String comment=getUserComment();
         if (comment==null||comment.isEmpty()){
             FacesContext.getCurrentInstance().addMessage("usercomment", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("noComment"), rb.getString("noComment")));
+        }else if(comment.length()>COMMENT_LENGTH){
+            FacesContext.getCurrentInstance().addMessage("usercomment", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("forumCmtOverChars"), rb.getString("forumCmtOverChars")));
         }else{
             ForumComment fc = new ForumComment();
             HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();

@@ -39,6 +39,8 @@ public class SurveyDetailsMBean implements Serializable {
     
     private static final Logger LOGGER=Logger.getLogger(SurveyDetailsMBean.class.getName());
     
+    private static final int COMMENT_LENGTH=1500;
+    
     @Inject
     private SurveyBeanLocal surveyBeanLocal;
     
@@ -108,24 +110,21 @@ public class SurveyDetailsMBean implements Serializable {
         SurveyVote voteDB= surveyBeanLocal.getSurveyVoteByUser(survey.getId(), user.getId());
         if (voteDB != null) {
             context.addMessage("surveyVote", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("multiVote"), rb.getString("multiVote")));
-            return null;
         } else {
             String comment = surveyVoteUser.getComment();
             if (comment.isEmpty()) {
                 context.addMessage("surveyVote", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("noVoteComment"), rb.getString("noVoteComment")));
-                return null;
-            } else if (comment.length() < 15 || comment.length() > 450) {
-                context.addMessage("surveyVote", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("voteCommentLength"), rb.getString("voteCommentLength")));
-                return null;
+            } else if (comment.length() > COMMENT_LENGTH) {
+                FacesContext.getCurrentInstance().addMessage("surveyVote", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("voteCommentLength"), rb.getString("voteCommentLength")));
             } else {
                 surveyVoteUser.setUser(user);
                 surveyVoteUser.setVoteType(surveyVoteUser.getVoteType());
                 survey = surveyBeanLocal.addSurveyVote(survey, surveyVoteUser);
                 context.addMessage("surveyVote", new FacesMessage(FacesMessage.SEVERITY_INFO, rb.getString("voteAdded"), rb.getString("voteAdded")));
                 surveyVoteUser = new SurveyVote();
-                return null;
             }
         }
+        return null;
     }
         
     

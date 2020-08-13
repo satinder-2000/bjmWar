@@ -62,6 +62,7 @@ public class ReportAbuseForumMBean implements Serializable {
         FacesContext context = FacesContext.getCurrentInstance();
         ResourceBundle rb = context.getApplication().evaluateExpressionGet(context, "#{msg}", ResourceBundle.class);
         FacesContext.getCurrentInstance().addMessage("", new FacesMessage(FacesMessage.SEVERITY_INFO, rb.getString("abuseReported"), rb.getString("abuseReported")));
+        forumAbuse=new ForumAbuse();
         return null;
     }
 
