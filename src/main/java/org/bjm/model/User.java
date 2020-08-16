@@ -89,6 +89,11 @@ public class User implements Serializable {
     @Column(name="FS_REMINDER")
     private int fsReminder;
     
+    @Column(name="LAST_FS_REMINDER")
+    private LocalDateTime lastFsReminder;
+    
+    
+    
     @OneToMany(
             mappedBy = "user",
             cascade = CascadeType.ALL,
@@ -332,5 +337,15 @@ public class User implements Serializable {
     public void setFsReminder(int fsReminder) {
         this.fsReminder = fsReminder;
     }
+
+    public LocalDateTime getLastFsReminder() {
+        return lastFsReminder;
+    }
+
+    public void setLastFsReminder(LocalDateTime lastFsReminder) {
+        this.lastFsReminder = lastFsReminder;
+    }
+    
+    
 
 }

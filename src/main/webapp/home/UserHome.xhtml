@@ -231,7 +231,20 @@
 
                     <c:set var="fsize" value="#{userMBean.forumsByUser.size()}"></c:set>
                     <c:choose>
-                        <c:when test="#{fsize==0}"><h:outputText value="#{msg.haveNoForum}"/></c:when>
+                        <c:when test="#{fsize==0}">
+                            <h:outputText value="#{msg.haveNoForum}"/>
+                            <!-- div class="row">
+                                <div class="col-sm-5 text-center">
+
+                                    <h:outputText/>
+                                </div>
+                                <div class="col-sm-5 text-center">
+                                    <h:form>
+                                        <h:commandLink  value="#{msg.createNewForum}"  action="NewForum" styleClass="btn btn-primary"/>
+                                    </h:form>
+                                </div>
+                            </div -->
+                        </c:when>
                         <c:otherwise>
                             <c:forEach items="#{userMBean.forumsByUser}" var="f">
                                 <div class="row">
@@ -270,7 +283,20 @@
 
                     <c:set var="ssize" value="#{userMBean.surveysByUser.size()}"></c:set>
                     <c:choose>
-                        <c:when test="#{ssize==0}"><h:outputText value="#{msg.haveNoSurvey}"/></c:when>
+                        <c:when test="#{ssize==0}">
+                            <h:outputText value="#{msg.haveNoSurvey}"/>
+                            <!-- div class=" row">
+                                <div class="col-sm-5 text-center">
+                                    <h:outputText/>
+                                </div>
+                                <div class="col-sm-5 text-center">
+                                    <h:form>
+                                        <h:commandLink  value="#{msg.createNewSurvey}"  action="NewSurvey" styleClass="btn btn-primary"/>
+                                    </h:form>
+                                </div>
+                            </div -->
+                        
+                        </c:when>
                         <c:otherwise>
                             <c:forEach items="#{userMBean.surveysByUser}" var="s">
                                 <div class="row">
