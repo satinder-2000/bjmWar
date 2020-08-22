@@ -1,0 +1,126 @@
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                template="/WEB-INF/bjmTemplate.xhtml"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+    <ui:define name="content">
+        <div class="col-sm-8">
+            <h1>#{msg.forumDetails}</h1>
+            <br/>
+            <div class="row form-group">
+                <div class="col-sm-3">
+                    <h:graphicImage value="/ForumCreatorImageServlet" width="60" height="60" style="border-radius: 50%;"/>
+                </div>
+
+                <div class="col-sm-3">
+                    <label>#{msg.category}</label>
+                </div>
+                <div class="col-sm-6">
+                    <h:outputText value="#{forumDetailsMBean.forum.forumCategory.type}" styleClass="form-control"></h:outputText> 
+                </div>
+                <div class="col-sm-3">
+                    <small>By:<h:outputText value="#{forumDetailsMBean.forum.user.firstname} #{forumDetailsMBean.forum.user.lastname}"/></small>  
+
+                </div>
+
+                <div class="col-sm-3">
+                    <label>#{msg.subCategory}</label>
+                </div>
+                <div class="col-sm-6">
+                    <h:outputText value="#{forumDetailsMBean.forum.forumCategory.subtype}" styleClass="form-control"></h:outputText> 
+                </div>
+            </div>
+            <br/>
+
+            <div class="row form-group">
+                <h4>#{forumDetailsMBean.forum.title}</h4>               
+            </div>
+
+            <div class="row form-group">
+                <p:textEditor value="#{forumDetailsMBean.forum.description}" readonly="true" secure="false"  height="200" />
+            </div>
+            <c:choose>
+                <c:when test="#{session.getAttribute('User')!=null}">
+                    <div class="row form-group">
+                        <div class="col-sm-3">
+                            <h:outputText value="&#160;"/> 
+                        </div>
+                        <div class="col-sm-6">
+                            <h4>#{msg.yourComment}</h4>
+                        </div>
+                        <div class="col-sm-3">
+                            <h:outputText value="&#160;"/> 
+                        </div>
+                    </div>
+
+                    <h:form>
+                        <h:messages infoStyle="color:blue;margin:5px;" errorStyle="color:red;margin:5px;"/>
+                        <div class="row form-group">
+                            <div class="col-sm-2">
+                                <h:graphicImage value="/TempImageServlet" width="60" height="60" style="border-radius: 50%;"/>
+                            </div>
+                            <div class="col-sm-8">
+                                <h:inputTextarea id="usercomment" value="#{forumDetailsMBean.userComment}" cols="50" rows="3" pt:placeholder="#{msg.forumCommentMaxChars}" styleClass="form-control"  />
+                            </div>
+                            <div class="col-sm-2">
+                                <h:commandButton styleClass="btn btn-sm btn-primary" action="#{forumDetailsMBean.postComment}" value="Submit">
+                                    <f:ajax execute="@form" render="@form" />
+                                </h:commandButton>
+                            </div>
+                        </div>
+                    </h:form>
+                </c:when>
+                <c:otherwise>
+                    <div class="row form-group"><b><h:outputText value="#{msg.loginForComment}"/></b></div>
+                </c:otherwise>
+            </c:choose>
+
+            <div class="row form-group">
+                <div class="col-sm-3">
+                    <h:outputText value="&#160;"/> 
+                </div>
+                <div class="col-sm-6">
+                    <h4>#{msg.otherComments}</h4>
+                </div>
+                <div class="col-sm-3">
+                    <h:outputText value="&#160;"/>
+                </div>
+            </div>
+
+            <c:forEach items="#{forumDetailsMBean.otherForumComments}" var="fc">
+                <div class="row form-group">
+                    <div class="col-sm-2">
+                        <h:graphicImage value="/ForumCommentImageServlet?fcId=#{fc.id}" width="60" height="60" style="border-radius: 50%;"/>
+                        <br/>
+                        <small><h:outputText value="#{fc.user.firstname} on #{fc.datedStr} " /></small>
+                    </div>
+                    <div class="col-sm-8">
+                        <h:outputText value="#{fc.text}" />
+                    </div>
+                    <div class="col-sm-2">
+                        <c:choose>
+                            <c:when test="#{session.getAttribute('User')!=null}">
+                                <h:outputLink value="ReportAbuse.xhtml?faces-redirect=true">
+                                    <small><h:outputText value="#{msg.reportAbuse}" styleClass="text-danger"/></small>
+                                    <f:param name="commentId" value="#{fc.id}"/> 
+                                </h:outputLink>
+                            </c:when>
+                            <c:otherwise>
+                                <small><h:outputText value="#{msg.logInToReportAbuse}" styleClass="text-danger"/></small>  
+                            </c:otherwise>
+                        </c:choose>
+                    </div>
+                    
+                </div>
+                <br/>
+            </c:forEach>
+
+
+        </div>
+
+    </ui:define>
+
+</ui:composition>
+

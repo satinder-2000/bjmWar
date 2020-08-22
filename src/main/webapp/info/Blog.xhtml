@@ -1,11 +1,32 @@
 <ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
                 xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
                 xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
                 template="/WEB-INF/bjmTemplate.xhtml">
 
     <ui:define name="content">
         <div class="col-sm-8">
             <h1>#{msg.blog}</h1>
+            <br/>
+            <p style="text-align: justify">
+                At time to time, the Admin Team will publish the Blogs on the some key topics that are relevant to the overall working principles of BJManch. 
+                Should you wish to contribute to the Blogs, please register yourself on the Site and contact the Administrator by sending an email to admin@bjmanch. 
+                Kindly, make sure that you specify the subject of the email as 
+                "Blog Contribution".
+            </p>
+            <br/>
+
+            <!-- div class="row">
+                <div class="col-sm-6">
+                    <h:outputText value="&#160;"/>
+                </div>
+                <div class="col-sm-6">
+                    <h:form>
+                        <h:commandButton value="# {msg.addBlog}" action="# {blogServiceMBean.addBlog}" class="btn btn-lg btn-primary"/>
+                    </h:form>
+                </div>
+
+            </div -->
             <div class="row">
                 <div class="col-sm-3">
                     <b><h:outputLabel value="#{msg.blogTitle}"/></b>   
@@ -21,23 +42,27 @@
                 </div>
             </div>
 
-            <c:forEach var="e" items="#{miscServiceMBean.allEssays}">
+            <c:forEach var="b" items="#{blogServiceMBean.allBlogs}">
                 <div class="row">
                     <div class="col-sm-3">
-                        <h:outputLabel value="#{e.title}"/> 
+                        <h:outputLabel value="#{b.title}"/> 
                     </div>
                     <div class="col-sm-3">
-                        <h:outputText value="#{e.dateStr}"/>
+                        <h:outputText value="#{b.dateStr}"/>
                     </div>
                     <div class="col-sm-3">
-                        <h:outputText value="#{e.author}"/>
+                        <h:outputText value="#{b.author}"/>
                     </div>
                     <div class="col-sm-3">
-                        <h:outputLink value="/blog/#{e.file}.xhtml?faces-redirect=true">#{msg.details}</h:outputLink>
+                        <h:outputLink value="/blog/#{b.file}.xhtml?faces-redirect=true">#{msg.details}</h:outputLink>
 
                     </div>
                 </div>
             </c:forEach>
+
+
+
+
         </div>
 
     </ui:define>

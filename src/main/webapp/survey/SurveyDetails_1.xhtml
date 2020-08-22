@@ -1,0 +1,174 @@
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                template="/WEB-INF/bjmTemplate.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+    <ui:define name="content">
+        <div class="col-sm-8">
+            <h1>#{msg.surveyDetails}</h1>
+            <br/>
+            <div class="row form-group">
+                <div class="col-sm-3">
+                    <h:graphicImage value="/SurveyCreatorImageServlet" width="60" height="60" style="border-radius: 50%;"/>
+                    <br/>
+                    <small>By:<h:outputText value="#{surveyDetailsMBean.survey.user.firstname} #{surveyDetailsMBean.survey.user.lastname}"/></small>  
+
+                </div>
+
+                <div class="col-sm-3">
+                    <h5>#{msg.title}</h5>
+                </div>
+                <div class="col-sm-6">
+                    <h:outputText id="title" value="#{surveyDetailsMBean.survey.title}" styleClass="form-control"/>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-sm-5" style="text-align: left;">
+                    <h5>#{msg.description}</h5>
+                </div>
+                <div class="col-sm-5">
+                    <h:outputText value="&#160;"/>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <p:textEditor value="#{surveyDetailsMBean.survey.description}" readonly="true" secure="false"  height="200" />
+
+            </div>
+            <c:choose>
+                <c:when test="#{session.getAttribute('User')!=null}">
+                    <div class="row form-group">
+                        <div class="col-sm-3">
+                            <h:outputText value="&#160;"/> 
+                        </div>
+                        <div class="col-sm-6">
+                            <h4>#{msg.yourVote}</h4>
+                        </div>
+                        <div class="col-sm-3">
+                            <h:outputText value="&#160;"/> 
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="alert alert-warning alert-dismissible">
+                            <button type="button" class="close" data-dismiss="alert"><small>X</small></button>
+                            <strong>#{msg.warning}</strong>&#160;#{msg.oneVoteOnly}
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <h:form>
+                            <h:messages infoStyle="color:blue;margin:5px;" errorStyle="color:red;margin:5px;"/>
+                            <div class="row form-group">
+                                <div class="col-sm-2">
+                                    <h:graphicImage value="/TempImageServlet" width="60" height="60" style="border-radius: 50%;"/>
+                                </div>
+                                <div class="col-sm-8">
+                                    <h:selectOneRadio style="margin-left: 1eml" value="#{surveyDetailsMBean.surveyVoteUser.voteType}">
+                                        <f:selectItem itemValue="AGREE" itemLabel="&#160;&#160;#{msg.agree}"  />
+                                        <f:selectItem itemValue="DISAGREE" itemLabel="&#160;&#160;#{msg.disagree}" />
+                                        <f:selectItem itemValue="UNDECIDED" itemLabel="&#160;&#160;#{msg.undecided}" />
+                                    </h:selectOneRadio>
+                                    <br/>
+                                    <h:inputTextarea id="usercomment" value="#{surveyDetailsMBean.surveyVoteUser.comment}" cols="50" rows="3" pt:placeholder="#{msg.surveyCommentMaxChars}" styleClass="form-control"  />
+                                </div>
+                                <div class="col-sm-2">
+                                    <h:commandButton styleClass="btn btn-sm btn-primary" action="#{surveyDetailsMBean.postSurveyVote}" value="#{msg.submit}">
+                                        <f:ajax execute="@form" render="@form" />
+                                    </h:commandButton>
+                                </div>
+                            </div>
+                        </h:form>
+                    </div>
+                </c:when>
+                <c:otherwise>
+                    <div class="row form-group"><b><h:outputText value="#{msg.loginForVote}"/></b></div>  
+                </c:otherwise>
+            </c:choose>
+
+            <c:if test="#{surveyDetailsMBean.votesTillDate gt 0}">
+                <div class="row form-group">
+                    <div class="col-sm-6">
+                        <h6>#{msg.votingResult}</h6>
+                        <h:panelGroup>
+                            <p><h:outputText value="#{msg.agree} : #{surveyDetailsMBean.agreePct} %"/></p>
+                            <p><h:outputText value="#{msg.disagree} : #{surveyDetailsMBean.disagreePct} %"/></p>
+                            <p><h:outputText value="#{msg.undecided} : #{surveyDetailsMBean.undecidedPct} %"/></p>
+                        </h:panelGroup>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:graphicImage value="/PieChartServlet?surveyId=#{surveyDetailsMBean.survey.id}&amp;dia=250"/>
+
+                    </div>
+                </div>
+            </c:if>
+            <c:otherwise>
+                <div class="row form-group">
+                    <div class="col-sm-12">
+                        <h:outputText value=""/>
+                    </div>
+                </div>
+
+            </c:otherwise>
+            <div class="row form-group">
+                <div class="col-sm-6">
+                    <h6>#{msg.votingResult}</h6>
+                    <h:panelGroup>
+                        <p><h:outputText value="#{msg.agree} : #{surveyDetailsMBean.agreePct} %"/></p>
+                        <p><h:outputText value="#{msg.disagree} : #{surveyDetailsMBean.disagreePct} %"/></p>
+                        <p><h:outputText value="#{msg.undecided} : #{surveyDetailsMBean.undecidedPct} %"/></p>
+                    </h:panelGroup>
+                </div>
+                <div class="col-sm-6">
+                    <h:graphicImage value="/PieChartServlet?surveyId=#{surveyDetailsMBean.survey.id}&amp;dia=250"/>
+
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-sm-3">
+                    <h:outputText value="&#160;"/> 
+                </div>
+                <div class="col-sm-6">
+                    <h4>#{msg.otherVotes}</h4>
+                </div>
+                <div class="col-sm-3">
+                    <h:outputText value="&#160;"/> 
+                </div>
+            </div>
+
+            <c:forEach items="#{surveyDetailsMBean.otherSurveyVotes}" var="sv">
+                <div class="row form-group">
+                    <div class="col-sm-2">
+                        <h:graphicImage value="/SurveyVoteImageServlet?svId=#{sv.id}" width="60" height="60" style="border-radius: 50%;"/>
+                        <br/>
+                        <small>By:<h:outputText value="#{sv.user.firstname} on #{sv.datedStr}"/></small>
+                    </div>
+                    <div class="col-sm-8">
+                        <h:outputText value="#{msg.voted} #{sv.voteType}" /><br/>
+                        <h:outputText value="#{msg.comments}: #{sv.comment}"/>
+                    </div>
+                    <div class="col-sm-2">
+                        <c:choose>
+                            <c:when test="#{session.getAttribute('User')!=null}">
+                                <h:outputLink value="ReportAbuse.xhtml?faces-redirect=true">
+                                    <small><h:outputText value="#{msg.reportAbuse}" styleClass="text-danger"/></small>
+                                    <f:param name="voteId" value="#{sv.id}"/> 
+                                </h:outputLink>
+                            </c:when>
+                            <c:otherwise>
+                                <small><h:outputText value="#{msg.logInToReportAbuse}" styleClass="text-danger"/></small>  
+                            </c:otherwise>
+                        </c:choose>
+                    </div>
+                </div>
+                <br/>
+            </c:forEach>
+
+
+        </div>
+    </ui:define>
+
+</ui:composition>

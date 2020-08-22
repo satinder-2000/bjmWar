@@ -11,8 +11,13 @@
                     <img src="/javax.faces.resource/Logo420.png.xhtml?ln=images" width="300" height="300" />
                 </div>
                 <div class="col-sm-6">
-                    <h1 class="display-4">#{msg.welcomeBjmanch}</h1>
+                    <h2 class="display-4">#{msg.welcomeBjmanch}</h2>
                     <p style="color: #006600;font-size: 1.75em;font-weight: bold; font-family: Garamond;">#{msg.slogan}</p>
+                    <p>
+                        <h:form>
+                            <h:commandButton  value="#{msg.registerNow}"  action="UserRegister" styleClass="btn btn-primary btn-lg"/>
+                        </h:form>
+                    </p>
                 </div>
             </div>
             <div class="row" style="margin-bottom: 5em;">

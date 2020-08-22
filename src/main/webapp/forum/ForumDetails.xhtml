@@ -9,40 +9,40 @@
         <div class="col-sm-8">
             <h1>#{msg.forumDetails}</h1>
             <br/>
-            <div class="row form-group">
-                <div class="col-sm-3">
-                    <h:graphicImage value="/ForumCreatorImageServlet" width="60" height="60" style="border-radius: 50%;"/>
-                </div>
-
-                <div class="col-sm-3">
-                    <label>#{msg.category}</label>
-                </div>
-                <div class="col-sm-6">
-                    <h:outputText value="#{forumDetailsMBean.forum.forumCategory.type}" styleClass="form-control"></h:outputText> 
-                </div>
-                <div class="col-sm-3">
-                    <small>By:<h:outputText value="#{forumDetailsMBean.forum.user.firstname} #{forumDetailsMBean.forum.user.lastname}"/></small>  
-
-                </div>
-
-                <div class="col-sm-3">
-                    <label>#{msg.subCategory}</label>
-                </div>
-                <div class="col-sm-6">
-                    <h:outputText value="#{forumDetailsMBean.forum.forumCategory.subtype}" styleClass="form-control"></h:outputText> 
-                </div>
-            </div>
-            <br/>
-
-            <div class="row form-group">
-                <h4>#{forumDetailsMBean.forum.title}</h4>               
-            </div>
-
-            <div class="row form-group">
-                <p:textEditor value="#{forumDetailsMBean.forum.description}" readonly="true" secure="false"  height="200" />
-            </div>
             <c:choose>
                 <c:when test="#{session.getAttribute('User')!=null}">
+                    <div class="row form-group">
+                        <div class="col-sm-3">
+                            <h:graphicImage value="/ForumCreatorImageServlet" width="60" height="60" style="border-radius: 50%;"/>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <label>#{msg.category}</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <h:outputText value="#{forumDetailsMBean.forum.forumCategory.type}" styleClass="form-control"></h:outputText> 
+                        </div>
+                        <div class="col-sm-3">
+                            <small>By:<h:outputText value="#{forumDetailsMBean.forum.user.firstname} #{forumDetailsMBean.forum.user.lastname}"/></small>  
+
+                        </div>
+
+                        <div class="col-sm-3">
+                            <label>#{msg.subCategory}</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <h:outputText value="#{forumDetailsMBean.forum.forumCategory.subtype}" styleClass="form-control"></h:outputText> 
+                        </div>
+                    </div>
+                    <br/>
+
+                    <div class="row form-group">
+                        <h4>#{forumDetailsMBean.forum.title}</h4>               
+                    </div>
+
+                    <div class="row form-group">
+                        <p:textEditor value="#{forumDetailsMBean.forum.description}" readonly="true" secure="false"  height="200" />
+                    </div>
                     <div class="row form-group">
                         <div class="col-sm-3">
                             <h:outputText value="&#160;"/> 
@@ -71,53 +71,60 @@
                             </div>
                         </div>
                     </h:form>
+                    <div class="row form-group">
+                        <div class="col-sm-3">
+                            <h:outputText value="&#160;"/> 
+                        </div>
+                        <div class="col-sm-6">
+                            <h4>#{msg.otherComments}</h4>
+                        </div>
+                        <div class="col-sm-3">
+                            <h:outputText value="&#160;"/>
+                        </div>
+                    </div>
+
+                    <c:forEach items="#{forumDetailsMBean.otherForumComments}" var="fc">
+                        <div class="row form-group">
+                            <div class="col-sm-2">
+                                <h:graphicImage value="/ForumCommentImageServlet?fcId=#{fc.id}" width="60" height="60" style="border-radius: 50%;"/>
+                                <br/>
+                                <small><h:outputText value="#{fc.user.firstname} on #{fc.datedStr} " /></small>
+                            </div>
+                            <div class="col-sm-8">
+                                <h:outputText value="#{fc.text}" />
+                            </div>
+                            <div class="col-sm-2">
+                                <c:choose>
+                                    <c:when test="#{session.getAttribute('User')!=null}">
+                                        <h:outputLink value="ReportAbuse.xhtml?faces-redirect=true">
+                                            <small><h:outputText value="#{msg.reportAbuse}" styleClass="text-danger"/></small>
+                                            <f:param name="commentId" value="#{fc.id}"/> 
+                                        </h:outputLink>
+                                    </c:when>
+                                    <c:otherwise>
+                                        <small><h:outputText value="#{msg.logInToReportAbuse}" styleClass="text-danger"/></small>  
+                                    </c:otherwise>
+                                </c:choose>
+                            </div>
+
+                        </div>
+                        <br/>
+                    </c:forEach>
                 </c:when>
                 <c:otherwise>
-                    <div class="row form-group"><b><h:outputText value="#{msg.loginForComment}"/></b></div>
+                    <div class="row">
+                        <div class="col-sm-2"><h:outputText value="&#160;"/></div>
+                        <div class="col-sm-8"><h5>#{msg.registerOrlogInForum}</h5></div>
+                        <div class="col-sm-2"><h:outputText value="&#160;"/></div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-sm-6"><h:outputText value="&#160;"/></div>
+                        <div class="col-sm-6">
+                            <h:button value="#{msg.cntinue}" outcome="/Home" styleClass="btn btn-primary btn-lg"></h:button>
+                        </div>
+                    </div>
                 </c:otherwise>
-            </c:choose>
-
-            <div class="row form-group">
-                <div class="col-sm-3">
-                    <h:outputText value="&#160;"/> 
-                </div>
-                <div class="col-sm-6">
-                    <h4>#{msg.otherComments}</h4>
-                </div>
-                <div class="col-sm-3">
-                    <h:outputText value="&#160;"/>
-                </div>
-            </div>
-
-            <c:forEach items="#{forumDetailsMBean.otherForumComments}" var="fc">
-                <div class="row form-group">
-                    <div class="col-sm-2">
-                        <h:graphicImage value="/ForumCommentImageServlet?fcId=#{fc.id}" width="60" height="60" style="border-radius: 50%;"/>
-                        <br/>
-                        <small><h:outputText value="#{fc.user.firstname} on #{fc.datedStr} " /></small>
-                    </div>
-                    <div class="col-sm-8">
-                        <h:outputText value="#{fc.text}" />
-                    </div>
-                    <div class="col-sm-2">
-                        <c:choose>
-                            <c:when test="#{session.getAttribute('User')!=null}">
-                                <h:outputLink value="ReportAbuse.xhtml?faces-redirect=true">
-                                    <small><h:outputText value="#{msg.reportAbuse}" styleClass="text-danger"/></small>
-                                    <f:param name="commentId" value="#{fc.id}"/> 
-                                </h:outputLink>
-                            </c:when>
-                            <c:otherwise>
-                                <small><h:outputText value="#{msg.logInToReportAbuse}" styleClass="text-danger"/></small>  
-                            </c:otherwise>
-                        </c:choose>
-                    </div>
-                    
-                </div>
-                <br/>
-            </c:forEach>
-
-
+            </c:choose>        
         </div>
 
     </ui:define>

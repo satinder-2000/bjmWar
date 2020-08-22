@@ -7,7 +7,7 @@ package org.bjm.ejb;
 
 import java.util.List;
 import javax.ejb.Local;
-import org.bjm.model.Essay;
+import org.bjm.model.Blog;
 import org.bjm.model.view.AbuseReport;
 import org.bjm.vo.ContactVO;
 
@@ -18,9 +18,9 @@ import org.bjm.vo.ContactVO;
 @Local
 public interface MiscellaneousServicesBeanLocal {
     
-    public List<Essay> getAllEssays();
+    public List<Blog> getAllBlogs();
     
-    public Essay addEssay(Essay essay);
+    public Blog addBlog(Blog blog);
     
     public List<AbuseReport> getAbusesReportedByUser(int userId);
     

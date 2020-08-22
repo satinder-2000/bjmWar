@@ -32,7 +32,7 @@ public class FsReminderScheduler {
     
     
     
-    @Schedule(second = "0,10,20", minute = "*", hour="*", persistent = false)
+    //@Schedule(second = "0,10,20", minute = "*", hour="*", persistent = false)
     public void sendReminders(){
         LocalDateTime timeNow=LocalDateTime.now();
         List<User> usersToNotify=getUsersToNotify();

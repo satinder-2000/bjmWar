@@ -119,6 +119,14 @@ public class User implements Serializable {
     )
     private List<Forum> userForums=new ArrayList<>();
     
+    
+    @OneToMany(
+            mappedBy = "user",
+            cascade = CascadeType.ALL,
+            orphanRemoval = true, fetch = FetchType.LAZY
+    )
+    private List<Blog> userBlogs=new ArrayList();
+    
      @Transient
     private String name;
     

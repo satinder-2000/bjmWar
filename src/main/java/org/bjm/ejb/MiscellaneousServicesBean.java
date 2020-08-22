@@ -12,7 +12,7 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
-import org.bjm.model.Essay;
+import org.bjm.model.Blog;
 import org.bjm.model.view.AbuseReport;
 import org.bjm.vo.ContactVO;
 
@@ -31,18 +31,17 @@ public class MiscellaneousServicesBean implements MiscellaneousServicesBeanLocal
     private EmailerBeanLocal emailerBeanLocal;
 
     @Override
-    public List<Essay> getAllEssays() {
-        TypedQuery<Essay> tQ=em.createQuery("select e from Essay e order by e.dated desc", Essay.class);
+    public List<Blog> getAllBlogs() {
+        TypedQuery<Blog> tQ=em.createQuery("select b from Blog b order by b.dated desc", Blog.class);
         return tQ.getResultList();
     }
 
     @Override
-    public Essay addEssay(Essay essay) {
-        essay.setAuthor("BJM Admin");
-        essay.setDated(LocalDateTime.now());
-        em.persist(essay);
+    public Blog addBlog(Blog blog) {
+        blog.setDated(LocalDateTime.now());
+        em.persist(blog);
         em.flush();
-        return essay;
+        return blog;
     }
 
     @Override

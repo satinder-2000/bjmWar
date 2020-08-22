@@ -18,10 +18,10 @@ import javax.persistence.Query;
  */
 public class FsReminderTest {
     
-    private static final String PERSISTENCE_UNIT_NAME = "bjmPU";
+    private static final String PERSISTENCE_UNIT_NAME = "bjmPUTest";
     private EntityManagerFactory factory;
     
-    public static void main(){
+    public static void main(String[] args){
         FsReminderTest test=new FsReminderTest();
         test.factory=Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
         EntityManager em = test.factory.createEntityManager();
