@@ -54,8 +54,11 @@
                         <h:outputText value="#{b.author}"/>
                     </div>
                     <div class="col-sm-3">
-                        <h:outputLink value="/blog/#{b.file}.xhtml?faces-redirect=true">#{msg.details}</h:outputLink>
-
+                        <h:form>
+                            <h:commandLink value="#{msg.details}" action="#{blogServiceMBean.loadBlog}">
+                                <f:param name="blogId" value="#{b.id}"/>
+                            </h:commandLink>
+                        </h:form>
                     </div>
                 </div>
             </c:forEach>

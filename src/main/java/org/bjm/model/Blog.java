@@ -8,6 +8,7 @@ package org.bjm.model;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -57,7 +58,7 @@ public class Blog implements Serializable {
     private User user;
     
     @OneToMany(mappedBy = "blog")
-    private List<BlogComment> blogComments;
+    private List<BlogComment> blogComments=new ArrayList<>();
     
 
     public int getId() {

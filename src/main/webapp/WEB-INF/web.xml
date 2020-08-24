@@ -45,6 +45,10 @@
         <servlet-name>SearchEngineServlet</servlet-name>
         <servlet-class>org.bjm.servlet.SearchEngineServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>BlogCommentImageServlet</servlet-name>
+        <servlet-class>org.bjm.servlet.BlogCommentImageServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.xhtml</url-pattern>
@@ -72,6 +76,10 @@
     <servlet-mapping>
         <servlet-name>SearchEngineServlet</servlet-name>
         <url-pattern>/SearchEngineServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BlogCommentImageServlet</servlet-name>
+        <url-pattern>/BlogCommentImageServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

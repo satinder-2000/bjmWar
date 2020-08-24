@@ -8,7 +8,8 @@ package org.bjm.ejb;
 import java.util.List;
 import javax.ejb.Local;
 import org.bjm.model.Blog;
-import org.bjm.model.view.AbuseReport;
+import org.bjm.model.BlogAbuse;
+import org.bjm.model.BlogComment;
 import org.bjm.vo.ContactVO;
 
 /**
@@ -22,7 +23,15 @@ public interface MiscellaneousServicesBeanLocal {
     
     public Blog addBlog(Blog blog);
     
-    public List<AbuseReport> getAbusesReportedByUser(int userId);
+    public List<BlogComment> getBlogComments(int blogId);
+    
+    public BlogComment getBlogCommentById(int commentId);
+    
+    public Blog addBlogComment(Blog blog, BlogComment blogComment);
+    
+    public BlogAbuse addBlogAbuse(BlogAbuse blogAbuse);
+    
+    public List<BlogAbuse> getBlogAbuses();
     
     public void sendContactUsMessage(ContactVO contactVO);
     

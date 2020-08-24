@@ -74,6 +74,7 @@ public class BlogComment implements Serializable {
     }
 
     public String getDatedStr() {
+        datedStr=dated.getDayOfMonth()+"/"+dated.getMonthValue()+"/"+dated.getYear()+" "+dated.getHour()+":"+dated.getMinute();
         return datedStr;
     }
 
