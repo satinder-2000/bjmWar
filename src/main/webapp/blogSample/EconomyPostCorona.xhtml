@@ -1,0 +1,62 @@
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                template="/WEB-INF/bjmTemplate.xhtml"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+
+    <ui:define name="content">
+        <div class="col-sm-8">
+            <h1>Indian Economy - Post Corona</h1>
+            <p style="text-align: justify">
+                In early January 2020, Prime Minister Modi had announced his dream of “challenging but achievable” $5 trillion economy by 2024. Like everyone else, I too have been contemplating the news. All I know is that there was a favourable economic environment for India to accept this challenge. As a layman, I just hoped for it to happen. I believed in India and knew that we have brilliant Economists, Entrepreneurs, Industrialists and of course the young talent with ever bursting and creative energy. 
+
+            </p>
+            <p style="text-align: justify">
+                Alas, the economy began to falter! Where the back to back growth rate of 10-12% was required, it dropped to an abysmal level 5.7%, when there was an unexplainable drop in the investments in general and knock on effect on key sectors such as infrastructure, automobile and of course agriculture. That kind of projected growth rate could hardly cheer anyone and no wonder gloom had set on India’s economic prospects. 
+            </p>
+            <c:choose>
+                <c:when test="#{session.getAttribute('User')!=null}">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h:outputText value="&#160;"/>
+                        </div>
+                        <div class="col-sm-6">
+                            <h:form>
+                                <h:commandLink value="#{msg.blogDetails}" action="#{blogServiceMBean.loadBlog}">
+                                    <f:param name="blogId" value="#{blogServiceMBean.blog.id}"/>
+                                </h:commandLink>
+                            </h:form>
+                        </div>
+                    </div>
+                </c:when>
+                <c:otherwise>
+                    <div class="row">
+                        <p style="text-align: justify">
+                            #{msg.registerOrlogInBlog}
+                        </p>
+                    </div>
+                    <div class="row form-group" style="margin-top: 2.5em;">
+                        <div class="col-sm-6">
+                            <h:form>
+                                <h:commandButton  value="#{msg.register}"  action="UserRegister" styleClass="btn btn-primary btn-lg"/>
+                            </h:form>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="/Login.xhtml" class="btn btn-primary btn-lg">#{msg.login}</a>
+                        </div>
+                    </div>
+                </c:otherwise>
+            </c:choose>
+
+
+
+            <div class="row">
+
+
+            </div>
+        </div>
+    </ui:define>
+
+</ui:composition>

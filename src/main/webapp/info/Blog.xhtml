@@ -9,24 +9,12 @@
             <h1>#{msg.blog}</h1>
             <br/>
             <p style="text-align: justify">
-                At time to time, the Admin Team will publish the Blogs on the some key topics that are relevant to the overall working principles of BJManch. 
-                Should you wish to contribute to the Blogs, please register yourself on the Site and contact the Administrator by sending an email to admin@bjmanch. 
-                Kindly, make sure that you specify the subject of the email as 
+                At time to time, the Admin Team will publish the Blogs on the some key topics that are relevant to the overall working principles of BJManch.in. 
+                Should you wish to read the full Blog or wish to comment on it, please Register and/or LogIn. 
                 "Blog Contribution".
             </p>
             <br/>
 
-            <!-- div class="row">
-                <div class="col-sm-6">
-                    <h:outputText value="&#160;"/>
-                </div>
-                <div class="col-sm-6">
-                    <h:form>
-                        <h:commandButton value="# {msg.addBlog}" action="# {blogServiceMBean.addBlog}" class="btn btn-lg btn-primary"/>
-                    </h:form>
-                </div>
-
-            </div -->
             <div class="row">
                 <div class="col-sm-3">
                     <b><h:outputLabel value="#{msg.blogTitle}"/></b>   
@@ -54,14 +42,43 @@
                         <h:outputText value="#{b.author}"/>
                     </div>
                     <div class="col-sm-3">
-                        <h:form>
-                            <h:commandLink value="#{msg.details}" action="#{blogServiceMBean.loadBlog}">
-                                <f:param name="blogId" value="#{b.id}"/>
-                            </h:commandLink>
-                        </h:form>
+                        <c:choose>
+                            <c:when test="#{session.getAttribute('User')!=null}}">
+                                <h:form>
+                                    <h:commandLink value="#{msg.blogDetails}" action="#{blogServiceMBean.loadBlog}">
+                                        <f:param name="blogId" value="#{b.id}"/>
+                                    </h:commandLink>
+                                </h:form>
+                            </c:when>
+                            <c:otherwise>
+                                <h:form>
+                                    <h:commandLink value="#{msg.blogSample}" action="#{blogServiceMBean.loadBlogSample}">
+                                        <f:param name="blogId" value="#{b.id}"/>
+                                    </h:commandLink>
+                                </h:form>
+
+                            </c:otherwise>
+                        </c:choose>
+    
+
                     </div>
                 </div>
             </c:forEach>
+
+
+
+            <!-- div class="row">
+                <div class="col-sm-6">
+                    <h:outputText value="&#160;"/>
+                </div>
+                <div class="col-sm-6">
+                    <h:form>
+                        <h:commandButton value="# {msg.addBlog}" action="# {blogServiceMBean.addBlog}" class="btn btn-lg btn-primary"/>
+                    </h:form>
+                </div>
+
+            </div -->
+
 
 
 

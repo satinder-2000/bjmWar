@@ -10,9 +10,21 @@
                 <a href="/" class="navbar-brand"><img src="/javax.faces.resource/Logo40White.png.xhtml?ln=images" /></a>
             </li>
             <li class="nav-item">
-                <h:form>
-                    <h:commandLink  value="#{msg.register}"  action="UserRegister" styleClass="nav-link"/>
-                </h:form>
+                <c:choose>
+                    <c:when test="#{session.getAttribute('User')!=null}">
+                        <li class="active">
+                            <h:outputText value=""/>
+                        </li>
+                    </c:when>
+                    <c:otherwise>
+                        <li class="active">
+                            <h:form>
+                                <h:commandLink  value="#{msg.register}"  action="UserRegister" styleClass="nav-link"/>
+                            </h:form>
+                        </li>
+                    </c:otherwise>
+                </c:choose>
+                
             </li>
             <li class="nav-item">
                 <c:choose>
