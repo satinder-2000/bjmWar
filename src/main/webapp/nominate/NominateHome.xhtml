@@ -1,0 +1,47 @@
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+                template="/WEB-INF/bjmTemplate.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <ui:define name="content">
+        <div class="col-sm-8">
+            <h1>#{msg.nominate}</h1>
+            <br/>
+            <p style="text-align: justify">
+                Use this facility to nominate Candidate of your choice, for your Constituency, for both Lok Sabha and Vidhan Sabha.<br/>
+                NOTE: Please ensure that the Candidate you nominate has right credentials for BjManch.in. If needed, please refer to the Link AboutBJM. 
+            </p>
+            <br/>
+            <c:choose>
+                <c:when test="#{session.getAttribute('User')!=null}">
+                    <div class=" row form-group">
+                        <div class="col-sm-5 text-center">
+                            <h:form>
+                                <h:commandLink  value="#{msg.lsCandidate}"  action="LsNominate" styleClass="btn btn-lg btn-primary"/>
+                            </h:form>
+
+                        </div>
+                        <div class="col-sm-5 text-center">
+                            <h:form>
+                                <h:commandLink  value="#{msg.vsCandidate}"  action="VsNominate" styleClass="btn btn-lg btn-primary"/>
+                            </h:form>
+                        </div>
+                    </div>
+                </c:when>
+                <c:otherwise>
+                    <div class=" row form-group">
+                        <div class="col-sm-5 text-center">
+                            <h:form>
+                                <h:commandButton  value="#{msg.register}"  action="UserRegister" styleClass="btn btn-primary btn-lg"/>
+                            </h:form>
+                        </div>
+                        <div class="col-sm-5 text-center">
+                            <h:outputLink value="/Login.xhtml" styleClass="btn btn-primary btn-lg">#{msg.login}</h:outputLink>
+                        </div>
+                    </div>
+                </c:otherwise>
+            </c:choose>
+        </div>
+    </ui:define>
+
+</ui:composition>

@@ -15,6 +15,8 @@ public enum EmailTemplateType {
     FORUM_CREATED,
     SURVEY_CREATED,
     PASSWORD_RESET,
-    CONTACT_US
+    CONTACT_US,
+    LS_NOMINATE,
+    VS_NOMINATE
     
 }

@@ -20,6 +20,4 @@ public interface ElectoralRefDataLocal {
     
     public List<String> getVidhanSabhas(String stateCode);
     
-    
-    
-}
+ }

@@ -7,6 +7,8 @@ package org.bjm.ejb;
 
 import javax.ejb.Local;
 import org.bjm.model.Forum;
+import org.bjm.model.LsCandidate;
+import org.bjm.model.VsCandidate;
 import org.bjm.model.Survey;
 import org.bjm.model.User;
 import org.bjm.vo.ContactVO;
@@ -29,5 +31,13 @@ public interface EmailerBeanLocal {
     public void sendPasswordResetEmail(String email);
     
     public void sendContactUsEmailToAdmin(ContactVO contactVO);
+    
+    public void sendNominateNewLSCandidateEmail(User user, LsCandidate lc);
+    
+    public void sendAddNominationLSCandidateEmail(User user, LsCandidate lc);
+    
+    public void sendnominateNewVSCandidateEmail(User user, VsCandidate lc);
+    
+    public void sendAddNominationVSCandidateEmail(User user, VsCandidate lc);
     
 }

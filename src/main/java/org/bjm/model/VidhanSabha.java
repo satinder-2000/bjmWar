@@ -5,9 +5,11 @@
  */
 package org.bjm.model;
 
+import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -27,6 +29,9 @@ public class VidhanSabha {
     
     @Column(name = "CONSTITUENCY")
     private String constituency;
+    
+    @OneToMany(mappedBy = "vidhanSabha")
+    private List<VsCandidate> candidates;
 
     public int getId() {
         return id;
@@ -51,7 +56,15 @@ public class VidhanSabha {
     public void setConstituency(String constituency) {
         this.constituency = constituency;
     }
+
+    public List<VsCandidate> getCandidates() {
+        return candidates;
+    }
+
+    public void setCandidates(List<VsCandidate> candidates) {
+        this.candidates = candidates;
+    }
     
     
-    
+
 }

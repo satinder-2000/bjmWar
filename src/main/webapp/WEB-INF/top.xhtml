@@ -77,6 +77,10 @@
             </li>
             
             <li class="nav-item">
+                <h:outputLink value="/nominate/NominateHome.xhtml" styleClass="nav-link">#{msg.nominate}</h:outputLink>
+            </li>
+            
+            <li class="nav-item">
                 <c:choose>
                     <c:when test="#{session.getAttribute('User')!=null}">
                         <li>

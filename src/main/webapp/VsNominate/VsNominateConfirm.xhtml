@@ -1,0 +1,46 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                template="/WEB-INF/bjmTemplate.xhtml"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+
+    <ui:define name="content">
+        <div class="col-sm-8">
+            <h1>#{msg.nominateVSCandidate}</h1>
+            <br/>
+            <h:form prependId="false">
+                <div class="row form-group">
+                    <div class="col-sm-6">
+                        <h:outputLabel value="#{msg.constituency}"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:outputText value="#{vidhanSabhaElectoralMBean.constituency}" styleClass="form-control"/>
+                    </div>
+                    
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-6">
+                        <h:outputLabel value="#{msg.nominatedCandidate}"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:outputText value="#{vidhanSabhaElectoralMBean.lsCandidate.name}" styleClass="form-control"/>   
+                    </div>
+                </div>
+                
+                <div class="row form-group">
+                    <div class="col-sm-6">
+                        <h:commandButton action="#{vidhanSabhaElectoralMBean.amendNomination}" value="#{msg.amend}" styleClass="btn btn-primary"/>  
+                    </div>
+                    <div class="col-sm-6">
+                        <h:commandButton action="returnFromVsNominateFlow" value="#{msg.submit}" styleClass="btn btn-primary"/>   
+                    </div>
+                </div>
+            </h:form>
+            
+        </div>
+    </ui:define>
+
+</ui:composition>
+

@@ -12,21 +12,27 @@ import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.annotation.PostConstruct;
+import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
-import javax.faces.view.ViewScoped;
+import javax.faces.event.AjaxBehaviorEvent;
+import javax.faces.flow.FlowScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import org.bjm.ejb.ElectoralBeanLocal;
 import org.bjm.ejb.ElectoralRefDataLocal;
+import org.bjm.model.LokSabha;
+import org.bjm.model.VsCandidate;
 import org.bjm.model.User;
+import org.bjm.model.VidhanSabha;
 import org.bjm.util.BJMConstants;
 
 /**
  *
  * @author root
  */
-@ViewScoped
+@FlowScoped("VsNominate")
 @Named(value = "vidhanSabhaElectoralMBean")
 public class VidhanSabhaElectoralMBean implements Serializable {
     
@@ -35,10 +41,18 @@ public class VidhanSabhaElectoralMBean implements Serializable {
     @Inject
     private ElectoralRefDataLocal erdl;
     
+    @Inject
+    private ElectoralBeanLocal ebl;
+    
     private User user;
     
     private List<String> constituencies;
     private String constituency;
+    private List<String> candidates;
+    private String candidateSelected;
+    private String candidateNew;
+    private VsCandidate vsCandidate;
+    private boolean newNomination;
     
     @PostConstruct
     public void init(){
@@ -47,15 +61,64 @@ public class VidhanSabhaElectoralMBean implements Serializable {
         user=(User)session.getAttribute(BJMConstants.USER);
         String stateCode=user.getStateCode();
         constituencies=erdl.getVidhanSabhas(stateCode);
-        if (constituencies==null){//No data found with this State Code. Could be a UT such as Chandigarh
-            constituencies=new ArrayList<>();
-            FacesContext context = FacesContext.getCurrentInstance();
-            ResourceBundle rb = context.getApplication().evaluateExpressionGet(context, "#{msg}", ResourceBundle.class);
-            constituencies.add(rb.getString("noVSConstituency"));
-        }
         LOGGER.log(Level.INFO, "VidhanSabha contituenties loaded for State: {0}", stateCode);
     }
+    
+    public void ajaxTypeListener(AjaxBehaviorEvent event){
+        LOGGER.log(Level.INFO, "Constituency is {0}", constituency);
+        String stateCode=user.getStateCode();
+        int vsId=ebl.getVidhanSabhaIdByConstituency(stateCode, constituency);
+        candidates=ebl.getVSCandidates(vsId);
+         LOGGER.log(Level.INFO, "candidates size is {0}", candidates.size());  
+    }
+    
+    public String amendNomination(){
+        return "VsNominate?faces-redirect=true";
+    }
+    
+    public String processNomination(){
+        if (!candidateNew.isEmpty()){//this will take precedence. TODO: Consider if a Flow is needed in case of similar name to the existing one, we can use Fizzy library.
+            newNomination=true;
+            vsCandidate=new VsCandidate();
+            VidhanSabha vs=ebl.getVidhanSabhaByConstituency(user.getStateCode(), constituency);
+            vsCandidate.setVidhanSabha(vs);
+            vsCandidate.setName(candidateNew);
+        }else{
+            newNomination=false;
+            int constituencyId=ebl.getVidhanSabhaIdByConstituency(user.getStateCode(), constituency);
+            vsCandidate=ebl.getVSCandidate(constituencyId, candidateSelected);
+        }
+        FacesContext context = FacesContext.getCurrentInstance();
+        ResourceBundle rb = context.getApplication().evaluateExpressionGet(context, "#{msg}", ResourceBundle.class);
+        FacesContext.getCurrentInstance().addMessage("", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("nominationSuccess"), rb.getString("nominationSuccess")));
+        return "VsNominateConfirm?faces-redirect=true";
 
+        
+        
+    }
+    
+    public void submitNomination(){
+        if(newNomination){
+            VsCandidate newC=new VsCandidate();
+            VidhanSabha vs=ebl.getVidhanSabhaByConstituency(user.getStateCode(), constituency);
+            newC.setVidhanSabha(vs);
+            newC.setName(candidateNew);
+            int idC=ebl.nominateNewVSCandidate(user,newC);
+            LOGGER.log(Level.INFO, "New VS Candidate nominated with ID : {0}", idC);
+        }else{
+            int constituencyId=ebl.getVidhanSabhaIdByConstituency(user.getStateCode(), constituency);
+            VsCandidate vc=ebl.getVSCandidate(constituencyId, candidateSelected);
+            ebl.addNominationVSCandidate(user,vc);
+            LOGGER.log(Level.INFO, "Existing VS Candidate nominated with ID : {0}", vc.getId());
+        }
+    }
+    
+    public String getReturnValue() {
+        submitNomination();
+        return "/flowreturns/VsNominate-return?faces-redirect=true";
+    }
+    
+    
     public List<String> getConstituencies() {
         return constituencies;
     }
@@ -71,6 +134,39 @@ public class VidhanSabhaElectoralMBean implements Serializable {
     public void setConstituency(String constituency) {
         this.constituency = constituency;
     }
+
+    public List<String> getCandidates() {
+        return candidates;
+    }
+
+    public void setCandidates(List<String> candidates) {
+        this.candidates = candidates;
+    }
+
+    public String getCandidateSelected() {
+        return candidateSelected;
+    }
+
+    public void setCandidateSelected(String candidateSelected) {
+        this.candidateSelected = candidateSelected;
+    }
+
+    public String getCandidateNew() {
+        return candidateNew;
+    }
+
+    public void setCandidateNew(String candidateNew) {
+        this.candidateNew = candidateNew;
+    }
+
+    public VsCandidate getLsCandidate() {
+        return vsCandidate;
+    }
+
+    public void setLsCandidate(VsCandidate lsCandidate) {
+        this.vsCandidate = lsCandidate;
+    }
+
     
     
     

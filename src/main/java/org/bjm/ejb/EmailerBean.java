@@ -23,6 +23,8 @@ import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
 import org.bjm.model.EmailTemplateType;
 import org.bjm.model.Forum;
+import org.bjm.model.LsCandidate;
+import org.bjm.model.VsCandidate;
 import org.bjm.model.Survey;
 import org.bjm.model.User;
 import org.bjm.vo.ContactVO;
@@ -71,21 +73,6 @@ public class EmailerBean implements EmailerBeanLocal {
     public void init(){
         LOGGER.info(sender+ " is Sender and accessConfirmURI is "+accessConfirmURI);
         templatesMap = referenceDataBeanLocal.getEmailTemplatesMap();
-      /*LOGGER.warning("Remove Temp Code from Emailer Bean");
-      Properties props = new Properties();
-      //props.put("mail.smtp.host", "smtp.privateemail.com");
-      props.put("mail.smtp.host", "smtp.gmail.com");
-      props.put("mail.smtp.port", "465");
-      props.put("mail.smtp.auth", "true");
-      props.put("mail.smtp.socketFactory.port", "465");
-      props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-      props.put("mail.smtp.starttls.enable", "true");
-      session = Session.getInstance(props, new javax.mail.Authenticator() {
-          protected PasswordAuthentication getPasswordAuthentication() {
-              return new PasswordAuthentication(sender, "IL@ve2nu69");
-          }
-      });*/
-        
     }
 
     @Override
@@ -250,5 +237,69 @@ public class EmailerBean implements EmailerBeanLocal {
             LOGGER.severe(mex.getMessage());
         }
 
+    }
+
+    @Override
+    public void sendNominateNewLSCandidateEmail(User user, LsCandidate lc) {
+        try {
+            MimeMessage message = new MimeMessage(session);
+            message.setFrom(new InternetAddress(sender));
+            message.addRecipient(Message.RecipientType.TO, new InternetAddress(user.getEmail()));
+            message.setSubject("Candidate Nomination - Lok Sabha");
+
+            String htmlText = templatesMap.get(EmailTemplateType.LS_NOMINATE);
+            VelocityEngine ve = new VelocityEngine();
+            StringWriter sw = new StringWriter();
+            VelocityContext vc = new VelocityContext();
+            vc.put("userName", user.getFirstname().concat(" ").concat(user.getLastname()));
+            vc.put("candidateName", lc.getName());
+            vc.put("constituency", lc.getLokSabha().getConstituency());
+            vc.put("welcomeURI", webURI);
+            ve.evaluate(vc, sw, EmailTemplateType.LS_NOMINATE.toString(), htmlText);
+
+            message.setContent(sw.getBuffer().toString(), "text/html");
+
+            Transport.send(message);
+            LOGGER.info("Sent message successfully....");
+        } catch (MessagingException mex) {
+            LOGGER.severe(mex.getMessage());
+        }
+    }
+
+    @Override
+    public void sendAddNominationLSCandidateEmail(User user, LsCandidate lc) {
+        sendNominateNewLSCandidateEmail(user,lc);
+    }
+
+    @Override
+    public void sendnominateNewVSCandidateEmail(User user, VsCandidate lc) {
+        try {
+            MimeMessage message = new MimeMessage(session);
+            message.setFrom(new InternetAddress(sender));
+            message.addRecipient(Message.RecipientType.TO, new InternetAddress(user.getEmail()));
+            message.setSubject("Candidate Nomination - Vidhan Sabha");
+
+            String htmlText = templatesMap.get(EmailTemplateType.VS_NOMINATE);
+            VelocityEngine ve = new VelocityEngine();
+            StringWriter sw = new StringWriter();
+            VelocityContext vc = new VelocityContext();
+            vc.put("userName", user.getFirstname().concat(" ").concat(user.getLastname()));
+            vc.put("candidateName", lc.getName());
+            vc.put("constituency", lc.getVidhanSabha().getConstituency());
+            vc.put("welcomeURI", webURI);
+            ve.evaluate(vc, sw, EmailTemplateType.VS_NOMINATE.toString(), htmlText);
+
+            message.setContent(sw.getBuffer().toString(), "text/html");
+
+            Transport.send(message);
+            LOGGER.info("Sent message successfully....");
+        } catch (MessagingException mex) {
+            LOGGER.severe(mex.getMessage());
+        }
+    }
+
+    @Override
+    public void sendAddNominationVSCandidateEmail(User user, VsCandidate lc) {
+        sendnominateNewVSCandidateEmail(user, lc);
     }
 }
