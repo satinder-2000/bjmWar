@@ -22,6 +22,8 @@ public interface ElectoralBeanLocal {
     
     public List<String> getLSCandidates(int constituencyId);
     
+    public List<String> getLSConstituencies(String stateCd);
+    
     public int getLokSabhaIdByConstituency(String stateCode,String constituency);
     
     public LokSabha getLokSabhaByConstituency(String stateCode,String constituency);
@@ -34,6 +36,8 @@ public interface ElectoralBeanLocal {
     
     public List<String> getVSCandidates(int constituencyId);
     
+    public List<String> getVSConstituencies(String stateCd);
+    
     public int getVidhanSabhaIdByConstituency(String stateCode,String constituency);
     
     public VidhanSabha getVidhanSabhaByConstituency(String stateCode,String constituency);
@@ -43,5 +47,7 @@ public interface ElectoralBeanLocal {
     public void addNominationVSCandidate(User user, VsCandidate lc);
     
     public VsCandidate getVSCandidate(int constituencyId, String cName);
+    
+    
     
 }

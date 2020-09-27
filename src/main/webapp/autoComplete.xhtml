@@ -1,0 +1,19 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                template="/WEB-INF/bjmTemplate.xhtml"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+    <ui:define name="content">
+        <h:form>
+            <h:panelGrid columns="2" cellpadding="5">
+            <p:outputLabel value="Simple:" for="acSimple" />
+            <p:autoComplete id="acSimple" value="#{autoCompleteMBean.constituency}" completeMethod="#{autoCompleteMBean.completeVidhanSabhas}" />
+            <p:outputLabel value=""/>
+            <p:commandButton action="#{autoCompleteMBean.submit}" value="Submit"/>
+            </h:panelGrid>
+        </h:form>
+    </ui:define>
+
+</ui:composition>

@@ -5,6 +5,7 @@
  */
 package org.bjm.model;
 
+import java.io.Serializable;
 import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -18,7 +19,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "VIDHAN_SABHA")
-public class VidhanSabha {
+public class VidhanSabha implements Serializable {
     
     @Id
     @Column(name = "ID")

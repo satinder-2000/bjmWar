@@ -49,6 +49,10 @@
         <servlet-name>BlogCommentImageServlet</servlet-name>
         <servlet-class>org.bjm.servlet.BlogCommentImageServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>NominateServlet</servlet-name>
+        <servlet-class>org.bjm.rest.NominateServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.xhtml</url-pattern>
@@ -80,6 +84,10 @@
     <servlet-mapping>
         <servlet-name>BlogCommentImageServlet</servlet-name>
         <url-pattern>/BlogCommentImageServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NominateServlet</servlet-name>
+        <url-pattern>/NominateServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

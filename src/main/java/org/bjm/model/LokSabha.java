@@ -5,10 +5,13 @@
  */
 package org.bjm.model;
 
+import java.io.Serializable;
 import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -18,7 +21,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "LOK_SABHA")
-public class LokSabha {
+public class LokSabha implements Serializable {
 
     @Id
     @Column(name = "ID")
@@ -32,6 +35,11 @@ public class LokSabha {
 
     @OneToMany(mappedBy = "lokSabha")
     private List<LsCandidate> candidates;
+    
+    
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "LOK_SABHA_ID")
+    private List<VidhanSabha> vidhanSabhas;
 
     public int getId() {
         return id;
@@ -64,4 +72,14 @@ public class LokSabha {
     public void setCandidates(List<LsCandidate> candidates) {
         this.candidates = candidates;
     }
+
+    public List<VidhanSabha> getVidhanSabhas() {
+        return vidhanSabhas;
+    }
+
+    public void setVidhanSabhas(List<VidhanSabha> vidhanSabhas) {
+        this.vidhanSabhas = vidhanSabhas;
+    }
+    
+    
 }

@@ -1,0 +1,3876 @@
+STATE_CODE,CONSTITUENCY,LOK_SABHA_ID
+AP,Ichchapuram,2
+AP,Palasa,2
+AP,Tekkali,2
+AP,Pathapatnam,2
+AP,Srikakulam,2
+AP,Amadalavalasa,2
+AP,Etcherla,3
+AP,Narasannapeta,2
+AP,Rajam,3
+AP,Palakonda,1
+AP,Kurupam,1
+AP,Parvathipuram,1
+AP,Salur,1
+AP,Bobbili,3
+AP,Cheepurupalli,3
+AP,Gajapathinagaram,3
+AP,Nellimarla,3
+AP,Vizianagaram,3
+AP,Srungavarapukota,2
+AP,Bhimili,2
+AP,Visakhapatnam East,2
+AP,Visakhapatnam South,2
+AP,Visakhapatnam North,2
+AP,Visakhapatnam West,2
+AP,Gajuwaka,2
+AP,Chodavaram,
+AP,Madugula,
+AP,Araku Valley,
+AP,Paderu,
+AP,Anakapalle,
+AP,Pendurthi,
+AP,Elamanchili,
+AP,Payakaraopet,1
+AP,Narsipatnam,1
+AP,Tuni,1
+AP,Prathipadu,1
+AP,Pithapuram,1
+AP,Kakinada Rural,1
+AP,Peddapuram,1
+AP,Anaparthy,1
+AP,Kakinada City,1
+AP,Ramachandrapuram,
+AP,Mummidivaram,
+AP,Amalapuram,
+AP,Razole,
+AP,Gannavaram,
+AP,Kothapeta,
+AP,Mandapeta,
+AP,Rajanagaram,1
+AP,Rajahmundry City,1
+AP,Rajahmundry Rural,1
+AP,Jaggampeta,1
+AP,Rampachodavaram,1
+AP,Kovvur,1
+AP,Nidadavole,1
+AP,Achanta,1
+AP,Palakollu,1
+AP,Narasapuram,1
+AP,Bhimavaram,1
+AP,Undi,1
+AP,Tanuku,1
+AP,Tadepalligudem,1
+AP,Unguturu,1
+AP,Denduluru,1
+AP,Eluru,1
+AP,Gopalapuram,1
+AP,Polavaram,1
+AP,Chintalapudi,1
+AP,Tiruvuru,1
+AP,Nuzvid,1
+AP,Gannavaram,1
+AP,Gudivada,1
+AP,Kaikalur,1
+AP,Pedana,1
+AP,Machilipatnam,1
+AP,Avanigadda,1
+AP,Pamarru,1
+AP,Penamaluru,1
+AP,Vijayawada West,2
+AP,Vijayawada Central,2
+AP,Vijayawada East,2
+AP,Mylavaram,2
+AP,Nandigama,2
+AP,Jaggayyapeta,2
+AP,Pedakurapadu,1
+AP,Tadikonda,1
+AP,Mangalagiri,1
+AP,Ponnuru,1
+AP,Vemuru,1
+AP,Repalle,1
+AP,Tenali,1
+AP,Bapatla,1
+AP,Prathipadu,1
+AP,Guntur West,1
+AP,Guntur East,1
+AP,Chilakaluripet,1
+AP,Narasaraopet,1
+AP,Sattenapalle,1
+AP,Vinukonda,1
+AP,Gurajala,1
+AP,Macherla,1
+AP,Yerragondapalem,1
+AP,Darsi,1
+AP,Parchur,1
+AP,Addanki,1
+AP,Chirala,1
+AP,Santhanuthalapadu,1
+AP,Ongole,1
+AP,Kandukur,1
+AP,Kondapi,1
+AP,Markapuram,1
+AP,Giddalur,1
+AP,Kanigiri,1
+AP,Kavali,1
+AP,Atmakur,1
+AP,Kovur,1
+AP,Nellore City,1
+AP,Nellore Rural,1
+AP,Sarvepalli,2
+AP,Gudur,2
+AP,Sullurpeta,2
+AP,Venkatagiri,2
+AP,Udayagiri,1
+AP,Badvel,1
+AP,Rajampet,1
+AP,Kadapa,1
+AP,Kodur,1
+AP,Rayachoti,1
+AP,Pulivendla,1
+AP,Kamalapuram,1
+AP,Jammalamadugu,1
+AP,Proddatur,1
+AP,Mydukur,1
+AP,Allagadda,17
+AP,Srisailam,17
+AP,Nandikotkur,17
+AP,Kurnool,1
+AP,Panyam,17
+AP,Nandyal,17
+AP,Banaganapalle,17
+AP,Dhone,17
+AP,Pattikonda,1
+AP,Kodumur,1
+AP,Yemmiganur,1
+AP,Mantralayam,1
+AP,Adoni,1
+AP,Alur,1
+AP,Rayadurg,
+AP,Uravakonda,
+AP,Guntakal,
+AP,Tadipatri,
+AP,Singanamala,
+AP,Anantapur Urban,
+AP,Kalyandurg,
+AP,Raptadu,1
+AP,Madakasira,1
+AP,Hindupur,1
+AP,Penukonda,1
+AP,Puttaparthi,1
+AP,Dharmavaram,1
+AP,Kadiri,1
+AP,Thamballapalle,1
+AP,Pileru,1
+AP,Madanapalle,1
+AP,Punganur,1
+AP,Chandragiri,1
+AP,Tirupati,1
+AP,Srikalahasti,2
+AP,Sathyavedu,2
+AP,Nagari,2
+AP,Gangadhara Nellore,1
+AP,Chittoor,1
+AP,Puthalapattu,1
+AP,Palamaner,1
+AP,Kuppam,1
+AR,Lumla,26
+AR,Tawang,26
+AR,Mukto,26
+AR,Dirang,26
+AR,Kalaktang,26
+AR,Thrizino-Buragaon,26
+AR,Bomdila,26
+AR,Bameng,26
+AR,Chayangtajo,26
+AR,Seppa East,26
+AR,Seppa West,26
+AR,Pakke-Kasang,26
+AR,Itanagar,26
+AR,Doimukh,26
+AR,Sagalee,26
+AR,Yachuli,26
+AR,Ziro-Hapoli,26
+AR,Palin,26
+AR,Nyapin,26
+AR,Tali,26
+AR,Koloriang,26
+AR,Nacho,26
+AR,Taliha,26
+AR,Daporijo,26
+AR,Raga,26
+AR,Damporijo,26
+AR,Liromoba,26
+AR,Likabali,26
+AR,Basar,26
+AR,Along West,26
+AR,Along East,26
+AR,Rumgong,26
+AR,Mechuka,26
+AR,Tuting-Yingkiong,25
+AR,Pangin,25
+AR,Nari-Koyu,25
+AR,Pasighat West,25
+AR,Pasighat East,25
+AR,Mebo,25
+AR,Mariyang-Geku,25
+AR,Anini,25
+AR,Dambuk,25
+AR,Roing,25
+AR,Tezu,25
+AR,Hayuliang,25
+AR,Chowkham,25
+AR,Namsai,25
+AR,Lekang,25
+AR,Bordumsa-Diyum,25
+AR,Miao,25
+AR,Nampong,25
+AR,Changlang South,25
+AR,Changlang North,25
+AR,Namsang,25
+AR,Khonsa East,25
+AR,Khonsa West,25
+AR,Borduria-Bagapani,25
+AR,Kanubari,25
+AR,Longding-Pumao,25
+AR,Pongchau-Wakka,25
+AS,Ratabari,28
+AS,Patharkandi,28
+AS,Karimganj North,28
+AS,Karimganj South,28
+AS,Badarpur,28
+AS,Hailakandi,28
+AS,Katlicherra,28
+AS,Algapur,28
+AS,Silchar,29
+AS,Sonai,29
+AS,Dholai,29
+AS,Udharbond,29
+AS,Lakhipur,29
+AS,Barkhola,29
+AS,Katigorah,29
+AS,Haflong,27
+AS,Bokajan,27
+AS,Howraghat,27
+AS,Diphu,27
+AS,Baithalangso,27
+AS,Mankachar,27
+AS,Salmara South,27
+AS,Dhubri,27
+AS,Gauripur,27
+AS,Golakganj,27
+AS,Bilasipara West,27
+AS,Bilasipara East,27
+AS,Gossaigaon,28
+AS,Kokrajhar West,28
+AS,Kokrajhar East,28
+AS,Sidli,28
+AS,Bongaigaon,27
+AS,Bijni,28
+AS,Abhayapuri North,27
+AS,Abhayapuri South,27
+AS,Dudhnai,34
+AS,Goalpara East,27
+AS,Goalpara West,27
+AS,Jaleswar,27
+AS,Sorbhog,28
+AS,Bhabanipur,28
+AS,Patacharkuchi,27
+AS,Barpeta,27
+AS,Jania,27
+AS,Baghbar,27
+AS,Sarukhetri,27
+AS,Chenga,27
+AS,Boko,34
+AS,Chaygaon,34
+AS,Palasbari,34
+AS,Jalukbari,34
+AS,Dispur,34
+AS,Gauhati East,34
+AS,Gauhati West,34
+AS,Hajo,34
+AS,Kamalpur,28
+AS,Rangiya,28
+AS,Tamulpur,28
+AS,Nalbari,28
+AS,Barkhetry,34
+AS,Dharmapur,27
+AS,Barama,28
+AS,Chapaguri,28
+AS,Panery,28
+AS,Kalaigaon,28
+AS,Sipajhar,28
+AS,Mangaldoi,28
+AS,Dalgaon,28
+AS,Udalguri,28
+AS,Majbat,28
+AS,Dhekiajuli,36
+AS,Barchalla,36
+AS,Tezpur,36
+AS,Rangapara,36
+AS,Sootea,36
+AS,Biswanath,36
+AS,Behali,36
+AS,Gohpur,36
+AS,Jagiroad,28
+AS,Marigaon,28
+AS,Laharighat,28
+AS,Raha,28
+AS,Dhing,38
+AS,Batadroba,38
+AS,Rupohihat,38
+AS,Nowgong,28
+AS,Barhampur,28
+AS,Samaguri,38
+AS,Kaliabor,38
+AS,Jamunamukh,28
+AS,Hojai,28
+AS,Lumding,28
+AS,Bokakhat,38
+AS,Sarupathar,38
+AS,Golaghat,38
+AS,Khumtai,38
+AS,Dergaon,38
+AS,Jorhat,34
+AS,Majuli,28
+AS,Titabar,34
+AS,Mariani,34
+AS,Teok,34
+AS,Amguri,34
+AS,Nazira,34
+AS,Mahmara,34
+AS,Sonari,34
+AS,Thowra,34
+AS,Sibsagar,34
+AS,Bihpuria,36
+AS,Naoboicha,28
+AS,Lakhimpur,28
+AS,Dhakuakhana,28
+AS,Dhemaji,28
+AS,Jonai,28
+AS,Moran,27
+AS,Dibrugarh,27
+AS,Lahowal,27
+AS,Duliajan,27
+AS,Tingkhong,27
+AS,Naharkatia,27
+AS,Chabua,28
+AS,Tinsukia,27
+AS,Digboi,27
+AS,Margherita,27
+AS,Doomdooma,28
+AS,Sadiya,28
+BR,Valmiki Nagar ,81
+BR,"Ramnagar, Paschim Champaran ",81
+BR,Narkatiaganj ,81
+BR,Bagaha ,81
+BR,Lauriya ,81
+BR,Nautan ,42
+BR,Chanpatia ,42
+BR,Bettiah ,42
+BR,Sikta ,81
+BR,Raxaul ,42
+BR,Sugauli ,42
+BR,Narkatiya ,42
+BR,Harsidhi ,43
+BR,Govindganj ,43
+BR,Kesaria ,43
+BR,"Kalyanpur, Purvi Champaran ",43
+BR,"Pipra, Purvi Champaran ",43
+BR,Madhuban ,44
+BR,Motihari ,43
+BR,Chiraia ,44
+BR,Dhaka ,44
+BR,Sheohar ,44
+BR,Riga ,44
+BR,Bathnaha ,45
+BR,Parihar ,45
+BR,Sursand ,45
+BR,Bajpatti ,45
+BR,Sitamarhi ,45
+BR,Runnisaidpur ,45
+BR,Belsand ,44
+BR,Harlakhi ,41
+BR,Benipatti ,41
+BR,Khajauli ,41
+BR,Babubarhi ,41
+BR,Bisfi ,41
+BR,Madhubani ,41
+BR,"Rajnagar, Madhubani ",41
+BR,Jhanjharpur ,41
+BR,Phulparas ,41
+BR,Laukaha ,41
+BR,Nirmali ,48
+BR,"Pipra, Supaul ",48
+BR,Supaul ,48
+BR,Triveniganj ,48
+BR,Chhatapur ,48
+BR,Narpatganj ,41
+BR,"Raniganj, Araria ",41
+BR,Forbesganj ,41
+BR,Araria ,41
+BR,Jokihat ,41
+BR,Sikti ,41
+BR,Bahadurganj ,51
+BR,Thakurganj ,51
+BR,Kishanganj ,51
+BR,Kochadhaman ,51
+BR,Amour ,51
+BR,Baisi ,51
+BR,"Kasba, Purnia ",42
+BR,Banmankhi ,42
+BR,Rupauli ,42
+BR,Dhamdaha ,42
+BR,Purnia ,42
+BR,Katihar ,51
+BR,Kadwa ,51
+BR,"Balrampur, Katihar ",51
+BR,Pranpur ,51
+BR,Manihari ,51
+BR,Barari ,51
+BR,Korha ,42
+BR,Alamnagar ,53
+BR,Bihariganj ,53
+BR,Singheshwar ,55
+BR,Madhepura ,53
+BR,"Sonbarsha, Saharsa ",53
+BR,Saharsa ,53
+BR,Simri Bakhtiarpur ,51
+BR,Mahishi ,53
+BR,Kusheshwar Asthan ,43
+BR,Gaura Bauram ,41
+BR,Benipur ,41
+BR,Alinagar ,41
+BR,Darbhanga Rural ,41
+BR,Darbhanga ,41
+BR,Hayaghat ,43
+BR,Bahadurpur ,41
+BR,Keoti ,41
+BR,Jale ,41
+BR,Gaighat ,41
+BR,Aurai ,41
+BR,Minapur ,56
+BR,Bochahan ,41
+BR,Sakra ,41
+BR,Kurhani ,41
+BR,Muzaffarpur ,41
+BR,Kanti ,56
+BR,Baruraj ,56
+BR,Paroo ,56
+BR,"Sahebganj, Muzaffarpur ",56
+BR,Baikunthpur ,41
+BR,"Barauli, Bihar ",41
+BR,Gopalganj ,41
+BR,Kuchaikote ,41
+BR,Bhore ,41
+BR,Hathua ,41
+BR,Siwan ,47
+BR,Ziradei ,47
+BR,Darauli ,47
+BR,"Raghunathpur, Siwan ",47
+BR,Daraunda ,47
+BR,Barharia ,47
+BR,Goriakothi ,59
+BR,"Maharajganj, Siwan ",59
+BR,Ekma ,59
+BR,Manjhi ,59
+BR,Baniapur ,59
+BR,Taraiya ,59
+BR,Marhaura ,43
+BR,"Chapra, Saran ",43
+BR,Garkha ,43
+BR,Amnour ,43
+BR,Parsa ,43
+BR,Sonepur ,43
+BR,Hajipur ,41
+BR,Lalganj ,41
+BR,Vaishali ,56
+BR,Mahua ,41
+BR,Raja Pakar ,41
+BR,"Raghopur, Vaishali ",41
+BR,Mahnar ,41
+BR,Patepur ,55
+BR,"Kalyanpur, Samastipur ",43
+BR,Warisnagar ,43
+BR,Samastipur ,43
+BR,Ujiarpur ,55
+BR,Morwa ,55
+BR,Sarairanjan ,55
+BR,Mohiuddinnagar ,55
+BR,Bibhutipur ,55
+BR,Rosera ,43
+BR,Hasanpur ,51
+BR,Cheria-Bariarpur ,41
+BR,Bachhwara ,41
+BR,Teghra ,41
+BR,Matihani ,41
+BR,Sahebpur Kamal ,41
+BR,Begusarai ,41
+BR,Bakhri ,41
+BR,Alauli ,51
+BR,Khagaria ,51
+BR,Beldaur ,51
+BR,Parbatta ,51
+BR,Bihpur ,41
+BR,Gopalpur ,41
+BR,Pirpainti ,41
+BR,Kahalgaon ,41
+BR,Bhagalpur ,41
+BR,Sultanganj ,41
+BR,Nathnagar ,41
+BR,Amarpur ,41
+BR,Dhoraiya ,41
+BR,Banka ,41
+BR,Katoria ,41
+BR,Belhar ,41
+BR,Tarapur ,41
+BR,Munger ,68
+BR,"Jamalpur, Munger ",68
+BR,Suryagarha ,68
+BR,Lakhisarai ,68
+BR,Sheikhpura ,41
+BR,Barbigha ,41
+BR,Asthawan ,41
+BR,Biharsharif ,41
+BR,Rajgir ,41
+BR,"Islampur, Nalanda ",41
+BR,Hilsa ,41
+BR,Nalanda ,41
+BR,Harnaut ,41
+BR,Mokama ,68
+BR,Barh ,68
+BR,Bakhtiarpur ,42
+BR,Digha ,42
+BR,Bankipur ,42
+BR,Kumhrar ,42
+BR,Patna Sahib ,42
+BR,Fatuha ,42
+BR,Danapur ,42
+BR,Maner ,42
+BR,Phulwari ,42
+BR,Masaurhi ,42
+BR,Paliganj ,42
+BR,Bikram ,42
+BR,Sandesh ,41
+BR,Barhara ,41
+BR,Arrah ,41
+BR,Agiaon ,41
+BR,Tarari ,41
+BR,Jagdishpur ,41
+BR,Shahpur ,41
+BR,Brahampur ,41
+BR,Buxar ,41
+BR,Dumraon ,41
+BR,Rajpur ,41
+BR,"Ramgarh, Kaimur ",41
+BR,Mohania ,43
+BR,Bhabua ,43
+BR,Chainpur ,43
+BR,Chenari ,43
+BR,Sasaram ,43
+BR,Kargahar ,43
+BR,Dinara ,41
+BR,Nokha ,41
+BR,Dehri ,41
+BR,Karakat ,41
+BR,Arwal ,41
+BR,Kurtha ,41
+BR,Jehanabad ,41
+BR,Ghosi ,41
+BR,Makhdumpur ,41
+BR,Goh ,41
+BR,Obra ,41
+BR,Nabinagar ,41
+BR,Kutumba ,41
+BR,Aurangabad ,41
+BR,Rafiganj ,41
+BR,Gurua ,41
+BR,Sherghati ,41
+BR,Imamganj ,41
+BR,Barachatti ,41
+BR,Bodh Gaya ,41
+BR,Gaya Town ,41
+BR,Tikari ,41
+BR,Belaganj ,41
+BR,Atri ,41
+BR,Wazirganj ,41
+BR,Rajauli ,41
+BR,Hisua ,41
+BR,Nawada ,41
+BR,Gobindpur ,41
+BR,Warsaliganj ,41
+BR,Sikandra ,41
+BR,Jamui ,41
+BR,Jhajha ,41
+BR,Chakai ,41
+CT,Bharatpur-Sonhat,85
+CT,Manendragarh,85
+CT,Baikunthpur,85
+CT,Premnagar,92
+CT,Bhatgaon,92
+CT,Pratappur,92
+CT,Ramanujganj,92
+CT,Samri,92
+CT,Lundra,92
+CT,Ambikapur,92
+CT,Sitapur,92
+CT,Jashpur,81
+CT,Kunkuri,81
+CT,Pathalgaon,81
+CT,Lailunga,81
+CT,Raigarh,81
+CT,Sarangarh,81
+CT,Kharsia,81
+CT,Dharamjaigarh,81
+CT,Rampur,85
+CT,Korba,85
+CT,Katghora,85
+CT,Pali-Tanakhar,85
+CT,Marwahi,85
+CT,Kota,81
+CT,Lormi,81
+CT,Mungeli,81
+CT,Takhatpur,81
+CT,Bilha,81
+CT,Bilaspur,81
+CT,Beltara,81
+CT,Masturi,81
+CT,Akaltara,81
+CT,Janjgir-Champa,81
+CT,Sakti,81
+CT,Chandrapur,81
+CT,Jaijaipur,81
+CT,Pamgarh,81
+CT,Saraipali,81
+CT,Basna,81
+CT,Khallari,81
+CT,Mahasamund,81
+CT,Bilaigarh,81
+CT,Kasdol,81
+CT,Baloda Bazar,89
+CT,Bhatapara,89
+CT,Dharsiwa,89
+CT,Raipur Rural,89
+CT,Raipur City West,89
+CT,Raipur City North,89
+CT,Raipur City South,89
+CT,Arang,89
+CT,Abhanpur,89
+CT,Rajim,81
+CT,Bindrawagarh,81
+CT,Sihawa,81
+CT,Kurud,81
+CT,Dhamtari,81
+CT,Sanjari Balod,81
+CT,Daundi Lohara,81
+CT,Gunderdehi,81
+CT,Patan,81
+CT,Durg Gramin,81
+CT,Durg City,81
+CT,Bhilai Nagar,81
+CT,Vaishali Nagar,81
+CT,Ahiwara,81
+CT,Saja,81
+CT,Bemetara,81
+CT,Navagarh,81
+CT,Pandariya,81
+CT,Kawardha,81
+CT,Khairagarh,81
+CT,Dongargarh,81
+CT,Rajnandgaon,81
+CT,Dongargaon,81
+CT,Khujji,81
+CT,Mohla-Manpur,81
+CT,Antagarh,81
+CT,Bhanupratappur,81
+CT,Kanker,81
+CT,Keshkal,81
+CT,Kondagaon,81
+CT,Narayanpur,81
+CT,Bastar (Jagdalpur rural),81
+CT,Jagdalpur city,81
+CT,Chitrakot,81
+CT,Dantewada,81
+CT,Bijapur,81
+CT,Konta,81
+DL,Nerela,92
+DL,Burari,92
+DL,Timarpur,92
+DL,Adarsh Nagar,92
+DL,Badli,92
+DL,Rithala,92
+DL,Bawana,92
+DL,Mundka,92
+DL,Kirari,92
+DL,Sultanpur Majra,92
+DL,Nangloi Jat,92
+DL,Mangol Puri,92
+DL,Rohini,92
+DL,Shalimar Bagh,92
+DL,Shakur Basti,92
+DL,Tri Nagar,92
+DL,Wazirpur,92
+DL,Model Town,92
+DL,Sadar Bazar,92
+DL,Chandni Chowk,92
+DL,Matia Mahal,92
+DL,Ballimaran,92
+DL,Karol Bagh,92
+DL,Patel Nagar,92
+DL,Moti Nagar,92
+DL,Madipur,92
+DL,Rajouri Garden,92
+DL,Hari Nagar,92
+DL,Tilak Nagar,92
+DL,Janakpuri,92
+DL,Vikaspuri,92
+DL,Uttam Nagar,92
+DL,Dwarka,92
+DL,Matiala,92
+DL,Najafgarh,92
+DL,Bijwasan,92
+DL,Palam,92
+DL,Delhi Cantonment,92
+DL,Rajinder Nagar,92
+DL,New Delhi,92
+DL,Jangpura,92
+DL,Kasturba Nagar,92
+DL,Malviya Nagar,92
+DL,R K Puram,92
+DL,Mehrauli,92
+DL,Chhatarpur,92
+DL,Deoli,92
+DL,Ambedkar Nagar,92
+DL,Sangam Vihar,92
+DL,Greater Kailash,92
+DL,Kalkaji,92
+DL,Tughlkabad,92
+DL,Badarpur,92
+DL,Okhla,92
+DL,Trilokpuri,92
+DL,Kondli,92
+DL,Patparganj,92
+DL,Laxmi Nagar,92
+DL,Vishwas Nagar,92
+DL,Krishna Nagar,92
+DL,Gandhi Nagar,92
+DL,Shahdara,92
+DL,Seemapuri,92
+DL,Rohtas Nagar,92
+DL,Seelampur,92
+DL,Ghonda,92
+DL,Babarpur,92
+DL,Gokalpur,92
+DL,Mustafabad,92
+DL,Karawal Nagar,92
+GA,Mandrem,92
+GA,Pernem,92
+GA,Bicholim,92
+GA,Tivim,92
+GA,Mapusa,92
+GA,Siolim,92
+GA,Saligao,92
+GA,Calangute,92
+GA,Porvorim,92
+GA,Aldona,92
+GA,Panaji,92
+GA,Taleigao,92
+GA,Santa Cruz,92
+GA,St. Andre,92
+GA,Cumbarjua,92
+GA,Maem,92
+GA,Sanquelim,92
+GA,Poriem,92
+GA,Valpoi,92
+GA,Priol,92
+GA,Ponda,92
+GA,Siroda,92
+GA,Marcaim,92
+GA,Mormugao,92
+GA,Vasco Da Gama,92
+GA,Dabolim,92
+GA,Cortalim,92
+GA,Nuvem,92
+GA,Curtorim,92
+GA,Fatorda,92
+GA,Margao,92
+GA,Benaulim,92
+GA,Navelim,92
+GA,Cuncolim,92
+GA,Velim,92
+GA,Quepem,92
+GA,Curchorem,92
+GA,Sanvordem,92
+GA,Sanguem,92
+GA,Canacona,92
+GJ,Abdasa,110
+GJ,Mandvi,110
+GJ,Bhuj,110
+GJ,Anjar,110
+GJ,Gandhidham,110
+GJ,Rapar,110
+GJ,Vav,110
+GJ,Tharad,110
+GJ,Dhanera,110
+GJ,Danta,110
+GJ,Vadgam,110
+GJ,Palanpur,110
+GJ,Deesa,110
+GJ,Deodar,110
+GJ,Kankrej,110
+GJ,Radhanpur,119
+GJ,Chanasma,119
+GJ,Patan,119
+GJ,Sidhpur,119
+GJ,Kheralu,111
+GJ,Unjha,111
+GJ,Visnagar,111
+GJ,Bechraji,111
+GJ,Kadi,111
+GJ,Mahesana,111
+GJ,Vijapur,111
+GJ,Himatnagar,119
+GJ,Idar,119
+GJ,Khedbrahma,119
+GJ,Prantij,119
+GJ,Bhiloda,110
+GJ,Modasa,110
+GJ,Bayad,110
+GJ,Dahegam,110
+GJ,Gandhinagar South,110
+GJ,Gandhinagar North,110
+GJ,Mansa,110
+GJ,Kalol,110
+GJ,Viramgam,94
+GJ,Sanand,94
+GJ,Ghatlodia,94
+GJ,Vejalpur,94
+GJ,Vatva,94
+GJ,Ellisbridge,94
+GJ,Naranpura,94
+GJ,Nikol,94
+GJ,Naroda,94
+GJ,Thakkarbapa Nagar,94
+GJ,Bapunagar,94
+GJ,Amraiwadi,94
+GJ,Dariapur,94
+GJ,Jamalpur-Khadiya,94
+GJ,Maninagar,94
+GJ,Danilimda,94
+GJ,Sabarmati,94
+GJ,Asarwa,94
+GJ,Daskroi,94
+GJ,Dholka,94
+GJ,Dhandhuka,94
+GJ,Dasada,119
+GJ,Limdi,119
+GJ,Wadhwan,119
+GJ,Chotila,119
+GJ,Dhangadhra,119
+GJ,Morbi,111
+GJ,Tankara,111
+GJ,Wankaner,111
+GJ,Rajkot East,119
+GJ,Rajkot West,119
+GJ,Rajkot South,119
+GJ,Rajkot Rural,119
+GJ,Jasdan,119
+GJ,Gondal,119
+GJ,Jetpur,119
+GJ,Dhoraji,119
+GJ,Kalavad,110
+GJ,Jamnagar Rural,110
+GJ,Jamnagar North,110
+GJ,Jamnagar South,110
+GJ,Jamjodhpur,110
+GJ,Khambhaliya,110
+GJ,Dwarka,110
+GJ,Porbandar,119
+GJ,Kutiyana,119
+GJ,Manavadar,110
+GJ,Junagadh,110
+GJ,Visavadar,110
+GJ,Keshod,110
+GJ,Mangrol,110
+GJ,Somnath,110
+GJ,Talala,110
+GJ,Kodinar,110
+GJ,Una,110
+GJ,Dhari,102
+GJ,Amreli,102
+GJ,Lathi,102
+GJ,Savarkundla,102
+GJ,Rajula,102
+GJ,Mahuva,110
+GJ,Talaja,110
+GJ,Gariadhar,110
+GJ,Palitana,110
+GJ,Bhavnagar Rural,110
+GJ,Bhavnagar East,110
+GJ,Bhavnagar West,110
+GJ,Gadhada,110
+GJ,Botad,110
+GJ,Khambhat,110
+GJ,Borsad,110
+GJ,Anklav,110
+GJ,Umreth,110
+GJ,Anand,110
+GJ,Petlad,110
+GJ,Sojitra,110
+GJ,Matar,111
+GJ,Nadiad,111
+GJ,Mehmedabad,111
+GJ,Mahudha,111
+GJ,Thasra,111
+GJ,Kapadvanj,111
+GJ,Balasinor,111
+GJ,Lunawada,111
+GJ,Santrampur,111
+GJ,Shehra,119
+GJ,Morva Hadaf,119
+GJ,Godhara,119
+GJ,Kaalol,119
+GJ,Halol,119
+GJ,Fatepura,110
+GJ,Jhalod,110
+GJ,Limkheda,110
+GJ,Dahod,110
+GJ,Garbada,110
+GJ,Devgadhbariya,110
+GJ,Jetpur (ST),110
+GJ,Chhota Udaipur,110
+GJ,Sankheda,110
+GJ,Savli,119
+GJ,Vaghodiya,119
+GJ,Dabhoi,119
+GJ,Vadodara City,119
+GJ,Sayajigunj,119
+GJ,Akota,119
+GJ,Raopura,119
+GJ,Manjalpur,119
+GJ,Padra,119
+GJ,Karjan,119
+GJ,Nandod,111
+GJ,Dediapada,111
+GJ,Jambusar,110
+GJ,Vagra,110
+GJ,Jhagadiya,110
+GJ,Bharuch,110
+GJ,Ankleshwar,110
+GJ,Olpad,119
+GJ,Mangrol,119
+GJ,Mandvi,119
+GJ,Kamrej,119
+GJ,Surat East,119
+GJ,Surat North,119
+GJ,Varachha Road,119
+GJ,Karanj,119
+GJ,Limbayat,119
+GJ,Udhana,119
+GJ,Majura,119
+GJ,Katargam,119
+GJ,Surat West,119
+GJ,Choryasi,119
+GJ,Bardoli,119
+GJ,Mahuva,119
+GJ,Vyara,119
+GJ,Nizar,119
+GJ,Dang,110
+GJ,Jalalpore,119
+GJ,Navsari,119
+GJ,Gandevi,119
+GJ,Vansda,119
+GJ,Dharampur,120
+GJ,Valsad,120
+GJ,Pardi,120
+GJ,Kaprada,120
+GJ,Umbergaon,120
+HR,Kalka,121
+HR,Panchkula,121
+HR,Naraingarh,121
+HR,Ambala Cantt,121
+HR,Ambala City,121
+HR,Mulana,121
+HR,Sadhaura,121
+HR,Jagadhri,121
+HR,Yamunanagar,121
+HR,Radaur,122
+HR,Ladwa,122
+HR,Shahbad,122
+HR,Thanesar,122
+HR,Pehowa,122
+HR,Guhla,122
+HR,Kalayat,122
+HR,Kaithal,122
+HR,Pundri,122
+HR,Nilokheri,121
+HR,Indri,121
+HR,Karnal,121
+HR,Gharaunda,121
+HR,Assandh,121
+HR,Panipat Rural,121
+HR,Panipat City,121
+HR,Israna,121
+HR,Samalkha,121
+HR,Ganaur,126
+HR,Rai,126
+HR,Kharkhauda,126
+HR,Sonipat,126
+HR,Gohana,126
+HR,Baroda,126
+HR,Julana,126
+HR,Safidon,126
+HR,Jind,126
+HR,Uchana Kalan,121
+HR,Narwana,123
+HR,Tohana,123
+HR,Fatehabad,123
+HR,Ratia,123
+HR,Kalanwali,123
+HR,Dabwali,123
+HR,Rania,123
+HR,Sirsa,123
+HR,Ellenabad,123
+HR,Adampur,121
+HR,Uklana,121
+HR,Narnaund,121
+HR,Hansi,121
+HR,Barwala,121
+HR,Hisar,121
+HR,Nalwa,121
+HR,Loharu,121
+HR,Badhra,121
+HR,Charkhi Dadri,121
+HR,Bhiwani,121
+HR,Tosham,121
+HR,Bawani Khera,121
+HR,Meham,127
+HR,Garhi Sampla-Kiloi,127
+HR,Rohtak,127
+HR,Kalanaur,127
+HR,Bahadurgarh,127
+HR,Badli,127
+HR,Jhajjar,127
+HR,Beri,127
+HR,Ateli,121
+HR,Mahendragarh,121
+HR,Narnaul,121
+HR,Nangal Chaudhry,121
+HR,Bawal,121
+HR,Kosli,127
+HR,Rewari,121
+HR,Pataudi,121
+HR,Badshahpur,121
+HR,Gurgaon,121
+HR,Sohna,121
+HR,Nuh,121
+HR,Ferozepur Jhirka,121
+HR,Punahana,121
+HR,Hathin,121
+HR,Hodal,121
+HR,Palwal,121
+HR,Prithla,121
+HR,Faridabad NIT,121
+HR,Badkhal,121
+HR,Ballabgarh,121
+HR,Faridabad,121
+HR,Tigaon,121
+HP,Churah,120
+HP,Bharmour,120
+HP,Chamba,120
+HP,Dalhousie,120
+HP,Bhattiyat,120
+HP,Nurpur,120
+HP,Indora,120
+HP,Fatehpur,120
+HP,Jawali,120
+HP,Dehra,120
+HP,Jaswan-Pragpur,120
+HP,Jawalamukhi,120
+HP,Jaisinghpur,120
+HP,Sullah,120
+HP,Nagrota,120
+HP,Kangra,120
+HP,Shahpur,120
+HP,Dharamshala,120
+HP,Palampur,120
+HP,Baijnath,120
+HP,Lahaul and Spiti,120
+HP,Manali,120
+HP,Kullu,120
+HP,Banjar,120
+HP,Anni,120
+HP,Karsog,120
+HP,Sundernagar,120
+HP,Nachan,120
+HP,Seraj,120
+HP,Darang,120
+HP,Jogindernagar,120
+HP,Dharampur,120
+HP,Mandi,120
+HP,Balh,120
+HP,Sarkaghat,120
+HP,Bhoranj,120
+HP,Sujanpur,120
+HP,Hamirpur,120
+HP,Barsar,120
+HP,Nadaun,120
+HP,Chintpurni,120
+HP,Gagret,120
+HP,Haroli,120
+HP,Una,120
+HP,Kutlehar,120
+HP,Jhanduta,120
+HP,Ghumarwin,120
+HP,Bilaspur,120
+HP,Sri Naina Devi Ji,120
+HP,Arki,120
+HP,Nalagarh,120
+HP,Doon,120
+HP,Solan,120
+HP,Kasauli,120
+HP,Pachhad,120
+HP,Nahan,120
+HP,Sri Renukaji,120
+HP,Paonta Sahib,120
+HP,Shillai,120
+HP,Chopal,120
+HP,Theog,120
+HP,Kasumpti,120
+HP,Shimla,120
+HP,Shimla Rural,120
+HP,Jubbal-Kotkhai,120
+HP,Rampur,120
+HP,Rohru,120
+HP,Kinnaur,120
+JK,Karnah,148
+JK,Kupwara,148
+JK,Lolab,148
+JK,Handwara,148
+JK,Langate,148
+JK,Uri,148
+JK,Rafiabad,148
+JK,Sopore,148
+JK,Gurez,148
+JK,Bandipora,148
+JK,Sonawari,148
+JK,Sangrama,148
+JK,Baramulla,148
+JK,Gulmarg,148
+JK,Pattan,148
+JK,Kangan,148
+JK,Ganderbal,148
+JK,Hazratbal,148
+JK,Zadibal,148
+JK,Eidgah,148
+JK,Khanyar,148
+JK,Habba Kadal,148
+JK,Amira Kadal,148
+JK,Sonawar,148
+JK,Batmaloo,148
+JK,Chadoora,148
+JK,Budgam,148
+JK,Beerwah,148
+JK,Khan Sahib,148
+JK,Charari Sharief,148
+JK,Tral,148
+JK,Pampore,148
+JK,Pulwama,148
+JK,Rajpora,148
+JK,Wachi,148
+JK,Shopian,148
+JK,Noorabad,148
+JK,Kulgam,148
+JK,Hom Shali Bugh,148
+JK,Anantnag,148
+JK,Devsar,148
+JK,Dooru,148
+JK,Kokernag,148
+JK,Shangus,148
+JK,Bijbehara,148
+JK,Pahalgam,148
+JK,Nubra,148
+JK,Leh,148
+JK,Kargil,148
+JK,Zanskar,148
+JK,Kishtwar,148
+JK,Inderwal,148
+JK,Doda,148
+JK,Bhaderwah,148
+JK,Ramban,148
+JK,Banihal,148
+JK,Gulabgarh,148
+JK,Reasi,148
+JK,Gool Arnas,148
+JK,Udhampur,148
+JK,Chenani,148
+JK,Chenani,148
+JK,Bani,148
+JK,Basohli,148
+JK,Kathua,148
+JK,Billawar,148
+JK,Hiranagar,148
+JK,Samba,148
+JK,Vijaypur,148
+JK,Nagrota,148
+JK,Gandhinagar,148
+JK,Jammu East,148
+JK,Jammu West,148
+JK,Bishnah,148
+JK,RS Pura,148
+JK,Suchetgarh,148
+JK,Marh,148
+JK,Raipur Domana,148
+JK,Akhnoor,148
+JK,Chhamb,148
+JK,Nowshera,148
+JK,Darhal,148
+JK,Rajouri,148
+JK,Kalakote,148
+JK,Kalakote,148
+JK,Mendhar,148
+JK,Poonch Haveli,148
+JH,Rajmahal,134
+JH,Borio,134
+JH,Barhait,134
+JH,Litipara,134
+JH,Pakur,134
+JH,Maheshpur,134
+JH,Sikaripara,134
+JH,Nala,134
+JH,Jamtara,134
+JH,Dumka,134
+JH,Jama,134
+JH,Jarmundi,134
+JH,Madhupur,134
+JH,Sarath,134
+JH,Devghar,134
+JH,Poreyahat,134
+JH,Godda,134
+JH,Mahagama,134
+JH,Kodarma,134
+JH,Barkatha,134
+JH,Barhi,134
+JH,Barkagaon,134
+JH,Ramgarh,134
+JH,Mandu,134
+JH,Hazaribagh,134
+JH,Simaria,134
+JH,Chatra,134
+JH,Dhanwar,134
+JH,Bagodar,134
+JH,Jamua,134
+JH,Gandey,134
+JH,Giridih,134
+JH,Dumri,134
+JH,Gomia,134
+JH,Bermo,134
+JH,Bokaro,134
+JH,Chandan kiyari,134
+JH,Sindri,134
+JH,Nirsa,134
+JH,Dhanbad,134
+JH,Jharia,134
+JH,Tundi,134
+JH,Baghmara,134
+JH,Baharagora,134
+JH,Ghatsila,134
+JH,Potka,134
+JH,Jugsalai,134
+JH,Jamshedpur East,134
+JH,Jamshedpur West,134
+JH,Ichagarh,134
+JH,Seraikella,134
+JH,Chaibasa,134
+JH,Majhgaon,134
+JH,Jaganathpur,134
+JH,Manoharpur,134
+JH,Chakradharpur,134
+JH,Kharsawan,134
+JH,Tamar,134
+JH,Torpa,134
+JH,Khunti,134
+JH,Silli,134
+JH,Khijri,134
+JH,Ranchi,134
+JH,Hatia,134
+JH,Kanke,134
+JH,Mandar,134
+JH,Sisai,134
+JH,Gumla,134
+JH,Bishunpur,134
+JH,Simdega,134
+JH,Kolebira,134
+JH,Lohardaga,134
+JH,Manika,134
+JH,Latehar,134
+JH,Panki,134
+JH,Daltonganj,134
+JH,Bishrampur,134
+JH,Chhatarpur,134
+JH,Hussainabad,134
+JH,Garhwa,134
+JH,Bhawanathpur,134
+KA,Nippani,149
+KA,Chikkodi-Sadalga,149
+KA,Athani,149
+KA,Kagwad,149
+KA,Kudachi,149
+KA,Raybag,149
+KA,Hukkeri,149
+KA,Arabhavi,148
+KA,Gokak,148
+KA,Yemkanmardi,149
+KA,Belagavi Uttar,148
+KA,Belagavi Dakshin,148
+KA,Belagavi Rural,148
+KA,Khanapur,148
+KA,Kittur,148
+KA,Bailhongal,148
+KA,Saundatti Yellamma,148
+KA,Ramdurg,148
+KA,Mudhol,148
+KA,Terdal,148
+KA,Jamkhandi,148
+KA,Bilgi,148
+KA,Badami,148
+KA,Bagalkot,148
+KA,Hungund,148
+KA,Muddebihal,148
+KA,Devar Hippargi,148
+KA,Basavana Bagevadi,148
+KA,Babaleshwar,148
+KA,Bijapur City,148
+KA,Nagathan,148
+KA,Indi,148
+KA,Sindgi,148
+KA,Afzalpur,151
+KA,Jevargi,151
+KA,Shorapur,151
+KA,Shahapur,151
+KA,Yadgir,151
+KA,Gurmitkal,151
+KA,Chittapur,151
+KA,Sedam,151
+KA,Chincholi,148
+KA,Gulbarga Rural,151
+KA,Gulbarga Dakshin,151
+KA,Gulbarga Uttar,151
+KA,Aland,148
+KA,Basavakalyan,148
+KA,Homnabad,148
+KA,Bidar South,148
+KA,Bidar,148
+KA,Bhalki,148
+KA,Aurad,148
+KA,Raichur Rural,151
+KA,Raichur,151
+KA,Manvi,151
+KA,Devadurga,151
+KA,Lingsugur,151
+KA,Sindhanur,151
+KA,Maski,151
+KA,Kushtagi,151
+KA,Kanakagiri,151
+KA,Gangawati,151
+KA,Yelburga,151
+KA,Koppal,151
+KA,Shirahatti,151
+KA,Gadag,151
+KA,Ron,151
+KA,Nargund,148
+KA,Navalgund,151
+KA,Kundgol,151
+KA,Dharwad,151
+KA,Hubli-Dharwad-East,151
+KA,Hubli-Dharwad-Central,151
+KA,Hubli-Dharwad-West,151
+KA,Kalghatgi,151
+KA,Haliyal,151
+KA,Karwar,151
+KA,Kumta,151
+KA,Bhatkal,151
+KA,Sirsi,151
+KA,Yellapur,151
+KA,Hangal,151
+KA,Shiggaon,151
+KA,Haveri,151
+KA,Byadgi,151
+KA,Hirekerur,151
+KA,Ranibennur,151
+KA,Hadagalli,148
+KA,Hagaribommanahalli,148
+KA,Vijayanagara,148
+KA,Kampli,148
+KA,Siruguppa,148
+KA,Bellary,148
+KA,Bellary City,148
+KA,Sandur,148
+KA,Kudligi,148
+KA,Molakalmuru,151
+KA,Challakere,151
+KA,Chitradurga,151
+KA,Hiriyur,151
+KA,Hosadurga,151
+KA,Holalkere,151
+KA,Jagalur,151
+KA,Harapanahalli,151
+KA,Harihar,151
+KA,Davanagere North,151
+KA,Davanagere South,151
+KA,Mayakonda,151
+KA,Channagiri,151
+KA,Honnali,151
+KA,Shimoga Rural,151
+KA,Bhadravati,151
+KA,Shimoga,151
+KA,Tirthahalli,151
+KA,Shikaripura,151
+KA,Sorab,151
+KA,Sagar,151
+KA,Baindur,151
+KA,Kundapura,151
+KA,Udupi,151
+KA,Kaup,151
+KA,Karkal,151
+KA,Sringeri,151
+KA,Mudigere,151
+KA,Chikmagalur,151
+KA,Tarikere,151
+KA,Kadur,151
+KA,Chiknayakanhalli,151
+KA,Tiptur,151
+KA,Turuvekere,151
+KA,Kunigal,148
+KA,Tumkur City,151
+KA,Tumkur Rural,151
+KA,Koratagere,151
+KA,Gubbi,151
+KA,Sira,151
+KA,Pavagada,151
+KA,Madhugiri,151
+KA,Gauribidanur,148
+KA,Bagepalli,148
+KA,Chikkaballapur,148
+KA,Sidlaghatta,151
+KA,Chintamani,151
+KA,Srinivaspur,151
+KA,Mulbagal,151
+KA,Kolar Gold Field,151
+KA,Bangarapet,151
+KA,Kolar,151
+KA,Malur,151
+KA,Yelahanka,148
+KA,Krishnarajapuram,148
+KA,Byatarayanapura,148
+KA,Yeshwantpur,148
+KA,Rajarajeshwarinagar,148
+KA,Dasarahalli,148
+KA,Mahalakshmi Layout,148
+KA,Malleshwaram,148
+KA,Hebbal,148
+KA,Pulakeshinagar,148
+KA,Sarvagnanagar,148
+KA,C. V. Raman Nagar,148
+KA,Shivajinagar,148
+KA,Shanti Nagar,148
+KA,Gandhi Nagar,148
+KA,Rajaji Nagar,148
+KA,Govindraj Nagar,148
+KA,Vijay Nagar,148
+KA,Chamrajpet,148
+KA,Chickpet,148
+KA,Basavanagudi,148
+KA,Padmanabhanagar,148
+KA,B.T.M. Layout,148
+KA,Jayanagar,148
+KA,Mahadevapura,148
+KA,Bommanahalli,148
+KA,Bangalore South,148
+KA,Anekal,148
+KA,Hoskote,148
+KA,Devanahalli,148
+KA,Doddaballapur,148
+KA,Nelamangala,148
+KA,Magadi,148
+KA,Ramanagaram,148
+KA,Kanakapura,148
+KA,Channapatna,148
+KA,Malavalli,151
+KA,Maddur,151
+KA,Melukote,151
+KA,Mandya,151
+KA,Shrirangapattana,151
+KA,Nagamangala,151
+KA,Krishnarajapet,151
+KA,Shravanabelagola,151
+KA,Arsikere,151
+KA,Belur,151
+KA,Hassan,151
+KA,Holenarasipur,151
+KA,Arkalgud,151
+KA,Sakleshpur,151
+KA,Belthangady,151
+KA,Moodabidri,151
+KA,Mangalore City North,151
+KA,Mangalore City South,151
+KA,Mangalore,151
+KA,Bantval,151
+KA,Puttur,151
+KA,Sullia,151
+KA,Madikeri,169
+KA,Virajpet,169
+KA,Periyapatna,169
+KA,Krishnarajanagara,151
+KA,Hunsur,169
+KA,Heggadadevankote,148
+KA,Nanjangud,148
+KA,Chamundeshwari,169
+KA,Krishnaraja,169
+KA,Chamaraja,169
+KA,Narasimharaja,169
+KA,Varuna,148
+KA,T. Narasipur,148
+KA,Hanur,148
+KA,Kollegal,148
+KA,Chamarajanagar,148
+KA,Gundlupet,148
+KL,Manjeshwaram,176
+KL,Kasaragod,176
+KL,Udma,176
+KL,Kanhangad,176
+KL,Thrikaripur,176
+KL,Payyanur,176
+KL,Kalliasseri,176
+KL,Taliparamba,176
+KL,Irikkur,176
+KL,Azhikode,176
+KL,Kannur,176
+KL,Dharmadom,176
+KL,Thalassery,176
+KL,Kuthuparamba,176
+KL,Mattanur,176
+KL,Peravoor,176
+KL,Mananthavady,176
+KL,Sulthan Bathery,176
+KL,Kalpetta,176
+KL,Vatakara,176
+KL,Kuttiady,176
+KL,Nadapuram,176
+KL,Koyilandy,176
+KL,Perambra,176
+KL,Balussery,176
+KL,Elathur,176
+KL,Kozhikode North,176
+KL,Kozhikode South,176
+KL,Beypore,176
+KL,Kunnamangalam,176
+KL,Koduvally,176
+KL,Thiruvambady,176
+KL,Kondotty,176
+KL,Eranad,176
+KL,Nilambur,176
+KL,Wandoor,176
+KL,Manjeri,176
+KL,Perinthalmanna,176
+KL,Mankada,176
+KL,Malappuram,176
+KL,Vengara,176
+KL,Vallikkunnu,176
+KL,Tirurangadi,176
+KL,Tanur,176
+KL,Tirur,176
+KL,Kottakkal,176
+KL,Thavanur,176
+KL,Ponnani,176
+KL,Thrithala,176
+KL,Pattambi,176
+KL,Shornur,176
+KL,Ottapalam,176
+KL,Kongad,176
+KL,Mannarkkad,176
+KL,Malampuzha,176
+KL,Palakkad,176
+KL,Tarur,176
+KL,Chittur,176
+KL,Nenmara,176
+KL,Alathur,176
+KL,Chelakkara,176
+KL,Kunnamkulam,176
+KL,Guruvayur,176
+KL,Manalur,176
+KL,Wadakkanchery,176
+KL,Ollur,176
+KL,Thrissur,176
+KL,Nattika,176
+KL,Kaipamangalam,176
+KL,Irinjalakuda,176
+KL,Puthukkad,176
+KL,Chalakudy,176
+KL,Kodungallur,176
+KL,Perumbavoor,176
+KL,Angamaly,176
+KL,Aluva,176
+KL,Kalamassery,176
+KL,Paravur,176
+KL,Vypin,176
+KL,Kochi,176
+KL,Thrippunithura,176
+KL,Ernakulam,176
+KL,Thrikkakara,176
+KL,Kunnathunad ,176
+KL,Piravom,176
+KL,Muvattupuzha,176
+KL,Kothamangalam,176
+KL,Devikulam,176
+KL,Udumbanchola,176
+KL,Thodupuzha,176
+KL,Idukki,176
+KL,Peerumade,176
+KL,Pala,176
+KL,Kaduthuruthy,176
+KL,Vaikom,176
+KL,Ettumanoor,176
+KL,Kottayam,176
+KL,Puthuppally,176
+KL,Changanassery,176
+KL,Kanjirappally,176
+KL,Poonjar,176
+KL,Aroor,176
+KL,Cherthala,176
+KL,Alappuzha,176
+KL,Ambalappuzha,176
+KL,Kuttanad,176
+KL,Haripad,176
+KL,Kayamkulam,176
+KL,Mavelikara,176
+KL,Chengannur,176
+KL,Thiruvalla,176
+KL,Ranni,176
+KL,Aranmula,176
+KL,Konni,176
+KL,Adoor,176
+KL,Karunagapally,176
+KL,Chavara,176
+KL,Kunnathur,176
+KL,Kottarakkara,176
+KL,Pathanapuram,176
+KL,Punalur,176
+KL,Chadayamangalam,176
+KL,Kundara,176
+KL,Kollam,176
+KL,Eravipuram,176
+KL,Chathannoor,176
+KL,Varkala,176
+KL,Attingal,176
+KL,Chirayinkeezhu,176
+KL,Nedumangad,176
+KL,Vamanapuram,176
+KL,Kazhakkoottam,176
+KL,Vattiyoorkavu,176
+KL,Thiruvananthapuram,176
+KL,Nemom,176
+KL,Aruvikkara,176
+KL,Parassala,176
+KL,Kattakkada,176
+KL,Kovalam,176
+KL,Neyyattinkara,176
+MP,Sheopur,197
+MP,Vijaypur,197
+MP,Sabalgarh,197
+MP,Joura,197
+MP,Sumawali,197
+MP,Morena,197
+MP,Dimani,197
+MP,Ambah,197
+MP,Ater,196
+MP,Bhind,196
+MP,Lahar,196
+MP,Mehgaon,196
+MP,Gohad,196
+MP,Gwalior Rural,196
+MP,Gwalior,196
+MP,Gwalior East,196
+MP,Gwalior South,196
+MP,Bhitarwar,196
+MP,Dabra,196
+MP,Sewda,196
+MP,Bhander,196
+MP,Datia,196
+MP,Karera,196
+MP,Pohari,196
+MP,Shivpuri,196
+MP,Pichhore,196
+MP,Kolaras,196
+MP,Bamori,196
+MP,Guna,196
+MP,Chachoura,200
+MP,Raghogarh,200
+MP,Ashok Nagar,196
+MP,Chanderi,196
+MP,Mungaoli,196
+MP,Bina,201
+MP,Khurai,201
+MP,Surkhi,201
+MP,Deori,196
+MP,Rehli,196
+MP,Naryoli,201
+MP,Sagar,201
+MP,Banda,196
+MP,Tikamgarh,202
+MP,Jatara,202
+MP,Prithvipur,202
+MP,Niwari,202
+MP,Khargapur,202
+MP,Maharajpur,202
+MP,Chandla,196
+MP,Rajnagar,196
+MP,Chhatarpur,202
+MP,Bijawar,202
+MP,Malhara,196
+MP,Pathariya,196
+MP,Damoh,196
+MP,Jabera,196
+MP,Hatta,196
+MP,Pawai,196
+MP,Gunnaor,196
+MP,Panna,196
+MP,Chitrakoot,201
+MP,Raigaon,201
+MP,Satna,201
+MP,Nagod,201
+MP,Maihar,201
+MP,Amarpatan,201
+MP,Rampur-Baghelan,201
+MP,Sirmour,200
+MP,Semariya,200
+MP,Teonthar,200
+MP,Mauganj,200
+MP,Deotalab,200
+MP,Mangawan,200
+MP,Rewa,200
+MP,Gurh,200
+MP,Churhat,201
+MP,Sidhi,201
+MP,Sihawal,201
+MP,Chitrangi,201
+MP,Singrauli,201
+MP,Devsar,201
+MP,Dhauhani,201
+MP,Beohari,201
+MP,Jaisingnagar,201
+MP,Jaitpur,201
+MP,Kotma,201
+MP,Anuppur,201
+MP,Pushprajgarh,201
+MP,Bandhavgarh,201
+MP,Manpur,201
+MP,Barwara,201
+MP,Vijayraghavgarh,196
+MP,Murwara,196
+MP,Bahoriband,196
+MP,Patan,196
+MP,Bargi,196
+MP,Jabalpur Purba,196
+MP,Jabalpur Uttar,196
+MP,Jabalpur Cantonment,196
+MP,Jabalpur Paschim,196
+MP,Panagar,196
+MP,Sihora,196
+MP,Shahpura,196
+MP,Dindori,196
+MP,Bichhiya,196
+MP,Niwas,196
+MP,Mandla,196
+MP,Baihar,196
+MP,Lanji,196
+MP,Paraswada,196
+MP,Balaghat,196
+MP,Waraseoni,196
+MP,Katangi,196
+MP,Barghat,196
+MP,Seoni,196
+MP,Keolari,196
+MP,Lakhnadon,196
+MP,Gotegaon,196
+MP,Narsingpur,196
+MP,Tendukheda,196
+MP,Gadarwara,196
+MP,Junnardeo,196
+MP,Amarwara,196
+MP,Churai,196
+MP,Saunsar,196
+MP,Chhindwara,196
+MP,Parasia,196
+MP,Pandhurna,196
+MP,Multai,196
+MP,Amla,196
+MP,Betul,196
+MP,Ghoradongri,196
+MP,Bhainsdehi,196
+MP,Timarni,196
+MP,Harda,196
+MP,Seoni-Malwa,196
+MP,Hoshangabad,196
+MP,Sohagpur,196
+MP,Pipariya,196
+MP,Udaipura,196
+MP,Bhojpur,214
+MP,Sanchi,214
+MP,Silwani,214
+MP,Vidisha,214
+MP,Basoda,214
+MP,Kurwai,201
+MP,Sironj,201
+MP,Shamshabad,201
+MP,Berasia,196
+MP,Bhopal Uttar,196
+MP,Narela,196
+MP,Bhopal Dakshin-Paschim,196
+MP,Bhopal Madhya,196
+MP,Govindpura,196
+MP,Huzur,196
+MP,Budhni,214
+MP,Ashta,196
+MP,Ichhawar,214
+MP,Sehore,196
+MP,Narsinghgarh,200
+MP,Biaora,200
+MP,Rajgarh,200
+MP,Khilchipur,200
+MP,Sarangpur,200
+MP,Susner,200
+MP,Agar,196
+MP,Shajapur,196
+MP,Shujalpur,196
+MP,Kalapipal,196
+MP,Sonkatch,196
+MP,Dewas,196
+MP,Hatpipliya,196
+MP,Khategaon,214
+MP,Bagali,196
+MP,Mandhata,196
+MP,Harsud,196
+MP,Khandwa,196
+MP,Pandhana,196
+MP,Nepanagar,196
+MP,Burhanpur,196
+MP,Bikhangaon,196
+MP,Badwah,196
+MP,Maheshwar,196
+MP,Kasrawad,196
+MP,Khargone,196
+MP,Bhagwanpura,196
+MP,Sendhawa,196
+MP,Rajpur,196
+MP,Pansemal,196
+MP,Badwani,196
+MP,Alirajpur,200
+MP,Jobat,200
+MP,Jhabua,200
+MP,Thandla,200
+MP,Petlawad,200
+MP,Sardarpur,196
+MP,Gandhwani,196
+MP,Kukshi,196
+MP,Manawar,196
+MP,Dharampuri,196
+MP,Dhar,196
+MP,Badnawar,196
+MP,Depalpur,196
+MP,Indore-1,196
+MP,Indore-2,196
+MP,Indore-3,196
+MP,Indore-4,196
+MP,Indore-5,196
+MP,Dr. Ambedkar Nagar-Mhow,196
+MP,Rau,196
+MP,Sanwer,196
+MP,Nagada-Khachrod,213
+MP,Mahidpur,213
+MP,Tarana,213
+MP,Ghatiya,213
+MP,Ujjain Uttar,213
+MP,Ujjain Dakshin,213
+MP,Badnagar,213
+MP,Ratlam Rural,200
+MP,Ratlam City,200
+MP,Sailana,200
+MP,Jaora,196
+MP,Alot,213
+MP,Mandsour,196
+MP,Malhargarh,196
+MP,Suwasra,196
+MP,Garoth,196
+MP,Manasa,196
+MP,Neemuch,196
+MP,Jawad,196
+MH,Akkalkuwa,196
+MH,Shahada,196
+MH,Nandurbar,196
+MH,Navapur,196
+MH,Sakri,196
+MH,Dhule Rural,196
+MH,Dhule City,196
+MH,Sindkheda,196
+MH,Shirpur,196
+MH,Chopda,196
+MH,Raver,196
+MH,Bhusawal,196
+MH,Jalgaon City,196
+MH,Jalgaon Rural,196
+MH,Amalner,196
+MH,Erandol,196
+MH,Chalisgaon,196
+MH,Pachora,196
+MH,Jamner,196
+MH,Muktainagar,196
+MH,Malkapur,196
+MH,Buldhana,196
+MH,Chikhali,196
+MH,Sindkhed Raja,196
+MH,Mehkar,196
+MH,Khamgaon,196
+MH,Jalgaon (Jamod),196
+MH,Akot,196
+MH,Balapur,196
+MH,Akola West,196
+MH,Akola East,196
+MH,Murtizapur,196
+MH,Risod,196
+MH,Washim,196
+MH,Karanja,196
+MH,Dhamangaon Railway,196
+MH,Badnera,196
+MH,Amravati,196
+MH,Teosa,196
+MH,Daryapur,196
+MH,Melghat,196
+MH,Achalpur,196
+MH,Morshi,196
+MH,Arvi,196
+MH,Deoli,196
+MH,Hinganghat,196
+MH,Wardha,196
+MH,Katol,196
+MH,Savner,196
+MH,Hingna,196
+MH,Umred,196
+MH,Nagpur South West,196
+MH,Nagpur South,196
+MH,Nagpur East,196
+MH,Nagpur Central,196
+MH,Nagpur West,196
+MH,Nagpur North,196
+MH,Kamthi,196
+MH,Ramtek,196
+MH,Tumsar,196
+MH,Bhandara,196
+MH,Sakoli,196
+MH,Arjuni Morgaon,196
+MH,Tirora,196
+MH,Gondiya,196
+MH,Amgaon,196
+MH,Armori,196
+MH,Gadchiroli,196
+MH,Aheri,196
+MH,Rajura,196
+MH,Chandrapur,196
+MH,Ballarpur,196
+MH,Brahmapuri,196
+MH,Chimur,196
+MH,Warora,196
+MH,Wani,196
+MH,Ralegaon,196
+MH,Yavatmal,196
+MH,Digras,196
+MH,Arni,196
+MH,Pusad,196
+MH,Umarkhed,196
+MH,Kinwat,196
+MH,Hadgaon,196
+MH,Bhokar,196
+MH,Nanded North,196
+MH,Nanded South,196
+MH,Loha,196
+MH,Naigaon,196
+MH,Deglur,196
+MH,Mukhed,196
+MH,Basmath,196
+MH,Kalamnuri,196
+MH,Hingoli,196
+MH,Jintur,196
+MH,Parbhani,196
+MH,Gangakhed,196
+MH,Pathri,196
+MH,Partur,196
+MH,Ghansawangi,196
+MH,Jalna,196
+MH,Badnapur,196
+MH,Bhokardan,196
+MH,Sillod,196
+MH,Kannad,196
+MH,Phulambri,196
+MH,Aurangabad Central,196
+MH,Aurangabad West,196
+MH,Aurangabad East,196
+MH,Paithan,196
+MH,Gangapur,196
+MH,Vaijapur,196
+MH,Nandgaon,196
+MH,Malegaon Central,196
+MH,Malegaon Outer,196
+MH,Baglan,196
+MH,Kalvan,196
+MH,Chandvad,196
+MH,Yewla,196
+MH,Sinnar,196
+MH,Niphad,196
+MH,Dindori,196
+MH,Nashik East,196
+MH,Nashik Central,196
+MH,Nashik West,196
+MH,Deolali,196
+MH,Igatpuri,196
+MH,Dahanu,196
+MH,Vikramgad,196
+MH,Palghar,196
+MH,Boisar,196
+MH,Nalasopara,196
+MH,Vasai,196
+MH,Bhiwandi Rural,196
+MH,Shahapur,196
+MH,Bhiwandi West,196
+MH,Bhiwandi East,196
+MH,Kalyan West,196
+MH,Murbad,196
+MH,Ambernath,196
+MH,Ulhasnagar,196
+MH,Kalyan East,196
+MH,Dombivali,196
+MH,Kalyan Rural,196
+MH,Mira Bhayandar,196
+MH,Ovala-Majiwada,196
+MH,Kopri-Pachpakhadi,196
+MH,Thane,196
+MH,Mumbra-Kalwa,196
+MH,Airoli,196
+MH,Belapur,196
+MH,Borivali,196
+MH,Dahisar,196
+MH,Magathane,196
+MH,Mulund,196
+MH,Vikhroli,196
+MH,Bhandup West,196
+MH,Jogeshwari East,196
+MH,Dindoshi,196
+MH,Kandivali East,196
+MH,Charkop,196
+MH,Malad West,196
+MH,Goregaon,196
+MH,Versova,196
+MH,Andheri West,196
+MH,Andheri East,196
+MH,Vile Parle,196
+MH,Chandivali,196
+MH,Ghatkopar West,196
+MH,Ghatkopar East,196
+MH,Mankhurd Shivaji Nagar,196
+MH,Anushakti Nagar,196
+MH,Chembur,196
+MH,Kurla,196
+MH,Kalina,196
+MH,Vandre East,196
+MH,Vandre West,196
+MH,Dharavi,196
+MH,Sion Koliwada,196
+MH,Wadala,196
+MH,Mahim,196
+MH,Worli,196
+MH,Shivadi,196
+MH,Byculla,196
+MH,Malabar Hill,196
+MH,Mumbadevi,196
+MH,Colaba,196
+MH,Panvel,196
+MH,Karjat,196
+MH,Uran,196
+MH,Pen,196
+MH,Alibag,196
+MH,Shrivardhan,196
+MH,Mahad,196
+MH,Junnar,196
+MH,Ambegaon,196
+MH,Khed Alandi,196
+MH,Shirur,196
+MH,Daund,196
+MH,Indapur,196
+MH,Baramati,196
+MH,Purandar,196
+MH,Bhor,196
+MH,Maval,196
+MH,Chinchwad,196
+MH,Pimpri,196
+MH,Bhosari,196
+MH,Vadgaon Sheri,196
+MH,Shivajinagar,196
+MH,Kothrud,196
+MH,Khadakwasala,196
+MH,Parvati,196
+MH,Hadapsar,196
+MH,Pune Cantonment,196
+MH,Kasba Peth,196
+MH,Akole,196
+MH,Sangamner,196
+MH,Shirdi,196
+MH,Kopargaon,196
+MH,Shrirampur,196
+MH,Nevasa,196
+MH,Shevgaon,196
+MH,Rahuri,196
+MH,Parner,196
+MH,Ahmednagar City,196
+MH,Shrigonda,196
+MH,Karjat Jamkhed,196
+MH,Georai,196
+MH,Majalgaon,196
+MH,Beed,196
+MH,Ashti,196
+MH,Kaij,196
+MH,Parli,196
+MH,Latur Rural,196
+MH,Latur City,196
+MH,Ahmadpur,196
+MH,Udgir,196
+MH,Nilanga,196
+MH,Ausa,196
+MH,Umarga,196
+MH,Tuljapur,196
+MH,Osmanabad,196
+MH,Paranda,196
+MH,Karmala,196
+MH,Madha,196
+MH,Barshi,196
+MH,Mohol,196
+MH,Solapur City North,196
+MH,Solapur City Central,196
+MH,Akkalkot,196
+MH,Solapur South,196
+MH,Pandharpur,196
+MH,Sangole,196
+MH,Malshiras,196
+MH,Phaltan,196
+MH,Wai,196
+MH,Koregaon,196
+MH,Man,196
+MH,Karad North,196
+MH,Karad South,196
+MH,Patan,196
+MH,Satara,196
+MH,Dapoli,196
+MH,Guhagar,196
+MH,Chiplun,196
+MH,Ratnagiri,196
+MH,Rajapur,196
+MH,Kankavli,196
+MH,Kudal,196
+MH,Sawantwadi,196
+MH,Chandgad,196
+MH,Radhanagari,196
+MH,Kagal,196
+MH,Kolhapur South,196
+MH,Karvir,196
+MH,Kolhapur North,196
+MH,Shahuwadi,196
+MH,Hatkanangle,196
+MH,Ichalkaranji,196
+MH,Shirol,196
+MH,Miraj,196
+MH,Sangli,196
+MH,Islampur,196
+MH,Shirala,196
+MH,Palus-Kadegaon,196
+MH,Khanapur,196
+MH,Tasgaon-Kavathe Mahankal,196
+MH,Jat,196
+MN,Khundrakpam,196
+MN,Heingang,196
+MN,Khurai,196
+MN,Kshetrigao,196
+MN,Thongju,196
+MN,Keirao,196
+MN,Andro,196
+MN,Lamlai,196
+MN,Thangmeiband,196
+MN,Uripok,196
+MN,Sagolband,196
+MN,Keishamthong,196
+MN,Singjamei,196
+MN,Yaiskul,196
+MN,Wangkhei,196
+MN,Sekmai ,196
+MN,Lamsang,196
+MN,Konthoujam,196
+MN,Patsoi,196
+MN,Langthabal,196
+MN,Naoriya Pakhanglakpa,196
+MN,Wangoi,196
+MN,Mayang Imphal,196
+MN,Nambol,196
+MN,Oinam,196
+MN,Bishnupur,196
+MN,Moirang,196
+MN,Thanga,196
+MN,Kumbi,196
+MN,Lilong,196
+MN,Thoubal,196
+MN,Wangkhem,196
+MN,Heirok,196
+MN,Wangjing Tentha,196
+MN,Khangabok,196
+MN,Wabgai,196
+MN,Kakching,196
+MN,Hiyanglam,196
+MN,Sugnu,196
+MN,Jiribam,196
+MN,Chandel,196
+MN,Tengnoupal,196
+MN,Phungyar,196
+MN,Ukhrul,196
+MN,Chingai,196
+MN,Saikul,196
+MN,Karong,196
+MN,Mao,196
+MN,Tadubi,196
+MN,Kang,196
+MN,Saitu,196
+MN,Tamei,196
+MN,Tamenglong,196
+MN,Nungba,196
+MN,Tipaimukh,196
+MN,Thanlon,196
+MN,Henglep,196
+MN,Churachandpur,196
+MN,Saikot,196
+MN,Singhat,196
+ML,Nartiang,196
+ML,Jowai,196
+ML,Raliang,196
+ML,Mowkaiaw,196
+ML,Sutnga Saipung,196
+ML,Khliehriat,196
+ML,Amlarem,196
+ML,Mawhati,196
+ML,Nongpoh,196
+ML,Jirang,196
+ML,Umsning,196
+ML,Umroi,196
+ML,Mawrengkneng,196
+ML,Pynthorumkhrah,196
+ML,Mawlai,196
+ML,East Shillong,196
+ML,North Shillong,196
+ML,South Shillong,196
+ML,West Shillong,196
+ML,Mylliem,196
+ML,Nongthymmai,196
+ML,Nongkrem,196
+ML,Sohiong,196
+ML,Mawphlang,196
+ML,Mawsynram,196
+ML,Pynursla,196
+ML,Sohra,196
+ML,Mawkynrew,196
+ML,Mairang,196
+ML,Mawthadraishan,196
+ML,Nongstoin,196
+ML,Rambrai Jyrngam,196
+ML,Mawshynrut,196
+ML,Ranikor,196
+ML,Mawkyrwat,196
+ML,Kharkutta,196
+ML,Mendipathar,196
+ML,Resubelpara,196
+ML,Bagengdoba,196
+ML,Songsak,196
+ML,Rongjeng,196
+ML,Willamnagar,196
+ML,Raksamgre,196
+ML,Tikrikilla,196
+ML,Phulbari,196
+ML,Rajabala,196
+ML,Selsella,196
+ML,Dadenggre,196
+ML,North Tura,196
+ML,South Tura,196
+ML,Rangsakon,196
+ML,Ampati,196
+ML,Mahendraganj,196
+ML,Salmanpara,196
+ML,Gambegre,196
+ML,Dalu,196
+ML,Rongara Siju,196
+ML,Chokpot,196
+ML,Baghmara,196
+MZ,Hachhek,277
+MZ,Dampa,277
+MZ,Mamit,277
+MZ,Tuirial,277
+MZ,Kolasib,277
+MZ,Serlui,277
+MZ,Tuivawl,277
+MZ,Chalfilh,277
+MZ,Tawi,277
+MZ,Aizawl North I,277
+MZ,Aizawl North Ii,277
+MZ,Aizawl North Iii,277
+MZ,Aizawl East I,277
+MZ,Aizawl East Ii,277
+MZ,Aizawl West I,277
+MZ,Aizawl West Ii,277
+MZ,Aizawl West Iii,277
+MZ,Aizawl South I,277
+MZ,Aizawl South Ii,277
+MZ,Aizawl South Iii,277
+MZ,Lengteng,277
+MZ,Tuichang,277
+MZ,Champhai North,277
+MZ,Champhai South,277
+MZ,East Tuipui,277
+MZ,Serchhip,277
+MZ,Tuikum,277
+MZ,Hrangturzo,277
+MZ,South Tuipui,277
+MZ,Lunglei North,277
+MZ,Lunglei East,277
+MZ,Lunglei West,277
+MZ,Lunglei South,277
+MZ,Thorang,277
+MZ,West Tuipui,277
+MZ,Tuichawng,277
+MZ,Lawngtlai West,277
+MZ,Lawngtlai East,277
+MZ,Saiha,277
+MZ,Palak,277
+NL,Dimapur-I,278
+NL,Dimapur-II,278
+NL,Dimapur-III,278
+NL,Ghaspani-I,278
+NL,Ghaspani-II,278
+NL,Tenning,278
+NL,Peren,278
+NL,Western Angami,278
+NL,Kohima Town,278
+NL,Northern Angami-I,278
+NL,Northern Angami II,278
+NL,Tseminyu,278
+NL,Pughoboto,278
+NL,Southern Angami I,278
+NL,Southern Angami II,278
+NL,Pfutsero,278
+NL,Chizami,278
+NL,Chazouba,278
+NL,Phek,278
+NL,Meluri,278
+NL,Tuli,278
+NL,Arkakong,278
+NL,Impur,278
+NL,Angetyongpang,278
+NL,Mongoya,278
+NL,Aonglenden,278
+NL,Mokokchung Town,278
+NL,Koridang,278
+NL,Jangpetkong,278
+NL,Alongtaki,278
+NL,Akuluto,278
+NL,Atoizu,278
+NL,Suruhoto,278
+NL,Aghunato,278
+NL,Aghunato,278
+NL,Satakha,278
+NL,Tyui,278
+NL,Wokha,278
+NL,Sanis,278
+NL,Bhandari,278
+NL,Tizit,278
+NL,Wakching,278
+NL,Tapi,278
+NL,Phomching,278
+NL,Tehok,278
+NL,Mon Town,278
+NL,Aboi,278
+NL,Aboi,278
+NL,Tamlu,278
+NL,Longleng,278
+NL,Noksen,278
+NL,Longkhim Chare,278
+NL,Tuensang Sadar I,278
+NL,Tuensang Sadar II,278
+NL,Tobu,278
+NL,Noklak,278
+NL,Thonoknyu,278
+NL,Shamator Chessore,278
+NL,Seyochung Sitimi,278
+NL,Pungro Kiphire,278
+OR,Padampur,279
+OR,Bijepur,279
+OR,Bargarh,279
+OR,Attabira,279
+OR,Bhatli,279
+OR,Brajarajnagar,279
+OR,Jharsuguda,279
+OR,Talsara,279
+OR,Sundargarh,279
+OR,Biramitrapur,279
+OR,Raghunathpali,279
+OR,Rourkela,279
+OR,Rajgangpur,279
+OR,Bonai,279
+OR,Kuchinda,279
+OR,Rengali,279
+OR,Sambalpur,279
+OR,Rairakhol,279
+OR,Deogarh,279
+OR,Telkoi,279
+OR,Ghasipura,279
+OR,Anandpur,279
+OR,Patna,279
+OR,Keonjhar,279
+OR,Champua,279
+OR,Jashipur,279
+OR,Saraskana,279
+OR,Rairangpur,279
+OR,Bangriposi,279
+OR,Karanjia,279
+OR,Udala,279
+OR,Badasahi,279
+OR,Baripada,279
+OR,Morada,279
+OR,Jaleswar,279
+OR,Bhograi,279
+OR,Basta,279
+OR,Balasore,279
+OR,Remuna,279
+OR,Nilagiri,279
+OR,Soro,279
+OR,Simulia,279
+OR,Bhandaripokhari,279
+OR,Bhadrak,279
+OR,Basudevpur,279
+OR,Dhamnagar,279
+OR,Chandabali,279
+OR,Binjharpur,279
+OR,Bari,279
+OR,Barchana,279
+OR,Dharmasala,279
+OR,Jajpur,279
+OR,Korei,279
+OR,Sukinda,279
+OR,Dhenkanal,279
+OR,Hindol,279
+OR,Kamakhyanagar,279
+OR,Parjanga,279
+OR,Pallahara,279
+OR,Talcher,279
+OR,Angul,279
+OR,Chhendipada,279
+OR,Athmallik,279
+OR,Birmaharajpur,279
+OR,Sonepur,279
+OR,Loisingha,279
+OR,Patnagarh,279
+OR,Bolangir,279
+OR,Titilagarh,279
+OR,Kantabanji,279
+OR,Nuapada,279
+OR,Khariar,279
+OR,Umarkote,279
+OR,Jharigam,279
+OR,Nabarangpur,279
+OR,Dabugam,279
+OR,Lanjigarh,279
+OR,Junagarh,279
+OR,Dharmagarh,279
+OR,Bhawanipatna,279
+OR,Narla,279
+OR,Baliguda,279
+OR,G. Udayagiri,279
+OR,Phulbani,279
+OR,Kantamal,279
+OR,Boudh,279
+OR,Baramba,279
+OR,Banki,279
+OR,Athgarh,279
+OR,Barabati-Cuttack,279
+OR,Choudwar-Cuttack,279
+OR,Niali,279
+OR,Cuttack Sadar,279
+OR,Salipur,279
+OR,Mahanga,279
+OR,Patkura,279
+OR,Kendrapara,279
+OR,Aul,279
+OR,Rajanagar,279
+OR,Mahakalapada,279
+OR,Paradeep,279
+OR,Tirtol,279
+OR,Balikuda-Erasama,279
+OR,Jagatsinghpur,279
+OR,Kakatpur,279
+OR,Nimapara,279
+OR,Puri,279
+OR,Brahmagiri,279
+OR,Satyabadi,279
+OR,Pipili,279
+OR,Jayadev,279
+OR,Bhubaneswar Central (Madhya),279
+OR,Bhubaneswar North,279
+OR,Ekamra Bhubaneswar,279
+OR,Jatani,279
+OR,Begunia,279
+OR,Khurda,279
+OR,Chilika,279
+OR,Ranpur,279
+OR,Khandapada,279
+OR,Daspalla,279
+OR,Nayagarh,279
+OR,Bhanjanagar,279
+OR,Polasara,279
+OR,Kabisuryanagar,279
+OR,Khalikote,279
+OR,Chhatrapur,279
+OR,Asika,279
+OR,Surada,279
+OR,Sanakhemundi,279
+OR,Hinjili,279
+OR,Gopalpur,279
+OR,Berhampur,279
+OR,Digapahandi,279
+OR,Chikiti,279
+OR,Mohana,279
+OR,Parlakhemundi,279
+OR,Gunupur,279
+OR,Bissam Cuttack,279
+OR,Rayagada,279
+OR,Lakshmipur,279
+OR,Kotpad,279
+OR,Jeypore,279
+OR,Koraput,279
+OR,Pottangi,279
+OR,Malkangiri,279
+OR,Chitrakonda,279
+PY,Mannadipet,313
+PY,Thirubuvanai,313
+PY,Ossudu,313
+PY,Mangalam,313
+PY,Villianur,313
+PY,Ozhukarai,313
+PY,Kadirkamam,313
+PY,Indira Nagar,313
+PY,Thattanchavady,313
+PY,Kamaraj Nagar,313
+PY,Lawspet,313
+PY,Kalapet,313
+PY,Muthialpet,313
+PY,Raj Bhavan,313
+PY,Oupalam,313
+PY,Orleampeth,313
+PY,Nellithope,313
+PY,Mudaliarpet,313
+PY,Ariankuppam,313
+PY,Manavely,313
+PY,Embalam,313
+PY,Nettapakkam,313
+PY,Bahour,313
+PY,Nedungadu,313
+PY,Thirunallar,313
+PY,Karaikal North,313
+PY,Karaikal South,313
+PY,Neravy T R Pattinam,313
+PY,Mahe,313
+PY,Yanam,313
+PB,Sujanpur,300
+PB,Bhoa,300
+PB,Pathankot,300
+PB,Gurdaspur,300
+PB,Dina Nagar,300
+PB,Qadian,300
+PB,Batala,300
+PB,Sri Hargobindpur,300
+PB,Fatehgarh Churian,300
+PB,Dera Baba Nanak,300
+PB,Ajnala,300
+PB,Raja Sansi,300
+PB,Majitha,300
+PB,Jandiala,300
+PB,Amritsar North,300
+PB,Amritsar West,300
+PB,Amritsar Central,300
+PB,Amritsar East,300
+PB,Amritsar South,300
+PB,Attari,300
+PB,Tarn Taran,300
+PB,Khem Karan,300
+PB,Patti,300
+PB,Khadoor Sahib,300
+PB,Baba Bakala,300
+PB,Bholath,300
+PB,Kapurthala,300
+PB,Sultanpur Lodhi,300
+PB,Phagwara,300
+PB,Phillaur,300
+PB,Nakodar,300
+PB,Shahkot,300
+PB,Kartarpur,300
+PB,Jalandhar West,300
+PB,Jalandhar Central,300
+PB,Jalandhar North,300
+PB,Jalandhar Cantt.,300
+PB,Adampur,300
+PB,Mukerian,300
+PB,Dasuya,300
+PB,Urmar,300
+PB,Sham Chaurasi,300
+PB,Hoshiarpur,300
+PB,Chabbewal,300
+PB,Garhshankar,300
+PB,Banga ,300
+PB,Nawanshahr,300
+PB,Balachaur,300
+PB,Anandpur Sahib,300
+PB,Rupnagar,300
+PB,Chamkaur Sahib,300
+PB,Kharar,300
+PB,S.A.S. Nagar,300
+PB,Bassi Pathana,300
+PB,Fatehgarh Sahib,300
+PB,Amloh,300
+PB,Khanna,300
+PB,Samrala,300
+PB,Sahnewal,300
+PB,Ludhiana East,300
+PB,Ludhiana South,300
+PB,Atam Nagar,300
+PB,Ludhiana Central,300
+PB,Ludhiana West,300
+PB,Ludhiana North,300
+PB,Gill,300
+PB,Payal,300
+PB,Dakha,300
+PB,Raikot,300
+PB,Jagraon,300
+PB,Nihal Singhwala,300
+PB,Bhagha Purana,300
+PB,Moga,300
+PB,Dharamkot,300
+PB,Zira,300
+PB,Firozpur City,300
+PB,Firozpur Rural,300
+PB,Guru Har Sahai,300
+PB,Jalalabad,300
+PB,Fazilka,300
+PB,Abohar,300
+PB,Balluana,300
+PB,Lambi,300
+PB,Gidderbaha,300
+PB,Malout,300
+PB,Muktsar,300
+PB,Faridkot,300
+PB,Kotkapura,300
+PB,Jaitu,300
+PB,Rampura Phul,300
+PB,Bhucho Mandi,300
+PB,Bathinda Urban,300
+PB,Bathinda Rural,300
+PB,Talwandi Sabo,300
+PB,Maur,300
+PB,Mansa,300
+PB,Sardulgarh,300
+PB,Budhlada,300
+PB,Lehra,300
+PB,Dirba,300
+PB,Sunam,300
+PB,Bhadaur,300
+PB,Barnala,300
+PB,Mehal Kalan,300
+PB,Malerkotla,300
+PB,Amargarh,300
+PB,Dhuri,300
+PB,Sangrur,300
+PB,Nabha,300
+PB,Patiala Rural,300
+PB,Rajpura,300
+PB,Dera Bassi,300
+PB,Ghanaur,300
+PB,Sanour,300
+PB,Patiala,300
+PB,Samana,300
+PB,Shutrana,300
+RJ,Sadulshahar,314
+RJ,Ganganagar,314
+RJ,Karanpur,314
+RJ,Suratgarh,314
+RJ,Raisinghnagar,314
+RJ,Anupgarh,313
+RJ,Sangaria,314
+RJ,Hanumangarh,314
+RJ,Pilibanga,314
+RJ,Nohar,313
+RJ,Bhadra,313
+RJ,Khajuwala,313
+RJ,Bikaner West,313
+RJ,Bikaner East,313
+RJ,Kolayat,313
+RJ,Lunkaransar,313
+RJ,Dungargarh,313
+RJ,Nokha,313
+RJ,Sadulpur,313
+RJ,Taranagar,313
+RJ,Sardarshahar,313
+RJ,Churu,313
+RJ,Ratangarh,313
+RJ,Sujangarh,313
+RJ,Pilani,317
+RJ,Surajgarh,317
+RJ,Jhunjhunu,317
+RJ,Mandawa,317
+RJ,Nawalgarh,317
+RJ,Udaipurwati,317
+RJ,Khetri,317
+RJ,Fatehpur,317
+RJ,Lachhmangarh,318
+RJ,Dhod,318
+RJ,Sikar,318
+RJ,Danta Ramgarh,318
+RJ,Khandela,318
+RJ,Neem Ka Thana,318
+RJ,Sri Madhopur,318
+RJ,Kotputli,316
+RJ,Viratnagar,316
+RJ,Shahpura,316
+RJ,Chomu,318
+RJ,Phulera,316
+RJ,Dudu,313
+RJ,Jhotwara,316
+RJ,Amber,316
+RJ,Jamwa Ramgarh,316
+RJ,Hawa Mahal,316
+RJ,Vidhyadhar Nagar,316
+RJ,Civil Lines,316
+RJ,Kishan Pole,316
+RJ,Adarsh Nagar,316
+RJ,Malviya Nagar,316
+RJ,Sanganer,316
+RJ,Bagru,316
+RJ,Bassi,313
+RJ,Chaksu,313
+RJ,Tijara,313
+RJ,Kishangarh Bas,313
+RJ,Mundawar,313
+RJ,Behror,313
+RJ,Bansur,316
+RJ,Thanagazi,313
+RJ,Alwar Rural,313
+RJ,Alwar Urban,313
+RJ,Ramgarh,313
+RJ,Rajgarh–Laxmangarh,313
+RJ,Kathumar,322
+RJ,Kaman,322
+RJ,Nagar,322
+RJ,Deeg–Kumher,322
+RJ,Bharatpur,322
+RJ,Nadbai,322
+RJ,Weir,322
+RJ,Bayana,322
+RJ,Baseri,317
+RJ,Bari,317
+RJ,Dholpur,317
+RJ,Rajakhera,317
+RJ,Todabhim,317
+RJ,Hindaun,317
+RJ,Karauli,317
+RJ,Sapotra,317
+RJ,Bandikui,313
+RJ,Mahuwa,313
+RJ,Sikrai,313
+RJ,Dausa,313
+RJ,Lalsot,313
+RJ,Gangapur,324
+RJ,Bamanwas,324
+RJ,Sawai Madhopur,324
+RJ,Khandar,324
+RJ,Malpura,324
+RJ,Niwai,324
+RJ,Tonk,324
+RJ,Deoli–Uniara,324
+RJ,Kishangarh,313
+RJ,Pushkar,313
+RJ,Ajmer North,313
+RJ,Ajmer South,313
+RJ,Nasirabad,313
+RJ,Beawar,317
+RJ,Masuda,313
+RJ,Kekri,313
+RJ,Ladnun,317
+RJ,Deedwana,317
+RJ,Jayal,317
+RJ,Nagaur,317
+RJ,Khinvsar,317
+RJ,Merta,317
+RJ,Degana,317
+RJ,Makrana,317
+RJ,Parbatsar,317
+RJ,Nawan,317
+RJ,Jaitaran,317
+RJ,Sojat,317
+RJ,Pali,317
+RJ,Marwar Junction,317
+RJ,Bali,317
+RJ,Sumerpur,317
+RJ,Phalodi,317
+RJ,Lohawat,317
+RJ,Shergarh,317
+RJ,Osian,317
+RJ,Bhopalgarh,317
+RJ,Sardarpura,317
+RJ,Jodhpur,317
+RJ,Soorsagar,317
+RJ,Luni,317
+RJ,Bilara,317
+RJ,Jaisalmer,313
+RJ,Pokaran,317
+RJ,Sheo,313
+RJ,Barmer,313
+RJ,Baytoo,313
+RJ,Pachpadra,313
+RJ,Siwana,313
+RJ,Gudha Malani,313
+RJ,Chohtan,313
+RJ,Ahore,316
+RJ,Jalore,316
+RJ,Bhinmal,316
+RJ,Sanchore,316
+RJ,Raniwara,316
+RJ,Sirohi,316
+RJ,Pindwara–Abu,316
+RJ,Reodar,316
+RJ,Gogunda,332
+RJ,Jhadol,332
+RJ,Kherwara,332
+RJ,Udaipur Rural,332
+RJ,Udaipur,332
+RJ,Mavli,313
+RJ,Vallabhnagar,313
+RJ,Salumber,332
+RJ,Dhariawad,332
+RJ,Dungarpur,313
+RJ,Aspur,332
+RJ,Sagwara,313
+RJ,Chorasi,313
+RJ,Ghatol,313
+RJ,Garhi,313
+RJ,Banswara,313
+RJ,Bagidora,313
+RJ,Kushalgarh,313
+RJ,Kapasan,313
+RJ,Begun,313
+RJ,Chittorgarh,313
+RJ,Nimbahera,313
+RJ,Bari Sadri,313
+RJ,Pratapgarh,313
+RJ,Bhim,317
+RJ,Kumbhalgarh,317
+RJ,Rajsamand,317
+RJ,Nathdwara,317
+RJ,Asind,313
+RJ,Mandal,313
+RJ,Sahara,313
+RJ,Bhilwara,313
+RJ,Shahpura,313
+RJ,Jahazpur,313
+RJ,Mandalgarh,313
+RJ,Hindoli,313
+RJ,Keshoraipatan,317
+RJ,Bundi,317
+RJ,Pipalda,317
+RJ,Sangod,317
+RJ,Kota North,317
+RJ,Kota South,317
+RJ,Ladpura,317
+RJ,Ramganj Mandi,317
+RJ,Anta,316
+RJ,Kishanganj,316
+RJ,Baran–Atru,316
+RJ,Chhabra,316
+RJ,Dag,316
+RJ,Jhalarapatan,316
+RJ,Khanpur,316
+RJ,Manohar Thana,316
+SK,Yoksam- Tashiding (BL),339
+SK,Yangthang,339
+SK,Maneybong Dentam,339
+SK,Gyalshing Barnyak,339
+SK,Rinchenpong (BL),339
+SK,Daramdin (BL),339
+SK,Soreng Chakung,339
+SK,Salghari Zoom ,339
+SK,Barfung (BL),339
+SK,Poklok Kamrang,339
+SK,Namchi Singhithang,339
+SK,Melli,339
+SK,Namthang Rateypani,339
+SK,Temi Namphing,339
+SK,Rangang Yangang,339
+SK,Tumin Lingee (BL),339
+SK,Khamdong Singtam,339
+SK,West Pendam ,339
+SK,Rhenock,339
+SK,Chujachen,339
+SK,Gnathang Machong (BL),339
+SK,Namchaybong,339
+SK,Shyari (BL),339
+SK,Martam Rumtek (BL),339
+SK,Upper Tadong,339
+SK,Arithang,339
+SK,Gangtok (BL),339
+SK,Upper Burtuk,339
+SK,Kabi Lungchuk (BL),339
+SK,Djongu (BL),339
+SK,Lachen Mangan (BL),339
+SK,Sangha,339
+TN,Gummidipoondi,346
+TN,Ponneri,346
+TN,Tiruttani,339
+TN,Thiruvallur,346
+TN,Poonamallee,346
+TN,Avadi,346
+TN,Maduravoyal,339
+TN,Ambattur,339
+TN,Madavaram,346
+TN,Thiruvottiyur,339
+TN,Dr. Radhakrishnan Nagar,339
+TN,Perambur,339
+TN,Kolathur,339
+TN,Villivakkam,339
+TN,Thiru. Vi. Ka. Nagar,339
+TN,Egmore,339
+TN,Royapuram,339
+TN,Harbour,339
+TN,Chepauk-Thiruvallikeni,339
+TN,Thousand Lights,339
+TN,Anna Nagar,339
+TN,Virugambakkam,339
+TN,Saidapet,339
+TN,T. Nagar,339
+TN,Mylapore,339
+TN,Velachery,339
+TN,Sholinganallur,339
+TN,Alandur,339
+TN,Sriperumbudur,339
+TN,Pallavaram,339
+TN,Tambaram,339
+TN,Chengalpattu,356
+TN,Thiruporur,356
+TN,Cheyyur,356
+TN,Maduranthakam,356
+TN,Uthiramerur,356
+TN,Kancheepuram,356
+TN,Arakkonam,339
+TN,Sholingur,339
+TN,Katpadi (Vellore North),339
+TN,Ranipet,339
+TN,Arcot,339
+TN,Vellore (Vellore south),347
+TN,Anaikattu,347
+TN,K. V. Kuppam,347
+TN,Gudiyattam,347
+TN,Vaniyambadi,347
+TN,Ambur,347
+TN,Jolarpet,346
+TN,"Tirupattur, Vellore",346
+TN,Uthangarai,356
+TN,Bargur,356
+TN,Krishnagiri,356
+TN,Veppanahalli,356
+TN,Hosur,356
+TN,Thalli,356
+TN,Palacode,343
+TN,Pennagaram,343
+TN,Dharmapuri,343
+TN,Pappireddippatti,343
+TN,Harur,343
+TN,Chengam,346
+TN,Tiruvannamalai,346
+TN,Kilpennathur,346
+TN,Kalasapakkam,346
+TN,Polur,339
+TN,Arani,339
+TN,Cheyyar,339
+TN,Vandavasi,339
+TN,Gingee,339
+TN,Mailam,339
+TN,Tindivanam,352
+TN,Vanur,352
+TN,Villupuram,352
+TN,Vikravandi,352
+TN,Tirukkoyilur,352
+TN,Ulundurpettai,352
+TN,Rishivandiyam,356
+TN,Sankarapuram,356
+TN,Kallakurichi,356
+TN,Gangavalli,356
+TN,Attur,356
+TN,Yercaud,356
+TN,Omalur,339
+TN,Mettur,343
+TN,Edapadi,339
+TN,Sankagiri,356
+TN,Salem (West),339
+TN,Salem (North),339
+TN,Salem (South),339
+TN,Veerapandi,339
+TN,Rasipuram,356
+TN,Senthamangalam,356
+TN,Namakkal,356
+TN,Paramathi Velur,356
+TN,Tiruchengodu,356
+TN,Kumarapalayam,356
+TN,Erode (East),356
+TN,Erode (West),356
+TN,Modakkurichi,356
+TN,Perundurai,346
+TN,Bhavani,346
+TN,Anthiyur,346
+TN,Gobichettipalayam,346
+TN,Bhavanisagar,358
+TN,Dharapuram,356
+TN,Kangayam,356
+TN,Avanashi,358
+TN,Tiruppur (North),346
+TN,Tiruppur (South),346
+TN,Palladam,343
+TN,Udumalaipettai,339
+TN,Madathukulam,339
+TN,Udhagamandalam,358
+TN,Coonoor,358
+TN,Gudalur,358
+TN,Mettupalayam,358
+TN,Sulur,343
+TN,Kavundampalayam,343
+TN,Coimbatore North,343
+TN,Thondamuthur,339
+TN,Coimbatore (South),343
+TN,Singanallur,343
+TN,Kinathukadavu,339
+TN,Pollachi,339
+TN,Valparai,339
+TN,Palani,343
+TN,Oddanchatram,343
+TN,Athoor,343
+TN,Nilakottai,343
+TN,Natham,343
+TN,Dindigul,343
+TN,Vedasandur,356
+TN,Aravakurichi,356
+TN,Karur,356
+TN,Krishnarayapuram,356
+TN,Kulithalai,364
+TN,Manapaarai,356
+TN,Srirangam,346
+TN,Tiruchirappalli (West),346
+TN,Tiruchirappalli (East),346
+TN,Thiruverumbur,346
+TN,Lalgudi,364
+TN,Manachanallur,364
+TN,Musiri,364
+TN,Thuraiyur,364
+TN,Perambalur,364
+TN,Kunnam,343
+TN,Ariyalur,343
+TN,Jayankondam,343
+TN,Tittakudi,343
+TN,Vriddhachalam,343
+TN,Neyveli,343
+TN,Panruti,343
+TN,Cuddalore,343
+TN,Kurinjipadi,343
+TN,Bhuvanagiri,343
+TN,Chidambaram,343
+TN,Kattumannarkoil,343
+TN,Sirkazhi,356
+TN,Mayiladuthurai,356
+TN,Poompuhar,356
+TN,Nagapattinam,356
+TN,Kilvelur,356
+TN,Vedaranyam,356
+TN,Thiruthuraipoondi,356
+TN,Mannargudi,339
+TN,Thiruvarur,356
+TN,Nannilam,356
+TN,Thiruvidaimarudur,356
+TN,Kumbakonam,356
+TN,Papanasam,356
+TN,Thiruvaiyaru,339
+TN,Thanjavur,339
+TN,Orathanadu,339
+TN,Pattukkottai,339
+TN,Peravurani,339
+TN,Gandharvakottai,346
+TN,Viralimalai,356
+TN,Pudukkottai,346
+TN,Thirumayam,339
+TN,Alangudi,339
+TN,Aranthangi,339
+TN,Karaikudi,339
+TN,"Tiruppattur, Sivaganga",339
+TN,Sivaganga,339
+TN,Manamadurai,339
+TN,Melur,356
+TN,Madurai East,356
+TN,Sholavandan,339
+TN,Madurai North,356
+TN,Madurai South,356
+TN,Madurai Central,356
+TN,Madurai West,356
+TN,Thiruparankundram,373
+TN,Tirumangalam,373
+TN,Usilampatti,339
+TN,Andipatti,339
+TN,Periyakulam,339
+TN,Bodinayakanur,339
+TN,Cumbum,339
+TN,Rajapalayam,339
+TN,Srivilliputhur,339
+TN,Sattur,373
+TN,Sivakasi,373
+TN,Virudhunagar,373
+TN,Aruppukkottai,373
+TN,Tiruchuli,339
+TN,Paramakudi,339
+TN,Tiruvadanai,339
+TN,Ramanathapuram,339
+TN,Mudhukulathur,339
+TN,Vilathikulam,346
+TN,Thoothukudi,346
+TN,Tiruchendur,346
+TN,Tiruvaikuntam,346
+TN,Ottapidaram,346
+TN,Kovilpatti,346
+TN,Sankarankovil,339
+TN,Vasudevanallur,339
+TN,Kadayanallur,339
+TN,Tenkasi,339
+TN,Alangulam,346
+TN,Tirunelveli,346
+TN,Ambasamudram,346
+TN,Palayamkottai,346
+TN,Nanguneri,346
+TN,Radhapuram,346
+TN,Kanniyakumari,356
+TN,Nagercoil,356
+TN,Colachal,356
+TN,Padmanabhapuram,356
+TN,Vilavancode,356
+TN,Killiyoor,356
+TG,Musheerabad,339
+TG,Malakpet,339
+TG,Amberpet,339
+TG,Khairatabad,339
+TG,Jubilee Hills,339
+TG,Sanathnagar,339
+TG,Nampally,339
+TG,Karwan,339
+TG,Goshamahal,339
+TG,Charminar,339
+TG,Chandrayangutta,339
+TG,Yakutpura,339
+TG,Bahadurpura,339
+TG,Secunderabad,339
+TG,Secunderabad Cantt.,339
+TG,Medchal,339
+TG,Malkajgiri,339
+TG,Quthbullapur,339
+TG,Kukatpally,339
+TG,Uppal,339
+TG,Ibrahimpatnam,339
+TG,L. B. Nagar,339
+TG,Maheshwaram,339
+TG,Rajendranagar,339
+TG,Serilingampally,339
+TG,Chevella ,339
+TG,Pargi,339
+TG,Vikarabad ,339
+TG,Tandur,339
+TG,Siddipet,339
+TG,Medak,339
+TG,Narayankhed,339
+TG,Andole ,339
+TG,Narsapur,339
+TG,Zahirabad ,339
+TG,Sangareddy,339
+TG,Patancheru,339
+TG,Dubbak,339
+TG,Gajwel,339
+TG,Sirpur,339
+TG,Chennur ,339
+TG,Bellampalli ,339
+TG,Mancheriala,339
+TG,Asifabad (ST),339
+TG,Khanapur (ST),339
+TG,Adliabad,339
+TG,Boath (ST),339
+TG,Nirmal,339
+TG,Mudhole,339
+TG,Koratla,339
+TG,Jagtial,339
+TG,Dharmapuri ,339
+TG,Ramagundam,339
+TG,Manthani,339
+TG,Peddapalle,339
+TG,Karimnagar,339
+TG,Choppadandi ,339
+TG,Vemulawada,339
+TG,Sircilla,339
+TG,Manakondur ,339
+TG,Huzurabad,339
+TG,Husnabad,339
+TG,Khammam,339
+TG,Palair,339
+TG,Madhira ,339
+TG,Wyra,339
+TG,Sathupalli ,339
+TG,Aswaraopeta,339
+TG,Yellandu,339
+TG,Kothagudem,339
+TG,Bhadrachalam,339
+TG,Pinapaka,339
+TG,Kodangal,339
+TG,Narayanpet,339
+TG,Mahbubnagar,339
+TG,Jadcherla,339
+TG,Devarkadra,339
+TG,Makthal,339
+TG,Wanaparthy,339
+TG,Gadwal,339
+TG,Alampur,339
+TG,Nagarkurnool,339
+TG,Achampet,339
+TG,Kalwakurthy,339
+TG,Shadnagar,339
+TG,Kollapur,339
+TG,Nalgonda,339
+TG,Suryapet,339
+TG,Devarakonda,339
+TG,Nagarjuna Sagar,339
+TG,Miryalaguda,339
+TG,Huzurnagar,339
+TG,Kodad,339
+TG,Munugode,339
+TG,Bhongir,339
+TG,Nakrekal ,339
+TG,Thungathurthi ,339
+TG,Alair,339
+TG,Armur,339
+TG,Bodhan,339
+TG,Jukkal ,339
+TG,Banswada,339
+TG,Yellareddy,339
+TG,Kamareddy,339
+TG,Nizamabad (Urban),339
+TG,Nizamabad (Rural),339
+TG,Balkonda,339
+TG,Jangaon,339
+TG,Ghanpur(Station),339
+TG,Palakurthi,339
+TG,Dornakal,339
+TG,Mahabubabad,339
+TG,Narsampet,339
+TG,Parkal,339
+TG,Warangal West,339
+TG,Warangal East,339
+TG,Waradhanapet,339
+TG,Bhupalpalle,339
+TG,Mulug,339
+TR,Simna,396
+TR,Mohanpur,396
+TR,Bamutia,396
+TR,Barjala,396
+TR,Khayerpur,396
+TR,Agartala,396
+TR,Ramnagar,396
+TR,Town Bordowali,396
+TR,Banamalipur,396
+TR,Majlishpur,396
+TR,Mandaibazar,396
+TR,Takarjala,396
+TR,Pratapgarh,396
+TR,Badharghat,396
+TR,Kamalasagar,396
+TR,Bishalgarh,396
+TR,Golaghati,396
+TR,Suryamaninagar,396
+TR,Charilam,396
+TR,Boxanagar,396
+TR,Nalchar,396
+TR,Sonamura,396
+TR,Dhanpur,396
+TR,Ramchandraghat,395
+TR,Khowai,395
+TR,Asharambari,395
+TR,Kalyanpur-Pramodenagar,395
+TR,Teliamura,395
+TR,Krishnapur,395
+TR,Bagma,396
+TR,Radhakishorpur,396
+TR,Matarbari,396
+TR,Kakraban-Salgarh,396
+TR,Rajnagar,396
+TR,Belonia,396
+TR,Santirbazar,396
+TR,Hrishyamukh,395
+TR,Jolaibari,395
+TR,Manu,395
+TR,Sabroom,395
+TR,Ampinagar,395
+TR,Amarpur,395
+TR,Karbook,395
+TR,Raima Valley,395
+TR,Kamalpur,395
+TR,Surma,395
+TR,Ambassa,395
+TR,Karmachhara,395
+TR,Chawamanu,395
+TR,Pabiachhara,395
+TR,Fatikroy,395
+TR,Chandipur,395
+TR,Kailashahar,395
+TR,Kadamtala-Kurti,395
+TR,Bagbassa,395
+TR,Dharmanagar,395
+TR,Jubarajnagar,395
+TR,Panisagar,395
+TR,Pencharthal,395
+TR,Kanchanpur,395
+UP,Agra Cantt.,397
+UP,Agra North,397
+UP,Agra Rural,397
+UP,Agra South,397
+UP,Ajagara,397
+UP,Akbarpur,397
+UP,Akbarpur - Raniya,397
+UP,Alapur,423
+UP,Aliganj,397
+UP,Aligarh,397
+UP,Allahabad North,397
+UP,Allahabad South,397
+UP,Allahabad West,397
+UP,Amanpur,397
+UP,Amethi,397
+UP,Amritpur,397
+UP,Amroha,397
+UP,Anupshahr,397
+UP,Aonla,397
+UP,Arya Nagar,397
+UP,Asmoli,405
+UP,Atrauli,397
+UP,Atrauliya,397
+UP,Aurai,397
+UP,Auraiya,397
+UP,Ayah Shah,397
+UP,Ayodhya,397
+UP,Azamgarh,397
+UP,Babaganj,397
+UP,Baberu,397
+UP,Babina,397
+UP,Bachhrawan,397
+UP,Badaun,397
+UP,Badlapur,397
+UP,Bagpat,397
+UP,Bah,397
+UP,Baheri,397
+UP,Bahraich,397
+UP,Bairia,397
+UP,Bakshi Kaa Talab,397
+UP,Balamau,397
+UP,Baldev,397
+UP,Balha,397
+UP,Ballia Nagar,397
+UP,Balrampur,426
+UP,Banda,397
+UP,Bangarmau,430
+UP,Bansdih,404
+UP,Bansgaon,397
+UP,Bansi,397
+UP,Bara,397
+UP,Barabanki,397
+UP,Barauli,397
+UP,Baraut,397
+UP,Bareilly,397
+UP,Bareilly Cantt.,397
+UP,Barhaj,397
+UP,Barhapur,397
+UP,Barkhera,397
+UP,Basti Sadar,397
+UP,Behat,398
+UP,Belthara Road,404
+UP,Bhadohi,397
+UP,Bhagwantnagar,430
+UP,Bharthana,397
+UP,Bhatpar Rani,404
+UP,Bhinga,426
+UP,Bhognipur,397
+UP,Bhojipura,397
+UP,Bhojpur,397
+UP,Bhongaon,397
+UP,Bidhuna,397
+UP,Bijnor,397
+UP,Bikapur,397
+UP,Bilari,405
+UP,Bilaspur,397
+UP,Bilgram-Mallanwan,397
+UP,Bilhaur,397
+UP,Bilsi,397
+UP,Bindki,397
+UP,Bisalpur,397
+UP,Bisauli,397
+UP,Biswan,427
+UP,Bithari Chainpur,397
+UP,Bithoor,397
+UP,Budhana,397
+UP,Bulandshahr,397
+UP,Caimpiyarganj,397
+UP,Chail,397
+UP,Chakia,397
+UP,Chamraua,397
+UP,Chandausi,405
+UP,Chandpur,397
+UP,Charkhari,397
+UP,Charthawal,397
+UP,Chauri-Chaura,397
+UP,Chhanbey,397
+UP,Chhaprauli,397
+UP,Chharra,397
+UP,Chhata,397
+UP,Chhibramau,397
+UP,Chillupar,397
+UP,Chitrakoot,397
+UP,Chunar,397
+UP,Colonelganj,397
+UP,Dadraul,424
+UP,Dadri,397
+UP,Dariyabad,397
+UP,Dataganj,397
+UP,Debai,397
+UP,Deoband,398
+UP,Deoria,397
+UP,Dhampur,397
+UP,Dhanaura,397
+UP,Dhanghata,423
+UP,Dhaurahra,397
+UP,Dhaulana,397
+UP,Dibiyapur,397
+UP,Didarganj,397
+UP,Domariyaganj,397
+UP,Duddhi,397
+UP,Etah,397
+UP,Etawah,397
+UP,Etmadpur,397
+UP,Faridpur,397
+UP,Farrukhabad,397
+UP,Fatehabad,397
+UP,Fatehpur,397
+UP,Fatehpur Sikri,397
+UP,Fazilnagar,397
+UP,Firozabad,397
+UP,Gainsari,426
+UP,Gangoh,397
+UP,Garautha,397
+UP,Garhmukteshwar,397
+UP,Gaura,397
+UP,Gauriganj,397
+UP,Ghatampur,397
+UP,Ghaziabad,397
+UP,Ghazipur,397
+UP,Ghorawal,397
+UP,Ghosi,397
+UP,Gola Gokrannath,397
+UP,Gonda,397
+UP,Gopalpur,397
+UP,Gopamau,397
+UP,Gorakhpur Rural,397
+UP,Gorakhpur Urban,397
+UP,Goshainganj,397
+UP,Goverdhan,397
+UP,Govindnagar,397
+UP,Gunnaur,397
+UP,Gyanpur,397
+UP,Haidergarh,397
+UP,Hamirpur,397
+UP,Handia,397
+UP,Hapur,407
+UP,Harchandpur,397
+UP,Hardoi,397
+UP,Hargaon,397
+UP,Harraiya,397
+UP,Hasanpur,397
+UP,Hastinapur,397
+UP,Hata,397
+UP,Hathras,397
+UP,Husainganj,397
+UP,Iglas,397
+UP,Isauli,429
+UP,Itwa,397
+UP,Jagdishpur,397
+UP,Jahanabad,397
+UP,Jakhanian,397
+UP,Jalalabad,424
+UP,Jalalpur,397
+UP,Jalesar,397
+UP,Jangipur,397
+UP,Jasrana,397
+UP,Jaswantnagar,397
+UP,Jaunpur,397
+UP,Jewar,397
+UP,Jhansi Nagar,397
+UP,Kadipur,429
+UP,Kaimganj,397
+UP,Kairana,397
+UP,Kaiserganj,397
+UP,Kalpi,397
+UP,Kalyanpur,397
+UP,Kannauj,397
+UP,Kanpur Cantt.,397
+UP,Kanth,397
+UP,Kapilvastu,397
+UP,Kaptanganj,397
+UP,Karachhana,397
+UP,Karhal,397
+UP,Kasganj,397
+UP,Kasta,397
+UP,Katehari,397
+UP,Katra,424
+UP,Katra Bazar,397
+UP,Kerakat,397
+UP,Khadda,397
+UP,Khaga,397
+UP,Khair,397
+UP,Khajani,423
+UP,Khalilabad,423
+UP,Khatauli,397
+UP,Kheragarh,397
+UP,Khurja,397
+UP,Kidwai Nagar,397
+UP,Kishni,397
+UP,Kithore,407
+UP,Koil,397
+UP,Koraon,397
+UP,Kunda,397
+UP,Kundarki,405
+UP,Kursi,397
+UP,Kushinagar,397
+UP,Laharpur,427
+UP,Lakhimpur,397
+UP,Lalganj,397
+UP,Lalitpur,397
+UP,Lambhua,429
+UP,Loni,397
+UP,Lucknow Cantt.,397
+UP,Lucknow Central,397
+UP,Lucknow East,397
+UP,Lucknow North,397
+UP,Lucknow West,397
+UP,Machhlishahr,397
+UP,Madhaugarh,397
+UP,Madhuban,397
+UP,Mahadewa,397
+UP,Maharajganj,397
+UP,Maharajpur,397
+UP,Mahasi,397
+UP,Mahmoodabad,427
+UP,Mahoba,397
+UP,Maholi,397
+UP,Mainpuri,397
+UP,Majhawan,397
+UP,Malhani,397
+UP,Malihabad,397
+UP,Manikpur,397
+UP,Manjhanpur,397
+UP,Mankapur,397
+UP,Mant,397
+UP,Marhara,397
+UP,Madihan,397
+UP,Mariyahu,397
+UP,Matera,397
+UP,Mathura,397
+UP,Mau,397
+UP,Mauranipur,397
+UP,Meerapur,397
+UP,Meerganj,397
+UP,Meerut,407
+UP,Meerut Cantt.,407
+UP,Meerut South,407
+UP,Mehnagar,397
+UP,Mehnaun,397
+UP,Mehroni,397
+UP,Meja,397
+UP,Menhdawal,423
+UP,Milak,397
+UP,Milkipur,397
+UP,Mirzapur,397
+UP,Misrikh,397
+UP,Modinagar,397
+UP,Mohammadabad,397
+UP,Mohammdi,397
+UP,Mohan,430
+UP,Mohanlalganj,397
+UP,Moradabad Nagar,397
+UP,Moradabad Rural,397
+UP,Mubarakpur,397
+UP,Mughalsarai,397
+UP,Muhammadabad-Gohna,397
+UP,Mungra Badshahpur,397
+UP,Muradnagar,397
+UP,Muzaffarnagar,397
+UP,Nagina,397
+UP,Najibabad,397
+UP,Nakur,397
+UP,Nanpara,397
+UP,Naraini,397
+UP,Naugawan Sadat,397
+UP,Nautanwa,397
+UP,Nawabganj,397
+UP,Nehtaur,397
+UP,Nighasan,397
+UP,Nizamabad,397
+UP,Noida,397
+UP,Noorpur,397
+UP,Obra,397
+UP,Orai,397
+UP,Padrauna,397
+UP,Palia,397
+UP,Paniyara,397
+UP,Pathardeva,397
+UP,Patiyali,397
+UP,Patti,397
+UP,Payagpur,397
+UP,Phaphamau,397
+UP,Pharenda,397
+UP,Phephana,397
+UP,Phoolpur Pawai,397
+UP,Phulpur,397
+UP,Pilibhit,397
+UP,Pindra,397
+UP,Pipraich,397
+UP,Powayan,424
+UP,Pratapgarh,397
+UP,Pratappur,397
+UP,Puranpur,397
+UP,Purqazi,397
+UP,Purwa,430
+UP,Rae Bareli,397
+UP,Ram Nagar,397
+UP,Ramkola,397
+UP,Rampur,397
+UP,Rampur Karkhana,397
+UP,Rampur Khas,397
+UP,Rampur Maniharan,398
+UP,Raniganj,397
+UP,Rasara,397
+UP,Rasulabad,397
+UP,Rath,397
+UP,Robertsganj,397
+UP,Rohaniya,474
+UP,Rudauli,397
+UP,Rudhauli,397
+UP,Rudrapur,397
+UP,Sadabad,397
+UP,Sadar,429
+UP,Safipur,430
+UP,Sagri,397
+UP,Sahajanwa,397
+UP,Saharanpur,398
+UP,Saharanpur Nagar,398
+UP,Sahaswan,397
+UP,Sahibabad,397
+UP,Saidpur,397
+UP,Saiyadraja,397
+UP,Sakaldiha,397
+UP,Salempur,404
+UP,Salon,397
+UP,Sambhal,405
+UP,Sandi,397
+UP,Sandila,397
+UP,Sardhana,397
+UP,Sareni,397
+UP,Sarojini Nagar,397
+UP,Sawayazpur,397
+UP,Sevapuri,474
+UP,Sevata,427
+UP,Shahabad,397
+UP,Shahganj,397
+UP,Shahjahanpur,424
+UP,Shamli,397
+UP,Shekhupur,397
+UP,Shikarpur,397
+UP,Shikohabad,397
+UP,Shivpur,397
+UP,Shohratgarh,397
+UP,Shrawasti,426
+UP,Sidhauli,397
+UP,Sikanderpur,404
+UP,Sikandra,397
+UP,Sikandra Rao,397
+UP,Sikandrabad,397
+UP,Sirathu,397
+UP,Sirsaganj,397
+UP,Sishamau,397
+UP,Siswa,397
+UP,Sitapur,427
+UP,Siwalkhas,397
+UP,Soraon,397
+UP,Sri Nagar,397
+UP,Suar,397
+UP,Sultanpur,429
+UP,Syana,397
+UP,Tamkuhi Raj,397
+UP,Tanda,397
+UP,Tarabganj,397
+UP,Thakurdwara,397
+UP,Thana Bhawan,397
+UP,Tilhar,424
+UP,Tiloi,397
+UP,Tindwari,397
+UP,Tirwa,397
+UP,Tulsipur,426
+UP,Tundla,397
+UP,Unchahar,397
+UP,Unnao,430
+UP,Utraula,397
+UP,Varanasi Cantt.,474
+UP,Varanasi North,474
+UP,Varanasi South,474
+UP,Vishwanathganj,397
+UP,Zafrabad,397
+UP,Zahoorabad,397
+UP,Zaidpur,397
+UP,Zamania,397
+UT,Purola,478
+UT,Yamunotri,478
+UT,Gangotri,478
+UT,Badrinath,477
+UT,Tharali,477
+UT,Karnaprayag,477
+UT,Kedarnath,477
+UT,Rudraprayag,477
+UT,Ghansali,478
+UT,Devprayag,477
+UT,Narendranagar,477
+UT,Pratapnagar,478
+UT,Tehri,478
+UT,Dhanaulti,478
+UT,Chakrata,478
+UT,Vikasnagar,478
+UT,Sahaspur,478
+UT,Dharampur,477
+UT,Raipur,478
+UT,Rajpur Road,478
+UT,Dehradun Cantt,478
+UT,Mussoorie,478
+UT,Doiwala,477
+UT,Rishikesh,477
+UT,Haridwar,477
+UT,BHEL Ranipur,477
+UT,Jwalapur,477
+UT,Bhagwanpur,477
+UT,Jhabrera,477
+UT,Piran Kaliyar,477
+UT,Roorkee,477
+UT,Khanpur,477
+UT,Manglaur,477
+UT,Laksar,477
+UT,Haridwar Rural,477
+UT,Yamkeshwar,477
+UT,Pauri,477
+UT,Srinagar,477
+UT,Chaubattakhal,477
+UT,Lansdowne,477
+UT,Kotdwar,477
+UT,Dharchula,477
+UT,Didihat,477
+UT,Pithoragarh,477
+UT,Gangolihat,477
+UT,Kapkot,477
+UT,Bageshwar,477
+UT,Dwarahat,477
+UT,Salt,477
+UT,Ranikhet,477
+UT,Someshwar,477
+UT,Almora,477
+UT,Jageshwar,477
+UT,Lohaghat,477
+UT,Champawat,477
+UT,Lalkuan,477
+UT,Bhimtal,477
+UT,Nainital,477
+UT,Haldwani,477
+UT,Kaladhungi,477
+UT,Ramnagar,477
+UT,Jaspur,477
+UT,Kashipur,477
+UT,Bajpur,477
+UT,Gadarpur,477
+UT,Rudrapur,477
+UT,Kichha,477
+UT,Sitarganj,477
+UT,Nanakmatta,477
+UT,Khatima,477
+WB,Mekliganj,482
+WB,Mathabhanga,482
+WB,Cooch Behar (Uttar),482
+WB,Cooch Behar (Dakshin),482
+WB,Sitalkuchi,482
+WB,Sitai,482
+WB,Dinhata,482
+WB,Natabari,482
+WB,Tufanganj,482
+WB,Kumargram,482
+WB,Kalchini,482
+WB,Alipurudars,482
+WB,Falakata,482
+WB,Madarihat,482
+WB,Dhupguri,482
+WB,Maynaguri,482
+WB,Jalpaiguri,482
+WB,Rajganj,482
+WB,Dabgram-Phulbari,482
+WB,Mal,482
+WB,Nagrakata,482
+WB,Kalimpong,482
+WB,Darjeeling,482
+WB,Kurseong,482
+WB,Matigara-Naxalbari,482
+WB,Siliguri,482
+WB,Phansidewa,482
+WB,Chopra,482
+WB,Islampur,482
+WB,Goalpokhar,482
+WB,Chakulia,482
+WB,Karandighi,482
+WB,Hemtabad,482
+WB,Kaliaganj,482
+WB,Raiganj,482
+WB,Itahar,482
+WB,Kushmandi,482
+WB,Kumarganj,482
+WB,Balurghat,482
+WB,Tapan,482
+WB,Gangarampur,482
+WB,Harirampur,482
+WB,Habibpur,482
+WB,Gazole,482
+WB,Chanchal,482
+WB,Harishchandrapur,482
+WB,Malatipur,482
+WB,Ratua,482
+WB,Manikchak,482
+WB,Maldah,482

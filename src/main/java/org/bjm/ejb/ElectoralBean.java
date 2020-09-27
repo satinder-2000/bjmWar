@@ -156,6 +156,20 @@ public class ElectoralBean implements ElectoralBeanLocal {
         return lc;
     }
 
+    @Override
+    public List<String> getLSConstituencies(String stateCd) {
+        TypedQuery<String> tQ=em.createQuery("select l.constituency from LokSabha l where l.stateCode=?1 order by l.constituency", String.class);
+        tQ.setParameter(1, stateCd);
+        return tQ.getResultList();
+    }
+
+    @Override
+    public List<String> getVSConstituencies(String stateCd) {
+        TypedQuery<String> tQ=em.createQuery("select v.constituency from VidhanSabha v where v.stateCode=?1 order by v.constituency", String.class);
+        tQ.setParameter(1, stateCd);
+        return tQ.getResultList();
+    }
+
    
 
     
