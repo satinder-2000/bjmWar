@@ -68,6 +68,15 @@
                                 <h:outputText id="state" value="#{userRegisterMBean.userState.name}" styleClass="form-control"/>
                             </div>
                         </div>
+                        
+                        <div class=" row form-group">
+                            <div class="col-sm-6">
+                                <label for="state">#{msg.constituency}</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <h:outputText id="constituency" value="#{userRegisterMBean.user.constituency.constituency}" styleClass="form-control"/>
+                            </div>
+                        </div>
 
                         <div class=" row form-group">
                             <div class="col-sm-6">

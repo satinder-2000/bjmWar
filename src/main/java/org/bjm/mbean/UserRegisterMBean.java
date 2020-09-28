@@ -26,6 +26,7 @@ import javax.faces.annotation.ManagedProperty;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
+import javax.faces.event.AjaxBehaviorEvent;
 import javax.faces.flow.FlowScoped;
 import javax.imageio.ImageIO;
 import javax.inject.Inject;
@@ -35,6 +36,7 @@ import javax.servlet.http.HttpSession;
 import javax.servlet.http.Part;
 import org.bjm.ejb.ReferenceDataBeanLocal;
 import org.bjm.ejb.UserBeanLocal;
+import org.bjm.model.LokSabha;
 import org.bjm.model.State;
 import org.bjm.model.User;
 import org.bjm.util.BJMConstants;
@@ -64,8 +66,10 @@ public class UserRegisterMBean implements Serializable {
     @ManagedProperty("#{msg}")
     private ResourceBundle bundle;
     
-    private List<State> states; 
-    
+    private List<State> states;
+    private List<LokSabha> constituencies;
+    private String userConstituencyId;
+    private static final String SELECT_ONE="Select One";
     private User user;
     private State userState;
     private Part profileFile; 
@@ -85,6 +89,17 @@ public class UserRegisterMBean implements Serializable {
         states.add(dummy);
         states.addAll(referenceDataBeanLocal.getStates());
         LOGGER.info("New User initialised");
+    }
+    
+    public void ajaxTypeListener(AjaxBehaviorEvent event){
+        LOGGER.log(Level.INFO, "State Code is {0}", user.getStateCode());
+        constituencies=new ArrayList();
+        LokSabha dummy=new LokSabha();
+        dummy.setId(0);
+        dummy.setConstituency(SELECT_ONE);
+        constituencies.add(dummy);
+        constituencies.addAll(referenceDataBeanLocal.getLokSabhasForState(user.getStateCode()));
+        LOGGER.log(Level.INFO, "Total Constituencies incl. Dummy is : {0}", constituencies.size());
     }
     
     public String processData(){
@@ -154,9 +169,8 @@ public class UserRegisterMBean implements Serializable {
            FacesContext.getCurrentInstance().addMessage("gender", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("genderRequired"), rb.getString("genderRequired"))); 
         }
         
-        //State and PostCode are mandatory
+        //State, Constituency and PostCode are mandatory
         String stateCode=user.getStateCode();
-        
         if (stateCode.equals(DEFAULT_STATE_CODE)){
              FacesContext.getCurrentInstance().addMessage("state",new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("stateRequired"), rb.getString("stateRequired")));  
         }else{
@@ -166,6 +180,20 @@ public class UserRegisterMBean implements Serializable {
                     break;
                 }
             }
+        }
+        
+        //LS Constituency
+        if (userConstituencyId.equals("0")){
+            FacesContext.getCurrentInstance().addMessage("userConstituency", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("noConstituency"), rb.getString("noConstituency")));
+        }else{
+            int constiId=Integer.parseInt(userConstituencyId);
+            for(LokSabha ls: constituencies){
+                if (ls.getId()==constiId){
+                    user.setConstituency(ls);
+                    break;
+                }
+            }
+                
         }
             
         //Phone and Mobile
@@ -360,6 +388,24 @@ public class UserRegisterMBean implements Serializable {
     public void setBundle(ResourceBundle bundle) {
         this.bundle = bundle;
     }
+
+    public List<LokSabha> getConstituencies() {
+        return constituencies;
+    }
+
+    public void setConstituencies(List<LokSabha> constituencies) {
+        this.constituencies = constituencies;
+    }
+
+    public String getUserConstituencyId() {
+        return userConstituencyId;
+    }
+
+    public void setUserConstituencyId(String userConstituencyId) {
+        this.userConstituencyId = userConstituencyId;
+    }
+    
+    
     
     
     

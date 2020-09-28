@@ -19,7 +19,9 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
@@ -91,6 +93,10 @@ public class User implements Serializable {
     
     @Column(name="LAST_FS_REMINDER")
     private LocalDateTime lastFsReminder;
+    
+    @OneToOne()
+    @JoinColumn(name = "LOK_SABHA_ID", referencedColumnName = "ID")
+    private LokSabha constituency;
     
     
     
@@ -353,6 +359,15 @@ public class User implements Serializable {
     public void setLastFsReminder(LocalDateTime lastFsReminder) {
         this.lastFsReminder = lastFsReminder;
     }
+
+    public LokSabha getConstituency() {
+        return constituency;
+    }
+
+    public void setConstituency(LokSabha constituency) {
+        this.constituency = constituency;
+    }
+    
     
     
 

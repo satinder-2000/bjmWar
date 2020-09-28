@@ -34,6 +34,7 @@ import org.bjm.ejb.ReferenceDataBeanLocal;
 import org.bjm.ejb.SurveyBeanLocal;
 import org.bjm.ejb.UserBeanLocal;
 import org.bjm.model.Forum;
+import org.bjm.model.LokSabha;
 import org.bjm.model.State;
 import org.bjm.model.Survey;
 import org.bjm.model.User;
@@ -87,6 +88,9 @@ public class UserMBean implements Serializable {
     private String accountAction;
     private List<String> accountActions;
     private String actionMode;
+    private List<LokSabha> constituencies;
+    private String userConstituencyId;
+    private static final String SELECT_ONE="Select One";
             
     
     
@@ -100,6 +104,8 @@ public class UserMBean implements Serializable {
         profileFileName=user.getProfileFile();
         states=new ArrayList<>();
         states.addAll(referenceDataBeanLocal.getStates());
+        constituencies=new ArrayList();
+        constituencies.addAll(referenceDataBeanLocal.getLokSabhasForState(user.getStateCode()));
         activities=new ArrayList<>();
         activities.add(MY_ACTIVITIES);
         activities.add(MY_FORUMS);
@@ -209,7 +215,20 @@ public class UserMBean implements Serializable {
             }
         }
         
-        
+        //LS Constituency
+        if (userConstituencyId.equals("0")){
+            FacesContext.getCurrentInstance().addMessage("userConstituency", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("noConstituency"), rb.getString("noConstituency")));
+        }else{
+            int constiId=Integer.parseInt(userConstituencyId);
+            for(LokSabha ls: constituencies){
+                if (ls.getId()==constiId){
+                    user.setConstituency(ls);
+                    break;
+                }
+            }
+                
+        }
+                
             
         //Phone and Mobile
         String phone=user.getPhone();
@@ -441,6 +460,22 @@ public class UserMBean implements Serializable {
 
     public static void setACTIVITY_REMINDER_OPTIONS(int[] ACTIVITY_REMINDER_OPTIONS) {
         UserMBean.ACTIVITY_REMINDER_OPTIONS = ACTIVITY_REMINDER_OPTIONS;
+    }
+
+    public List<LokSabha> getConstituencies() {
+        return constituencies;
+    }
+
+    public void setConstituencies(List<LokSabha> constituencies) {
+        this.constituencies = constituencies;
+    }
+
+    public String getUserConstituencyId() {
+        return userConstituencyId;
+    }
+
+    public void setUserConstituencyId(String userConstituencyId) {
+        this.userConstituencyId = userConstituencyId;
     }
 
     

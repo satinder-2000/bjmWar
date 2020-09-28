@@ -72,6 +72,18 @@
                     <div class="col-sm-6">
                         <h:selectOneMenu id="stateCd" value="#{userRegisterMBean.user.stateCode}" styleClass="form-control">
                             <f:selectItems value="#{userRegisterMBean.states}" var="s" itemLabel="#{s.name}" itemValue="#{s.code}"/>
+                            <f:ajax listener="#{userRegisterMBean.ajaxTypeListener}" render="@this userConstituency"/>
+                        </h:selectOneMenu> 
+                    </div>
+                </div>
+                
+                <div class=" row form-group">
+                    <div class="col-sm-6">
+                        <label for="stateCd">#{msg.constituency}*</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <h:selectOneMenu id="userConstituency" value="#{userRegisterMBean.userConstituencyId}" styleClass="form-control">
+                            <f:selectItems value="#{userRegisterMBean.constituencies}" var="c" itemLabel="#{c.constituency}" itemValue="#{c.id}"/>
                         </h:selectOneMenu> 
                     </div>
                 </div>

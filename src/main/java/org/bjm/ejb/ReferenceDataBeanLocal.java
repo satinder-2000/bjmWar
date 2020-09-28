@@ -10,6 +10,7 @@ import java.util.Map;
 import javax.ejb.Local;
 import org.bjm.model.EmailTemplateType;
 import org.bjm.model.ForumCategory;
+import org.bjm.model.LokSabha;
 import org.bjm.model.State;
 import org.bjm.model.SurveyCategory;
 
@@ -21,6 +22,8 @@ import org.bjm.model.SurveyCategory;
 public interface ReferenceDataBeanLocal {
     
     public List<State> getStates();
+    
+    public List<LokSabha> getLokSabhasForState(String stateCode);
 
     public Map<EmailTemplateType, String> getEmailTemplatesMap();
     

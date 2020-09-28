@@ -21,6 +21,7 @@ import javax.persistence.TypedQuery;
 import org.bjm.model.EmailTemplateType;
 import org.bjm.model.EmailTemplate;
 import org.bjm.model.ForumCategory;
+import org.bjm.model.LokSabha;
 import org.bjm.model.State;
 import org.bjm.model.SurveyCategory;
 
@@ -121,13 +122,11 @@ public class ReferenceDataBean implements Serializable, ReferenceDataBeanLocal {
         scTq.setParameter(2, subCat);
         return scTq.getSingleResult();
     }
-    
-    
-    
-    
-    
-    
-    
 
-    
+    @Override
+    public List<LokSabha> getLokSabhasForState(String stateCode) {
+        TypedQuery<LokSabha> tQ=em.createQuery("select l from LokSabha l where l.stateCode=?1", LokSabha.class);
+        tQ.setParameter(1, stateCode);
+        return tQ.getResultList();
+    }
 }
