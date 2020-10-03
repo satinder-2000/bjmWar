@@ -60,6 +60,7 @@ public class LokSabhaElectoralMBean implements Serializable {
         HttpServletRequest request=(HttpServletRequest)FacesContext.getCurrentInstance().getExternalContext().getRequest();
         HttpSession session=request.getSession();
         user=(User)session.getAttribute(BJMConstants.USER);
+        constituency=user.getConstituency().getConstituency();
         String stateCode=user.getStateCode();
         constituencies=erdl.getLokSabhas(stateCode);
         LOGGER.log(Level.INFO, "LokSabha contituenties loaded for State: {0}", stateCode);

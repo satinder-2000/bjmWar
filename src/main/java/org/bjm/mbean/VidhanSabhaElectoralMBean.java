@@ -61,6 +61,12 @@ public class VidhanSabhaElectoralMBean implements Serializable {
         user=(User)session.getAttribute(BJMConstants.USER);
         String stateCode=user.getStateCode();
         constituencies=erdl.getVidhanSabhas(stateCode);
+        for(String c: constituencies){
+            if (c.equals(user.getConstituency().getConstituency())){
+                constituency=c;
+                break;
+            }
+        } 
         LOGGER.log(Level.INFO, "VidhanSabha contituenties loaded for State: {0}", stateCode);
     }
     
