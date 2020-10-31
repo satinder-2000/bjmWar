@@ -61,12 +61,21 @@ public class VidhanSabhaElectoralMBean implements Serializable {
         user=(User)session.getAttribute(BJMConstants.USER);
         String stateCode=user.getStateCode();
         constituencies=erdl.getVidhanSabhas(stateCode);
-        for(String c: constituencies){
-            if (c.equals(user.getConstituency().getConstituency())){
-                constituency=c;
-                break;
+        if (constituencies!=null){
+            for (String c : constituencies) {
+                if (c.equals(user.getConstituency().getConstituency())) {
+                    constituency = c;
+                    break;
+                }
             }
-        } 
+        }else if (constituencies!=null && constituencies.size()>0){
+           constituency=constituencies.get(0);
+        }else{
+            FacesContext context = FacesContext.getCurrentInstance();
+            ResourceBundle rb = context.getApplication().evaluateExpressionGet(context, "#{msg}", ResourceBundle.class);
+           constituency=rb.getString("noVSConstituency");
+        }
+        
         LOGGER.log(Level.INFO, "VidhanSabha contituenties loaded for State: {0}", stateCode);
     }
     

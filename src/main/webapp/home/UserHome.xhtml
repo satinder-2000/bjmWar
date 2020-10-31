@@ -83,7 +83,7 @@
                                     <f:selectItem itemLabel="#{msg.selectone}" itemValue="" />
                                     <f:selectItem itemValue="MALE" itemLabel="#{msg.male}" />
                                     <f:selectItem itemValue="FEMALE" itemLabel="#{msg.female}" />
-                                    <f:selectItem itemValue="HUMAN" itemLabel="#{msg.human}" />
+                                    <f:selectItem itemValue="NOT SPECIFIED" itemLabel="#{msg.notSpecified}" />
                                 </h:selectOneMenu>
                             </div>
                         </div>
@@ -104,8 +104,8 @@
                                 <label for="stateCd">#{msg.constituency}*</label>
                             </div>
                             <div class="col-sm-5">
-                                <h:selectOneMenu id="userConstituency" value="#{userMBean.userConstituencyId}" styleClass="form-control">
-                                    <f:selectItems value="#{userMBean.constituencies}" var="c" itemLabel="#{c.constituency}" itemValue="#{c.id}"/>
+                                <h:selectOneMenu id="userConstituency" value="#{userMBean.user.constituency.constituency}" styleClass="form-control">
+                                    <f:selectItems value="#{userMBean.constituencies}" var="c" itemLabel="#{c.constituency}" itemValue="#{c.constituency}"/>
                                 </h:selectOneMenu> 
                             </div>
                         </div>

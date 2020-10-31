@@ -27,6 +27,4 @@ public interface BJMConstants {
     public static String SURVEY="Survey";
     public static String VISITOR="Visitor";
     public static final int BLOG_COMMENT_LENGTH=1500;
-    
-    
 }

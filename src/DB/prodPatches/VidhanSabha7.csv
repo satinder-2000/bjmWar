@@ -1,0 +1,501 @@
+ID,STATE_CODE,CONSTITUENCY,LOK_SABHA_ID
+3001,TN,Yercaud,356
+3002,TN,Omalur,339
+3003,TN,Mettur,343
+3004,TN,Edapadi,339
+3005,TN,Sankagiri,356
+3006,TN,"Salem (West)",339
+3007,TN,"Salem (North)",339
+3008,TN,"Salem (South)",339
+3009,TN,Veerapandi,339
+3010,TN,Rasipuram,356
+3011,TN,Senthamangalam,356
+3012,TN,Namakkal,356
+3013,TN,"Paramathi Velur",356
+3014,TN,Tiruchengodu,356
+3015,TN,Kumarapalayam,356
+3016,TN,"Erode (East)",356
+3017,TN,"Erode (West)",356
+3018,TN,Modakkurichi,356
+3019,TN,Perundurai,346
+3020,TN,Bhavani,346
+3021,TN,Anthiyur,346
+3022,TN,Gobichettipalayam,346
+3023,TN,Bhavanisagar,358
+3024,TN,Dharapuram,356
+3025,TN,Kangayam,356
+3026,TN,Avanashi,358
+3027,TN,"Tiruppur (North)",346
+3028,TN,"Tiruppur (South)",346
+3029,TN,Palladam,343
+3030,TN,Udumalaipettai,339
+3031,TN,Madathukulam,339
+3032,TN,Udhagamandalam,358
+3033,TN,Coonoor,358
+3034,TN,Gudalur,358
+3035,TN,Mettupalayam,358
+3036,TN,Sulur,343
+3037,TN,Kavundampalayam,343
+3038,TN,"Coimbatore North",343
+3039,TN,Thondamuthur,339
+3040,TN,"Coimbatore (South)",343
+3041,TN,Singanallur,343
+3042,TN,Kinathukadavu,339
+3043,TN,Pollachi,339
+3044,TN,Valparai,339
+3045,TN,Palani,343
+3046,TN,Oddanchatram,343
+3047,TN,Athoor,343
+3048,TN,Nilakottai,343
+3049,TN,Natham,343
+3050,TN,Dindigul,343
+3051,TN,Vedasandur,356
+3052,TN,Aravakurichi,356
+3053,TN,Karur,356
+3054,TN,Krishnarayapuram,356
+3055,TN,Kulithalai,364
+3056,TN,Manapaarai,356
+3057,TN,Srirangam,346
+3058,TN,"Tiruchirappalli (West)",346
+3059,TN,"Tiruchirappalli (East)",346
+3060,TN,Thiruverumbur,346
+3061,TN,Lalgudi,364
+3062,TN,Manachanallur,364
+3063,TN,Musiri,364
+3064,TN,Thuraiyur,364
+3065,TN,Perambalur,364
+3066,TN,Kunnam,343
+3067,TN,Ariyalur,343
+3068,TN,Jayankondam,343
+3069,TN,Tittakudi,343
+3070,TN,Vriddhachalam,343
+3071,TN,Neyveli,343
+3072,TN,Panruti,343
+3073,TN,Cuddalore,343
+3074,TN,Kurinjipadi,343
+3075,TN,Bhuvanagiri,343
+3076,TN,Chidambaram,343
+3077,TN,Kattumannarkoil,343
+3078,TN,Sirkazhi,356
+3079,TN,Mayiladuthurai,356
+3080,TN,Poompuhar,356
+3081,TN,Nagapattinam,356
+3082,TN,Kilvelur,356
+3083,TN,Vedaranyam,356
+3084,TN,Thiruthuraipoondi,356
+3085,TN,Mannargudi,339
+3086,TN,Thiruvarur,356
+3087,TN,Nannilam,356
+3088,TN,Thiruvidaimarudur,356
+3089,TN,Kumbakonam,356
+3090,TN,Papanasam,356
+3091,TN,Thiruvaiyaru,339
+3092,TN,Thanjavur,339
+3093,TN,Orathanadu,339
+3094,TN,Pattukkottai,339
+3095,TN,Peravurani,339
+3096,TN,Gandharvakottai,346
+3097,TN,Viralimalai,356
+3098,TN,Pudukkottai,346
+3099,TN,Thirumayam,339
+3100,TN,Alangudi,339
+3101,TN,Aranthangi,339
+3102,TN,Karaikudi,339
+3103,TN,"Tiruppattur, Sivaganga",339
+3104,TN,Sivaganga,339
+3105,TN,Manamadurai,339
+3106,TN,Melur,356
+3107,TN,"Madurai East",356
+3108,TN,Sholavandan,339
+3109,TN,"Madurai North",356
+3110,TN,"Madurai South",356
+3111,TN,"Madurai Central",356
+3112,TN,"Madurai West",356
+3113,TN,Thiruparankundram,373
+3114,TN,Tirumangalam,373
+3115,TN,Usilampatti,339
+3116,TN,Andipatti,339
+3117,TN,Periyakulam,339
+3118,TN,Bodinayakanur,339
+3119,TN,Cumbum,339
+3120,TN,Rajapalayam,339
+3121,TN,Srivilliputhur,339
+3122,TN,Sattur,373
+3123,TN,Sivakasi,373
+3124,TN,Virudhunagar,373
+3125,TN,Aruppukkottai,373
+3126,TN,Tiruchuli,339
+3127,TN,Paramakudi,339
+3128,TN,Tiruvadanai,339
+3129,TN,Ramanathapuram,339
+3130,TN,Mudhukulathur,339
+3131,TN,Vilathikulam,346
+3132,TN,Thoothukudi,346
+3133,TN,Tiruchendur,346
+3134,TN,Tiruvaikuntam,346
+3135,TN,Ottapidaram,346
+3136,TN,Kovilpatti,346
+3137,TN,Sankarankovil,339
+3138,TN,Vasudevanallur,339
+3139,TN,Kadayanallur,339
+3140,TN,Tenkasi,339
+3141,TN,Alangulam,346
+3142,TN,Tirunelveli,346
+3143,TN,Ambasamudram,346
+3144,TN,Palayamkottai,346
+3145,TN,Nanguneri,346
+3146,TN,Radhapuram,346
+3147,TN,Kanniyakumari,356
+3148,TN,Nagercoil,356
+3149,TN,Colachal,356
+3150,TN,Padmanabhapuram,356
+3151,TN,Vilavancode,356
+3152,TN,Killiyoor,356
+3153,TG,Musheerabad,339
+3154,TG,Malakpet,339
+3155,TG,Amberpet,339
+3156,TG,Khairatabad,339
+3157,TG,"Jubilee Hills",339
+3158,TG,Sanathnagar,339
+3159,TG,Nampally,339
+3160,TG,Karwan,339
+3161,TG,Goshamahal,339
+3162,TG,Charminar,339
+3163,TG,Chandrayangutta,339
+3164,TG,Yakutpura,339
+3165,TG,Bahadurpura,339
+3166,TG,Secunderabad,339
+3167,TG,"Secunderabad Cantt.",339
+3168,TG,Medchal,339
+3169,TG,Malkajgiri,339
+3170,TG,Quthbullapur,339
+3171,TG,Kukatpally,339
+3172,TG,Uppal,339
+3173,TG,Ibrahimpatnam,339
+3174,TG,"L. B. Nagar",339
+3175,TG,Maheshwaram,339
+3176,TG,Rajendranagar,339
+3177,TG,Serilingampally,339
+3178,TG,"Chevella ",339
+3179,TG,Pargi,339
+3180,TG,"Vikarabad ",339
+3181,TG,Tandur,339
+3182,TG,Siddipet,339
+3183,TG,Medak,339
+3184,TG,Narayankhed,339
+3185,TG,"Andole ",339
+3186,TG,Narsapur,339
+3187,TG,"Zahirabad ",339
+3188,TG,Sangareddy,339
+3189,TG,Patancheru,339
+3190,TG,Dubbak,339
+3191,TG,Gajwel,339
+3192,TG,Sirpur,339
+3193,TG,"Chennur ",339
+3194,TG,"Bellampalli ",339
+3195,TG,Mancheriala,339
+3196,TG,"Asifabad (ST)",339
+3197,TG,"Khanapur (ST)",339
+3198,TG,Adliabad,339
+3199,TG,"Boath (ST)",339
+3200,TG,Nirmal,339
+3201,TG,Mudhole,339
+3202,TG,Koratla,339
+3203,TG,Jagtial,339
+3204,TG,"Dharmapuri ",339
+3205,TG,Ramagundam,339
+3206,TG,Manthani,339
+3207,TG,Peddapalle,339
+3208,TG,Karimnagar,339
+3209,TG,"Choppadandi ",339
+3210,TG,Vemulawada,339
+3211,TG,Sircilla,339
+3212,TG,"Manakondur ",339
+3213,TG,Huzurabad,339
+3214,TG,Husnabad,339
+3215,TG,Khammam,339
+3216,TG,Palair,339
+3217,TG,"Madhira ",339
+3218,TG,Wyra,339
+3219,TG,"Sathupalli ",339
+3220,TG,Aswaraopeta,339
+3221,TG,Yellandu,339
+3222,TG,Kothagudem,339
+3223,TG,Bhadrachalam,339
+3224,TG,Pinapaka,339
+3225,TG,Kodangal,339
+3226,TG,Narayanpet,339
+3227,TG,Mahbubnagar,339
+3228,TG,Jadcherla,339
+3229,TG,Devarkadra,339
+3230,TG,Makthal,339
+3231,TG,Wanaparthy,339
+3232,TG,Gadwal,339
+3233,TG,Alampur,339
+3234,TG,Nagarkurnool,339
+3235,TG,Achampet,339
+3236,TG,Kalwakurthy,339
+3237,TG,Shadnagar,339
+3238,TG,Kollapur,339
+3239,TG,Nalgonda,339
+3240,TG,Suryapet,339
+3241,TG,Devarakonda,339
+3242,TG,"Nagarjuna Sagar",339
+3243,TG,Miryalaguda,339
+3244,TG,Huzurnagar,339
+3245,TG,Kodad,339
+3246,TG,Munugode,339
+3247,TG,Bhongir,339
+3248,TG,"Nakrekal ",339
+3249,TG,"Thungathurthi ",339
+3250,TG,Alair,339
+3251,TG,Armur,339
+3252,TG,Bodhan,339
+3253,TG,"Jukkal ",339
+3254,TG,Banswada,339
+3255,TG,Yellareddy,339
+3256,TG,Kamareddy,339
+3257,TG,"Nizamabad (Urban)",339
+3258,TG,"Nizamabad (Rural)",339
+3259,TG,Balkonda,339
+3260,TG,Jangaon,339
+3261,TG,Ghanpur(Station),339
+3262,TG,Palakurthi,339
+3263,TG,Dornakal,339
+3264,TG,Mahabubabad,339
+3265,TG,Narsampet,339
+3266,TG,Parkal,339
+3267,TG,"Warangal West",339
+3268,TG,"Warangal East",339
+3269,TG,Waradhanapet,339
+3270,TG,Bhupalpalle,339
+3271,TG,Mulug,339
+3272,TR,Simna,396
+3273,TR,Mohanpur,396
+3274,TR,Bamutia,396
+3275,TR,Barjala,396
+3276,TR,Khayerpur,396
+3277,TR,Agartala,396
+3278,TR,Ramnagar,396
+3279,TR,"Town Bordowali",396
+3280,TR,Banamalipur,396
+3281,TR,Majlishpur,396
+3282,TR,Mandaibazar,396
+3283,TR,Takarjala,396
+3284,TR,Pratapgarh,396
+3285,TR,Badharghat,396
+3286,TR,Kamalasagar,396
+3287,TR,Bishalgarh,396
+3288,TR,Golaghati,396
+3289,TR,Suryamaninagar,396
+3290,TR,Charilam,396
+3291,TR,Boxanagar,396
+3292,TR,Nalchar,396
+3293,TR,Sonamura,396
+3294,TR,Dhanpur,396
+3295,TR,Ramchandraghat,395
+3296,TR,Khowai,395
+3297,TR,Asharambari,395
+3298,TR,Kalyanpur-Pramodenagar,395
+3299,TR,Teliamura,395
+3300,TR,Krishnapur,395
+3301,TR,Bagma,396
+3302,TR,Radhakishorpur,396
+3303,TR,Matarbari,396
+3304,TR,Kakraban-Salgarh,396
+3305,TR,Rajnagar,396
+3306,TR,Belonia,396
+3307,TR,Santirbazar,396
+3308,TR,Hrishyamukh,395
+3309,TR,Jolaibari,395
+3310,TR,Manu,395
+3311,TR,Sabroom,395
+3312,TR,Ampinagar,395
+3313,TR,Amarpur,395
+3314,TR,Karbook,395
+3315,TR,"Raima Valley",395
+3316,TR,Kamalpur,395
+3317,TR,Surma,395
+3318,TR,Ambassa,395
+3319,TR,Karmachhara,395
+3320,TR,Chawamanu,395
+3321,TR,Pabiachhara,395
+3322,TR,Fatikroy,395
+3323,TR,Chandipur,395
+3324,TR,Kailashahar,395
+3325,TR,Kadamtala-Kurti,395
+3326,TR,Bagbassa,395
+3327,TR,Dharmanagar,395
+3328,TR,Jubarajnagar,395
+3329,TR,Panisagar,395
+3330,TR,Pencharthal,395
+3331,TR,Kanchanpur,395
+3332,UP,"Agra Cantt.",397
+3333,UP,"Agra North",397
+3334,UP,"Agra Rural",397
+3335,UP,"Agra South",397
+3336,UP,Ajagara,397
+3337,UP,Akbarpur,397
+3338,UP,"Akbarpur - Raniya",397
+3339,UP,Alapur,423
+3340,UP,Aliganj,397
+3341,UP,Aligarh,397
+3342,UP,"Allahabad North",397
+3343,UP,"Allahabad South",397
+3344,UP,"Allahabad West",397
+3345,UP,Amanpur,397
+3346,UP,Amethi,397
+3347,UP,Amritpur,397
+3348,UP,Amroha,397
+3349,UP,Anupshahr,397
+3350,UP,Aonla,397
+3351,UP,"Arya Nagar",397
+3352,UP,Asmoli,405
+3353,UP,Atrauli,397
+3354,UP,Atrauliya,397
+3355,UP,Aurai,397
+3356,UP,Auraiya,397
+3357,UP,"Ayah Shah",397
+3358,UP,Ayodhya,397
+3359,UP,Azamgarh,397
+3360,UP,Babaganj,397
+3361,UP,Baberu,397
+3362,UP,Babina,397
+3363,UP,Bachhrawan,397
+3364,UP,Badaun,397
+3365,UP,Badlapur,397
+3366,UP,Bagpat,397
+3367,UP,Bah,397
+3368,UP,Baheri,397
+3369,UP,Bahraich,397
+3370,UP,Bairia,397
+3371,UP,"Bakshi Kaa Talab",397
+3372,UP,Balamau,397
+3373,UP,Baldev,397
+3374,UP,Balha,397
+3375,UP,"Ballia Nagar",397
+3376,UP,Balrampur,426
+3377,UP,Banda,397
+3378,UP,Bangarmau,430
+3379,UP,Bansdih,404
+3380,UP,Bansgaon,397
+3381,UP,Bansi,397
+3382,UP,Bara,397
+3383,UP,Barabanki,397
+3384,UP,Barauli,397
+3385,UP,Baraut,397
+3386,UP,Bareilly,397
+3387,UP,"Bareilly Cantt.",397
+3388,UP,Barhaj,397
+3389,UP,Barhapur,397
+3390,UP,Barkhera,397
+3391,UP,"Basti Sadar",397
+3392,UP,Behat,398
+3393,UP,"Belthara Road",404
+3394,UP,Bhadohi,397
+3395,UP,Bhagwantnagar,430
+3396,UP,Bharthana,397
+3397,UP,"Bhatpar Rani",404
+3398,UP,Bhinga,426
+3399,UP,Bhognipur,397
+3400,UP,Bhojipura,397
+3401,UP,Bhojpur,397
+3402,UP,Bhongaon,397
+3403,UP,Bidhuna,397
+3404,UP,Bijnor,397
+3405,UP,Bikapur,397
+3406,UP,Bilari,405
+3407,UP,Bilaspur,397
+3408,UP,Bilgram-Mallanwan,397
+3409,UP,Bilhaur,397
+3410,UP,Bilsi,397
+3411,UP,Bindki,397
+3412,UP,Bisalpur,397
+3413,UP,Bisauli,397
+3414,UP,Biswan,427
+3415,UP,"Bithari Chainpur",397
+3416,UP,Bithoor,397
+3417,UP,Budhana,397
+3418,UP,Bulandshahr,397
+3419,UP,Caimpiyarganj,397
+3420,UP,Chail,397
+3421,UP,Chakia,397
+3422,UP,Chamraua,397
+3423,UP,Chandausi,405
+3424,UP,Chandpur,397
+3425,UP,Charkhari,397
+3426,UP,Charthawal,397
+3427,UP,Chauri-Chaura,397
+3428,UP,Chhanbey,397
+3429,UP,Chhaprauli,397
+3430,UP,Chharra,397
+3431,UP,Chhata,397
+3432,UP,Chhibramau,397
+3433,UP,Chillupar,397
+3434,UP,Chitrakoot,397
+3435,UP,Chunar,397
+3436,UP,Colonelganj,397
+3437,UP,Dadraul,424
+3438,UP,Dadri,397
+3439,UP,Dariyabad,397
+3440,UP,Dataganj,397
+3441,UP,Debai,397
+3442,UP,Deoband,398
+3443,UP,Deoria,397
+3444,UP,Dhampur,397
+3445,UP,Dhanaura,397
+3446,UP,Dhanghata,423
+3447,UP,Dhaurahra,397
+3448,UP,Dhaulana,397
+3449,UP,Dibiyapur,397
+3450,UP,Didarganj,397
+3451,UP,Domariyaganj,397
+3452,UP,Duddhi,397
+3453,UP,Etah,397
+3454,UP,Etawah,397
+3455,UP,Etmadpur,397
+3456,UP,Faridpur,397
+3457,UP,Farrukhabad,397
+3458,UP,Fatehabad,397
+3459,UP,Fatehpur,397
+3460,UP,"Fatehpur Sikri",397
+3461,UP,Fazilnagar,397
+3462,UP,Firozabad,397
+3463,UP,Gainsari,426
+3464,UP,Gangoh,397
+3465,UP,Garautha,397
+3466,UP,Garhmukteshwar,397
+3467,UP,Gaura,397
+3468,UP,Gauriganj,397
+3469,UP,Ghatampur,397
+3470,UP,Ghaziabad,397
+3471,UP,Ghazipur,397
+3472,UP,Ghorawal,397
+3473,UP,Ghosi,397
+3474,UP,"Gola Gokrannath",397
+3475,UP,Gonda,397
+3476,UP,Gopalpur,397
+3477,UP,Gopamau,397
+3478,UP,"Gorakhpur Rural",397
+3479,UP,"Gorakhpur Urban",397
+3480,UP,Goshainganj,397
+3481,UP,Goverdhan,397
+3482,UP,Govindnagar,397
+3483,UP,Gunnaur,397
+3484,UP,Gyanpur,397
+3485,UP,Haidergarh,397
+3486,UP,Hamirpur,397
+3487,UP,Handia,397
+3488,UP,Hapur,407
+3489,UP,Harchandpur,397
+3490,UP,Hardoi,397
+3491,UP,Hargaon,397
+3492,UP,Harraiya,397
+3493,UP,Hasanpur,397
+3494,UP,Hastinapur,397
+3495,UP,Hata,397
+3496,UP,Hathras,397
+3497,UP,Husainganj,397
+3498,UP,Iglas,397
+3499,UP,Isauli,429
+3500,UP,Itwa,397

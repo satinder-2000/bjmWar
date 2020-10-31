@@ -99,6 +99,15 @@ public class UserMBean implements Serializable {
         HttpServletRequest request= (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
         HttpSession session=request.getSession();
         user=(User)session.getAttribute(BJMConstants.USER);
+        LokSabha ls=user.getConstituency();
+        if (ls==null){
+            ls=new LokSabha();
+            FacesContext context = FacesContext.getCurrentInstance();
+            ResourceBundle rb = context.getApplication().evaluateExpressionGet(context, "#{msg}", ResourceBundle.class);
+            ls.setConstituency(rb.getString("selectone"));
+            ls.setId(0);
+            user.setConstituency(ls);
+        }
         newEmail=user.getEmail();
         orgStateCode=user.getStateCode();
         profileFileName=user.getProfileFile();
@@ -216,12 +225,11 @@ public class UserMBean implements Serializable {
         }
         
         //LS Constituency
-        if (userConstituencyId.equals("0")){
+        if (user.getConstituency().getConstituency().equals(rb.getString("selectOne"))){
             FacesContext.getCurrentInstance().addMessage("userConstituency", new FacesMessage(FacesMessage.SEVERITY_ERROR, rb.getString("noConstituency"), rb.getString("noConstituency")));
         }else{
-            int constiId=Integer.parseInt(userConstituencyId);
             for(LokSabha ls: constituencies){
-                if (ls.getId()==constiId){
+                if(user.getConstituency().getConstituency().equals(ls.getConstituency())){
                     user.setConstituency(ls);
                     break;
                 }
@@ -270,6 +278,9 @@ public class UserMBean implements Serializable {
             toReturn = null;
         } else {
             user=userBeanLocal.amendUser(user);
+            HttpServletRequest request=(HttpServletRequest)FacesContext.getCurrentInstance().getExternalContext().getRequest();
+            HttpSession session=request.getSession();
+            session.setAttribute(BJMConstants.USER, user);
             FacesContext.getCurrentInstance().addMessage("",new FacesMessage(FacesMessage.SEVERITY_INFO, rb.getString("changesApplied"), rb.getString("changesApplied")));
             toReturn = null;
         }

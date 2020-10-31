@@ -1,0 +1,501 @@
+ID,STATE_CODE,CONSTITUENCY,LOK_SABHA_ID
+2501,OR,Satyabadi,279
+2502,OR,Pipili,279
+2503,OR,Jayadev,279
+2504,OR,"Bhubaneswar Central (Madhya)",279
+2505,OR,"Bhubaneswar North",279
+2506,OR,"Ekamra Bhubaneswar",279
+2507,OR,Jatani,279
+2508,OR,Begunia,279
+2509,OR,Khurda,279
+2510,OR,Chilika,279
+2511,OR,Ranpur,279
+2512,OR,Khandapada,279
+2513,OR,Daspalla,279
+2514,OR,Nayagarh,279
+2515,OR,Bhanjanagar,279
+2516,OR,Polasara,279
+2517,OR,Kabisuryanagar,279
+2518,OR,Khalikote,279
+2519,OR,Chhatrapur,279
+2520,OR,Asika,279
+2521,OR,Surada,279
+2522,OR,Sanakhemundi,279
+2523,OR,Hinjili,279
+2524,OR,Gopalpur,279
+2525,OR,Berhampur,279
+2526,OR,Digapahandi,279
+2527,OR,Chikiti,279
+2528,OR,Mohana,279
+2529,OR,Parlakhemundi,279
+2530,OR,Gunupur,279
+2531,OR,"Bissam Cuttack",279
+2532,OR,Rayagada,279
+2533,OR,Lakshmipur,279
+2534,OR,Kotpad,279
+2535,OR,Jeypore,279
+2536,OR,Koraput,279
+2537,OR,Pottangi,279
+2538,OR,Malkangiri,279
+2539,OR,Chitrakonda,279
+2540,PY,Mannadipet,313
+2541,PY,Thirubuvanai,313
+2542,PY,Ossudu,313
+2543,PY,Mangalam,313
+2544,PY,Villianur,313
+2545,PY,Ozhukarai,313
+2546,PY,Kadirkamam,313
+2547,PY,"Indira Nagar",313
+2548,PY,Thattanchavady,313
+2549,PY,"Kamaraj Nagar",313
+2550,PY,Lawspet,313
+2551,PY,Kalapet,313
+2552,PY,Muthialpet,313
+2553,PY,"Raj Bhavan",313
+2554,PY,Oupalam,313
+2555,PY,Orleampeth,313
+2556,PY,Nellithope,313
+2557,PY,Mudaliarpet,313
+2558,PY,Ariankuppam,313
+2559,PY,Manavely,313
+2560,PY,Embalam,313
+2561,PY,Nettapakkam,313
+2562,PY,Bahour,313
+2563,PY,Nedungadu,313
+2564,PY,Thirunallar,313
+2565,PY,"Karaikal North",313
+2566,PY,"Karaikal South",313
+2567,PY,"Neravy T R Pattinam",313
+2568,PY,Mahe,313
+2569,PY,Yanam,313
+2570,PB,Sujanpur,300
+2571,PB,Bhoa,300
+2572,PB,Pathankot,300
+2573,PB,Gurdaspur,300
+2574,PB,"Dina Nagar",300
+2575,PB,Qadian,300
+2576,PB,Batala,300
+2577,PB,"Sri Hargobindpur",300
+2578,PB,"Fatehgarh Churian",300
+2579,PB,"Dera Baba Nanak",300
+2580,PB,Ajnala,300
+2581,PB,"Raja Sansi",300
+2582,PB,Majitha,300
+2583,PB,Jandiala,300
+2584,PB,"Amritsar North",300
+2585,PB,"Amritsar West",300
+2586,PB,"Amritsar Central",300
+2587,PB,"Amritsar East",300
+2588,PB,"Amritsar South",300
+2589,PB,Attari,300
+2590,PB,"Tarn Taran",300
+2591,PB,"Khem Karan",300
+2592,PB,Patti,300
+2593,PB,"Khadoor Sahib",300
+2594,PB,"Baba Bakala",300
+2595,PB,Bholath,300
+2596,PB,Kapurthala,300
+2597,PB,"Sultanpur Lodhi",300
+2598,PB,Phagwara,300
+2599,PB,Phillaur,300
+2600,PB,Nakodar,300
+2601,PB,Shahkot,300
+2602,PB,Kartarpur,300
+2603,PB,"Jalandhar West",300
+2604,PB,"Jalandhar Central",300
+2605,PB,"Jalandhar North",300
+2606,PB,"Jalandhar Cantt.",300
+2607,PB,Adampur,300
+2608,PB,Mukerian,300
+2609,PB,Dasuya,300
+2610,PB,Urmar,300
+2611,PB,"Sham Chaurasi",300
+2612,PB,Hoshiarpur,300
+2613,PB,Chabbewal,300
+2614,PB,Garhshankar,300
+2615,PB,"Banga ",300
+2616,PB,Nawanshahr,300
+2617,PB,Balachaur,300
+2618,PB,"Anandpur Sahib",300
+2619,PB,Rupnagar,300
+2620,PB,"Chamkaur Sahib",300
+2621,PB,Kharar,300
+2622,PB,"S.A.S. Nagar",300
+2623,PB,"Bassi Pathana",300
+2624,PB,"Fatehgarh Sahib",300
+2625,PB,Amloh,300
+2626,PB,Khanna,300
+2627,PB,Samrala,300
+2628,PB,Sahnewal,300
+2629,PB,"Ludhiana East",300
+2630,PB,"Ludhiana South",300
+2631,PB,"Atam Nagar",300
+2632,PB,"Ludhiana Central",300
+2633,PB,"Ludhiana West",300
+2634,PB,"Ludhiana North",300
+2635,PB,Gill,300
+2636,PB,Payal,300
+2637,PB,Dakha,300
+2638,PB,Raikot,300
+2639,PB,Jagraon,300
+2640,PB,"Nihal Singhwala",300
+2641,PB,"Bhagha Purana",300
+2642,PB,Moga,300
+2643,PB,Dharamkot,300
+2644,PB,Zira,300
+2645,PB,"Firozpur City",300
+2646,PB,"Firozpur Rural",300
+2647,PB,"Guru Har Sahai",300
+2648,PB,Jalalabad,300
+2649,PB,Fazilka,300
+2650,PB,Abohar,300
+2651,PB,Balluana,300
+2652,PB,Lambi,300
+2653,PB,Gidderbaha,300
+2654,PB,Malout,300
+2655,PB,Muktsar,300
+2656,PB,Faridkot,300
+2657,PB,Kotkapura,300
+2658,PB,Jaitu,300
+2659,PB,"Rampura Phul",300
+2660,PB,"Bhucho Mandi",300
+2661,PB,"Bathinda Urban",300
+2662,PB,"Bathinda Rural",300
+2663,PB,"Talwandi Sabo",300
+2664,PB,Maur,300
+2665,PB,Mansa,300
+2666,PB,Sardulgarh,300
+2667,PB,Budhlada,300
+2668,PB,Lehra,300
+2669,PB,Dirba,300
+2670,PB,Sunam,300
+2671,PB,Bhadaur,300
+2672,PB,Barnala,300
+2673,PB,"Mehal Kalan",300
+2674,PB,Malerkotla,300
+2675,PB,Amargarh,300
+2676,PB,Dhuri,300
+2677,PB,Sangrur,300
+2678,PB,Nabha,300
+2679,PB,"Patiala Rural",300
+2680,PB,Rajpura,300
+2681,PB,"Dera Bassi",300
+2682,PB,Ghanaur,300
+2683,PB,Sanour,300
+2684,PB,Patiala,300
+2685,PB,Samana,300
+2686,PB,Shutrana,300
+2687,RJ,Sadulshahar,314
+2688,RJ,Ganganagar,314
+2689,RJ,Karanpur,314
+2690,RJ,Suratgarh,314
+2691,RJ,Raisinghnagar,314
+2692,RJ,Anupgarh,313
+2693,RJ,Sangaria,314
+2694,RJ,Hanumangarh,314
+2695,RJ,Pilibanga,314
+2696,RJ,Nohar,313
+2697,RJ,Bhadra,313
+2698,RJ,Khajuwala,313
+2699,RJ,"Bikaner West",313
+2700,RJ,"Bikaner East",313
+2701,RJ,Kolayat,313
+2702,RJ,Lunkaransar,313
+2703,RJ,Dungargarh,313
+2704,RJ,Nokha,313
+2705,RJ,Sadulpur,313
+2706,RJ,Taranagar,313
+2707,RJ,Sardarshahar,313
+2708,RJ,Churu,313
+2709,RJ,Ratangarh,313
+2710,RJ,Sujangarh,313
+2711,RJ,Pilani,317
+2712,RJ,Surajgarh,317
+2713,RJ,Jhunjhunu,317
+2714,RJ,Mandawa,317
+2715,RJ,Nawalgarh,317
+2716,RJ,Udaipurwati,317
+2717,RJ,Khetri,317
+2718,RJ,Fatehpur,317
+2719,RJ,Lachhmangarh,318
+2720,RJ,Dhod,318
+2721,RJ,Sikar,318
+2722,RJ,"Danta Ramgarh",318
+2723,RJ,Khandela,318
+2724,RJ,"Neem Ka Thana",318
+2725,RJ,"Sri Madhopur",318
+2726,RJ,Kotputli,316
+2727,RJ,Viratnagar,316
+2728,RJ,Shahpura,316
+2729,RJ,Chomu,318
+2730,RJ,Phulera,316
+2731,RJ,Dudu,313
+2732,RJ,Jhotwara,316
+2733,RJ,Amber,316
+2734,RJ,"Jamwa Ramgarh",316
+2735,RJ,"Hawa Mahal",316
+2736,RJ,"Vidhyadhar Nagar",316
+2737,RJ,"Civil Lines",316
+2738,RJ,"Kishan Pole",316
+2739,RJ,"Adarsh Nagar",316
+2740,RJ,"Malviya Nagar",316
+2741,RJ,Sanganer,316
+2742,RJ,Bagru,316
+2743,RJ,Bassi,313
+2744,RJ,Chaksu,313
+2745,RJ,Tijara,313
+2746,RJ,"Kishangarh Bas",313
+2747,RJ,Mundawar,313
+2748,RJ,Behror,313
+2749,RJ,Bansur,316
+2750,RJ,Thanagazi,313
+2751,RJ,"Alwar Rural",313
+2752,RJ,"Alwar Urban",313
+2753,RJ,Ramgarh,313
+2754,RJ,Rajgarh–Laxmangarh,313
+2755,RJ,Kathumar,322
+2756,RJ,Kaman,322
+2757,RJ,Nagar,322
+2758,RJ,Deeg–Kumher,322
+2759,RJ,Bharatpur,322
+2760,RJ,Nadbai,322
+2761,RJ,Weir,322
+2762,RJ,Bayana,322
+2763,RJ,Baseri,317
+2764,RJ,Bari,317
+2765,RJ,Dholpur,317
+2766,RJ,Rajakhera,317
+2767,RJ,Todabhim,317
+2768,RJ,Hindaun,317
+2769,RJ,Karauli,317
+2770,RJ,Sapotra,317
+2771,RJ,Bandikui,313
+2772,RJ,Mahuwa,313
+2773,RJ,Sikrai,313
+2774,RJ,Dausa,313
+2775,RJ,Lalsot,313
+2776,RJ,Gangapur,324
+2777,RJ,Bamanwas,324
+2778,RJ,"Sawai Madhopur",324
+2779,RJ,Khandar,324
+2780,RJ,Malpura,324
+2781,RJ,Niwai,324
+2782,RJ,Tonk,324
+2783,RJ,Deoli–Uniara,324
+2784,RJ,Kishangarh,313
+2785,RJ,Pushkar,313
+2786,RJ,"Ajmer North",313
+2787,RJ,"Ajmer South",313
+2788,RJ,Nasirabad,313
+2789,RJ,Beawar,317
+2790,RJ,Masuda,313
+2791,RJ,Kekri,313
+2792,RJ,Ladnun,317
+2793,RJ,Deedwana,317
+2794,RJ,Jayal,317
+2795,RJ,Nagaur,317
+2796,RJ,Khinvsar,317
+2797,RJ,Merta,317
+2798,RJ,Degana,317
+2799,RJ,Makrana,317
+2800,RJ,Parbatsar,317
+2801,RJ,Nawan,317
+2802,RJ,Jaitaran,317
+2803,RJ,Sojat,317
+2804,RJ,Pali,317
+2805,RJ,"Marwar Junction",317
+2806,RJ,Bali,317
+2807,RJ,Sumerpur,317
+2808,RJ,Phalodi,317
+2809,RJ,Lohawat,317
+2810,RJ,Shergarh,317
+2811,RJ,Osian,317
+2812,RJ,Bhopalgarh,317
+2813,RJ,Sardarpura,317
+2814,RJ,Jodhpur,317
+2815,RJ,Soorsagar,317
+2816,RJ,Luni,317
+2817,RJ,Bilara,317
+2818,RJ,Jaisalmer,313
+2819,RJ,Pokaran,317
+2820,RJ,Sheo,313
+2821,RJ,Barmer,313
+2822,RJ,Baytoo,313
+2823,RJ,Pachpadra,313
+2824,RJ,Siwana,313
+2825,RJ,"Gudha Malani",313
+2826,RJ,Chohtan,313
+2827,RJ,Ahore,316
+2828,RJ,Jalore,316
+2829,RJ,Bhinmal,316
+2830,RJ,Sanchore,316
+2831,RJ,Raniwara,316
+2832,RJ,Sirohi,316
+2833,RJ,Pindwara–Abu,316
+2834,RJ,Reodar,316
+2835,RJ,Gogunda,332
+2836,RJ,Jhadol,332
+2837,RJ,Kherwara,332
+2838,RJ,"Udaipur Rural",332
+2839,RJ,Udaipur,332
+2840,RJ,Mavli,313
+2841,RJ,Vallabhnagar,313
+2842,RJ,Salumber,332
+2843,RJ,Dhariawad,332
+2844,RJ,Dungarpur,313
+2845,RJ,Aspur,332
+2846,RJ,Sagwara,313
+2847,RJ,Chorasi,313
+2848,RJ,Ghatol,313
+2849,RJ,Garhi,313
+2850,RJ,Banswara,313
+2851,RJ,Bagidora,313
+2852,RJ,Kushalgarh,313
+2853,RJ,Kapasan,313
+2854,RJ,Begun,313
+2855,RJ,Chittorgarh,313
+2856,RJ,Nimbahera,313
+2857,RJ,"Bari Sadri",313
+2858,RJ,Pratapgarh,313
+2859,RJ,Bhim,317
+2860,RJ,Kumbhalgarh,317
+2861,RJ,Rajsamand,317
+2862,RJ,Nathdwara,317
+2863,RJ,Asind,313
+2864,RJ,Mandal,313
+2865,RJ,Sahara,313
+2866,RJ,Bhilwara,313
+2867,RJ,Shahpura,313
+2868,RJ,Jahazpur,313
+2869,RJ,Mandalgarh,313
+2870,RJ,Hindoli,313
+2871,RJ,Keshoraipatan,317
+2872,RJ,Bundi,317
+2873,RJ,Pipalda,317
+2874,RJ,Sangod,317
+2875,RJ,"Kota North",317
+2876,RJ,"Kota South",317
+2877,RJ,Ladpura,317
+2878,RJ,"Ramganj Mandi",317
+2879,RJ,Anta,316
+2880,RJ,Kishanganj,316
+2881,RJ,Baran–Atru,316
+2882,RJ,Chhabra,316
+2883,RJ,Dag,316
+2884,RJ,Jhalarapatan,316
+2885,RJ,Khanpur,316
+2886,RJ,"Manohar Thana",316
+2887,SK,"Yoksam- Tashiding (BL)",339
+2888,SK,Yangthang,339
+2889,SK,"Maneybong Dentam",339
+2890,SK,"Gyalshing Barnyak",339
+2891,SK,"Rinchenpong (BL)",339
+2892,SK,"Daramdin (BL)",339
+2893,SK,"Soreng Chakung",339
+2894,SK,"Salghari Zoom ",339
+2895,SK,"Barfung (BL)",339
+2896,SK,"Poklok Kamrang",339
+2897,SK,"Namchi Singhithang",339
+2898,SK,Melli,339
+2899,SK,"Namthang Rateypani",339
+2900,SK,"Temi Namphing",339
+2901,SK,"Rangang Yangang",339
+2902,SK,"Tumin Lingee (BL)",339
+2903,SK,"Khamdong Singtam",339
+2904,SK,"West Pendam ",339
+2905,SK,Rhenock,339
+2906,SK,Chujachen,339
+2907,SK,"Gnathang Machong (BL)",339
+2908,SK,Namchaybong,339
+2909,SK,"Shyari (BL)",339
+2910,SK,"Martam Rumtek (BL)",339
+2911,SK,"Upper Tadong",339
+2912,SK,Arithang,339
+2913,SK,"Gangtok (BL)",339
+2914,SK,"Upper Burtuk",339
+2915,SK,"Kabi Lungchuk (BL)",339
+2916,SK,"Djongu (BL)",339
+2917,SK,"Lachen Mangan (BL)",339
+2918,SK,Sangha,339
+2919,TN,Gummidipoondi,346
+2920,TN,Ponneri,346
+2921,TN,Tiruttani,339
+2922,TN,Thiruvallur,346
+2923,TN,Poonamallee,346
+2924,TN,Avadi,346
+2925,TN,Maduravoyal,339
+2926,TN,Ambattur,339
+2927,TN,Madavaram,346
+2928,TN,Thiruvottiyur,339
+2929,TN,"Dr. Radhakrishnan Nagar",339
+2930,TN,Perambur,339
+2931,TN,Kolathur,339
+2932,TN,Villivakkam,339
+2933,TN,"Thiru. Vi. Ka. Nagar",339
+2934,TN,Egmore,339
+2935,TN,Royapuram,339
+2936,TN,Harbour,339
+2937,TN,Chepauk-Thiruvallikeni,339
+2938,TN,"Thousand Lights",339
+2939,TN,"Anna Nagar",339
+2940,TN,Virugambakkam,339
+2941,TN,Saidapet,339
+2942,TN,"T. Nagar",339
+2943,TN,Mylapore,339
+2944,TN,Velachery,339
+2945,TN,Sholinganallur,339
+2946,TN,Alandur,339
+2947,TN,Sriperumbudur,339
+2948,TN,Pallavaram,339
+2949,TN,Tambaram,339
+2950,TN,Chengalpattu,356
+2951,TN,Thiruporur,356
+2952,TN,Cheyyur,356
+2953,TN,Maduranthakam,356
+2954,TN,Uthiramerur,356
+2955,TN,Kancheepuram,356
+2956,TN,Arakkonam,339
+2957,TN,Sholingur,339
+2958,TN,"Katpadi (Vellore North)",339
+2959,TN,Ranipet,339
+2960,TN,Arcot,339
+2961,TN,"Vellore (Vellore south)",347
+2962,TN,Anaikattu,347
+2963,TN,"K. V. Kuppam",347
+2964,TN,Gudiyattam,347
+2965,TN,Vaniyambadi,347
+2966,TN,Ambur,347
+2967,TN,Jolarpet,346
+2968,TN,"Tirupattur, Vellore",346
+2969,TN,Uthangarai,356
+2970,TN,Bargur,356
+2971,TN,Krishnagiri,356
+2972,TN,Veppanahalli,356
+2973,TN,Hosur,356
+2974,TN,Thalli,356
+2975,TN,Palacode,343
+2976,TN,Pennagaram,343
+2977,TN,Dharmapuri,343
+2978,TN,Pappireddippatti,343
+2979,TN,Harur,343
+2980,TN,Chengam,346
+2981,TN,Tiruvannamalai,346
+2982,TN,Kilpennathur,346
+2983,TN,Kalasapakkam,346
+2984,TN,Polur,339
+2985,TN,Arani,339
+2986,TN,Cheyyar,339
+2987,TN,Vandavasi,339
+2988,TN,Gingee,339
+2989,TN,Mailam,339
+2990,TN,Tindivanam,352
+2991,TN,Vanur,352
+2992,TN,Villupuram,352
+2993,TN,Vikravandi,352
+2994,TN,Tirukkoyilur,352
+2995,TN,Ulundurpettai,352
+2996,TN,Rishivandiyam,356
+2997,TN,Sankarapuram,356
+2998,TN,Kallakurichi,356
+2999,TN,Gangavalli,356
+3000,TN,Attur,356

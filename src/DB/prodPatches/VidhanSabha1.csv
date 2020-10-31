@@ -1,0 +1,501 @@
+ID,STATE_CODE,CONSTITUENCY,LOK_SABHA_ID
+1,AP,Ichchapuram,2
+2,AP,Palasa,2
+3,AP,Tekkali,2
+4,AP,Pathapatnam,2
+5,AP,Srikakulam,2
+6,AP,Amadalavalasa,2
+7,AP,Etcherla,3
+8,AP,Narasannapeta,2
+9,AP,Rajam,3
+10,AP,Palakonda,1
+11,AP,Kurupam,1
+12,AP,Parvathipuram,1
+13,AP,Salur,1
+14,AP,Bobbili,3
+15,AP,Cheepurupalli,3
+16,AP,Gajapathinagaram,3
+17,AP,Nellimarla,3
+18,AP,Vizianagaram,3
+19,AP,Srungavarapukota,2
+20,AP,Bhimili,2
+21,AP,"Visakhapatnam East",2
+22,AP,"Visakhapatnam South",2
+23,AP,"Visakhapatnam North",2
+24,AP,"Visakhapatnam West",2
+25,AP,Gajuwaka,2
+26,AP,Payakaraopet,1
+27,AP,Narsipatnam,1
+28,AP,Tuni,1
+29,AP,Prathipadu,1
+30,AP,Pithapuram,1
+31,AP,"Kakinada Rural",1
+32,AP,Peddapuram,1
+33,AP,Anaparthy,1
+34,AP,"Kakinada City",1
+35,AP,Rajanagaram,1
+36,AP,"Rajahmundry City",1
+37,AP,"Rajahmundry Rural",1
+38,AP,Jaggampeta,1
+39,AP,Rampachodavaram,1
+40,AP,Kovvur,1
+41,AP,Nidadavole,1
+42,AP,Achanta,1
+43,AP,Palakollu,1
+44,AP,Narasapuram,1
+45,AP,Bhimavaram,1
+46,AP,Undi,1
+47,AP,Tanuku,1
+48,AP,Tadepalligudem,1
+49,AP,Unguturu,1
+50,AP,Denduluru,1
+51,AP,Eluru,1
+52,AP,Gopalapuram,1
+53,AP,Polavaram,1
+54,AP,Chintalapudi,1
+55,AP,Tiruvuru,1
+56,AP,Nuzvid,1
+57,AP,Gannavaram,1
+58,AP,Gudivada,1
+59,AP,Kaikalur,1
+60,AP,Pedana,1
+61,AP,Machilipatnam,1
+62,AP,Avanigadda,1
+63,AP,Pamarru,1
+64,AP,Penamaluru,1
+65,AP,"Vijayawada West",2
+66,AP,"Vijayawada Central",2
+67,AP,"Vijayawada East",2
+68,AP,Mylavaram,2
+69,AP,Nandigama,2
+70,AP,Jaggayyapeta,2
+71,AP,Pedakurapadu,1
+72,AP,Tadikonda,1
+73,AP,Mangalagiri,1
+74,AP,Ponnuru,1
+75,AP,Vemuru,1
+76,AP,Repalle,1
+77,AP,Tenali,1
+78,AP,Bapatla,1
+79,AP,Prathipadu,1
+80,AP,"Guntur West",1
+81,AP,"Guntur East",1
+82,AP,Chilakaluripet,1
+83,AP,Narasaraopet,1
+84,AP,Sattenapalle,1
+85,AP,Vinukonda,1
+86,AP,Gurajala,1
+87,AP,Macherla,1
+88,AP,Yerragondapalem,1
+89,AP,Darsi,1
+90,AP,Parchur,1
+91,AP,Addanki,1
+92,AP,Chirala,1
+93,AP,Santhanuthalapadu,1
+94,AP,Ongole,1
+95,AP,Kandukur,1
+96,AP,Kondapi,1
+97,AP,Markapuram,1
+98,AP,Giddalur,1
+99,AP,Kanigiri,1
+100,AP,Kavali,1
+101,AP,Atmakur,1
+102,AP,Kovur,1
+103,AP,"Nellore City",1
+104,AP,"Nellore Rural",1
+105,AP,Sarvepalli,2
+106,AP,Gudur,2
+107,AP,Sullurpeta,2
+108,AP,Venkatagiri,2
+109,AP,Udayagiri,1
+110,AP,Badvel,1
+111,AP,Rajampet,1
+112,AP,Kadapa,1
+113,AP,Kodur,1
+114,AP,Rayachoti,1
+115,AP,Pulivendla,1
+116,AP,Kamalapuram,1
+117,AP,Jammalamadugu,1
+118,AP,Proddatur,1
+119,AP,Mydukur,1
+120,AP,Allagadda,17
+121,AP,Srisailam,17
+122,AP,Nandikotkur,17
+123,AP,Kurnool,1
+124,AP,Panyam,17
+125,AP,Nandyal,17
+126,AP,Banaganapalle,17
+127,AP,Dhone,17
+128,AP,Pattikonda,1
+129,AP,Kodumur,1
+130,AP,Yemmiganur,1
+131,AP,Mantralayam,1
+132,AP,Adoni,1
+133,AP,Alur,1
+134,AP,Raptadu,1
+135,AP,Madakasira,1
+136,AP,Hindupur,1
+137,AP,Penukonda,1
+138,AP,Puttaparthi,1
+139,AP,Dharmavaram,1
+140,AP,Kadiri,1
+141,AP,Thamballapalle,1
+142,AP,Pileru,1
+143,AP,Madanapalle,1
+144,AP,Punganur,1
+145,AP,Chandragiri,1
+146,AP,Tirupati,1
+147,AP,Srikalahasti,2
+148,AP,Sathyavedu,2
+149,AP,Nagari,2
+150,AP,"Gangadhara Nellore",1
+151,AP,Chittoor,1
+152,AP,Puthalapattu,1
+153,AP,Palamaner,1
+154,AP,Kuppam,1
+155,AR,Lumla,26
+156,AR,Tawang,26
+157,AR,Mukto,26
+158,AR,Dirang,26
+159,AR,Kalaktang,26
+160,AR,Thrizino-Buragaon,26
+161,AR,Bomdila,26
+162,AR,Bameng,26
+163,AR,Chayangtajo,26
+164,AR,"Seppa East",26
+165,AR,"Seppa West",26
+166,AR,Pakke-Kasang,26
+167,AR,Itanagar,26
+168,AR,Doimukh,26
+169,AR,Sagalee,26
+170,AR,Yachuli,26
+171,AR,Ziro-Hapoli,26
+172,AR,Palin,26
+173,AR,Nyapin,26
+174,AR,Tali,26
+175,AR,Koloriang,26
+176,AR,Nacho,26
+177,AR,Taliha,26
+178,AR,Daporijo,26
+179,AR,Raga,26
+180,AR,Damporijo,26
+181,AR,Liromoba,26
+182,AR,Likabali,26
+183,AR,Basar,26
+184,AR,"Along West",26
+185,AR,"Along East",26
+186,AR,Rumgong,26
+187,AR,Mechuka,26
+188,AR,Tuting-Yingkiong,25
+189,AR,Pangin,25
+190,AR,Nari-Koyu,25
+191,AR,"Pasighat West",25
+192,AR,"Pasighat East",25
+193,AR,Mebo,25
+194,AR,Mariyang-Geku,25
+195,AR,Anini,25
+196,AR,Dambuk,25
+197,AR,Roing,25
+198,AR,Tezu,25
+199,AR,Hayuliang,25
+200,AR,Chowkham,25
+201,AR,Namsai,25
+202,AR,Lekang,25
+203,AR,Bordumsa-Diyum,25
+204,AR,Miao,25
+205,AR,Nampong,25
+206,AR,"Changlang South",25
+207,AR,"Changlang North",25
+208,AR,Namsang,25
+209,AR,"Khonsa East",25
+210,AR,"Khonsa West",25
+211,AR,Borduria-Bagapani,25
+212,AR,Kanubari,25
+213,AR,Longding-Pumao,25
+214,AR,Pongchau-Wakka,25
+215,AS,Ratabari,28
+216,AS,Patharkandi,28
+217,AS,"Karimganj North",28
+218,AS,"Karimganj South",28
+219,AS,Badarpur,28
+220,AS,Hailakandi,28
+221,AS,Katlicherra,28
+222,AS,Algapur,28
+223,AS,Silchar,29
+224,AS,Sonai,29
+225,AS,Dholai,29
+226,AS,Udharbond,29
+227,AS,Lakhipur,29
+228,AS,Barkhola,29
+229,AS,Katigorah,29
+230,AS,Haflong,27
+231,AS,Bokajan,27
+232,AS,Howraghat,27
+233,AS,Diphu,27
+234,AS,Baithalangso,27
+235,AS,Mankachar,27
+236,AS,"Salmara South",27
+237,AS,Dhubri,27
+238,AS,Gauripur,27
+239,AS,Golakganj,27
+240,AS,"Bilasipara West",27
+241,AS,"Bilasipara East",27
+242,AS,Gossaigaon,28
+243,AS,"Kokrajhar West",28
+244,AS,"Kokrajhar East",28
+245,AS,Sidli,28
+246,AS,Bongaigaon,27
+247,AS,Bijni,28
+248,AS,"Abhayapuri North",27
+249,AS,"Abhayapuri South",27
+250,AS,Dudhnai,34
+251,AS,"Goalpara East",27
+252,AS,"Goalpara West",27
+253,AS,Jaleswar,27
+254,AS,Sorbhog,28
+255,AS,Bhabanipur,28
+256,AS,Patacharkuchi,27
+257,AS,Barpeta,27
+258,AS,Jania,27
+259,AS,Baghbar,27
+260,AS,Sarukhetri,27
+261,AS,Chenga,27
+262,AS,Boko,34
+263,AS,Chaygaon,34
+264,AS,Palasbari,34
+265,AS,Jalukbari,34
+266,AS,Dispur,34
+267,AS,"Gauhati East",34
+268,AS,"Gauhati West",34
+269,AS,Hajo,34
+270,AS,Kamalpur,28
+271,AS,Rangiya,28
+272,AS,Tamulpur,28
+273,AS,Nalbari,28
+274,AS,Barkhetry,34
+275,AS,Dharmapur,27
+276,AS,Barama,28
+277,AS,Chapaguri,28
+278,AS,Panery,28
+279,AS,Kalaigaon,28
+280,AS,Sipajhar,28
+281,AS,Mangaldoi,28
+282,AS,Dalgaon,28
+283,AS,Udalguri,28
+284,AS,Majbat,28
+285,AS,Dhekiajuli,36
+286,AS,Barchalla,36
+287,AS,Tezpur,36
+288,AS,Rangapara,36
+289,AS,Sootea,36
+290,AS,Biswanath,36
+291,AS,Behali,36
+292,AS,Gohpur,36
+293,AS,Jagiroad,28
+294,AS,Marigaon,28
+295,AS,Laharighat,28
+296,AS,Raha,28
+297,AS,Dhing,38
+298,AS,Batadroba,38
+299,AS,Rupohihat,38
+300,AS,Nowgong,28
+301,AS,Barhampur,28
+302,AS,Samaguri,38
+303,AS,Kaliabor,38
+304,AS,Jamunamukh,28
+305,AS,Hojai,28
+306,AS,Lumding,28
+307,AS,Bokakhat,38
+308,AS,Sarupathar,38
+309,AS,Golaghat,38
+310,AS,Khumtai,38
+311,AS,Dergaon,38
+312,AS,Jorhat,34
+313,AS,Majuli,28
+314,AS,Titabar,34
+315,AS,Mariani,34
+316,AS,Teok,34
+317,AS,Amguri,34
+318,AS,Nazira,34
+319,AS,Mahmara,34
+320,AS,Sonari,34
+321,AS,Thowra,34
+322,AS,Sibsagar,34
+323,AS,Bihpuria,36
+324,AS,Naoboicha,28
+325,AS,Lakhimpur,28
+326,AS,Dhakuakhana,28
+327,AS,Dhemaji,28
+328,AS,Jonai,28
+329,AS,Moran,27
+330,AS,Dibrugarh,27
+331,AS,Lahowal,27
+332,AS,Duliajan,27
+333,AS,Tingkhong,27
+334,AS,Naharkatia,27
+335,AS,Chabua,28
+336,AS,Tinsukia,27
+337,AS,Digboi,27
+338,AS,Margherita,27
+339,AS,Doomdooma,28
+340,AS,Sadiya,28
+341,BR,"Valmiki Nagar ",81
+342,BR,"Ramnagar, Paschim Champaran ",81
+343,BR,"Narkatiaganj ",81
+344,BR,"Bagaha ",81
+345,BR,"Lauriya ",81
+346,BR,"Nautan ",42
+347,BR,"Chanpatia ",42
+348,BR,"Bettiah ",42
+349,BR,"Sikta ",81
+350,BR,"Raxaul ",42
+351,BR,"Sugauli ",42
+352,BR,"Narkatiya ",42
+353,BR,"Harsidhi ",43
+354,BR,"Govindganj ",43
+355,BR,"Kesaria ",43
+356,BR,"Kalyanpur, Purvi Champaran ",43
+357,BR,"Pipra, Purvi Champaran ",43
+358,BR,"Madhuban ",44
+359,BR,"Motihari ",43
+360,BR,"Chiraia ",44
+361,BR,"Dhaka ",44
+362,BR,"Sheohar ",44
+363,BR,"Riga ",44
+364,BR,"Bathnaha ",45
+365,BR,"Parihar ",45
+366,BR,"Sursand ",45
+367,BR,"Bajpatti ",45
+368,BR,"Sitamarhi ",45
+369,BR,"Runnisaidpur ",45
+370,BR,"Belsand ",44
+371,BR,"Harlakhi ",41
+372,BR,"Benipatti ",41
+373,BR,"Khajauli ",41
+374,BR,"Babubarhi ",41
+375,BR,"Bisfi ",41
+376,BR,"Madhubani ",41
+377,BR,"Rajnagar, Madhubani ",41
+378,BR,"Jhanjharpur ",41
+379,BR,"Phulparas ",41
+380,BR,"Laukaha ",41
+381,BR,"Nirmali ",48
+382,BR,"Pipra, Supaul ",48
+383,BR,"Supaul ",48
+384,BR,"Triveniganj ",48
+385,BR,"Chhatapur ",48
+386,BR,"Narpatganj ",41
+387,BR,"Raniganj, Araria ",41
+388,BR,"Forbesganj ",41
+389,BR,"Araria ",41
+390,BR,"Jokihat ",41
+391,BR,"Sikti ",41
+392,BR,"Bahadurganj ",51
+393,BR,"Thakurganj ",51
+394,BR,"Kishanganj ",51
+395,BR,"Kochadhaman ",51
+396,BR,"Amour ",51
+397,BR,"Baisi ",51
+398,BR,"Kasba, Purnia ",42
+399,BR,"Banmankhi ",42
+400,BR,"Rupauli ",42
+401,BR,"Dhamdaha ",42
+402,BR,"Purnia ",42
+403,BR,"Katihar ",51
+404,BR,"Kadwa ",51
+405,BR,"Balrampur, Katihar ",51
+406,BR,"Pranpur ",51
+407,BR,"Manihari ",51
+408,BR,"Barari ",51
+409,BR,"Korha ",42
+410,BR,"Alamnagar ",53
+411,BR,"Bihariganj ",53
+412,BR,"Singheshwar ",55
+413,BR,"Madhepura ",53
+414,BR,"Sonbarsha, Saharsa ",53
+415,BR,"Saharsa ",53
+416,BR,"Simri Bakhtiarpur ",51
+417,BR,"Mahishi ",53
+418,BR,"Kusheshwar Asthan ",43
+419,BR,"Gaura Bauram ",41
+420,BR,"Benipur ",41
+421,BR,"Alinagar ",41
+422,BR,"Darbhanga Rural ",41
+423,BR,"Darbhanga ",41
+424,BR,"Hayaghat ",43
+425,BR,"Bahadurpur ",41
+426,BR,"Keoti ",41
+427,BR,"Jale ",41
+428,BR,"Gaighat ",41
+429,BR,"Aurai ",41
+430,BR,"Minapur ",56
+431,BR,"Bochahan ",41
+432,BR,"Sakra ",41
+433,BR,"Kurhani ",41
+434,BR,"Muzaffarpur ",41
+435,BR,"Kanti ",56
+436,BR,"Baruraj ",56
+437,BR,"Paroo ",56
+438,BR,"Sahebganj, Muzaffarpur ",56
+439,BR,"Baikunthpur ",41
+440,BR,"Barauli, Bihar ",41
+441,BR,"Gopalganj ",41
+442,BR,"Kuchaikote ",41
+443,BR,"Bhore ",41
+444,BR,"Hathua ",41
+445,BR,"Siwan ",47
+446,BR,"Ziradei ",47
+447,BR,"Darauli ",47
+448,BR,"Raghunathpur, Siwan ",47
+449,BR,"Daraunda ",47
+450,BR,"Barharia ",47
+451,BR,"Goriakothi ",59
+452,BR,"Maharajganj, Siwan ",59
+453,BR,"Ekma ",59
+454,BR,"Manjhi ",59
+455,BR,"Baniapur ",59
+456,BR,"Taraiya ",59
+457,BR,"Marhaura ",43
+458,BR,"Chapra, Saran ",43
+459,BR,"Garkha ",43
+460,BR,"Amnour ",43
+461,BR,"Parsa ",43
+462,BR,"Sonepur ",43
+463,BR,"Hajipur ",41
+464,BR,"Lalganj ",41
+465,BR,"Vaishali ",56
+466,BR,"Mahua ",41
+467,BR,"Raja Pakar ",41
+468,BR,"Raghopur, Vaishali ",41
+469,BR,"Mahnar ",41
+470,BR,"Patepur ",55
+471,BR,"Kalyanpur, Samastipur ",43
+472,BR,"Warisnagar ",43
+473,BR,"Samastipur ",43
+474,BR,"Ujiarpur ",55
+475,BR,"Morwa ",55
+476,BR,"Sarairanjan ",55
+477,BR,"Mohiuddinnagar ",55
+478,BR,"Bibhutipur ",55
+479,BR,"Rosera ",43
+480,BR,"Hasanpur ",51
+481,BR,"Cheria-Bariarpur ",41
+482,BR,"Bachhwara ",41
+483,BR,"Teghra ",41
+484,BR,"Matihani ",41
+485,BR,"Sahebpur Kamal ",41
+486,BR,"Begusarai ",41
+487,BR,"Bakhri ",41
+488,BR,"Alauli ",51
+489,BR,"Khagaria ",51
+490,BR,"Beldaur ",51
+491,BR,"Parbatta ",51
+492,BR,"Bihpur ",41
+493,BR,"Gopalpur ",41
+494,BR,"Pirpainti ",41
+495,BR,"Kahalgaon ",41
+496,BR,"Bhagalpur ",41
+497,BR,"Sultanganj ",41
+498,BR,"Nathnagar ",41
+499,BR,"Amarpur ",41
+500,BR,"Dhoraiya ",41
