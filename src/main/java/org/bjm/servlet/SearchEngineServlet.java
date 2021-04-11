@@ -10,6 +10,7 @@ import java.io.PrintWriter;
 import java.util.logging.Logger;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -18,6 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author root
  */
+@WebServlet(name = "SearchEngineServlet", urlPatterns = {"/SearchEngineServlet"})
 public class SearchEngineServlet extends HttpServlet {
     
     private static final Logger LOGGER=Logger.getLogger(SearchEngineServlet.class.getName());
