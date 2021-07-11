@@ -8,6 +8,7 @@ package org.bjm.mbean;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -62,9 +63,12 @@ public class NewForumMBean implements Serializable {
         forumCategories=new ArrayList<>();
         FacesContext context = FacesContext.getCurrentInstance();
         ResourceBundle rb = context.getApplication().evaluateExpressionGet(context, "#{msg}", ResourceBundle.class);
+        Locale locale= context.getViewRoot().getLocale();
+        //locale.getLanguage().equals(context)
         SELECT_ONE=rb.getString("selectOne");
         forumCategories.add(SELECT_ONE);
-        forumCategories.addAll(referenceDataBeanLocal.getForumCategories());
+        String lang=context.getViewRoot().getLocale().getLanguage();
+        forumCategories.addAll(referenceDataBeanLocal.getForumCategories(lang));
         forum=new Forum();
         ForumCategory fc=new ForumCategory();
         forum.setForumCategory(fc);
@@ -75,7 +79,8 @@ public class NewForumMBean implements Serializable {
         LOGGER.log(Level.INFO, "Category Type is {0}", type);
         forumSubcategories=new ArrayList();
         forumSubcategories.add(SELECT_ONE);
-        forumSubcategories.addAll(referenceDataBeanLocal.getForumSubCategories(type));
+        String lang=FacesContext.getCurrentInstance().getViewRoot().getLocale().getLanguage();
+        forumSubcategories.addAll(referenceDataBeanLocal.getForumSubCategories(type,lang));
         
     }
     
@@ -131,6 +136,7 @@ public class NewForumMBean implements Serializable {
         HttpSession session=(HttpSession) request.getSession();
         User user=(User)session.getAttribute(BJMConstants.USER); 
         forum.setUser(user);
+        forum.setLang(FacesContext.getCurrentInstance().getViewRoot().getLocale().getLanguage());
         //Crate Forum now
         forum=forumBeanLocal.createForum(forum,user);
     }

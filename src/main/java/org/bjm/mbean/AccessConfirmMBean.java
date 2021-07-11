@@ -94,7 +94,8 @@ final static Logger LOGGER=Logger.getLogger(AccessConfirmMBean.class.getName());
         if (msgs!=null && msgs.size()>0){
             toReturn =null;
         }else{
-            user=userBeanLocal.createAccess(user);
+            String lang=FacesContext.getCurrentInstance().getViewRoot().getLocale().getLanguage();
+            user=userBeanLocal.createAccess(user, lang);
             toReturn="/home/UserWelcome?faces-redirect=true";
         }
         LOGGER.log(Level.INFO, "toReturn is :{0}", toReturn);

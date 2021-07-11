@@ -55,6 +55,7 @@ public class ReportAbuseForumMBean implements Serializable {
         HttpSession session=request.getSession();
         User user=(User) session.getAttribute(BJMConstants.USER);
         forumAbuse.setReportedBy(user);
+        forumAbuse.setLang(FacesContext.getCurrentInstance().getViewRoot().getLocale().getLanguage());
         ForumComment fc=forumBeanLocal.getForumCommentById(commentId);
         forumAbuse.setForumComment(fc);
         forumAbuse=forumBeanLocal.addForumAbuse(forumAbuse);

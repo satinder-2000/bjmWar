@@ -112,6 +112,7 @@ public class LokSabhaElectoralMBean implements Serializable {
             LokSabha ls=ebl.getLokSabhaByConstituency(user.getStateCode(), constituency);
             newC.setLokSabha(ls);
             newC.setName(candidateNew);
+            newC.setLang(FacesContext.getCurrentInstance().getViewRoot().getLocale().getLanguage());
             int idC=ebl.nominateNewLSCandidate(user,newC);
             LOGGER.log(Level.INFO, "New LS Candidate nominated with ID : {0}", idC);
         }else{

@@ -71,7 +71,7 @@ public class ElectoralBean implements ElectoralBeanLocal {
         em.persist(lc);
         em.merge(lc.getLokSabha());
         em.flush();
-        emailerBeanLocal.sendNominateNewLSCandidateEmail(user, lc);
+        emailerBeanLocal.sendNominateNewLSCandidateEmail(user, lc, lc.getLang());
         LOGGER.log(Level.INFO, "New LS Candidate Nominated with ID: {0}", lc.getId());
         return lc.getId();
     }
@@ -80,7 +80,7 @@ public class ElectoralBean implements ElectoralBeanLocal {
     public void addNominationLSCandidate(User user,LsCandidate lc) {
         lc.setNameConfCount(lc.getNameConfCount()+1);
         lc=em.merge(lc);
-        emailerBeanLocal.sendAddNominationLSCandidateEmail(user,lc);
+        emailerBeanLocal.sendAddNominationLSCandidateEmail(user,lc,lc.getLang());
         LOGGER.log(Level.INFO, "LsCandidate {0} now has {1} nominations", new Object[]{lc.getId(), lc.getNameConfCount()});
         em.flush();
     }
@@ -132,7 +132,7 @@ public class ElectoralBean implements ElectoralBeanLocal {
         em.persist(vc);
         em.merge(vc.getVidhanSabha());
         em.flush();
-        emailerBeanLocal.sendnominateNewVSCandidateEmail(user, vc);
+        emailerBeanLocal.sendnominateNewVSCandidateEmail(user, vc, vc.getLang());
         LOGGER.log(Level.INFO, "New VS Candidate Nominated with ID: {0}", vc.getId());
         return vc.getId();
     }
@@ -141,7 +141,7 @@ public class ElectoralBean implements ElectoralBeanLocal {
     public void addNominationVSCandidate(User user, VsCandidate vc) {
         vc.setNameConfCount(vc.getNameConfCount()+1);
         vc=em.merge(vc);
-        emailerBeanLocal.sendAddNominationVSCandidateEmail(user, vc);
+        emailerBeanLocal.sendAddNominationVSCandidateEmail(user, vc, vc.getLang());
         LOGGER.log(Level.INFO, "VsCandidate {0} now has {1} nominations", new Object[]{vc.getId(), vc.getNameConfCount()});
         em.flush();
     }

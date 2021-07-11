@@ -15,7 +15,7 @@ import org.bjm.model.User;
 @Local
 public interface UserBeanLocal {
     
-    public User createUser(User user);
+    public User createUser(User user, String lang);
     
     public boolean isEmailRegistered(String email);
 
@@ -23,11 +23,11 @@ public interface UserBeanLocal {
 
     public User amendUser(User user);
     
-    public User createAccess(User user);
+    public User createAccess(User user, String lang);
     
     public User getUser(String email, String password);
     
-    public void dispatchAccessReset(String email);
+    public void dispatchAccessReset(String email, String lang);
     
     public User changePassword(User user);
     

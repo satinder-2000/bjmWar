@@ -91,7 +91,7 @@ public class ContactUsMBean implements Serializable {
         
         if (formValid){//Submit Data
             ContactVO vo = new ContactVO(userEmail, subject, message);
-            miscellaneousServicesBeanLocal.sendContactUsMessage(vo);
+            miscellaneousServicesBeanLocal.sendContactUsMessage(vo, FacesContext.getCurrentInstance().getViewRoot().getLocale().getLanguage());
 
             FacesContext.getCurrentInstance().addMessage("",
                     new FacesMessage(FacesMessage.SEVERITY_INFO, rb.getString("requestSent"), rb.getString("requestSent")));

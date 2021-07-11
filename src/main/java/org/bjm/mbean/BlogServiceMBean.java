@@ -79,7 +79,7 @@ public class BlogServiceMBean implements Serializable {
         HttpSession session=request.getSession();
         User user=(User)session.getAttribute(BJMConstants.USER);
         blog.setUser(user);
-        LOGGER.severe("The method has not been implemented");
+        blog.setLang(FacesContext.getCurrentInstance().getViewRoot().getLocale().getLanguage());
         return "/blog/AddBlogConfirm.xhtml?faces-redirect=true";
     }
     
@@ -167,6 +167,7 @@ public class BlogServiceMBean implements Serializable {
         }else{//every this is fine. proceed to submit
             //set the User on the blogComment
             blogComment.setUser(user);
+            blogComment.setLang(FacesContext.getCurrentInstance().getViewRoot().getLocale().getLanguage());
             blog=miscServicesBeanLocal.addBlogComment(blog, blogComment);
             blogComments=blog.getBlogComments();
             FacesContext.getCurrentInstance().addMessage("usercomment", new FacesMessage(FacesMessage.SEVERITY_INFO, rb.getString("blogCmtSuccess"), rb.getString("blogCmtSuccess"))); 

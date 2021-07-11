@@ -44,7 +44,8 @@ public class AccessResetMBean implements Serializable {
                 FacesContext.getCurrentInstance().addMessage("email",new FacesMessage(FacesMessage.SEVERITY_ERROR,rb.getString("emailNotRegistered"),rb.getString("emailNotRegistered")));
                 return null;
             }else{
-                userBeanLocal.dispatchAccessReset(email);
+                String lang=FacesContext.getCurrentInstance().getViewRoot().getLocale().getLanguage();
+                userBeanLocal.dispatchAccessReset(email, lang);
                 FacesContext.getCurrentInstance().addMessage("email",new FacesMessage(FacesMessage.SEVERITY_INFO,rb.getString("requestSent"),rb.getString("requestSent")));
                 return null;
             }

@@ -20,24 +20,24 @@ import org.bjm.vo.ContactVO;
 @Local
 public interface EmailerBeanLocal {
     
-    public void sendUserRegConfirmEmail(User user);
+    public void sendUserRegConfirmEmail(User user, String lang);
     
-    public void sendAccessConfirmEmail(String email);
+    public void sendAccessConfirmEmail(String email, String lang);
 
-    public void sendSurveyCreatedMail(Survey survey);
+    public void sendSurveyCreatedMail(Survey survey, String lang);
     
-    public void sendForumCreatedMail(Forum forum);
+    public void sendForumCreatedMail(Forum forum, String lang);
     
-    public void sendPasswordResetEmail(String email);
+    public void sendPasswordResetEmail(String email, String lang);
     
-    public void sendContactUsEmailToAdmin(ContactVO contactVO);
+    public void sendContactUsEmailToAdmin(ContactVO contactVO, String lang);
     
-    public void sendNominateNewLSCandidateEmail(User user, LsCandidate lc);
+    public void sendNominateNewLSCandidateEmail(User user, LsCandidate lc, String lang);
     
-    public void sendAddNominationLSCandidateEmail(User user, LsCandidate lc);
+    public void sendAddNominationLSCandidateEmail(User user, LsCandidate lc, String lang);
     
-    public void sendnominateNewVSCandidateEmail(User user, VsCandidate lc);
+    public void sendnominateNewVSCandidateEmail(User user, VsCandidate lc, String lang);
     
-    public void sendAddNominationVSCandidateEmail(User user, VsCandidate lc);
+    public void sendAddNominationVSCandidateEmail(User user, VsCandidate lc, String lang);
     
 }

@@ -46,13 +46,19 @@ public class ForumBean implements ForumBeanLocal {
         em.merge(forum.getUser());
         em.flush();
         LOGGER.info("New Forum created with ID : "+forum.getId());
-        emailerBeanLocal.sendForumCreatedMail(forum);
+        emailerBeanLocal.sendForumCreatedMail(forum, forum.getLang());
         Activity activity=new Activity();
         activity.setUserId(user.getId());
         activity.setActivityId(forum.getId());
         activity.setActivityType(ActivityType.FORUM_CREATED);
         activity.setDated(LocalDateTime.now());
-        activity.setDescription("Forum created :"+forum.getTitle());
+        if (forum.getLang().equals("en")){
+           activity.setDescription("Forum created :"+forum.getTitle()); 
+        }else{
+           activity.setDescription("फ़ोरम बनाया गया : "+forum.getTitle()); 
+        }
+        
+        activity.setLang(forum.getLang());
         activityBeanLocal.logActivity(activity);
         return forum;
     }

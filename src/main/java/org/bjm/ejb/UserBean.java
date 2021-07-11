@@ -34,12 +34,12 @@ public class UserBean implements UserBeanLocal {
     private EmailerBeanLocal emailerBeanLocal;
 
     @Override
-    public User createUser(User user) {
+    public User createUser(User user, String lang) {
         user.setCreatedOn(LocalDateTime.now());
         user.setUpdatedOn(LocalDateTime.now());
         user.setFsReminder(4);
         em.persist(user);
-        emailerBeanLocal.sendUserRegConfirmEmail(user);
+        emailerBeanLocal.sendUserRegConfirmEmail(user, lang);
         LOGGER.log(Level.INFO, "User persisted with ID : {0}", user.getId());
         return user;
     }
@@ -75,7 +75,7 @@ public class UserBean implements UserBeanLocal {
     }
 
     @Override
-    public User createAccess(User user) {
+    public User createAccess(User user, String lang) {
         String email=user.getEmail();
         String password=user.getPassword();
         user.setPassword(PasswordUtil.generateSecurePassword(password, email));
@@ -84,7 +84,7 @@ public class UserBean implements UserBeanLocal {
         em.merge(user);
         em.flush();
         //Email now
-        emailerBeanLocal.sendAccessConfirmEmail(email);
+        emailerBeanLocal.sendAccessConfirmEmail(email, lang);
         return user;
     }
 
@@ -129,8 +129,8 @@ public class UserBean implements UserBeanLocal {
     }
 
     @Override
-    public void dispatchAccessReset(String email) {
-        emailerBeanLocal.sendPasswordResetEmail(email);
+    public void dispatchAccessReset(String email, String lang) {
+        emailerBeanLocal.sendPasswordResetEmail(email,lang);
     }
 
     @Override

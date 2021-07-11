@@ -119,6 +119,7 @@ public class SurveyDetailsMBean implements Serializable {
             } else {
                 surveyVoteUser.setUser(user);
                 surveyVoteUser.setVoteType(surveyVoteUser.getVoteType());
+                surveyVoteUser.setLang(FacesContext.getCurrentInstance().getViewRoot().getLocale().getLanguage());
                 survey = surveyBeanLocal.addSurveyVote(survey, surveyVoteUser);
                 context.addMessage("surveyVote", new FacesMessage(FacesMessage.SEVERITY_INFO, rb.getString("voteAdded"), rb.getString("voteAdded")));
                 surveyVoteUser = new SurveyVote();

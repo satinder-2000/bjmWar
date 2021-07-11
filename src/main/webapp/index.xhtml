@@ -1,7 +1,8 @@
 <ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
                 xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:f="http://java.sun.com/jsf/core"
-                template="/WEB-INF/bjmTemplateHome.xhtml">
+                template="/WEB-INF/bjmTemplateHome.xhtml"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
 
     <ui:define name="content">
         <div class="container">
@@ -25,7 +26,15 @@
                 <div class="col-sm-8">
                     <h:form>
                         <div class="row col-sm-12">
-                            <img src="/javax.faces.resource/BJManch#{tempImageScroll.index}.jpg.xhtml?ln=images" width="700" height="526"/>
+                            <c:choose>
+                                <c:when test="#{languageMBean.localeCode eq 'hi_IN'}">
+                                    <img src="/javax.faces.resource/BJManch#{tempImageScroll.index}.jpeg.xhtml?ln=images" width="700" height="400"/>
+                                </c:when>
+                                <c:otherwise>
+                                    <img src="/javax.faces.resource/BJManch#{tempImageScroll.index}.jpg.xhtml?ln=images" width="700" height="526"/>
+                                </c:otherwise>
+                            </c:choose>
+                            
                         </div>
                         <div class="row col-sm-12">
                             <div class="col-sm-6">
@@ -44,7 +53,7 @@
                 <div class="col-sm-2"/>
                 <div class="col-sm-2"/>
                 <div class="col-sm-8">
-                    <a href="/javax.faces.resource/PresentationText.pdf.xhtml?ln=docs">Click to download the Text</a>  
+                    <a href="/javax.faces.resource/PresentationText.pdf.xhtml?ln=docs">#{msg.clickDownload}</a>  
                 </div>
                 <div class="col-sm-2"/>
             </div>

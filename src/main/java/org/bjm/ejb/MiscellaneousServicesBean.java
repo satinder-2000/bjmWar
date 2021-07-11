@@ -49,8 +49,8 @@ public class MiscellaneousServicesBean implements MiscellaneousServicesBeanLocal
     }
 
     @Override
-    public void sendContactUsMessage(ContactVO contactVO) {
-        emailerBeanLocal.sendContactUsEmailToAdmin(contactVO);
+    public void sendContactUsMessage(ContactVO contactVO, String lang) {
+        emailerBeanLocal.sendContactUsEmailToAdmin(contactVO, lang);
     }
 
     @Override

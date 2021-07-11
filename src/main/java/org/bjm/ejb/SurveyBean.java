@@ -48,13 +48,18 @@ public class SurveyBean implements SurveyBeanLocal {
         em.merge(survey.getUser());
         em.flush();
         LOGGER.log(Level.INFO, "New Survey created with ID: {0}", survey.getId());
-        emailerBeanLocal.sendSurveyCreatedMail(survey);
+        emailerBeanLocal.sendSurveyCreatedMail(survey,survey.getLang());
         Activity activity=new Activity();
         activity.setUserId(user.getId());
         activity.setActivityId(survey.getId());
         activity.setActivityType(ActivityType.SURVEY_CREATED);
         activity.setDated(LocalDateTime.now());
         activity.setDescription("Survey created :"+survey.getTitle());
+        if (survey.getLang().equals("en")){
+           activity.setDescription("Survey created :"+survey.getTitle()); 
+        }else{
+           activity.setDescription("सर्वेक्षण बनाया गया: "+survey.getTitle()); 
+        }
         activityBeanLocal.logActivity(activity);
         return survey;
         

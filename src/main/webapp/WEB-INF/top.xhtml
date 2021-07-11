@@ -63,7 +63,7 @@
                 <h:outputLink value="/info/TermsAndConditions.xhtml" styleClass="nav-link">#{msg.tAndC}</h:outputLink>
             </li>
             <li class="nav-item">
-                <h:outputLink value="/info/Blog.xhtml" styleClass="nav-link">Blog</h:outputLink>
+                <h:outputLink value="/info/Blog.xhtml" styleClass="nav-link">#{msg.blog}</h:outputLink>
             </li>
 
             <li class="nav-item dropdown">
@@ -100,6 +100,14 @@
                         <f:param name="vuId" value="#{view.viewId}"/>
                         <img src="/javax.faces.resource/Search30.png.xhtml?ln=images"/>
                     </h:commandLink>
+                </h:form>
+            </li>
+            <li>
+                <h:form>
+                    <h:selectOneMenu value="#{languageMBean.localeCode}" onchange="submit()"
+                                     valueChangeListener="#{languageMBean.countryLocaleCodeChanged}">
+                        <f:selectItems value="#{languageMBean.countriesInMap}" /> 
+                    </h:selectOneMenu>
                 </h:form>
             </li>
             

@@ -18,6 +18,7 @@ import javax.ejb.Stateful;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
+import org.bjm.model.EmailMessage;
 import org.bjm.model.EmailTemplateType;
 import org.bjm.model.EmailTemplate;
 import org.bjm.model.ForumCategory;
@@ -40,8 +41,10 @@ public class ReferenceDataBean implements Serializable, ReferenceDataBeanLocal {
     
     private List<State> states;
     Map<EmailTemplateType, String> emailTemplateMap;
-    private List<String> forumCategories;
-    private List<String> surveyCategories;
+    private List<String> forumCategories_hi;
+    private List<String> forumCategories_en;
+    private List<String> surveyCategories_hi;
+    private List<String> surveyCategories_en;
     
     @PostConstruct
     public void init(){
@@ -49,11 +52,15 @@ public class ReferenceDataBean implements Serializable, ReferenceDataBeanLocal {
         TypedQuery<State> tQ=em.createQuery("select s from State s", State.class);
         states=tQ.getResultList();
         //Forum Categories
-        TypedQuery<String> fcTq=em.createQuery("select distinct fc.type from ForumCategory fc", String.class);
-        forumCategories=fcTq.getResultList();
+        TypedQuery<String> fcTq=em.createQuery("select distinct fc.type from ForumCategory fc where fc.lang='hi'", String.class);
+        forumCategories_hi=fcTq.getResultList();
+        fcTq=em.createQuery("select distinct fc.type from ForumCategory fc where fc.lang='en'", String.class);
+        forumCategories_en=fcTq.getResultList();
         //Survey Categories
-        TypedQuery<String> scTq=em.createQuery("select distinct sc.type from SurveyCategory sc", String.class);
-        forumCategories=scTq.getResultList();
+        TypedQuery<String> scTq=em.createQuery("select distinct sc.type from SurveyCategory sc  where sc.lang='hi'", String.class);
+        surveyCategories_hi=scTq.getResultList();
+        scTq=em.createQuery("select distinct sc.type from SurveyCategory sc  where sc.lang='en'", String.class);
+        surveyCategories_en=scTq.getResultList();
         
         //Email Templates
         TypedQuery<EmailTemplate> eTQ=em.createQuery("select et from EmailTemplate et", EmailTemplate.class);
@@ -82,16 +89,20 @@ public class ReferenceDataBean implements Serializable, ReferenceDataBeanLocal {
     }
 
     @Override
-    public List<String> getForumCategories() {
-        return forumCategories;
+    public List<String> getForumCategories(String lang) {
+        if (lang.equals("hi")){
+            return forumCategories_hi;
+        }
+        return forumCategories_en;
     }
     
     
 
     @Override
-    public List<String> getForumSubCategories(String category) {
-        TypedQuery<String> fcTq=em.createQuery("select fc.subtype from ForumCategory fc where fc.type=?1", String.class);
+    public List<String> getForumSubCategories(String category, String lang) {
+        TypedQuery<String> fcTq=em.createQuery("select fc.subtype from ForumCategory fc where fc.type=?1 and fc.lang=?2", String.class);
         fcTq.setParameter(1, category);
+        fcTq.setParameter(2, lang);
         return fcTq.getResultList();
     }
     
@@ -105,14 +116,18 @@ public class ReferenceDataBean implements Serializable, ReferenceDataBeanLocal {
     }
 
     @Override
-    public List<String> getSurveyCategories() {
-        return surveyCategories;
+    public List<String> getSurveyCategories(String lang) {
+        if (lang.equals("hi")){
+            return surveyCategories_hi;
+        }
+        return surveyCategories_en;
     }
 
     @Override
-    public List<String> getSurveySubCategories(String category) {
-        TypedQuery<String> scTq=em.createQuery("select sc.subtype from SurveyCategory sc where sc.type=?1", String.class);
+    public List<String> getSurveySubCategories(String category, String lang) {
+        TypedQuery<String> scTq=em.createQuery("select sc.subtype from SurveyCategory sc where sc.type=?1 and sc.lang=?2", String.class);
         scTq.setParameter(1, category);
+        scTq.setParameter(2, lang);
         return scTq.getResultList();
     }
 
@@ -129,4 +144,21 @@ public class ReferenceDataBean implements Serializable, ReferenceDataBeanLocal {
         tQ.setParameter(1, stateCode);
         return tQ.getResultList();
     }
+
+    @Override
+    public HashMap<String, List<EmailMessage>> getEmailMessages(String langCode) {
+        TypedQuery<EmailMessage> tQ = em.createQuery("select em from EmailMessage em where em.lang=?1", EmailMessage.class);
+        tQ.setParameter(1, langCode);
+        List<EmailMessage> resultSet = tQ.getResultList();
+        HashMap<String, List<EmailMessage>> map = new HashMap();
+        for (EmailMessage em : resultSet) {
+            if (map.containsKey(em.getTemplate())) {
+                map.get(em.getTemplate()).add(em);
+            } else {
+                map.put(em.getTemplate(), new ArrayList());
+            }
+        }
+        return map;
+    }
+    
 }

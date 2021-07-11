@@ -98,6 +98,7 @@ public class VidhanSabhaElectoralMBean implements Serializable {
             VidhanSabha vs=ebl.getVidhanSabhaByConstituency(user.getStateCode(), constituency);
             vsCandidate.setVidhanSabha(vs);
             vsCandidate.setName(candidateNew);
+            vsCandidate.setLang(FacesContext.getCurrentInstance().getViewRoot().getLocale().getLanguage());
         }else{
             newNomination=false;
             int constituencyId=ebl.getVidhanSabhaIdByConstituency(user.getStateCode(), constituency);

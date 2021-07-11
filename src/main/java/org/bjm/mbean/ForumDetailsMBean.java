@@ -85,6 +85,7 @@ public class ForumDetailsMBean implements Serializable {
             fc.setUser(user);
 
             fc.setText(getUserComment());
+            fc.setLang(FacesContext.getCurrentInstance().getViewRoot().getLocale().getLanguage());
             forum = forumBeanLocal.addForumComment(forum, fc);
             FacesContext.getCurrentInstance().addMessage("usercomment", new FacesMessage(FacesMessage.SEVERITY_INFO, rb.getString("commentAdded"), rb.getString("commentAdded")));
             userComment="";

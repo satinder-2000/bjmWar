@@ -33,6 +33,6 @@ public interface MiscellaneousServicesBeanLocal {
     
     public List<BlogAbuse> getBlogAbuses();
     
-    public void sendContactUsMessage(ContactVO contactVO);
+    public void sendContactUsMessage(ContactVO contactVO, String lang);
     
 }

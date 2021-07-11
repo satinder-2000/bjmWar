@@ -323,7 +323,8 @@ public class UserRegisterMBean implements Serializable {
     }
     
     public void submitDetails() {
-        user = userBeanLocal.createUser(user);
+        String lang=FacesContext.getCurrentInstance().getViewRoot().getLocale().getLanguage();
+        user = userBeanLocal.createUser(user, lang);
         LOGGER.log(Level.INFO, "User persisted with ID: {0} ",user.getId());
         //User has been sussessfully persisted in the Database. Now the Image (byte[]) can be removed from the session as well. 
         HttpServletRequest request= (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();

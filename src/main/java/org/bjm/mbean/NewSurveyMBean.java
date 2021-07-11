@@ -74,7 +74,8 @@ public class NewSurveyMBean implements Serializable {
         ResourceBundle rb = context.getApplication().evaluateExpressionGet(context, "#{msg}", ResourceBundle.class);
         SELECT_ONE=rb.getString("selectOne");
         categories.add(SELECT_ONE);
-        categories.addAll(referenceDataBeanLocal.getForumCategories());
+        String lang=context.getViewRoot().getLocale().getLanguage();
+        categories.addAll(referenceDataBeanLocal.getForumCategories(lang));
         HttpServletRequest request=(HttpServletRequest) context.getExternalContext().getRequest();
         HttpSession session=request.getSession();
         User user=(User)session.getAttribute(BJMConstants.USER); 
@@ -104,7 +105,8 @@ public class NewSurveyMBean implements Serializable {
         LOGGER.log(Level.INFO, "Category Type is {0}", type);
         subcategories=new ArrayList();
         subcategories.add(SELECT_ONE);
-        subcategories.addAll(referenceDataBeanLocal.getSurveySubCategories(type));
+        String lang=FacesContext.getCurrentInstance().getViewRoot().getLocale().getLanguage();
+        subcategories.addAll(referenceDataBeanLocal.getSurveySubCategories(type, lang));
         
     }
     
@@ -164,6 +166,7 @@ public class NewSurveyMBean implements Serializable {
         HttpSession session=request.getSession();
         User user=(User)session.getAttribute(BJMConstants.USER); 
         survey.setUser(user);
+        survey.setLang(FacesContext.getCurrentInstance().getViewRoot().getLocale().getLanguage());
         survey=surveyBeanLocal.createSurvey(survey,user);
         survey=new Survey();
         LOGGER.info("New Servey initialized");
