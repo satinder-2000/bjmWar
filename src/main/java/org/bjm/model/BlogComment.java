@@ -48,6 +48,9 @@ public class BlogComment implements Serializable {
     @ManyToOne
     @JoinColumn(name="USER_ID")
     private User user;
+    
+    @Column(name = "LANG")
+    private String lang;
 
     public int getId() {
         return id;
@@ -96,6 +99,14 @@ public class BlogComment implements Serializable {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public String getLang() {
+        return lang;
+    }
+
+    public void setLang(String lang) {
+        this.lang = lang;
     }
     
     

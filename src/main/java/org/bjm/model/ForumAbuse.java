@@ -44,6 +44,10 @@ public class ForumAbuse implements Serializable {
     @ManyToOne
     @JoinColumn(name="USER_ID")
     private User reportedBy;
+    
+    @Column(name = "LANG")
+    private String lang;
+
 
     public int getId() {
         return id;
@@ -83,6 +87,14 @@ public class ForumAbuse implements Serializable {
 
     public void setReportedBy(User reportedBy) {
         this.reportedBy = reportedBy;
+    }
+
+    public String getLang() {
+        return lang;
+    }
+
+    public void setLang(String lang) {
+        this.lang = lang;
     }
     
     

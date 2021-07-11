@@ -36,6 +36,10 @@ public class ForumCategory implements Serializable {
     
     @Column(name = "DESCRIPTION")
     private String description;
+    
+    @Column(name = "LANG")
+    private String lang;
+
 
     public int getId() {
         return id;
@@ -67,6 +71,14 @@ public class ForumCategory implements Serializable {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getLang() {
+        return lang;
+    }
+
+    public void setLang(String lang) {
+        this.lang = lang;
     }
     
     

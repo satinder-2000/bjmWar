@@ -33,6 +33,9 @@ public class VidhanSabha implements Serializable {
     
     @OneToMany(mappedBy = "vidhanSabha")
     private List<VsCandidate> candidates;
+    
+    @Column(name = "LANG")
+    private String lang;
 
     public int getId() {
         return id;
@@ -64,6 +67,14 @@ public class VidhanSabha implements Serializable {
 
     public void setCandidates(List<VsCandidate> candidates) {
         this.candidates = candidates;
+    }
+
+    public String getLang() {
+        return lang;
+    }
+
+    public void setLang(String lang) {
+        this.lang = lang;
     }
     
     

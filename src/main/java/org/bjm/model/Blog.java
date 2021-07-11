@@ -60,6 +60,9 @@ public class Blog implements Serializable {
     @OneToMany(mappedBy = "blog")
     private List<BlogComment> blogComments=new ArrayList<>();
     
+    @Column(name = "LANG")
+    private String lang;
+    
 
     public int getId() {
         return id;
@@ -135,6 +138,14 @@ public class Blog implements Serializable {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public String getLang() {
+        return lang;
+    }
+
+    public void setLang(String lang) {
+        this.lang = lang;
     }
     
     

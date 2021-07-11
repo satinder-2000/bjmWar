@@ -40,6 +40,10 @@ public class LokSabha implements Serializable {
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "LOK_SABHA_ID")
     private List<VidhanSabha> vidhanSabhas;
+    
+    @Column(name = "LANG")
+    private String lang;
+
 
     public int getId() {
         return id;
@@ -80,6 +84,15 @@ public class LokSabha implements Serializable {
     public void setVidhanSabhas(List<VidhanSabha> vidhanSabhas) {
         this.vidhanSabhas = vidhanSabhas;
     }
+
+    public String getLang() {
+        return lang;
+    }
+
+    public void setLang(String lang) {
+        this.lang = lang;
+    }
+    
     
     
 }

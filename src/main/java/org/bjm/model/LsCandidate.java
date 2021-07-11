@@ -41,6 +41,10 @@ public class LsCandidate implements Serializable {
     @ManyToOne
     @JoinColumn(name = "LOK_SABHA_ID")
     private LokSabha lokSabha;
+    
+    @Column(name = "LANG")
+    private String lang;
+
 
     public int getId() {
         return id;
@@ -80,6 +84,14 @@ public class LsCandidate implements Serializable {
 
     public void setLokSabha(LokSabha lokSabha) {
         this.lokSabha = lokSabha;
+    }
+
+    public String getLang() {
+        return lang;
+    }
+
+    public void setLang(String lang) {
+        this.lang = lang;
     }
     
     

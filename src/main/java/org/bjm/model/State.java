@@ -8,6 +8,8 @@ package org.bjm.model;
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -23,6 +25,11 @@ public class State implements Serializable {
     private static final long serialVersionUID = 1L;
     
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID")
+    private int id;
+    
+    
     @Column(name = "CODE")
     private String code;
     
@@ -31,6 +38,10 @@ public class State implements Serializable {
     
     @Column(name="POST_CODE_PREFIX")
     private String postCodePrefix;
+    
+    @Column(name = "LANG")
+    private String lang;
+
 
     public String getCode() {
         return code;
@@ -54,6 +65,22 @@ public class State implements Serializable {
 
     public void setPostCodePrefix(String postCodePrefix) {
         this.postCodePrefix = postCodePrefix;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getLang() {
+        return lang;
+    }
+
+    public void setLang(String lang) {
+        this.lang = lang;
     }
     
     

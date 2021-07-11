@@ -61,6 +61,10 @@ public class Forum implements Serializable {
     
     @OneToMany(mappedBy = "forum")
     private List<ForumComment> forumComments;
+    
+    @Column(name = "LANG")
+    private String lang;
+
 
     public int getId() {
         return id;
@@ -140,6 +144,14 @@ public class Forum implements Serializable {
 
     public void setForumComments(List<ForumComment> forumComments) {
         this.forumComments = forumComments;
+    }
+
+    public String getLang() {
+        return lang;
+    }
+
+    public void setLang(String lang) {
+        this.lang = lang;
     }
     
     

@@ -38,6 +38,9 @@ public class VsCandidate implements Serializable {
     @ManyToOne
     @JoinColumn(name = "VIDHAN_SABHA_ID")
     private VidhanSabha vidhanSabha;
+    
+    @Column(name = "LANG")
+    private String lang;
 
     public int getId() {
         return id;
@@ -77,6 +80,14 @@ public class VsCandidate implements Serializable {
 
     public void setVidhanSabha(VidhanSabha vidhanSabha) {
         this.vidhanSabha = vidhanSabha;
+    }
+
+    public String getLang() {
+        return lang;
+    }
+
+    public void setLang(String lang) {
+        this.lang = lang;
     }
 
     

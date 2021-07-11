@@ -33,6 +33,9 @@ public class EmailTemplate implements Serializable {
     
     @Column(name = "FILE")
     private String file;
+    
+    @Column(name = "LANG")
+    private String lang;
 
     public int getId() {
         return id;
@@ -56,6 +59,14 @@ public class EmailTemplate implements Serializable {
 
     public void setFile(String file) {
         this.file = file;
+    }
+
+    public String getLang() {
+        return lang;
+    }
+
+    public void setLang(String lang) {
+        this.lang = lang;
     }
     
     

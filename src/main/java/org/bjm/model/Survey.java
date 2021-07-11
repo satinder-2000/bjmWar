@@ -62,6 +62,9 @@ public class Survey implements Serializable {
     
     @OneToMany(mappedBy = "survey", cascade = CascadeType.ALL,orphanRemoval = true, fetch = FetchType.EAGER)
     private List<SurveyVote> surveyVotes;
+    
+    @Column(name = "LANG")
+    private String lang;
 
     public int getId() {
         return id;
@@ -139,6 +142,14 @@ public class Survey implements Serializable {
 
     public void setSurveyCategory(SurveyCategory surveyCategory) {
         this.surveyCategory = surveyCategory;
+    }
+
+    public String getLang() {
+        return lang;
+    }
+
+    public void setLang(String lang) {
+        this.lang = lang;
     }
 
     
